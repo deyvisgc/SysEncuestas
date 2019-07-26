@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>WebAdmin - Responsive Admin Dashboard Template</title>
+    <title>PODER JUDICIAL - SYSENCUESTAS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -21,7 +21,7 @@
 <body class="fixed-left"><div id="wrapper"><div class="topbar">
         <div class="topbar-left"><div class="text-center">
                 <a href="index.html" class="logo">
-                    <span>Web</span>Admin</a>
+                    <span>SYS</span> Encuesta</a>
                 <a href="index.html" class="logo-sm"><span>W</span></a>
             </div></div>
         <div class="navbar navbar-default" role="navigation">
@@ -72,7 +72,7 @@
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
                                 <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle">
-                                <span class="profile-username"> Kenny Rigdon <br/> <small>Developer</small> </span>
+                                <span class="profile-username"> {{Auth::user()->Usuario}}<br/> <small>Developer</small> </span>
                             </a><ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a></li><li>
                                     <a href="javascript:void(0)"><span class="badge badge-success pull-right">5</span> Settings </a>
                                 </li>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="user-info">
                     <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Kenny Rigdon</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{Auth::user()->Usuario}}</a>
                         <ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a>
                             </li>
                             <li>
@@ -126,7 +126,7 @@
                         </i> Online</p></div></div><div id="sidebar-menu">
                      <ul>
                     <li>
-                        <a href="index.html" class="waves-effect">
+                        <a href="#" class="waves-effect">
                             <i class="mdi mdi-home"></i>
                             <span> Dashboard <span class="badge badge-primary pull-right">1</span></span>
                         </a>
@@ -141,18 +141,8 @@
                              <ul class="list-unstyled">
                                  <li><a href="{{url('Usuarios')}}">Usuarios</a>
                                  </li>
+
                                  <li>
-                                     <a href="ui-panels.html">Panels</a>
-                                 </li>
-                                 <li>
-                                     <a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
-                                 </li><li><a href="ui-modals.html">Modals</a>
-                                 </li><li><a href="ui-components.html">Components</a>
-                                 </li><li><a href="ui-progressbars.html">Progress Bars</a>
-                                 </li><li><a href="ui-alerts.html">Alerts</a>
-                                 </li><li><a href="ui-sweet-alert.html">Sweet-Alert</a>
-                                 </li><li><a href="ui-grid.html">Grid</a>
-                                 </li>
                              </ul>
                          </li>
                          <li class="has_sub">
@@ -164,117 +154,12 @@
                              </a>
                              <ul class="list-unstyled"><li>
                                      <a href="{{url('Encuestas')}}">Encuestas</a>
-                                 </li><li><a href="icons-ion.html">Ion Icons</a>
-                                 </li><li><a href="icons-fontawesome.html">Font awesome</a>
-                                 </li><li><a href="icons-themify.html">Themify Icons</a>
-                                 </li></ul></li><li class="has_sub"> <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-layers"></i><span> Forms </span>
-                                 <span class="pull-right"><i class="mdi mdi-plus"></i>
-                                 </span>
-                             </a>
-                             <ul class="list-unstyled">
-                                 <li>
-                                     <a href="form-elements.html">General Elements</a>
                                  </li>
-                                 <li>
-                                     <a href="form-validation.html">Form Validation</a>
-                                 </li>
-                                 <li>
-                                     <a href="form-advanced.html">Advanced Form</a>
-                                 </li>
-                                 <li><a href="form-wysiwyg.html">WYSIWYG Editor</a>
-                                 </li><li><a href="form-uploads.html">Multiple File Upload</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>
-                             <a href="typography.html" class="waves-effect"><i class="mdi mdi-diamond">
 
-                                 </i><span> Typography <span class="badge badge-primary pull-right">4</span></span></a>
-                         </li>
-                         <li class="has_sub">
-                             <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-table"></i>
-                                 <span> Tables </span><span class="pull-right">
-                                     <i class="mdi mdi-plus"></i></span></a>
-                             <ul class="list-unstyled">
-                                 <li>
-                                     <a href="tables-basic.html">Basic Tables</a>
-                                 </li>
-                                 <li>
-                                     <a href="tables-datatable.html">Data Table</a>
-                                 </li>
                              </ul>
                          </li>
-                         <li class="has_sub">
-                             <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-chart-pie"></i><span> Charts </span><span class="pull-right">
-                                     <i class="mdi mdi-plus"></i></span></a>
-                             <ul class="list-unstyled"><li>
-                                     <a href="charts-morris.html">Morris Chart</a>
-                                 </li>
-                                 <li>
-                                     <a href="charts-chartjs.html">Chartjs</a>
-                                 </li>
-                                 <li><a href="charts-flot.html">Flot Chart</a>
-                                 </li>
-                                 <li>
-                                     <a href="charts-other.html">Other Chart</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li class="has_sub">
-                             <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-map"></i><span> Maps </span>
-                                 <span class="pull-right"><i class="mdi mdi-plus"></i>
-                                 </span></a><ul class="list-unstyled"><li>
-                                     <a href="maps-google.html"> Google Map</a>
-                                 </li>
-                                 <li>
-                                     <a href="maps-vector.html"> Vector Map</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>
-                             <a href="calendar.html" class="waves-effect"><i class="mdi mdi-calendar"></i>
-                                 <span> Calendar <span class="badge badge-primary pull-right">NEW</span></span></a>
-                         </li>
-                         <li class="has_sub"> <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-assistant"></i><span> Layouts </span><span class="pull-right">
-                                     <i class="mdi mdi-plus"></i></span></a><ul class="list-unstyled">
-                                 <li>
-                                     <a href="layouts-collapse.html">Menu Collapse</a>
-                                 </li>
-                                 <li>
-                                     <a href="layouts-smallmenu.html">Menu Small</a>
-                                 </li>
-                                 <li>
-                                     <a href="layouts-menu2.html">Menu Style 2</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li class="has_sub"> <a href="javascript:void(0);" class="waves-effect">
-                                 <i class="mdi mdi-google-pages"></i><span> Pages </span>
-                                 <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
-                             <ul class="list-unstyled">
-                                 <li>
-                                     <a href="pages-timeline.html">Timeline</a>
-                                 </li>
-                                 <li>
-                                     <a href="pages-invoice.html">Invoice</a>
-                                 </li>
-                                 <li>
-                                     <a href="pages-directory.html">Directory</a>
-                                 </li><li><a href="pages-login.html">Login</a>
-                                 </li><li><a href="pages-register.html">Register</a>
-                                 </li><li><a href="pages-recoverpw.html">Recover Password</a>
-                                 </li><li><a href="pages-lock-screen.html">Lock Screen</a>
-                                 </li><li><a href="pages-blank.html">Blank Page</a>
-                                 </li><li><a href="pages-404.html">Error 404</a>
-                                 </li><li><a href="pages-500.html">Error 500</a>
-                                 </li>
-                             </ul>
-                         </li>
+
+
                      </ul>
             </div>
             <div class="clearfix">
