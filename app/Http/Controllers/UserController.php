@@ -26,7 +26,6 @@ class UserController extends Controller
         return view('Admin.Usuario',['rol'=>$rol]);
     }
     public function store(Request $request){
-        return $request;
         $user=new User();
         $user->Usuario=$request->usuarios;
         $user->password=bcrypt($request->password);
