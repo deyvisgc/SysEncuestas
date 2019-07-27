@@ -27,7 +27,7 @@
                                 </a>
                             </li>
                             <li role="presentation" class="disabled">
-                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="ASPECTOS INFORMATICOS">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-list-alt"></i>
                             </span>
@@ -367,7 +367,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                     <table class="table table-bordered table-striped table-highlight">
                                                         <thead>
                                                         <th style="padding-bottom: 50px;text-align: center" width="30%;";t>MOBILIARIO</th>
-                                                        <th style="padding-bottom: 50px;text-align: center;padding-top: 10px;" width="30%;">Deficiencias Identificadas Indicar el
+                                                        <th style="padding-bottom: 50px;text-align: center;padding-bottom: 10px;" width="30%;">Deficiencias Identificadas Indicar el
                                                             estado de conservación de los bienes y el
                                                             porqué de la calificación?</th>
                                                         <th style="padding-bottom: 20px;text-align: center" width="40%;"><p>Acciones que adopto la Administración para subsanar la(s) deficiencia(s) Explicar la solución?</p></th>
@@ -502,17 +502,415 @@ realizar y plazo para dar la solución.</textarea></td>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step3">
-                                <h3>Step 3</h3>
-                                <p>This is step 3</p>
+                                    <div class="panel panel-color panel-success">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">ASPECTOS INFORMATICOS</h3>
+                                        </div><div class="panel-body">
+                                            <div class="col-12"style="width: 100%;height: auto">
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped table-highlight">
+                                                        <thead>
+                                                        <th style="padding-bottom: 50px;text-align: center" width="30%;";t>ASPECTO</th>
+                                                        <th style="padding-bottom: 50px;padding-bottom: 10px;" width="30%;">Deficiencias Identificadas Indicar
+                                                            el estado de conservación de los bienes y el porqué de la calificación?</th>
+                                                        <th style="padding-bottom: 20px;text-align: center" width="40%;"><p>Acciones que adopto la Administración para subsanar la(s) deficiencia(s) Explicar la solución?</p></th>
+
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Computadoras</textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Computadoras_informaticos_Deficiencias"   style="color: black;font-weight: bold;" ></textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Computadoras_informaticos__Acciones"   style="color: black;font-weight: bold;" ></textarea></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Impresoras</textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Impresoras_informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Impresoras_informaticos_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input  type="text" class="form-control" readonly value="Fax"style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control" id="Fax_Informaticos_Deficiencias"  /></td>
+                                                            <td><input type="text" class="form-control" id="Fax_informaticos_suministro_Acciones"  /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="Mantenimiento de Equipos de
+Cómputo" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="Mantenimiento_equipos_Informaticos_Deficiencias" name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="UPS" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="UPS_Informaticos_Deficiencias" name="UPS_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="UPS_Informaticos_Acciones" name="UPS_Informaticos_Acciones" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="Supresor de Picos" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="supresor_picos_Informaticos_Deficiencias" name="supresor_picos_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="supresor_picos_Informaticos_Acciones" name="supresor_picos_Informaticos_Acciones" /></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="Correo Electronico" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="Correo_Informaticos_Deficiencias" name="Correo_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="Correo_Informaticos_Acciones" name="Correo_Informaticos_Deficiencias" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="Sistemas Informáticos – Software" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="sistemas_Informaticos_Deficiencias" name="sistemas_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="sistemas_Informaticos_Acciones" name="sistemas_Informaticos_Acciones" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input  type="text"  class="form-control" readonly value="Redes Informáticos" style="color: black;font-weight: bold;" /></td>
+                                                            <td><input type="text" class="form-control"  id="Redes_Informáticos_Informaticos_Deficiencias" name="Redes_Informáticos_Informaticos_Deficiencias" /></td>
+                                                            <td><input type="text" class="form-control" id="Redes_Informáticos_Informaticos_Acciones" name="Redes_Informáticos_Informaticos_Acciones" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Otros</textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Otros_Informaticos_Deficiencias"  name="Otros_Informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                            <td><textarea class="form-control"  rows="2" id="Otros_Informaticos_Acciones"  name="Otros_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
+deficiencia explicar la acción a
+realizar y plazo para dar la solución.</textarea></td>
+                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Informaticos_Deficiencias" name="subrasarse_Informaticos_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
+                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Informaticos_Acciones" name="subrasarse_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h6 style="margin-left: 20px;">CALIFICACIÓN: BUENO (B), REGULAR (R), MALO (M).</h6>
+
+                                                </div>
+                                                <br>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="panel panel-color panel-dark">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">ASPECTOS DE SEGURIDAD.</h3>
+                                    </div><div class="panel-body">
+                                        <div class="col-12"style="width: 100%;height: auto">
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped table-highlight">
+                                                    <thead>
+                                                    <th style="padding-bottom: 50px;text-align: center" width="30%;";t>ASPECTO</th>
+                                                    <th style="padding-bottom: 50px;padding-bottom: 10px;" width="30%;">Deficiencias Identificadas</th>
+                                                    <th style="padding-bottom: 20px;text-align: center" width="40%;"><p>Acciones que adopto la Administración para subsanar la(s) deficiencia(s) Explicar la solución?</p></th>
+
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Detectores de Metal</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_detectorM_Deficiencias" name="Aspectos_seguridad_detectorM_Deficiencias"   style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Extintores</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text" class="form-control" readonly value="Mangueras contra incendio"style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_seguridad_Mangueras_Deficiencias" name="Aspectos_seguridad_Mangueras_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_seguridad_Mangueras_Acciones" name="Aspectos_seguridad_Mangueras_Acciones"  /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Otros" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_seguridad_Otros_Deficiencias" name="Aspectos_seguridad_Otros_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_seguridad_Otros_Acciones" name="Aspectos_seguridad_Otros_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
+deficiencia explicar la acción a
+realizar y plazo para dar la solución.</textarea></td>
+                                                        <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Deficiencias" name="subrasarse_Aspectos_seguridad_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Acciones" name="subrasarse_Aspectos_seguridad_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <br>
+
+                                        </div>
+                                        <div style="width:500px; padding:3px;">
+
+                                            <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                <center><p>Firma del Presidente de la Corte<br><center><p>Superior</p></center></p></center>
+                                            </div>
+                                            <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                <center><p>Firma del Jefe de la Oficina de<br><center><p>Administración</p></center>
+                                                </p></center>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="panel panel-color panel-info">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">ASPECTOS GENERALES DEL INMUEBLE.</h3>
+                                    </div><div class="panel-body">
+                                        <div class="col-12"style="width: 100%;height: auto">
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped table-highlight">
+                                                    <thead>
+                                                    <tr>
+                                                        <th colspan="3"><label>Cuando el local visitado, es de <label style="color: black;">PROPIEDAD</label> del Poder Judicial, deberá señalar de manera pormenorizada las
+                                                                deficiencias encontradas en los aspectos del inmueble, como se muestra a continuación:</label></th>
+                                                    </tr>
+                                                    <th style="padding-bottom: 50px;text-align: center" width="30%;";>ASPECTO</th>
+                                                    <th  width="30%;">Deficiencias Identificadas Indicar el estado de
+                                                        conservación de los bienes y el  porqué de la calificación?</th>
+                                                    <th style="padding-bottom: 20px;text-align: center" width="40%;"><p>Acciones que adopto la Administración para subsanar la(s) deficiencia(s) Explicar la solución?</p></th>
+
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Estructuras</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Deficiencias" name="Aspectos_generales_Estructuras_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Acciones"  name="Aspectos_generales_Estructuras_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Puertas</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Deficiencias" name="Aspectos_generales_Puertas_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Acciones" name="Aspectos_generales_Puertas_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text" class="form-control" readonly value="Ventanas"style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Ventanas_Deficiencias" name="Aspectos_generales_Ventanas_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Ventanas_Acciones" name="Aspectos_generales_Ventanas_Acciones"  /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Pisos" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Pisos_Deficiencias" name="Aspectos_generales_Pisos_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Pisos_Acciones" name="Aspectos_generales_Pisos_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Pintura (externa – interna)" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Pintura_Deficiencias" name="Aspectos_generales_Pintura_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Pintura_Acciones" name="Aspectos_generales_Pintura_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Instalaciones Sanitarias" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" name="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Instalaciones_Sanitarias_Acciones" name="Aspectos_generales_Instalaciones_Sanitarias_Acciones" /></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Instalaciones Eléctricas" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" name="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Instalaciones_Eléctricas_Acciones" name="Aspectos_generales_Instalaciones_Eléctricas_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Brinda Seguridad" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_brinda_Seguridad_Deficiencias" name="Aspectos_generales_brinda_Seguridad_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_brinda_Seguridad_Acciones" name="Aspectos_generales_brinda_Seguridad_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Mantenimiento de Local" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Mantenimiento_local_Deficiencias" name="Aspectos_generales_Mantenimiento_local_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Mantenimiento_local_Acciones" name="Aspectos_generales_Mantenimiento_local_Acciones" /></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" readonly value="Otros" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control"  id="Aspectos_generales_Otros_Deficiencias" name="Aspectos_generales_Otros_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_Otros_Acciones" name="Aspectos_generales_Otros_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
+deficiencia explicar la acción a
+realizar y plazo para dar la solución.</textarea></td>
+                                                        <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_generales_Deficiencias" name="ssubrasarse_Aspectos_generales_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_generales_Acciones" name="subrasarse_Aspectos_generales_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3"><label>Cuando el local visitado es <label style="color: black;">ALQUILADO</label> , y en la visita se han encontrado deficiencias en los aspectos del inmueble (cuadro
+                                                                anterior), señalar las deficiencias encontradas para las reparaciones que se requieran, precisando que <label style="color: black">no se efectuaran
+                                                                    mejoras en locales alquilados.</label></label></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text" id="Aspectos_generales_ALQUILADO"  name="Aspectos_generales_ALQUILADO" class="form-control"  placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_ALQUILADO1"  name="Aspectos_generales_ALQUILADO1" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Deficiencias" name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_ALQUILADO2"  name="Aspectos_generales_ALQUILADO2" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3">Si el local visitado tiene la condición de <label style="color: black;">CEDIDO EN USO,</label> ,y en la visita se han advertido deficiencias en los aspectos del
+                                                                inmueble (cuadro anterior), podrá coordinar con la Oficina de Infraestructura a fin de que está evalué las acciones a tomar,
+                                                                siempre y cuando el plazo de cesión en uso es superior a los 10 años.></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input  type="text"  class="form-control" id="Aspectos_generales_CEDIDO" name="Aspectos_generales_CEDIDO" placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_CEDIDO1" name="Aspectos_generales_CEDIDO1" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Deficiencias" name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
+                                                        <td><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3"><label>Nota: </label>En los casos de inmuebles de propiedad de la Entidad o en condición de Cesión en Uso (mayor a 10 años) que requieran
+                                                            de la intervención de la Oficina de Infraestructura, podrán presentar fotografías en las cuales se pueda apreciar la(s)
+                                                            deficiencia(s) encontrada(s) en la Visita, para la evaluación respectiva.</th>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <br>
+
+                                        </div>
+                                        <div style="width:500px; padding:3px;">
+
+                                            <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                <center><p>Firma del Presidente de la Corte<br><center><p>Superior</p></center></p></center>
+                                            </div>
+                                            <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                <center><p>Firma del Jefe de la Oficina de<br><center><p>Administración</p></center>
+                                                </p></center>
+
+                                            </div>
+
+                                        </div><br>
+
+
+                                        <div class="panel panel-color panel-primary">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">SERVICIOS JUDICIALES.</h3>
+                                            </div><div class="panel-body">
+                                                <div class="col-12"style="width: 100%;height: auto">
+
+                                                    <div class="table-responsive">
+                                                        <h5 style="margin-left: 10px;">REGISTRO NACIONAL DE INTERNOS PROCESADOS Y SENTENCIADOS “RENIPROS”</h5>
+                                                        <p style="margin-left: 10px;"> Verificar el cumplimiento del Reglamento del Registro Nacional de Internos, Procesados y Sentenciados
+                                                            <label style="color: black"> “RENIPROS”</label>, aprobado mediante R.A. de Presidente del Poder Judicial Nº 166-2005-P-PJ”</p>
+                                                        <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
+                                                        <table class="table table-bordered table-striped table-highlight">
+                                                            <thead>
+                                                            <th style="text-align: center" width="2%;";t>Nº</th>
+                                                            <th style="padding-bottom: 10px;" width="40%;">CONDICIÓN Y/O PREGUNTAS</th>
+                                                            <th style="text-align: center" width="5%;">si</th>
+                                                            <th style="text-align: center" width="5%;">no</th>
+                                                            <th style="text-align: center" width="48%;">OBSERVACIONES</th>
+
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td><textarea class="form-control" readonly  rows="3" style="color: black;font-weight: bold; ">¿Se cumple con el llenado de la Ficha única del Renipros al ordenar el internamiento o salida del Procesado o Sentenciado?</textarea></td>
+                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Remite a su Registro Distrital de Internos Procesados y Sentenciados (Redipros), la Ficha Única del Renipros dentro de las 24 horas de emitido el mandato?</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al remitir la Ficha Única del Renipros ¿Adjunta la Resolución Judicial que da origen al llenado de la Ficha en copia certificada por el Secretario de Juzgado o Sala?</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >Se cumple con informar al Redipros de los mandatos del Órgano Jurisdiccional sobre el internamiento o salida o la variación de la situación jurídica (de procesado a sentenciado)</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="5">De ser negativa la respuesta, explique porque?: <input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui....."  /></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h6 style="margin-left: 20px;">(*) NO APLICA</h6>
+                                                    </div>
+
+                                                    <br>
+
+                                                </div>
+                                                <div style="width:500px; padding:3px;">
+
+                                                    <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                        <center><p>Firma del Presidente de la Corte<br><center><p>Superior</p></center></p></center>
+                                                    </div>
+                                                    <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                        <center><p>Firma del Jefe de la Oficina de<br><center><p>Administración</p></center>
+                                                        </p></center>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                    <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                                    <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                                    <li><button type="button" class="btn btn-danger prev-step">
+                                            Anterior</button></li>
+                                    <li><button type="button" class="btn btn-default next-step">Omitir</button></li>
+                                    <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="complete">
-                                <h3>Complete</h3>
-                                <p>You have successfully completed all steps.</p>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-danger prev-step">
+                                            Anterior</button></li>
+                                    <li><button type="button" class="btn btn-success btn-info-full next-step">Registrar Encuesta</button></li>
+                                </ul>
                             </div>
                             <div class="clearfix"></div>
                         </div>
