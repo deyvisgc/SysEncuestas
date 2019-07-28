@@ -41,7 +41,6 @@
                             </span>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
 
@@ -883,16 +882,127 @@ realizar y plazo para dar la solución.</textarea></td>
 
                                                     </div>
 
+                                                </div><br>
+                                                <div class="panel panel-color panel-success">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">AUXILIO JUDICIAL.</h3>
+                                                    </div><div class="panel-body">
+                                                        <div class="col-12"style="width: 100%;height: auto">
+
+                                                            <div class="table-responsive">
+                                                                <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE
+                                                                    CORRESPONDE.</h5>
+                                                                <p style="margin-left: 10px;">Verificar el cumplimiento de la R. A. Nº 182-2004-CE-PJ, que aprueba la Directiva Nº 006-2004-CE-PJ,
+                                                                    “Procedimientos para la Concesión del Beneficio de Auxilio Judicial”.</p>
+                                                                <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
+                                                                <table class="table table-bordered table-striped table-highlight">
+                                                                    <thead>
+                                                                    <th style="text-align: center" width="2%;";t>Nº</th>
+                                                                    <th style="padding-bottom: 10px;" width="40%;">CONDICIÓN Y/O PREGUNTAS</th>
+                                                                    <th style="text-align: center" width="5%;">si</th>
+                                                                    <th style="text-align: center" width="5%;">no</th>
+                                                                    <th style="text-align: center" width="48%;">OBSERVACIONES</th>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <center><td style="padding-top: 40px;">1</td></center>
+                                                                        <td><textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
+                                                                        <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-top: 90px;">2</td>
+                                                                        <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >En los últimos doce meses ¿El Órgano Jurisdiccional concedió Auxilio Judicial?</textarea>
+                                                                            <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De ser afirmativa la respuesta, señale ¿Cuántas resoluciones se han expedido y su fueron puestos en conocimiento de la Oficina de Administración Distrital?</textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-top: 40px;">3</td>
+                                                                        <td><textarea class="form-control"  rows="5" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Al conceder Auxilio Judicial tiene en consideración, que se otorga a los justiciables que para cubrir los gastos del proceso, ponen en peligro su subsistencia y la de quienes de ellos dependen? (Art. 179º TUO del CPC)</textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-top: 40px;">4</td>
+                                                                        <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿En la Resolución que concede el auxilio judicial se indica que esta comprende únicamente la exoneración en la presentación del derecho por notificación judicial y aranceles judiciales, como lo precisan las normas emitidas al respecto?</textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td style="padding-top: 40px;">5</td>
+                                                                        <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El justiciable beneficiado con el Auxilio Judicial, usa siempre, el formato aprobado por la R.A. Nº R. A. Nº 182-2004-CE-PJ?</textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td style="padding-top: 40px;">6</td>
+                                                                        <td><textarea class="form-control"  rows="7" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juzgado en los procesos judiciales en los que hubiera concedido Auxilio Judicial a la parte ganadora, cumple con requerir el reembolso de los derechos por notificación judicial y aranceles judiciales en favor del PJ., conforme lo estipula el Art.412º del TUO del CPC?</textarea></td>
+                                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                        <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN PARA MEJORAR EL SERVICIO:</h5></th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <br>
+
+                                                        </div>
+                                                        <div style="width:500px; padding:3px;">
+
+                                                            <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                                <center><p style="color: black">Firma del Presidente de la Corte<br><center><p style="color: black">Superior</p></center></p></center>
+                                                            </div>
+                                                            <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                                <center><p style="color: black">Firma del Jefe de la Oficina de<br><center><p style="color: black">Administración</p></center>
+                                                                </p></center>
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+
                                                 </div>
-
                                             </div>
-
-
                                         </div>
-
-
-
-
 
 
                                     </div>
@@ -907,16 +1017,17 @@ realizar y plazo para dar la solución.</textarea></td>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="complete">
-                                <div class="panel panel-color panel-primary">
+                                <div class="panel panel-color panel-success">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">SERVICIOS JUDICIALES.</h3>
+                                        <h3 class="panel-title">PERITOS JUDICIALES.</h3>
                                     </div><div class="panel-body">
                                         <div class="col-12"style="width: 100%;height: auto">
 
                                             <div class="table-responsive">
-                                                <h5 style="margin-left: 10px;">REGISTRO NACIONAL DE INTERNOS PROCESADOS Y SENTENCIADOS “RENIPROS”</h5>
-                                                <p style="margin-left: 10px;"> Verificar el cumplimiento del Reglamento del Registro Nacional de Internos, Procesados y Sentenciados
-                                                    <label style="color: black"> “RENIPROS”</label>, aprobado mediante R.A. de Presidente del Poder Judicial Nº 166-2005-P-PJ”</p>
+                                                <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE
+                                                    CORRESPONDE.</h5>
+                                                <p style="margin-left: 10px;">Verificar el cumplimiento del reglamento de Peritos Judiciales, aprobado por Resolución Administrativa N° 351-
+                                                    98-TP-CME-PJ y el manual de Procedimiento de Registro de Peritos Judiciales, aprobado con R.A <input style="width: 200px;padding: 12px 20px; margin: 8px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="_____________________________"/></p>
                                                 <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
                                                 <table class="table table-bordered table-striped table-highlight">
                                                     <thead>
@@ -929,43 +1040,69 @@ realizar y plazo para dar la solución.</textarea></td>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td><textarea class="form-control" readonly  rows="3" style="color: black;font-weight: bold; ">¿Se cumple con el llenado de la Ficha única del Renipros al ordenar el internamiento o salida del Procesado o Sentenciado?</textarea></td>
+                                                        <center><td style="padding-top: 30px;">1</td></center>
+                                                        <td><textarea class="form-control" readonly  rows="2" style="color: black;font-weight: bold; ">En los últimos 6 meses ¿Han existido procesos judiciales que requirieron de un peritaje judicial?</textarea></td>
                                                         <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
                                                         <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
                                                         <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
 
                                                     </tr>
                                                     <tr>
-                                                        <td>2</td>
-                                                        <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Remite a su Registro Distrital de Internos Procesados y Sentenciados (Redipros), la Ficha Única del Renipros dentro de las 24 horas de emitido el mandato?</textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                        <td style="padding-top: 90px;">2</td>
+                                                        <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al nombrar Peritos Judiciales ¿El Juzgado utiliza los peritos del REPEJ y/o Administración Distrital?</textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >EL REPEJ y/o Administración, demoran en designar a los Peritos Judiciales? Indicar número de días.</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
 
 
                                                     </tr>
                                                     <tr>
-                                                        <td>3</td>
-                                                        <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al remitir la Ficha Única del Renipros ¿Adjunta la Resolución Judicial que da origen al llenado de la Ficha en copia certificada por el Secretario de Juzgado o Sala?</textarea></td>
+                                                        <td style="padding-top: 40px;">3</td>
+                                                        <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Durante el año, los Jueces han requerido Peritos de una profesión o especialidad que no existe en la nómina del REPEJ o Administración?</textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
 
 
                                                     </tr>
                                                     <tr>
-                                                        <td>4</td>
-                                                        <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >Se cumple con informar al Redipros de los mandatos del Órgano Jurisdiccional sobre el internamiento o salida o la variación de la situación jurídica (de procesado a sentenciado)</textarea></td>
+                                                        <td style="padding-top: 40px;">4</td>
+                                                        <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Si la respuesta es afirmativa, utilizan el Peritaje Extraordinario (Cuando el especialista requerido no existe en el PREPEJ o Administración?</textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-
-
+                                                        <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                     </tr>
+
                                                     <tr>
-                                                        <th colspan="5">De ser negativa la respuesta, explique porque?: <input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui....."  /></th>
+                                                        <td style="padding-top: 40px;">5</td>
+                                                        <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juez al designar a los especialistas que no se existen en la nómina del REPEJ, dispone la retención del 8% de los honorarios netos a favor de PJ? Nota.- Esto no es adecuado porque el 8% es deduce de los honorarios netos de los peritos del REPEJ y de administración.</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                     </tr>
+
+                                                    <tr>
+                                                        <td style="padding-top: 90px;">6</td>
+                                                        <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Los peritos del REPEJ o Administración aceptan la designación por escrito ante el Juez de la causa en procesos penales (gratuitos)?</textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿De ser negativa la respuesta precisar si se informa al REPEJ o Administración, para que consideren su conducta en la renovación de la inscripción.</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                            <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="padding-top: 40px;">7</td>
+                                                        <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿ El Órgano Jurisdiccional antes de fijar los honorarios, solicita al REPEJ o Administración Distrital la disponibilidad del 8% para el pago de las “Pericias Penales Extraordinarias”, conforme al artículo 7,4 de la Directiva N° 003-2007-GG/PJ u otra.?</textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                    </tr>
+
                                                     <tr>
                                                         <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
                                                     </tr>
@@ -978,24 +1115,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                         <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
 
                                                     </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
-
-                                                    </tr>
                                                     </tbody>
                                                 </table>
-                                                <h6 style="margin-left: 20px;">(*) NO APLICA</h6>
                                             </div>
 
                                             <br>
@@ -1004,26 +1125,26 @@ realizar y plazo para dar la solución.</textarea></td>
                                         <div style="width:500px; padding:3px;">
 
                                             <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
-                                                <center><p>Firma del Presidente de la Corte<br><center><p>Superior</p></center></p></center>
+                                                <center><p style="color: black">Firma del Presidente de la Corte<br><center><p style="color: black">Superior</p></center></p></center>
                                             </div>
                                             <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
-                                                <center><p>Firma del Jefe de la Oficina de<br><center><p>Administración</p></center>
+                                                <center><p style="color: black">Firma del Jefe de la Oficina de<br><center><p style="color: black">Administración</p></center>
                                                 </p></center>
 
                                             </div>
 
-                                        </div><br>
-                                        <div class="panel panel-color panel-success">
+                                        </div>
+                                        <div class="panel panel-color panel-dark">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title">AUXILIO JUDICIAL.</h3>
+                                                <h3 class="panel-title">CUERPOS DEL DELITO Y EFECTOS DECOMISADOS.</h3>
                                             </div><div class="panel-body">
                                                 <div class="col-12"style="width: 100%;height: auto">
 
                                                     <div class="table-responsive">
                                                         <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE
                                                             CORRESPONDE.</h5>
-                                                        <p style="margin-left: 10px;">Verificar el cumplimiento de la R. A. Nº 182-2004-CE-PJ, que aprueba la Directiva Nº 006-2004-CE-PJ,
-                                                            “Procedimientos para la Concesión del Beneficio de Auxilio Judicial”.</p>
+                                                        <p style="margin-left: 10px;">Verificar el cumplimiento del Reglamento de Cosas Materia del delito y de Efectos Decomisados
+                                                            (CMDED), aprobada por R.A. N° Resolución Administrativa N° 133-2014-CE-PJ.</p>
                                                         <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
                                                         <table class="table table-bordered table-striped table-highlight">
                                                             <thead>
@@ -1036,8 +1157,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <center><td style="padding-top: 40px;">1</td></center>
-                                                                <td><textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
+                                                                <center><td style="padding-top: 30px;">1</td></center>
+                                                                <td><textarea class="form-control" readonly  rows="2" style="color: black;font-weight: bold; ">El Juzgado cuenta con CMDED?</textarea></td>
                                                                 <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
                                                                 <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
                                                                 <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
@@ -1045,8 +1166,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td style="padding-top: 90px;">2</td>
-                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >En los últimos doce meses ¿El Órgano Jurisdiccional concedió Auxilio Judicial?</textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De ser afirmativa la respuesta, señale ¿Cuántas resoluciones se han expedido y su fueron puestos en conocimiento de la Oficina de Administración Distrital?</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se remiten al Almacén las CMDED, dentro de las 72 horas de apertura de la instrucción?</textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Utilizan la Boleta de Internamiento firmada por el Secretario y Magistrado?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                     <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
@@ -1057,7 +1178,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td style="padding-top: 40px;">3</td>
-                                                                <td><textarea class="form-control"  rows="5" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Al conceder Auxilio Judicial tiene en consideración, que se otorga a los justiciables que para cubrir los gastos del proceso, ponen en peligro su subsistencia y la de quienes de ellos dependen? (Art. 179º TUO del CPC)</textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >El encargado del Almacén, ¿Emite reporte a los Órganos Jurisdiccionales, sobre las CMDED que ingresaron por disposición de sus despachos?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
@@ -1065,31 +1186,37 @@ realizar y plazo para dar la solución.</textarea></td>
 
                                                             </tr>
                                                             <tr>
-                                                                <td style="padding-top: 40px;">4</td>
-                                                                <td><textarea class="form-control"  rows="5" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿En la Resolución que concede el auxilio judicial se indica que esta comprende únicamente la exoneración en la presentación del derecho por notificación judicial y aranceles judiciales, como lo precisan las normas emitidas al respecto?</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td style="padding-top: 90px;">4</td>
+                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se detectaron CMDED que figuran en la denuncia fiscal y que no fueron puestos a disposición del Juzgado por parte de la Policía Nacional y el Ministerio Publico?</textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa, indicar las acciones adoptadas.</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+
+
                                                             </tr>
 
                                                             <tr>
                                                                 <td style="padding-top: 40px;">5</td>
-                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El justiciable beneficiado con el Auxilio Judicial, usa siempre, el formato aprobado por la R.A. Nº R. A. Nº 182-2004-CE-PJ?</textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se cumple con remitir a la DISCAMEC las armas de fuego, municiones y explosivos incautados por el Juzgado?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                             </tr>
+
 
                                                             <tr>
                                                                 <td style="padding-top: 40px;">6</td>
-                                                                <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juzgado en los procesos judiciales en los que hubiera concedido Auxilio Judicial a la parte ganadora, cumple con requerir el reembolso de los derechos por notificación judicial y aranceles judiciales en favor del PJ., conforme lo estipula el Art.412º del TUO del CPC?</textarea></td>
+                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se informa al Encargado del Almacén de CMDED los procesos fenecidos, en el día, para computar los seis meses que permitan el remate y disposición de los mismos?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                             </tr>
 
                                                             <tr>
-                                                                <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN PARA MEJORAR EL SERVICIO:</h5></th>
+                                                                <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
                                                             </tr>
                                                             <tr>
                                                                 <td>1</td>
@@ -1129,98 +1256,259 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
                                         </div>
-                                        <div class="panel panel-color panel-dark">
+                                        <div class="panel panel-color panel-primary">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title">PERITOS JUDICIALES.</h3>
+                                                <h3 class="panel-title">RECAUDACION JUDICIAL</h3>
                                             </div><div class="panel-body">
                                                 <div class="col-12"style="width: 100%;height: auto">
 
                                                     <div class="table-responsive">
-                                                        <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE
-                                                            CORRESPONDE.</h5>
-                                                        <p style="margin-left: 10px;">Verificar el cumplimiento del reglamento de Peritos Judiciales, aprobado por Resolución Administrativa N° 351-
-                                                            98-TP-CME-PJ y el manual de Procedimiento de Registro de Peritos Judiciales, aprobado con R.A <input style="width: 200px;padding: 12px 20px; margin: 8px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="_____________________________"/></p>
+                                                        <h4>Derechos de Tramitación (contenidos en el TUPA), Aranceles Judiciales y
+                                                            derechos por Notificación Judicial</h4><br>
+                                                        <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE  CORRESPONDE.</h5>
+                                                        <p style="margin-left: 10px;">Verificar el cumplimiento y aplicación del TUPA del Poder Judicial, aprobado con R.A N° 161-2015-CE-PJ, el Cuadro de Aranceles Judiciales aprobado por R.A. N° 077-2015-CE-PJ Reglamento de Aranceles Judiciales y las
+                                                            normas vigentes emitidas con relación al Derecho por Notificación Judicial”.</p>
                                                         <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
                                                         <table class="table table-bordered table-striped table-highlight">
                                                             <thead>
                                                             <th style="text-align: center" width="2%;";t>Nº</th>
-                                                            <th style="padding-bottom: 10px;" width="40%;">CONDICIÓN Y/O PREGUNTAS</th>
+                                                            <th style="padding-bottom: 10px;" width="88%;">CONDICIÓN Y/O PREGUNTAS</th>
                                                             <th style="text-align: center" width="5%;">si</th>
                                                             <th style="text-align: center" width="5%;">no</th>
-                                                            <th style="text-align: center" width="48%;">OBSERVACIONES</th>
+
 
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <center><td style="padding-top: 30px;">1</td></center>
-                                                                <td><textarea class="form-control" readonly  rows="2" style="color: black;font-weight: bold; ">En los últimos 6 meses ¿Han existido procesos judiciales que requirieron de un peritaje judicial?</textarea></td>
-                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                <td><textarea class="form-control"   rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                <td style="padding-top: 200px;">1</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Los comprobantes de pago por Derechos de Tramitación, Aranceles Judiciales y Derecho por Notificación Judicial Contienen las formalidades de la R. A. N° 077-2015-CE-PJ como.</textarea>
+                                                                    <hr size="2" color="black";><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Sello de UTILIZADA</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Sello fechador</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Datos de quien lo presenta y que se consignan en el dorso del original y de la copia (nombre, documento de la identidad o N° de colegiatura y firma)</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Cumplen con presentar el original y copia y copia legible del comprobante de pago.</textarea>
 
+
+
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td style="padding-top: 90px;">2</td>
-                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al nombrar Peritos Judiciales ¿El Juzgado utiliza los peritos del REPEJ y/o Administración Distrital?</textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >EL REPEJ y/o Administración, demoran en designar a los Peritos Judiciales? Indicar número de días.</textarea></td>
+                                                                <td style="padding-top: 200px;">2</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Cuentan con el Sistema de Validación del comprobante de pago: SINAREJ?</textarea>
+                                                                    <hr size="2" color="black";><label style="color: black">Si la respuesta es negativa, cumple con remitir las copias legibles conteniendo los datos
+                                                                        indicados, a la Oficina de Administración Distrital, precisar con que periodicidad <input type="text" style="width: 100px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________"/>, mostrar
+                                                                        copia del ultimo oficio de remisión: Oficio N°<input type="text" style="width: 100px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="____________"/> de fecha <input type="date" style="width: 150px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="________"/></label>
+                                                                    <hr><label style="color: black">Si la respuesta es afirmativa, cumple con remitir el consolidado de lo ingresado, precisar la
+                                                                        periodicidad <input type="text" style="width: 100px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________"/>, mostrar copia del último oficio de remisión: Oficio N°<input type="text" style="width: 100px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________"/> de
+                                                                        fecha <input type="date" style="width: 150px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________"/>.</label>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota. Las copias se deben remitir semanal o quincenalmente, según lo señalado por la Oficina de Administración, Distrital.( Precisar en este acto la periodicidad)</textarea>
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 200px;">3</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿El Juzgado cuenta con expedientes fenecidos no remitidos al Archivo Central?</textarea>
+                                                                    <hr size="2" color="black";><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa, detalle las razones de su no remisión.</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Esta situación impide obtener Ingresos por los servicios prestados en el archivo, como Búsqueda, Lectura de Expedientes, Expedición de Copias, Etc.)</textarea>
+
+
+
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 90px;">4</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Cumplen con verificar si los montos pagados por concepto de Arancel Judicial corresponden a los fijados en el Cuadro de Valor vigente al momento de solicitar el acto procesal?</textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De presentarse casos de aranceles judiciales diminutos, ¿Se cumple con requerir el reintegro correspondiente?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                     <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                     <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
 
 
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="padding-top: 40px;">3</td>
-                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Durante el año, los Jueces han requerido Peritos de una profesión o especialidad que no existe en la nómina del REPEJ o Administración?</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="padding-top: 40px;">4</td>
-                                                                <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Si la respuesta es afirmativa, utilizan el Peritaje Extraordinario (Cuando el especialista requerido no existe en el PREPEJ o Administración?</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="3" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                             </tr>
 
                                                             <tr>
                                                                 <td style="padding-top: 40px;">5</td>
-                                                                <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juez al designar a los especialistas que no se existen en la nómina del REPEJ, dispone la retención del 8% de los honorarios netos a favor de PJ? Nota.- Esto no es adecuado porque el 8% es deduce de los honorarios netos de los peritos del REPEJ y de administración.</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se verifica la presentación de los derechos por notificación judicial suficientes para notificar a todas las partes que intervienen en el proceso?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <br>
+
+                                                </div>
+                                                <div style="width:500px; padding:3px;">
+
+                                                    <div style="width:245px;  float:left; margin-left: 300px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                        <center><p style="color: black">Firma del Presidente de la Corte<br><center><p style="color: black">Superior</p></center></p></center>
+                                                    </div>
+                                                    <div style="width:245px;   margin-left:600px;"> <hr size="10" style="color: black;font-weight: bold; margin-left: 10px" />
+                                                        <center><p style="color: black">Firma del Jefe de la Oficina de<br><center><p style="color: black">Administración</p></center>
+                                                        </p></center>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="panel panel-color panel-warning">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">COBRANZA DE MULTAS Y CERTIFICADOS DE DEPOSITOS JUDICIAL.</h3>
+                                            </div><div class="panel-body">
+                                                <div class="col-12"style="width: 100%;height: auto">
+
+                                                    <div class="table-responsive">
+                                                        <h4>Derechos de Tramitación (contenidos en el TUPA), Aranceles Judiciales y
+                                                            derechos por Notificación Judicial</h4><br>
+                                                        <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE  CORRESPONDE.</h5>
+                                                        <p style="margin-left: 10px;">Verificar el cumplimiento del Reglamento de Cobranza de Multas (RCM), aprobado por R.A. N° 177-2014-CE-PJ y modificado con R.A. N°_____” Manual de Procedimiento del Reglamento de Cobranza de Multas Impuestas por
+                                                            el Poder Judicial”, aprobado por R.A N°_____ y la R.A. N°_______ aplicable a los Certificados de Depósito Judicial donde no se puede determinar el proceso de origen y por ende la condición de prescritos o no”.</p>
+                                                        <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
+                                                        <table class="table table-bordered table-striped table-highlight">
+                                                            <thead>
+                                                            <th style="text-align: center" width="2%;";t>Nº</th>
+                                                            <th style="padding-bottom: 10px;" width="88%;">CONDICIÓN Y/O PREGUNTAS</th>
+                                                            <th style="text-align: center" width="5%;">si</th>
+                                                            <th style="text-align: center" width="5%;">no</th>
+
+
+                                                            </thead>
+                                                            <tbody>
+
+                                                            <tr>
+                                                                <td style="padding-top: 90px;">1</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >El Juzgado cuenta con el Libro de Registro de Multas?</textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa. ¿Llena los datos como: Nombre del multado. Monto de la Multa en URP, N° y fecha de Resolución de la Multa previo en el artículo 7° del RCM u otro? precisar.</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 300px;">2</td>
+                                                                <td><label style="color: black">Si la respuesta es negativa, indicar ¿Cómo registra el Juzgado las multas impuestas y/o apertura un
+                                                                        cuaderno conteniendo los datos antes indicados?  <input type="text" style="width: 100px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________________________"/></label>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >En los doce últimos meses ¿Se han impuesto multas en el Juzgado?</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa a. ¿Ha cumplido con formar el cuadernillo correspondiente?</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >b. ¿El secretario de Multas informo al Juez de las multas impuestas?</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >c. ¿Se requiere al multado cumpla con pagar la multa tan pronto quede consentida y ejecutoriada la resolución que aprueba la liquidación, conforme el artículo 423° del CPC?</textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >d. ¿Qué acciones ha realizado el Juzgado para el cobro de las multas?, precise:</textarea>
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 150px;">3</td>
+                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se informa mensualmente a la Presidencia de Corte, dentro de los 3 primeros días hábiles los reporteros con las multas impuestas y pagadas y estas a su vez son remitidos por la Administración a la Subgerencia de Recaudación Judicial?</textarea>
+                                                                    <hr size="2" color="black";><label>  Si la respuesta es afirmativa, mostrar el cargo de remisión:  Oficio:N°  <input type="text" style="width: 300px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________________________________________"/></label>
+                                                                    <hr><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Los pagos deben efectuarse con CP o Boletas de Deposito, de efectuarse en CDJ deben ser inmediatamente endosados a la Subgerencia de Tesorería y remitidos a la Adm. Para su envió a la Subgerencia de Recaudación Judicial.</textarea>
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 30px;">4</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿El Juzgado cuenta con el Libro de Registro de CDJ?</textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td style="padding-top: 40px;">5</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Existen CDJ prescriptos (con más de cinco años de concluido el proceso que les dio origen), que mantiene en custodia del encargado y que aún no ha sido remitidos a la Oficina de Administración Distrital?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                             </tr>
 
                                                             <tr>
-                                                                <td style="padding-top: 90px;">6</td>
-                                                                <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Los peritos del REPEJ o Administración aceptan la designación por escrito ante el Juez de la causa en procesos penales (gratuitos)?</textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿De ser negativa la respuesta precisar si se informa al REPEJ o Administración, para que consideren su conducta en la renovación de la inscripción.</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea><hr><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td style="padding-top: 40px;">7</td>
-                                                                <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿ El Órgano Jurisdiccional antes de fijar los honorarios, solicita al REPEJ o Administración Distrital la disponibilidad del 8% para el pago de las “Pericias Penales Extraordinarias”, conforme al artículo 7,4 de la Directiva N° 003-2007-GG/PJ u otra.?</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                <td style="padding-top: 40px;">6</td>
+                                                                <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Cuentan, el juez y los auxiliares jurisdiccionales, con las normas vigentes que regulan los temas antes señalados?</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                             </tr>
-
                                                             <tr>
                                                                 <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
                                                             </tr>
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>2</td>
@@ -1251,15 +1539,15 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
                                         </div>
+
                                     </div>
 
 
                                 </div>
-
                                 <ul class="list-inline pull-right">
                                     <li><button type="button" class="btn btn-danger prev-step">
                                             Anterior</button></li>
-                                    <li><button type="button" class="btn btn-success btn-info-full next-step">Registrar Encuesta</button></li>
+                                    <li><button type="button" class="btn btn-success btn-info-full next-step">Enviar Encuesta</button></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -1269,6 +1557,9 @@ realizar y plazo para dar la solución.</textarea></td>
             </section>
         </div>
     </div>
+
+
+
     @endsection
 @section('script')
 <script>
