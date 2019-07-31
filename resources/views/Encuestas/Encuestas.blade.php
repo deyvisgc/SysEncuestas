@@ -44,7 +44,9 @@
                         </ul>
                     </div>
 
-                    <form role="form">
+                    <form role="form" id="regisEncuestas">
+                        @csrf
+                       <input type="hidden" id="iduser" name="iduser" value=" {{ Auth::user()->idUsuario }}">
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                  <div class="col-lg-12" style="width: 100%;height: auto">
@@ -120,11 +122,11 @@
                                             <p style="margin-left: 10px;">Indicar número de trabajadores (incluyendo al Magistrado) que laboran en el órgano jurisdiccional
                                                 visitado.</p>
                                             <br>
-                                            <form class="form-horizontal">
+                                            <form class="form-horizontal" id="regisPersona">
                                             <div class="form-group">
                                                 <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">PERSONAL TOTAL:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="number" name="personañ_total" style="margin-right: 10px;"  class="form-control"  id="personañ_total" placeholder="Escribia aqui.." >
+                                                    <input type="number" name="personal_total" style="margin-right: 10px;"  class="form-control"  id="personal_total" placeholder="Escribia aqui.." >
                                                 </div>
                                             </div>
                                             </form>
@@ -132,27 +134,48 @@
 
                                             <h5 style="margin-left: 10px;">Detallar régimen que lo regula su cantidad y si cuentan con Fotocheck</h5>
 
-                                            <label style="margin-left: 15px;">Trabajadores</label> :
-                                            <label style="color: black" class="radio-inline"> <input type="radio" id="DL_728" name="DL_728">DL 728 fijo</label> <br>
-                                            <label style="margin-left: 15px;">Magistrados</label>   :
-                                            <label style="color: black" class="radio-inline"> <input type="radio" id="DL_276" name="DL_276">DL 276</label><br>
-                                            <label style="margin-left: 15px;">Trabajadores</label> :
-                                            <label style="color: black" class="radio-inline"> <input type="radio" id="DL 1057" name="optradio">DL 1057</label><br>
-                                            <label style="margin-left: 15px;" >Cuentan con Fotocheck:</label> :
-                                            <input type="radio" name="optradio"><br>
+                                               <label style="color: black" class="radio-inline"></label>
+
+                                            <label style="margin-left: 15px;">Trabajadores: <div  class="checkbox checkbox-success checkbox-circle" >
+                                                    <input id="checkbox7" value="trabajador" name="DL_728_Trabajador" type="checkbox">
+                                                    <label for="checkbox7"> DL 728 fijo</label>
+
+                                                </div>
+                                            </label>
+                                            <label style="color: black" class="radio-inline"></label>
+
+                                            <label style="margin-left: 15px;">Magistrados: <div  class="checkbox checkbox-success checkbox-circle" >
+                                                    <input id="checkbox7" value="Magistrado" name="DL_276_Magistrado" type="checkbox">
+                                                    <label for="checkbox7"> DL_276</label>
+
+                                                </div>
+                                            </label>
+                                            <label style="color: black" class="radio-inline"></label>
+
+                                            <label style="margin-left: 15px;">Trabajadores: <div  class="checkbox checkbox-success checkbox-circle" >
+                                                    <input id="checkbox7" name="DL_1057_Trabajador_1" type="checkbox">
+                                                    <label for="checkbox7"> DL 728 fijo</label>
+
+                                                </div>
+                                            </label>
+
+                                            <div style="margin-left: 40px;" class="checkbox checkbox-primary checkbox-circle">
+                                                <input id="checkbox-10" value="" name="Fotocheck" type="checkbox" checked="checked">
+                                                <label for="checkbox-10"> Cuentan con Fotocheck </label></div>
+
                                             <h4 style="margin-left: 15px;" >OBSERVACION</h4>
                                             <h6 style="margin-left: 20px;">ACCIONES QUE LA ADMINISTRACIÓN DE LA CORTE ADOPTA PARA SUBSANAR LA(S) DEFICIENCIA (S) ENCONTRADA (S): INDICAR PLAZO</h6><br>
-                                            <form class="form-horizontal">
+                                            <form class="form-horizontal" id="form_personal_Observaciones">
                                             <div class="form-group">
                                                 <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">1:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="number" name="observacion_1_Persona" style="margin-right: 10px;"  class="form-control"   id="observacion_1_Persona" placeholder="Escribia aqui.." >
+                                                    <input type="text" name="observacion_1_Personal" style="margin-right: 10px;"  class="form-control"   id="observacion_1_Personal" placeholder="Escribia aqui.." >
                                                 </div>
                                             </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">2:</label>
                                                     <div class="col-sm-9">
-                                                        <input type="number" name="observacion_2_Persona" style="margin-right: 10px;"  class="form-control"  id="observacion_2_Persona" placeholder="Escribia aqui.." >
+                                                        <input type="text" name="observacion_2_Personal" style="margin-right: 10px;"  class="form-control"  id="observacion_2_Personal" placeholder="Escribia aqui.." >
                                                     </div>
                                                 </div>
                                             </form>
@@ -442,9 +465,14 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 <td><textarea class="form-control"  rows="2" id="Papel_suministro_Acciones"  name="Papel_suministro_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
                                                             </tr>
                                                             <tr>
-                                                                <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Bolígrafos / Grapas 26/6</textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Bolígrafos / Grapas 26/6</textarea></td>
                                                                 <td><textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Deficiencias" name="Bolígrafos_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Bolígrafos_suministro_Acciones"  name="Bolígrafos_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Acciones"  name="Bolígrafos_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Cinta p/Impresora matricial/Tóner p/Impresora</textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" id="Cinta_suministro_Deficiencias" name="Cinta_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="3" id="Cinta_suministro_Acciones"  name="Cinta_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td><input  type="text" class="form-control" readonly value="Carátulas para expedientes"style="color: black;font-weight: bold;" /></td>
@@ -1060,7 +1088,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_2_1" name="Peritos_judiciales_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                             <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_2_2" name="Peritos_judiciales_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_1" name="Peritos_judiciales_Obserbaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                            <hr><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_2" name="eritos_judiciales_Obserbaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                            <hr><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_2" name="Peritos_judiciales_Obserbaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
 
 
                                                     </tr>
@@ -1106,7 +1134,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                         <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿ El Órgano Jurisdiccional antes de fijar los honorarios, solicita al REPEJ o Administración Distrital la disponibilidad del 8% para el pago de las “Pericias Penales Extraordinarias”, conforme al artículo 7,4 de la Directiva N° 003-2007-GG/PJ u otra.?</textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_7" name="Peritos_judiciales_SI_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                         <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_7" name="Peritos_judiciales_NO_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                        <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_8" name="Peritos_judiciales_Obserbaciones_8"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                        <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_7" name="Peritos_judiciales_Obserbaciones_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                     </tr>
 
                                                     <tr>
@@ -1174,12 +1202,12 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 <td style="padding-top: 90px;">2</td>
                                                                 <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se remiten al Almacén las CMDED, dentro de las 72 horas de apertura de la instrucción?</textarea>
                                                                     <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Utilizan la Boleta de Internamiento firmada por el Secretario y Magistrado?</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_1" name="Cuerpo_delito_efectos_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " >s1</textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_2" name="Cuerpo_delito_efectos_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " >s2</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_1" name="Cuerpo_delito_efectos_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " >n1</textarea>
-                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_2" name="Cuerpo_delito_efectos_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " >n2</textarea></td>
-                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_1" name="Cuerpo_delito_efectos_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " >o1</textarea>
-                                                                    <hr><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_2" name="Cuerpo_delito_efectos_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " >o2</textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_1" name="Cuerpo_delito_efectos_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_2" name="Cuerpo_delito_efectos_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_1" name="Cuerpo_delito_efectos_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_2" name="Cuerpo_delito_efectos_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_1" name="Cuerpo_delito_efectos_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                    <hr><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_2" name="Cuerpo_delito_efectos_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
 
 
                                                             </tr>
@@ -1299,7 +1327,7 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_1" name="Recaudacion_judicial_SI_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_3" name="Recaudacion_judicial_SI_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
@@ -1328,8 +1356,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                     <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota. Las copias se deben remitir semanal o quincenalmente, según lo señalado por la Oficina de Administración, Distrital.( Precisar en este acto la periodicidad)</textarea>
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " >S1</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " >2</textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_2" name="Recaudacion_judicial_S1_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_3" name="Recaudacion_judicial_S1_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                 </td>
@@ -1347,15 +1375,15 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                     <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Esta situación impide obtener Ingresos por los servicios prestados en el archivo, como Búsqueda, Lectura de Expedientes, Expedición de Copias, Etc.)</textarea>
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " >2</textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " >3</textarea>
 
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " >2</textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " >3</textarea>
 
 
                                                                 </td>
@@ -1552,7 +1580,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                 <ul class="list-inline pull-right">
                                     <li><button type="button" class="btn btn-danger prev-step">
                                             Anterior</button></li>
-                                    <li><button type="button" class="btn btn-success btn-info-full next-step">Enviar Encuesta</button></li>
+                                    <li><button type="button" onclick="hahah();" class="btn btn-success btn-info-full next-step">Enviar Encuesta</button></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -1568,6 +1596,26 @@ realizar y plazo para dar la solución.</textarea></td>
     @endsection
 @section('script')
 <script>
+    function hahah(){
+        var frm=$("#regisEncuestas,#form_personal_Observaciones,#regisPersona");
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url:'{{url('registrar')}}',
+            type:'post',
+            dataType:'json',
+            data:frm.serialize(),
+            success:function (response) {
+                alert(response);
+
+            }
+        })
+
+    }
 
     $(document).ready(function () {
         var fecha_programada=get_fhoy();
@@ -1600,6 +1648,7 @@ realizar y plazo para dar la solución.</textarea></td>
             prevTab($active);
 
         });
+
     });
 
     function nextTab(elem) {

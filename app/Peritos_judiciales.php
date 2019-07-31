@@ -17,7 +17,7 @@ class Peritos_judiciales extends Model
 
         'Peritos_Condicion_uno_observa', 'Peritos_Condicion_dos_Observa','Peritos_Condicion_dos_uno_Observa',
         'Peritos_Condicion_tres_Observa', 'Peritos_Condicion_cuatro_Observa','Peritos_Condicion_cinco_Observa',
-        'Peritos_Condicion_seis_uno_Observa', 'Peritos_Condicion_seis_Observa','Peritos_Condicion_siete_Observa_',
+        'Peritos_Condicion_seis_uno_Observa', 'Peritos_Condicion_seis_Observa','Peritos_Condicion_siete_Observa',
         'Usuario_idUsuario',
     ];
 }

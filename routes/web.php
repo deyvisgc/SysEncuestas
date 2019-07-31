@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('Usuarios','UserController');
 Route::resource('Encuestas','EncuestaController');
+Route::post('registrar','EncuestaController@hola');

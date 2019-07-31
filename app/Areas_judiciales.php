@@ -13,7 +13,7 @@ class Areas_judiciales extends Model
         'Mesa_partes_Deficiencias','Archivo_Jurisdicionales_Deficiencias',
         'Notificaciones_Judiciales_Deficiencias','Publicacion_Edictos_Deficiencias',
         'Convenio_Reniec_Deficiencias', 'Requesitos_Deficiencias','Areas_judiciales_Otros_Deficiencias',
-        'Areas_judiciales_Advertencia_Deficiencias','Advertencia','Usuario_idUsuario',
+        'Areas_judiciales_Advertencia_Deficiencias','Usuario_idUsuario',
 
         'Mesa_partes_Accio','Archivo_Juris_Accio',
         'Notificaciones_Judiciales_Accio','Publicacion_Edictos_Accio',
