@@ -25,6 +25,11 @@ class UserController extends Controller
         }
         return view('Admin.Usuario',['rol'=>$rol]);
     }
+    public function show($id)
+    {
+        $libros =($id);
+        return $libros;
+    }
     public function store(Request $request){
         $user=new User();
         $user->Usuario=$request->usuarios;
@@ -46,6 +51,7 @@ class UserController extends Controller
 
 
     }
+
     public function edit($id){
         $rol=Rol::all();
         $user=DB::select("Select * from Usuario where  idUsuario=$id");
@@ -53,6 +59,8 @@ class UserController extends Controller
         return response()->json($data);
 
     }
+
+
     public function update(Request $request,$id){
         $user=User::find($id);
         $user->Usuario=$request->usuario_up;

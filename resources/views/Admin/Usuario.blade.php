@@ -116,12 +116,14 @@
             </div>
         </div>
     </div>
+
     @endsection
 
 @section('script')
 <script>
+    var tabla;
     $(document).ready(function () {
-        var tabla;
+
       tabla=  $('#tb_usuarios').dataTable({
             stateSave: true,
             responsive: true,
@@ -157,7 +159,9 @@
                 {data: 'Nombre_Rol', name: 'Nombre_Rol'},
                 {"mRender": function ( data, type, row ) {
                         return '<a style="margin-left: 5px" class="btn btn-success btnEdit" data-edit="/Usuarios/'+row.idUsuario +'/edit" ><i class="fa fa-edit text-warning"></i></a>' +
-                            '<a style="margin-left: 5px" class="btn btn-danger" data-edit="/Usuarios/'+row.idUsuario +'/edit" ><i class="fa fa-remove text-warning"></i></a>'
+                            '<a style="margin-left: 5px" class="btn btn-danger" data-delete="/Usuarios/'+row.idUsuario +'/delete" ><i class="fa fa-remove text-warning"></i></a>'+
+                            '<a style="margin-left: 5px" class="btn btn-dark btnshow" data-show="/Usuarios/'+row.idUsuario +'/show" ><i class="fa fa-eye text-warning"></i></a>'
+
                     }
                 },
             ]
@@ -220,46 +224,74 @@
 
 
                     });
-                    $('#Actualizar').click(function (e) {
-                        var frm=$('#ActuRegister');
-                        console.log(frm);
 
-                        e.preventDefault();
-                        $.ajaxSetup({
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            }
-                        });
 
-                        $.ajax({
-                            url:'{{url('Usuarios')}}/'+$('#idusuario_up').val(),
-                            type:'put',
-                            dataType:'json',
-                            data:frm.serialize(),
-                            success:function (response) {
-                                if(response.success==true){
-                                    iziToast.success({
-                                        title: 'OK',
-                                        message: 'Actualizado Registrado Correctamente!',
-                                    });
-                                    $('#ActualizarModal').modal('hide');
-                                    frm.trigger('reset');
-                                    tabla.api().ajax.reload();
 
-                                }
-                            }
-                        });
+                      hola();
 
-                    })
+
                 }
+
+            })
+
+        });
+
+        $('#tb_usuarios').on('click','.btnshow[data-show]',function(e){
+            e.preventDefault();
+            var url = $(this).data('show');
+            $.ajax({
+                url : url,
+                type : 'GET',
+                datatype : 'json',
+                success:function(response){
+                    alert(response);
+
+
+                }
+
             })
 
         });
 
     });
+    function hola() {
+        $('#Actualizar').click(function (e) {
+            var id=$('#idusuario_up').val();
+            var frm=$('#ActuRegister');
+
+            e.preventDefault();
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                url:'{{url('Usuarios')}}/'+id,
+                type:'put',
+                dataType:'json',
+                data:frm.serialize(),
+                success:function (response) {
+                    if(response.success==true){
+                        iziToast.success({
+                            title: 'OK',
+                            message: 'Actualizado Registrado Correctamente!',
+                        });
+                        $('#ActualizarModal').modal('hide');
+                        frm.trigger('reset');
+                        tabla.api().ajax.reload();
+
+                    }
+                }
+            });
+
+        });
+
+    }
     $('body').on('hidden.bs.modal', '.modal', function () {
         $("#rol_update").empty();
 
+        document.location.reload();
     });
 
 </script>

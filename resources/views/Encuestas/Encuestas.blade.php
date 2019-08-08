@@ -71,20 +71,29 @@
                                                          <div class="col-sm-9"> <input type="text" name="Gerente_Administrativo" readonly value="Lic. Freddy Díaz Castillo" class="form-control" id="Gerente_Administrativo" ></div>
                                                      </div><br><br>
                                                      <div class="form-group">
+                                                         <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">Magistrado <label>:</label></label>
+                                                         <div class="col-sm-9">
+                                                             <select class="selectpicker form-control" id="magis" name="magistrados" data-live-search="true">
+                                                                 <option data-tokens="ketchup mustard" value="" disabled selected>SELECCIONAR MAGISTRADO</option>
+                                                               @foreach($magistrados as $ma)
+                                                                   <option value="{{$ma->idMagistrados}}">{{$ma->magistrados}}</option>
+                                                                   @endforeach
+                                                             </select>
+
+                                                         </div>
+                                                     </div><br><br>
+                                                     <div class="form-group">
                                                          <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">Órgano Jurisdiccional <label>:</label></label>
                                                          <div class="col-sm-9">
-                                                             <input type="text" name="Org_Judi"  class="form-control"  id="Org_Judi" placeholder="Escribia aqui.." >
+
+                                                             <select class="selectpicker form-control Org_Judi"   name="Org_Judi"  data-live-search="true" ata-width="100%">
+                                                                 <option value=""></option>
+                                                             </select>
                                                          </div>
                                                      </div><br><br>
                                                      <div class="form-group">
                                                          <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Dirección  <label>:</label></label>
                                                          <div class="col-sm-9"> <input type="text" name="direccion"  placeholder="Escribia aqui.." class="form-control" id="password" ></div>
-                                                     </div><br><br>
-                                                     <div class="form-group">
-                                                         <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">Magistrado <label>:</label></label>
-                                                         <div class="col-sm-9">
-                                                             <input type="text" name="Magistrado"  class="form-control"  id="Magistrado" placeholder="Escribia aqui.." >
-                                                         </div>
                                                      </div><br><br>
                                                      <div class="form-group">
                                                          <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Fecha de programación  <label>:</label></label>
@@ -943,8 +952,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 <tr>
                                                                     <center><td style="padding-top: 40px;">1</td></center>
                                                                     <td><textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
-                                                                    <td><textarea class="form-control"   rows="2" id="auxilio_genereal_SI_1" name="auxilio_genereal_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"   rows="2" id="auxilio_genereal_NO_1" name="auxilio_genereal_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"   rows="2" id="auxilio_genereal_SI_1" name="auxilio_genereal_si"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"   rows="2" id="auxilio_genereal_NO_1" name="auxilio_genereal_no"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
                                                                     <td><textarea class="form-control"   rows="2" id="auxilio_genereal_Observacaciones_1" name="auxilio_genereal_Observacaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
 
                                                                 </tr>
@@ -1260,7 +1269,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>2</td>
-                                                                <td colspan="5"><input type="text" class="form-control" id="Cuerpo_delito_efectos_ACCIONES_2" name="Cuerpo_delito_efectos_ACCIONES_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                <td colspan="5"><input type="text" class="form-control" id="Cuerpo_delito_efectos_ACCIONES_2" name="Cuerpo_delito_efectos_ACCIONES_2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
 
                                                             </tr>
                                                             <tr>
@@ -1327,7 +1336,7 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_1" name="Recaudacion_judicial_SI_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_3" name="Recaudacion_judicial_SI_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
@@ -1356,8 +1365,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                     <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota. Las copias se deben remitir semanal o quincenalmente, según lo señalado por la Oficina de Administración, Distrital.( Precisar en este acto la periodicidad)</textarea>
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " >2</textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_2" name="Recaudacion_judicial_S1_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_3" name="Recaudacion_judicial_S1_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                 </td>
@@ -1375,15 +1384,15 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                     <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Esta situación impide obtener Ingresos por los servicios prestados en el archivo, como Búsqueda, Lectura de Expedientes, Expedición de Copias, Etc.)</textarea>
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " >2</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " >3</textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                 </td>
-                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " >1</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " >2</textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " >3</textarea>
+                                                                <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                 </td>
@@ -1610,14 +1619,49 @@ realizar y plazo para dar la solución.</textarea></td>
             dataType:'json',
             data:frm.serialize(),
             success:function (response) {
-                alert(response);
+
+                if(response.success==true){
+                    frm.trigger('reset');
+                    iziToast.success({
+                        title: 'OK',
+                        message: 'Successfully Registrado Correctamente!',
+                    });
+
+
+                }
 
             }
         })
 
     }
+    $('#magis').on('change',function (e) {
+        var catid=e.target.value;
 
+      $.ajax({
+           url: '{{url('BuscarOrgano')}}/'+catid,
+          type:'get',
+          dataType: 'json',
+          success:function (response) {
+             $.each(response.magistrados,function (index,val) {
+                 $('.Org_Judi').empty();
+                 $.each(response.subadmin,function (index,vals) {
+                     if(vals.id_subAministracion===val.idsubAdmins){
+                        $('.Org_Judi').append('<option value="'+vals.id_subAministracion+'">'+vals.organo_judicial+'</option>')
+                     }
+                 });
+             });
+
+
+
+
+          }
+
+      });
+    });
+    $('.selectpicker').selectpicker();
     $(document).ready(function () {
+
+
         var fecha_programada=get_fhoy();
         var fecha_ejecucion=get_fhoy();
         $('#fecha_progra').val(fecha_programada);
