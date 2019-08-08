@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="eff6f185-86e7-44c5-b1b8-57e6e765cce5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Auxilio_Judicial.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Auxilio_Judicial.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Administrativa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Administrativa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Principal/principal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Principal/principal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +39,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="678" column="46" selection-start-line="678" selection-start-column="38" selection-end-line="678" selection-end-column="46" />
+            <state relative-caret-position="257">
+              <caret line="498" column="54" selection-start-line="498" selection-start-column="54" selection-end-line="498" selection-end-column="54" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
-                <element signature="e#760#38663#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-253">
+              <caret line="256" column="21" lean-forward="true" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Auxilio_Judicial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Recaudacion_judicial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="52" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Administrativa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -55,14 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="88" column="112" selection-start-line="88" selection-start-column="112" selection-end-line="88" selection-end-column="112" />
-              <folding>
-                <element signature="e#8315#54022#0#HTML" />
-                <element signature="e#45108#53563#0#HTML" />
-                <element signature="e#54051#117651#0#HTML" />
-                <element signature="e#117680#192998#0#HTML" />
-              </folding>
+            <state relative-caret-position="303">
+              <caret line="1348" column="175" selection-start-line="1348" selection-start-column="148" selection-end-line="1348" selection-end-column="175" />
             </state>
           </provider>
         </entry>
@@ -79,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Principal/principal.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="206" column="93" selection-start-line="206" selection-start-column="93" selection-end-line="206" selection-end-column="93" />
+            <state relative-caret-position="424">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
             </state>
           </provider>
         </entry>
@@ -110,7 +141,6 @@
         <option value="$PROJECT_DIR$/public/css/wizard.css" />
         <option value="$PROJECT_DIR$/../Sys_Conta/resources/views/layaouts/prinsipal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Administrativa.php" />
         <option value="$PROJECT_DIR$/app/Cobranzas_multas.php" />
         <option value="$PROJECT_DIR$/app/Aspectos_informaticos.php" />
         <option value="$PROJECT_DIR$/app/Aspectos_logisticos.php" />
@@ -124,13 +154,14 @@
         <option value="$PROJECT_DIR$/app/Servicios_Judiciales.php" />
         <option value="$PROJECT_DIR$/app/Cuerpos_Delito.php" />
         <option value="$PROJECT_DIR$/app/Recaudacion_judicial.php" />
-        <option value="$PROJECT_DIR$/app/Auxilio_Judicial.php" />
         <option value="$PROJECT_DIR$/app/Peritos_judiciales.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php" />
+        <option value="$PROJECT_DIR$/app/Administrativa.php" />
+        <option value="$PROJECT_DIR$/app/Auxilio_Judicial.php" />
         <option value="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Principal/principal.blade.php" />
       </list>
     </option>
@@ -242,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,6 +383,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,12 +456,14 @@
       <workItem from="1565221396612" duration="2460000" />
       <workItem from="1565237908248" duration="2251000" />
       <workItem from="1565245953701" duration="196000" />
-      <workItem from="1565246778371" duration="6614000" />
+      <workItem from="1565246778371" duration="6970000" />
+      <workItem from="1565293680619" duration="2741000" />
+      <workItem from="1565303926901" duration="4169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171906000" />
+    <option name="totallyTimeSpent" value="179172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,7 +478,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3857791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39788198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -503,7 +536,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php</url>
-          <line>1536</line>
+          <line>1535</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -670,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Administrativa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Aspectos_logisticos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -747,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Auxilio_Judicial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Peritos_judiciales.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -775,29 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Recaudacion_judicial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,15 +811,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Auxilio_Judicial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="88" column="112" selection-start-line="88" selection-start-column="112" selection-end-line="88" selection-end-column="112" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Recaudacion_judicial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="498" column="54" selection-start-line="498" selection-start-column="54" selection-end-line="498" selection-end-column="54" />
           <folding>
-            <element signature="e#8315#54022#0#HTML" />
-            <element signature="e#45108#53563#0#HTML" />
-            <element signature="e#54051#117651#0#HTML" />
-            <element signature="e#117680#192998#0#HTML" />
+            <element signature="e#48#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,21 +842,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
+    <entry file="file://$PROJECT_DIR$/app/Administrativa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="678" column="46" selection-start-line="678" selection-start-column="38" selection-end-line="678" selection-end-column="46" />
+        <state relative-caret-position="221">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="1348" column="175" selection-start-line="1348" selection-start-column="148" selection-end-line="1348" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="256" column="21" lean-forward="true" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
           <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-            <element signature="e#760#38663#0#PHP" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Principal/principal.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="206" column="93" selection-start-line="206" selection-start-column="93" selection-end-line="206" selection-end-column="93" />
+        <state relative-caret-position="424">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
         </state>
       </provider>
     </entry>

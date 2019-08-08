@@ -11,7 +11,7 @@ class Administrativa extends Model
     public $timestamps=false;
     protected $fillable = [
         'Presidente_corte','Gerente_Administrativo',
-        'Organo_Juridicial','Direccion','Magistrado',
+        'idsubAministracion','Direccion','idMagiatradi',
         'Fecha_Programacion','Fecha_Ejecucion','Usuario_idUsuario',
     ];
 }

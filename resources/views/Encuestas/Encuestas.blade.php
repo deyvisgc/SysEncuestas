@@ -85,10 +85,9 @@
                                                      <div class="form-group">
                                                          <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">Órgano Jurisdiccional <label>:</label></label>
                                                          <div class="col-sm-9">
-
-                                                             <select class="selectpicker form-control Org_Judi"   name="Org_Judi"  data-live-search="true" ata-width="100%">
-                                                                 <option value=""></option>
+                                                             <select class="selectpicker form-control " id="organo_judicial"   name="organo_judicial"  data-live-search="true" ata-width="100%">
                                                              </select>
+
                                                          </div>
                                                      </div><br><br>
                                                      <div class="form-group">
@@ -1338,7 +1337,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 </td>
                                                                 <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_1" name="Recaudacion_judicial_SI_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_3" name="Recaudacion_judicial_SI_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_4" name="Recaudacion_judicial_SI_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
@@ -1346,7 +1345,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 </td>
                                                                 <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1" name="Recaudacion_judicial_NO_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_1" name="Recaudacion_judicial_NO_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_2" name="Recaudacion_judicial_NO_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                    <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_2" name="Recaudacion_judicial_NO_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_3" name="Recaudacion_judicial_NO_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                     <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_4" name="Recaudacion_judicial_NO_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
@@ -1613,6 +1612,7 @@ realizar y plazo para dar la solución.</textarea></td>
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+
         $.ajax({
             url:'{{url('registrar')}}',
             type:'post',
@@ -1643,11 +1643,14 @@ realizar y plazo para dar la solución.</textarea></td>
           dataType: 'json',
           success:function (response) {
              $.each(response.magistrados,function (index,val) {
-                 $('.Org_Judi').empty();
+                 $('#organo_judicial').empty();
                  $.each(response.subadmin,function (index,vals) {
                      if(vals.id_subAministracion===val.idsubAdmins){
-                        $('.Org_Judi').append('<option value="'+vals.id_subAministracion+'">'+vals.organo_judicial+'</option>')
+
+                        $('#organo_judicial').append('<option value="'+vals.id_subAministracion+'">'+vals.organo_judicial+'</option>')
+
                      }
+                     $('#organo_judicial').selectpicker('refresh');
                  });
              });
 

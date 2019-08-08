@@ -33,9 +33,9 @@ class EncuestaController extends Controller
        $admin = new Administrativa();
        $admin->Presidente_corte = $request->Precidente_corte;
        $admin->Gerente_Administrativo = $request->Gerente_Administrativo;
-       $admin->Organo_Juridicial = $request->Org_Judi;
+       $admin->idsubAministracion = $request->organo_judicial;
        $admin->Direccion = $request->direccion;
-       $admin->Magistrado = $request->Magistrado;
+       $admin->idMagiatradi = $request->magistrados;
        $admin->Fecha_Programacion = $request->fecha_progra;
        $admin->Fecha_Ejecucion = $request->fecha_ejecu;
        $admin->Usuario_idUsuario = $request->iduser;
@@ -488,7 +488,7 @@ class EncuestaController extends Controller
        } else {
            $recaudacion_judicial->Recau_Sello_Utilzada = $request->Recaudacion_judicial_NO_1_1;
        }
-       if ($request->get('Recaudacion_judicial_SI_1_1')) {
+       if ($request->get('Recaudacion_judicial_SI_1_2')) {
            $recaudacion_judicial->Recau_Sello_fechador = $request->Recaudacion_judicial_SI_1_2;
        } else {
            $recaudacion_judicial->Recau_Sello_fechador = $request->Recaudacion_judicial_NO_1_2;
@@ -496,7 +496,7 @@ class EncuestaController extends Controller
        if ($request->get('Recaudacion_judicial_SI_1_3')) {
            $recaudacion_judicial->Recau_Datos_Presenta = $request->Recaudacion_judicial_SI_1_3;
        } else {
-           $recaudacion_judicial->Recau_Sello_fechador = $request->Recaudacion_judicial_NO_1_3;
+           $recaudacion_judicial->Recau_Datos_Presenta = $request->Recaudacion_judicial_NO_1_3;
        }
        if ($request->get('Recaudacion_judicial_SI_1_4')) {
            $recaudacion_judicial->Recaudacion_Cumplen_Prestar = $request->Recaudacion_judicial_SI_1_4;
@@ -648,7 +648,7 @@ class EncuestaController extends Controller
            $cobranza_multa->Condicion_sinco = $request->Cobransas_certificados_NO_5;
        }
 
-       if ($request->get('Cobransas_certificados_SI_5')) {
+       if ($request->get('Cobransas_certificados_SI_6')) {
            $cobranza_multa->Condicion_seis = $request->Cobransas_certificados_SI_6;
        } else {
            $cobranza_multa->Condicion_seis = $request->Cobransas_certificados_NO_6;
