@@ -1,8 +1,6 @@
 @extends('Principal.principal')
 @section('contenido')
-    <style>
 
-    </style>
     <div class="container">
         <div class="row">
             <section>
