@@ -72,4 +72,50 @@ class UserController extends Controller
 
 
     }
+    public function detalle($id){
+     $detalle=DB::SELECT("SELECT * from 
+administrativa,
+adminmagistrado,
+subaministracion,
+areas_judiciales_apoyo, 
+aspectos_generales_inmueble, 
+aspectos_informaticos,
+aspectos_logisticos, 
+aspectos_seguridad,
+auxilio_judicial,
+cobranzas_multas_certificados, 
+cuerpos_delito_efectos,
+mobiliario, 
+peritos_judiciales,
+personal, 
+recaudacion_judicial, 
+servicios_basicos,
+servicio_judiciales, 
+suministro_materiales, 
+usuario
+WHERE administrativa.idMagiatradi=adminmagistrado.idMagistrados 
+and administrativa.idsubAministracion=subaministracion.id_subAministracion
+and administrativa.Usuario_idUsuario=usuario.idUsuario 
+and areas_judiciales_apoyo.Usuario_idUsuario=usuario.idUsuario
+and aspectos_generales_inmueble.Usuario_idUsuario=usuario.idUsuario 
+and aspectos_informaticos.Usuario_idUsuario=usuario.idUsuario
+and aspectos_logisticos.Usuario_idUsuario=usuario.idUsuario
+and aspectos_seguridad.Usuario_idUsuario=usuario.idUsuario 
+and auxilio_judicial.Usuario_idUsuario=usuario.idUsuario
+and cobranzas_multas_certificados.Usuario_idUsuario=usuario.idUsuario
+and cuerpos_delito_efectos.Usuario_idUsuario=usuario.idUsuario
+and mobiliario.Usuario_idUsuario=usuario.idUsuario
+and peritos_judiciales.Usuario_idUsuario=usuario.idUsuario
+and personal.Usuario_idUsuario=usuario.idUsuario
+and recaudacion_judicial.Usuario_idUsuario=usuario.idUsuario
+and servicios_basicos.Usuario_idUsuario=usuario.idUsuario
+and servicio_judiciales.Usuario_idUsuario=usuario.idUsuario
+and suministro_materiales.Usuario_idUsuario=usuario.idUsuario
+and usuario.idUsuario=$id");
+
+     return response()->json($detalle);
+
+
+    }
+
 }

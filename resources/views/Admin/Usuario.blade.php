@@ -116,7 +116,7 @@
             </div>
         </div>
     </div>
-
+@include('Admin.DetalleEncuesta')
     @endsection
 
 @section('script')
@@ -160,7 +160,7 @@
                 {"mRender": function ( data, type, row ) {
                         return '<a style="margin-left: 5px" class="btn btn-success btnEdit" data-edit="/Usuarios/'+row.idUsuario +'/edit" ><i class="fa fa-edit text-warning"></i></a>' +
                             '<a style="margin-left: 5px" class="btn btn-danger" data-delete="/Usuarios/'+row.idUsuario +'/delete" ><i class="fa fa-remove text-warning"></i></a>'+
-                            '<a style="margin-left: 5px" class="btn btn-dark btnshow" data-show="/Usuarios/'+row.idUsuario +'/show" ><i class="fa fa-eye text-warning"></i></a>'
+                            '<a onclick="detalleEncuesta('+row.idUsuario +')" data-toggle="modal" data-target="#DetalleEncuesta" style="margin-left: 5px" class="btn btn-dark "><i class="fa fa-eye text-warning"></i></a>'
 
                     }
                 },
@@ -236,7 +236,7 @@
 
         });
 
-        $('#tb_usuarios').on('click','.btnshow[data-show]',function(e){
+        /*$('#tb_usuarios').on('click','.btnshow[data-show]',function(e){
             e.preventDefault();
             var url = $(this).data('show');
             $.ajax({
@@ -252,7 +252,7 @@
             })
 
         });
-
+*/
     });
     function hola() {
         $('#Actualizar').click(function (e) {
@@ -293,6 +293,58 @@
 
         document.location.reload();
     });
+       function detalleEncuesta(id) {
+           $.ajax({
+               url:'{{url('Detalle')}}/'+id,
+               type:'get',
+               dataType:'json',
+               success:function (response) {
+
+               }
+           })
+       }
+    $(document).ready(function () {
+
+
+        var fecha_programada=get_fhoy();
+        var fecha_ejecucion=get_fhoy();
+        $('#fecha_progra').val(fecha_programada);
+        $('#fecha_ejecu').val(fecha_ejecucion);
+        //Initialize tooltips
+        $('.nav-tabs > li a[title]').tooltip();
+
+        //Wizard
+        $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+            var $target = $(e.target);
+
+            if ($target.parent().hasClass('disabled')) {
+                return false;
+            }
+        });
+
+        $(".next-step").click(function (e) {
+
+            var $active = $('.wizard .nav-tabs li.active');
+            $active.next().removeClass('disabled');
+            nextTab($active);
+
+        });
+        $(".prev-step").click(function (e) {
+
+            var $active = $('.wizard .nav-tabs li.active');
+            prevTab($active);
+
+        });
+
+    });
+
+    function nextTab(elem) {
+        $(elem).next().find('a[data-toggle="tab"]').click();
+    }
+    function prevTab(elem) {
+        $(elem).prev().find('a[data-toggle="tab"]').click();
+    }
 
 </script>
     @endsection
