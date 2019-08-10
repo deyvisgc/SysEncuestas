@@ -1071,7 +1071,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                             <h5 style="margin-left: 10px;">INDICAR EL NUMERO DE RESOLUCION DEL TUPA Y CUADRO DEL VALOR. ASI COMO LAS DIRECTIVAS VIGENTES EN LOS ESPACIOS EN BLANCO QUE
                                                                 CORRESPONDE.</h5>
                                                             <p style="margin-left: 10px;">Verificar el cumplimiento del reglamento de Peritos Judiciales, aprobado por Resolución Administrativa N° 351-
-                                                                98-TP-CME-PJ y el manual de Procedimiento de Registro de Peritos Judiciales, aprobado con R.A <input id="Peritos_judiciales_R_A" name="Peritos_judiciales_R_A"  placeholder="_____________________________"/></p>
+                                                                98-TP-CME-PJ y el manual de Procedimiento de Registro de Peritos Judiciales, aprobado con R.A <input id="Peritos_judiciales_R_A" name="Peritos_judiciales_R_A" style="width: 200px;padding: 12px 20px; margin: 8px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="_____________________________"/></p>
                                                             <h6 style="margin-left: 20px;">Marca con (S) = SI o (N) = NO</h6>
                                                             <table class="table table-bordered table-striped table-highlight">
                                                                 <thead>
@@ -1468,12 +1468,12 @@ realizar y plazo para dar la solución.</textarea></td>
 
                                                                         <tr>
                                                                             <td style="padding-top: 90px;">1</td>
-                                                                            <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >El Juzgado cuenta con el Libro de Registro de Multas?</textarea>
+                                                                            <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  >El Juzgado cuenta con el Libro de Registro de Multas?</textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"readonly  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa. ¿Llena los datos como: Nombre del multado. Monto de la Multa en URP, N° y fecha de Resolución de la Multa previo en el artículo 7° del RCM u otro? precisar.</textarea></td>
-                                                                            <td><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_SI_1" name="Cobransas_certificados_SI_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_SI_1_1" name="Cobransas_certificados_SI_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_NO_1" name="Cobransas_certificados_NO_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_NO_1_1" name="Cobransas_certificados_NO_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_SI_1" name="Cobransas_certificados_SI_1"   ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_SI_1_1" name="Cobransas_certificados_SI_1_1"  ></textarea></td>
+                                                                            <td><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_NO_1" name="Cobransas_certificados_NO_1"  ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control" readonly rows="2" id="Cobransas_certificados_NO_1_1" name="Cobransas_certificados_NO_1_1" ></textarea></td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 300px;">2</td>

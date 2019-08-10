@@ -772,6 +772,217 @@
                        $('#Cuerpo_delito_efectos_ACCIONES_1').val(val.Cuerpos_Acciones_uno);
                        $('#Cuerpo_delito_efectos_ACCIONES_2').val(val.Cuerpos_Acciones_dos);
                        $('#Cuerpo_delito_efectos_ACCIONES_3').val(val.Cuerpos_Acciones_tres);
+
+                       //fin lista cuerpo del delito
+                       if(val.Recau_Comprobantes_pago=='s'){
+                           $('#Recaudacion_judicial_SI_1').val(val.Recau_Comprobantes_pago);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_1').val(val.Recau_Comprobantes_pago);
+                       }
+
+                       if(val.Recau_Sello_Utilzada=='s'){
+                           $('#Recaudacion_judicial_SI_1_1').val(val.Recau_Sello_Utilzada);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_1_1').val(val.Recau_Sello_Utilzada);
+                       }
+
+                       if(val.Recaudacion_judicial_SI_1_2=='s'){
+                           $('#Recaudacion_judicial_SI_1_1').val(val.Recau_Sello_fechador);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_1_2').val(val.Recau_Sello_fechador);
+                       }
+
+                       if(val.Recau_Datos_Presenta=='s'){
+                           $('#Recaudacion_judicial_SI_1_3').val(val.Recau_Datos_Presenta);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_1_3').val(val.Recau_Datos_Presenta);
+                       }
+
+                       if(val.Recaudacion_Cumplen_Prestar=='s'){
+                           $('#Recaudacion_judicial_SI_1_4').val(val.Recaudacion_Cumplen_Prestar);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_1_4').val(val.Recaudacion_Cumplen_Prestar);
+                       }
+
+                       if(val.Recau_Sistema_Validacion=='s'){
+                           $('#Recaudacion_judicial_S1_2').val(val.Recau_Sistema_Validacion);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_2').val(val.Recau_Sistema_Validacion);
+                       }
+
+                       if(val.Reca_Respuesta_Negativa=='s'){
+                           $('#Recaudacion_judicial_S1_2_1').val(val.Reca_Respuesta_Negativa);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_2_1').val(val.Reca_Respuesta_Negativa);
+                       }
+
+                       if(val.Reca_Respuesta_Afirmativa=='s'){
+                           $('#Recaudacion_judicial_S1_2_2').val(val.Reca_Respuesta_Negativa);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_2_2').val(val.Reca_Respuesta_Negativa);
+                       }
+                       if(val.Reca_Nota_Situacion=='s'){
+                           $('#Recaudacion_judicial_S1_2_3').val(val.Reca_Respuesta_Negativa);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_2_3').val(val.Reca_Respuesta_Negativa);
+                       }
+                       $('#Recaudacion_judicial_periodicidad').val(val.recaud_judicial_Perio);
+                       $('#Recaudacion_judicial_Oficio').val(val.recaud_judicial_Num_Ofici);
+                       $('#Recaudacion_judicial_fecha').val(val.recaud_judicial_Fecha);
+
+                       $('#Recaudacion_judicial_afirmativa_periodicidad').val(val.recaudacion_judicial_Afirma_Periodi);
+                       $('#Recaudacion_judicial_afirmativa_Oficio').val(val.recauda_judicial_Afirma_Num_Oficio);
+                       $('#Recaudacion_judicial_afirmativa_fecha').val(val.ecauda_judicial_Afirma_Fecha);
+
+
+                       if(val.Recaudacion_Expedientes_fenecidos=='s'){
+                           $('#Recaudacion_judicial_S1_3').val(val.Recaudacion_Expedientes_fenecidos);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_3').val(val.Recaudacion_Expedientes_fenecidos);
+                       }
+
+                       if(val.Recaudacion_Resp_Afirmativa=='s'){
+                           $('#Recaudacion_judicial_S1_3_1').val(val.Recaudacion_Resp_Afirmativa);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_3_1').val(val.Recaudacion_Resp_Afirmativa);
+                       }
+
+
+                       if(val.Recaudacion_Nota_situcacion_3=='s'){
+                           $('#Recaudacion_judicial_S1_3_2').val(val.Recaudacion_Nota_situcacion_3);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_3_2').val(val.Recaudacion_Nota_situcacion_3);
+                       }
+
+                       if(val.Reca_Cumplen_Verificar=='s'){
+                           $('#Recaudacion_judicial_S1_4').val(val.Reca_Cumplen_Verificar);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_4').val(val.Reca_Cumplen_Verificar);
+                       }
+                       if(val.Reca_Presentase_Aranceles_Judiciales=='s'){
+                           $('#Recaudacion_judicial_S1_4_1').val(val.Reca_Presentase_Aranceles_Judiciales);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_4_1').val(val.Reca_Presentase_Aranceles_Judiciales);
+                       }
+
+                       if(val.Reca_Presentacion_Derechos_Notificacion=='s'){
+                           $('#Recaudacion_judicial_SI_5').val(val.Reca_Presentacion_Derechos_Notificacion);
+
+                       }else {
+                           $('#Recaudacion_judicial_NO_5').val(val.Reca_Presentacion_Derechos_Notificacion);
+                       }
+                       //fin lista recaudacion judicial
+
+                       if(val.Condicion_uno_Libro_Registros=='s'){
+                           $('#Cobransas_certificados_SI_1').val(val.Condicion_uno_Libro_Registros);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_1').val(val.Condicion_uno_Libro_Registros);
+                       }
+
+                       if(val.Condicion_uno_Respuesta_Afirmativa=='s'){
+                           $('#Cobransas_certificados_SI_1_1').val(val.Condicion_uno_Respuesta_Afirmativa);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_1_1').val(val.Condicion_uno_Respuesta_Afirmativa);
+                       }
+                       if(val.Condicion_dos_Respuesta_Negativa=='s'){
+                           $('#Cobransas_certificados_SI_2').val(val.Condicion_dos_Respuesta_Negativa);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2').val(val.Condicion_dos_Respuesta_Negativa);
+                       }
+
+                       if(val.Condicion_dos_Ultimos_Meses=='s'){
+                           $('#Cobransas_certificados_SI_2_1').val(val.Condicion_dos_Ultimos_Meses);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2_1').val(val.Condicion_dos_Ultimos_Meses);
+                       }
+
+                       if(val.Condicion_Dos_A=='s'){
+                           $('#Cobransas_certificados_SI_2_2').val(val.Condicion_Dos_A);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2_2').val(val.Condicion_Dos_A);
+                       }
+
+                       if(val.Condicion_Dos_B=='s'){
+                           $('#Cobransas_certificados_SI_2_3').val(val.Condicion_Dos_B);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2_3').val(val.Condicion_Dos_B);
+                       }
+
+                       if(val.Condicion_Dos_C=='s'){
+                           $('#Cobransas_certificados_SI_2_4').val(val.Condicion_Dos_C);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2_4').val(val.Condicion_Dos_C);
+                       }
+
+                       if(val.Condicion_Dos_D=='s'){
+                           $('#Cobransas_certificados_SI_2_5').val(val.Condicion_Dos_D);
+
+                       }else {
+                           $('#Cobransas_certificados_N0_2_5').val(val.Condicion_Dos_D);
+                       }
+
+                       if(val.Condicion_tres_Precidencia_corte=='s'){
+                           $('#Cobransas_certificados_SI_3').val(val.Condicion_tres_Precidencia_corte);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_3').val(val.Condicion_tres_Precidencia_corte);
+                       }
+                       if(val.Condicion_tres_Cargo_Remision=='s'){
+                           $('#Cobransas_certificados_SI_3_1').val(val.Condicion_tres_Cargo_Remision);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_3_1').val(val.Condicion_tres_Cargo_Remision);
+                       }
+
+                       if(val.Condicion_tres_Nota=='s'){
+                           $('#Cobransas_certificados_SI_3_2').val(val.Condicion_tres_Nota);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_3_2').val(val.Condicion_tres_Nota);
+                       }
+                       if(val.Condicion_cuatro=='s'){
+                           $('#Cobransas_certificados_SI_4').val(val.Condicion_cuatro);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_4').val(val.Condicion_cuatro);
+                       }
+                       if(val.Condicion_sinco=='s'){
+                           $('#Cobransas_certificados_SI_5').val(val.Condicion_sinco);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_5').val(val.Condicion_sinco);
+                       }
+                       if(val.Condicion_seis=='s'){
+                           $('#Cobransas_certificados_SI_6').val(val.Condicion_sinco);
+
+                       }else {
+                           $('#Cobransas_certificados_NO_6').val(val.Condicion_sinco);
+                       }
+
+                       $('#Cobransas_certificados_ACCIONES_1').val(val.Cobranza_acciones_uno);
+                       $('#Cobransas_certificados_ACCIONES_2').val(val.Cobranzas_acciones_dos);
+                       $('#Cobransas_certificados_ACCIONES_3').val(val.Cobranzas_acciones_tres);
                    })
                }
            })

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eff6f185-86e7-44c5-b1b8-57e6e765cce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SysEncuestas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SysEncuestas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/DetalleEncuesta.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/DetalleEncuesta.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,24 +34,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Admin/DetalleEncuesta.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="1279" column="168" selection-start-line="1279" selection-start-column="136" selection-end-line="1279" selection-end-column="168" />
+            <state relative-caret-position="500">
+              <caret line="1550" column="177" selection-start-line="1550" selection-start-column="144" selection-end-line="1550" selection-end-column="177" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
-              <caret line="773" column="91" selection-start-line="773" selection-start-column="91" selection-end-line="773" selection-end-column="91" />
+              <caret line="982" column="60" selection-start-line="982" selection-start-column="60" selection-end-line="982" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
@@ -69,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2615">
-              <caret line="249" column="92" selection-start-line="249" selection-start-column="64" selection-end-line="249" selection-end-column="92" />
+            <state relative-caret-position="328">
+              <caret line="559" column="73" selection-start-line="559" selection-start-column="34" selection-end-line="559" selection-end-column="73" />
               <folding>
                 <element signature="e#48#76#0#PHP" expanded="true" />
               </folding>
@@ -413,12 +409,12 @@
       <workItem from="1565355759232" duration="2529000" />
       <workItem from="1565359062730" duration="1506000" />
       <workItem from="1565366780633" duration="4469000" />
-      <workItem from="1565446924644" duration="19410000" />
+      <workItem from="1565446924644" duration="22866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211780000" />
+    <option name="totallyTimeSpent" value="215236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2615">
-          <caret line="249" column="92" selection-start-line="249" selection-start-column="64" selection-end-line="249" selection-end-column="92" />
-          <folding>
-            <element signature="e#48#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -814,25 +800,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EncuestaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="773" column="91" selection-start-line="773" selection-start-column="91" selection-end-line="773" selection-end-column="91" />
+        <state relative-caret-position="328">
+          <caret line="559" column="73" selection-start-line="559" selection-start-column="34" selection-end-line="559" selection-end-column="73" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
+            <element signature="e#48#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/DetalleEncuesta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="1279" column="168" selection-start-line="1279" selection-start-column="136" selection-end-line="1279" selection-end-column="168" />
+        <state relative-caret-position="500">
+          <caret line="1550" column="177" selection-start-line="1550" selection-start-column="144" selection-end-line="1550" selection-end-column="177" />
           <folding>
             <element signature="n#style#0;n#input#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Admin/Usuario.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="982" column="60" selection-start-line="982" selection-start-column="60" selection-end-line="982" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
