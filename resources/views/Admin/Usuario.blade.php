@@ -116,6 +116,7 @@
             </div>
         </div>
     </div>
+
 @include('Admin.DetalleEncuesta')
     @endsection
 
@@ -291,15 +292,487 @@
     $('body').on('hidden.bs.modal', '.modal', function () {
         $("#rol_update").empty();
 
-        document.location.reload();
+       /* document.location.reload();*/
     });
        function detalleEncuesta(id) {
+         //  alert($('input:checkbox[name=colorfavorito]:checked').val());
            $.ajax({
                url:'{{url('Detalle')}}/'+id,
                type:'get',
                dataType:'json',
                success:function (response) {
+                   $.each(response,function (index,val) {
+                       $('#user').html(val.Usuario);
+                       $('#Precidente_corte').val(val.Presidente_corte);
+                       $('#Gerente_Administrativo').val(val.Gerente_Administrativo);
+                       $('#Magistrado').val(val.magistrados);
+                       $('#organo_judi').val(val.organo_judicial);
+                       $('#direccion').val(val.Direccion);
+                       $('#fecha_programacion').val(val.Fecha_Programacion);
+                       $('#fecha_ejecucion').val(val.Fecha_Ejecucion);
+                       //fin de listado administrativa
+                       $('#personal_total').val(val.Personal_Total);
+                       if (val.Regi_Trabajadores===1){
 
+                           $("#dl_trabajador").prop('checked',true);
+
+                        //   $('#dl_trabajador').val(val.Regi_Trabajadores,'checked',true);
+                       }else if (val.Regi_Magistrado==2){
+                              $("#dl_magistrado").prop('checked',true);
+
+                           //   $('#dl_trabajador').val(val.Regi_Trabajadores,'ch
+                        //   $('#dl_magistrado').val(val.Regi_Magistrado,'checked',true);
+                       } else if (val.Regi_Trabajadores_1==3){
+                           $("#dl_trabajadores1").prop('checked',true);
+
+                          // $('#dl_trabajadores1').val(val.Regi_Trabajadores_1,'checked',true);
+                       } else  if (val.Regis_Ftocheck==4){
+                           $("#Fotocheck").prop('checked',true);
+
+                        //   $('#Fotocheck').val(val.Regis_Ftocheck,'checked',true);
+                       }
+
+                       $('#observacion_1_Personal').val(val.Obersvaciones);
+                       $('#observacion_2_Personal').val(val.Observaciones1);
+                       //fin de listado personal
+                       $('#Mesa_Partes_areas_apoyo_Deficiencias').val(val.Mesa_partes_Deficiencias);
+                       $('#Mesa_Partes_areas_apoyo_Acciones').val(val.Mesa_partes_Accio);
+                       $('#archivo_areas_apoyo_Deficiencias').val(val.Archivo_Jurisdicionales_Deficiencias);
+                       $('#archivo_areas_apoyo_Acciones').val(val.Archivo_Juris_Accio);
+
+                       $('#Notificaciones_areas_apoyo_Deficiencias').val(val.Notificaciones_Judiciales_Deficiencias);
+                       $('#Notificaciones_areas_apoyo_Acciones').val(val.Notificaciones_Judiciales_Accio);
+
+                       $('#Publicaciones_areas_apoyo_Deficiencias').val(val.Publicacion_Edictos_Deficiencias);
+                       $('#Publicaciones_areas_apoyo_Archivos').val(val.Publicacion_Edictos_Accio);
+
+                       $('#Convenio_reniec_areas_apoyo_Deficiencias').val(val.Convenio_Reniec_Deficiencias);
+                       $('#Convenio_reniec_areas_apoyo_Acciones').val(val.Convenio_Reniec_Accio);
+
+                       $('#Requisitorias_areas_apoyo_Deficiencias').val(val.Requesitos_Deficiencias);
+                       $('#Requisitorias_areas_apoyo_Acciones').val(val.Requesitos_Accio);
+
+                       $('#Otros_areas_apoyo_Deficiencias').val(val.Areas_judiciales_Otros_Deficiencias);
+                       $('#Otros_areas_apoyo_Acciones').val(val.Areas_judiciales_Otros_Accio);
+
+                       $('#subrasarse_areas_apoyo_Deficiencias').val(val.Areas_judiciales_Advertencia_Deficiencias);
+                       $('#subrasarse_areas_apoyo_Acciones').val(val.Areas_judiciales_Advertencia_Accio);
+                        //fin de listado de aspectos logisticlos-servicios terzeridos
+                       $('#Mensajería_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Mensa_Defi);
+                       $('#Mensajería_aspectos_logisticos_Acciones').val(val.Servi_Tercer_Mensa_Acci);
+                       $('#Fotocopiado_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_fotocop_Defi);
+                       $('#Fotocopiado_aspectos_logisticos_Acciones').val(val.Servi_Tercer_fotocop_Acci);
+
+                       $('#Limpieza_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_linpieza_Defi);
+                       $('#Limpieza_aspectos_logisticos_Acciones').val(val.Servi_Tercer_linpieza_Acci);
+                       $('#Traducciones_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Traducc_Defi);
+                       $('#Traducciones_aspectos_logisticos_Archivos').val(val.Servi_Tercer_Traducc_Acc);
+
+                       $('#Publicaciones_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Publica_Defi);
+                       $('#Publicaciones_aspectos_logisticos_Acciones').val(val.Servi_Tercer_Publica_Acc);
+                       $('#Arrendamiento_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Arrenda_Defi);
+                       $('#Arrendamiento_aspectos_logisticos_Acciones').val(val.Servi_Tercer_Arrenda_Acci);
+
+                       $('#Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Manten_Defi);
+                       $('#Mantenimiento_vehiculos_aspectos_logisticos_Acciones').val(val.Servi_Tercer_Manten_Acc);
+                       $('#Otros_aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Otros_Defi);
+                       $('#Otros_aspectos_logisticos_Acciones').val(val.Servi_Tercer_Otros_Acc);
+                       $('#subrasarse_Aspectos_logisticos_Deficiencias').val(val.Servi_Tercer_Adverten_Defi);
+                       $('#subrasarse_Aspectos_logisticos_Acciones').val(val.Servi_Tercer_Adverten_Acci);
+                     //fin lista servicios   terciarios
+
+                       $('#Energía_servicio_bascios_Deficiencias').val(val.Servi_Basi_Ener_Elec_Defi);
+                       $('#Energía_servicio_bascios_Acciones').val(val.Servi_Basi_Ener_Elec_Acc);
+                       $('#Agua_servicio_bascios_Deficiencias').val(val.Servi_Basi_Agua_Defi);
+                       $('#Agua_servicio_bascios_Acciones').val(val.Servi_Basi_Agua_Acc);
+
+                       $('#Telefonía_servicio_bascios_Deficiencias').val(val.Servi_Basi_Telefo_Inter_Defi);
+                       $('#Telefonía_servicio_bascios_Acciones').val(val.Servi_Basi_Telefo_Inter_Acci);
+                       $('#Otros_servicios_basicos_Deficiencias').val(val.Servi_Basi_Otros_Defi);
+                       $('#Otros_servicios_basicos_Acciones').val(val.Servi_Basi_Otros_Acci);
+                       $('#subrasarse_servicios_basicos_Deficiencias').val(val.Servi_Basi_Adver_Defi);
+                       $('#subrasarse_servicios_basicos_Acciones').val(val.Servi_Basi_Adver_Acci);
+                       //servicios basicos
+
+                       $('#Armarios_mobiliario_Deficiencias').val(val.Mobi_Armarios_Archiva_Defi);
+                       $('#Armarios_mobiliario_Acciones').val(val.Mobi_Armarios_Archiva_Acci);
+                       $('#Estantería_mobiliario_Deficiencias').val(val.Mobi_Estanteria_Metalica_Defi);
+                       $('#Estantería_mobiliario_Acciones').val(val.Mobi_Estanteria_Metalica_Acci);
+
+                       $('#Escritorios_mobiliario_Deficiencias').val(val.Mobi_Escritorio_mesas_Defi);
+                       $('#Escritorios_mobiliario_Acciones').val(val.Mobi_Escritorio_mesas_Acci);
+                       $('#Sillas_mobiliario_Deficiencias').val(val.Mobi_sillas_sillones_Defi);
+                       $('#Sillas_mobiliario_Archivos').val(val.Mobi_sillas_sillones_Acci);
+
+                       $('#Módulos_computadoras_mobiliarios_Deficiencias').val(val.Mobi_Modulos_Defi);
+                       $('#Módulos_computadoras_mobiliarios_Acciones').val(val.Mobi_Modulos_Acci);
+                       $('#otros_mobiliario_Deficiencias').val(val.Mobi_Otros_Defi);
+                       $('#otros_mobiliario_Acciones').val(val.Mobi_Otros_Acci);
+                       $('#subrasarse_mobiliarios_Deficiencias').val(val.Advertencia_Mobiliario_Defi);
+                       $('#subrasarse_mobiliarios_acciones').val(val.Advertencia_Mobiliario_Acci);
+                       //fin lista mobiliarios
+
+                       $('#Papel_suministro_Deficiencias').val(val.sumi_Papel_Defi);
+                       $('#Papel_suministro_Acciones').val(val.sumi_Papel_Acci);
+                       $('#Bolígrafos_suministro_Deficiencias').val(val.sumi_Boligrafos_Grapas_Defi);
+                       $('#Bolígrafos_suministro_Acciones').val(val.sumi_Boligrafos_Grapas_Acci);
+
+                       $('#Cinta_suministro_Deficiencias').val(val.Sumi_Cinta_Impresora_Defi);
+                       $('#Cinta_suministro_Acciones').val(val.Sumi_Cinta_Impresora_Acci);
+                       $('#Carátulas_suministro_Deficiencias').val(val.Sumi_Caratulas_Defi);
+                       $('#Carátulas_suministro_Acciones').val(val.Sumi_Caratulas_Acci);
+
+                       $('#Peruano_suministro_Deficiencias').val(val.Sumi_Peruano_Defi);
+                       $('#Peruano_suministro_Archivos').val(val.Sumi_Peruano_Acci);
+                       $('#Otros_suministro_Deficiencias').val(val.Sumi_Otros_Defi);
+                       $('#Otros_suministro_Acciones').val(val.Sumi_Otros_Acci);
+
+                       $('#subrasarse_suministro_Deficiencias').val(val.Sumi_Advertencia_Defi);
+                       $('#subrasarse_suministro_Acciones').val(val.Sumi_Advertencia_Acci);
+                       //fin lista sumunistro
+
+                       $('#Computadoras_informaticos_Deficiencias').val(val.Aspect_Infor_Compu_Defi);
+                       $('#Computadoras_informaticos__Acciones').val(val.Aspect_Infor_Compu_Acc);
+                       $('#Impresoras_informaticos_Deficiencias').val(val.Aspect_infor_Impres_Defi);
+                       $('#Impresoras_informaticos_Acciones').val(val.Aspect_infor_Impres_Acc);
+
+                       $('#Fax_Informaticos_Deficiencias').val(val.Aspect_Infor_Fax_Defi);
+                       $('#Fax_informaticos_Acciones').val(val.Aspect_Infor_Fax_Acc);
+                       $('#Mantenimiento_equipos_Informaticos_Deficiencias').val(val.Aspect_Infor_Mante_Equi_Defi);
+                       $('#Mantenimiento_equipos_Informaticos_Acciones').val(val.Aspect_Infor_Mante_Equi_Acci);
+
+                       $('#UPS_Informaticos_Deficiencias').val(val.Aspect_Infor_Ups_Defi);
+                       $('#UPS_Informaticos_Acciones').val(val.Aspect_Infor_Ups_Acc);
+                       $('#supresor_picos_Informaticos_Deficiencias').val(val.Aspect_Infor_Supresor_Defi);
+                       $('#supresor_picos_Informaticos_Acciones').val(val.Aspect_Infor_Supresor_Acc);
+
+                       $('#Correo_Informaticos_Deficiencias').val(val.Aspect_Infor_correo_Defi);
+                       $('#Correo_Informaticos_Acciones').val(val.Aspect_Infor_correo_Acc);
+                       $('#sistemas_Informaticos_Deficiencias').val(val.Aspect_Sistemas_Informaticos);
+                       $('#sistemas_Informaticos_Acciones').val(val.Aspect_Sistemas_Informaticos_Acc);
+
+                       $('#Redes_Informáticos_Informaticos_Deficiencias').val(val.Aspect_Redes_Informaticos_Defi);
+                       $('#Redes_Informáticos_Informaticos_Acciones').val(val.Aspect_Redes_Informaticos_Acc);
+                       $('#Otros_Informaticos_Deficiencias').val(val.Aspect_Infor_Otros_Defi);
+                       $('#Otros_Informaticos_Acciones').val(val.Aspect_Infor_Otros_Acc);
+                       $('#subrasarse_Informaticos_Deficiencias').val(val.Aspect_Infor_Advert_Defi);
+                       $('#subrasarse_Informaticos_Acciones').val(val.Aspect_Infor_Advert_Acc);
+                       //fin lista aspectos informaticos
+
+                       $('#Aspectos_seguridad_detectorM_Deficiencias').val(val.Aspecto_segu_Detectores_metal_Defi);
+                       $('#Aspectos_seguridad_detectorM_Acciones').val(val.Aspecto_segu_Detectores_metal_Acc);
+
+                       $('#Aspectos_seguridad_Extintores_Deficiencias').val(val.Aspecto_segu_Extintotores_Defi);
+                       $('#Aspectos_seguridad_Extintores_Acciones').val(val.Aspecto_segu_Extintotores_Acc);
+
+                       $('#Aspectos_seguridad_Mangueras_Deficiencias').val(val.Aspecto_segu_Mangueras_Defi);
+                       $('#Aspectos_seguridad_Mangueras_Acciones').val(val.Aspecto_segu_Mangueras_Acc);
+
+                       $('#Aspectos_seguridad_Otros_Deficiencias').val(val.Aspecto_segu_Otros_Defi);
+                       $('#Aspectos_seguridad_Otros_Acciones').val(val.Aspecto_segu_Otros_Acc);
+
+                       $('#subrasarse_Aspectos_seguridad_Deficiencias').val(val.Aspecto_Segu_Advertencia_Defi);
+                       $('#subrasarse_Aspectos_seguridad_Acciones').val(val.Aspecto_Segu_Advertencia_Acc);
+
+                       //fin lista aspectos de seguridad
+
+
+                       $('#Aspectos_generales_Estructuras_Deficiencias').val(val.Aspec_Gene_Estructuras_Defi);
+                       $('#Aspectos_generales_Estructuras_Acciones').val(val.Aspec_Gene_Estructuras_Acc);
+                       $('#Aspectos_generales_Puertas_Deficiencias').val(val.Aspec_Gene_Puertas_Defi);
+                       $('#Aspectos_generales_Puertas_Acciones').val(val.Aspec_Gene_Puertas_Acc);
+
+                       $('#Aspectos_generales_Ventanas_Deficiencias').val(val.Aspect_Gene_Ventanas_Defi);
+                       $('#Aspectos_generales_Ventanas_Acciones').val(val.Aspect_Gene_Ventanas_Acc);
+
+                       $('#Aspectos_generales_Pisos_Deficiencias').val(val.Aspect_Gene_Pisos_Defi);
+                       $('#Aspectos_generales_Pisos_Acciones').val(val.Aspect_Gene_Pisos_Acc);
+                       $('#Aspectos_generales_Pintura_Deficiencias').val(val.Aspect_Gene_Pintura_Defi);
+                       $('#Aspectos_generales_Pintura_Acciones').val(val.Aspect_Gene_Pintura_Acc);
+
+
+                       $('#Aspectos_generales_Instalaciones_Sanitarias_Deficiencias').val(val.Aspect_Instalaciones_sanitarias_Defi);
+                       $('#Aspectos_generales_Instalaciones_Sanitarias_Acciones').val(val.Aspect_Instalaciones_sanitarias_Acc);
+                       $('#Aspectos_generales_Instalaciones_Eléctricas_Deficiencias').val(val.Aspect_Gene_Electricas_Defi);
+                       $('#Aspectos_generales_Instalaciones_Eléctricas_Acciones').val(val.Aspect_Gene_Electricas_Acc);
+
+                       $('#Aspectos_generales_brinda_Seguridad_Deficiencias').val(val.Aspect_Gene_Brinsa_Seguridad_Defi);
+                       $('#Aspectos_generales_brinda_Seguridad_Acciones').val(val.Aspect_Gene_Brinsa_Seguridad_Acc);
+                       $('#Aspectos_generales_Mantenimiento_local_Deficiencias').val(val.Aspect_Gene_manteni_local_defi);
+                       $('#Aspectos_generales_Mantenimiento_local_Acciones').val(val.Aspect_Gene_manteni_local_Acci);
+
+                       $('#Aspectos_generales_Otros_Deficiencias').val(val.Aspect_Gene_Otros_Defi);
+                       $('#Aspectos_generales_Otros_Acciones').val(val.Aspect_Gene_Otros_Acc);
+                       $('#subrasarse_Aspectos_generales_Deficiencias').val(val.Aspect_Gene_Advertencia_Difi);
+                       $('#subrasarse_Aspectos_generales_Acciones').val(val.Aspect_Gene_Advertencia_Acc);
+
+                       $('#Aspectos_generales_ALQUILADO').val(val.Aspect_Gene_Alquilado_1);
+                       $('#Aspectos_generales_ALQUILADO1').val(val.Aspect_Gene_Alquilado_2);
+                       $('#Aspectos_generales_ALQUILADO2').val(val.Aspect_Gene_Alquilado_3);
+
+                       $('#Aspectos_generales_CEDIDO').val(val.Aspect_Gene_Cedido_1);
+                       $('#Aspectos_generales_CEDIDO1').val(val.Aspect_Gene_Cedido_2);
+                       $('#Aspectos_generales_CEDIDO2').val(val.Aspect_Gene_Cedido_3);
+
+                       //fin lista servicios judiciales
+                           if (val.Condicion_uno=='s'){
+                               $('#servicio_judiciales_SI_1').val(val.Condicion_uno);
+                           } else {
+                               $('#servicio_judiciales_NO_1').val(val.Condicion_uno);
+                           }
+                               $('#servicio_judiciales_Observaciones_1').val(val.Condicion_uno_Observa);
+
+                       if (val.Condicion_dos=='s'){
+                           $('#servicio_judiciales_SI_2').val(val.Condicion_dos);
+                       } else {
+                           $('#servicio_judiciales_NO_2').val(val.Condicion_dos);
+                       }
+                       $('#servicio_judiciales_Observaciones_2').val(val.Condicion_dos_Observa);
+
+                       if (val.Condicion_tres=='s'){
+                           $('#servicio_judiciales_SI_3').val(val.Condicion_tres);
+                       } else {
+                           $('#servicio_judiciales_NO_3').val(val.Condicion_tres);
+                       }
+                       $('#servicio_judiciales_Observaciones_3').val(val.Condicion_tres_Observa);
+
+                       if (val.Condicion_cuatro=='s'){
+                           $('#servicio_judiciales_SI_4').val(val.Condicion_tres);
+                       } else {
+                           $('#servicio_judiciales_NO_4').val(val.Condicion_tres);
+                       }
+                       $('#servicio_judiciales_Observaciones_4').val(val.Condicion_cuatro_Observa);
+                       $('#servicio_judiciales_respuesta_negativa').val(val.respuesta_negativa);
+                       $('#servicio_judiciales_acciones1').val(val.Acciones_Adoptadas_uno);
+                       $('#servicio_judiciales_acciones2').val(val.Acciones_Adoptadas_dos);
+                       $('#servicio_judiciales_acciones3').val(val.Acciones_Adoptadoas_tres);
+                       $('#servicio_judiciales_acciones4').val(val.Acciones_Adoptadas_cuatro);
+                       $('#servicio_judiciales_acciones5').val(val.Acciones_Adoptadas_cinco);
+
+                       //fin lista servicio Judicial
+
+                       if(val.auxi_Judi_Condi_uno=='s'){
+                           $('#auxilio_genereal_SI_1').val(val.auxi_Judi_Condi_uno);
+
+                       }else {
+                           $('#auxilio_genereal_NO_1').val(val.auxi_Judi_Condi_uno);
+                       }
+                       $('#auxilio_genereal_Observacaciones_1').val(val.auxi_Judi_Condici_uno_Observa);
+
+                       if(val.auxi_Judi_Condici_dos=='s'){
+                           $('#auxilio_genereal_SI_2_1').val(val.auxi_Judi_Condici_dos);
+
+                       }else {
+                           $('#auxilio_genereal_NO_2_1').val(val.auxi_Judi_Condici_dos);
+                       }
+                       $('#auxilio_genereal_Observaciones_2_1').val(val.auxi_Judi_Condici_dos_Observa);
+
+                       if(val.Condici_dos_uno=='s'){
+                           $('#auxilio_genereal_SI_2_2').val(val.Condici_dos_uno);
+
+                       }else {
+                           $('#auxilio_genereal_NO_2_2').val(val.Condici_dos_uno);
+                       }
+                       $('#auxilio_genereal_Observaciones_2_2').val(val.auxi_Judi_Condici_dos_uno_Observa);
+
+                       if(val.auxi_Judi_Condici_tres=='s'){
+                           $('#auxilio_genereal_SI_3').val(val.auxi_Judi_Condici_tres);
+
+                       }else {
+                           $('#auxilio_genereal_NO_3').val(val.auxi_Judi_Condici_tres);
+                       }
+                       $('#auxilio_genereal_Observaciones_3').val(val.auxi_Judi_Condici_tres_Observa);
+
+                       if(val.auxi_Judi_Condici_cuatro=='s'){
+                           $('#auxilio_genereal_SI_4').val(val.auxi_Judi_Condici_cuatro);
+
+                       }else {
+                           $('#auxilio_genereal_NO_4').val(val.auxi_Judi_Condici_cuatro);
+                       }
+                       $('#auxilio_genereal_Observaciones_4').val(val.auxi_Judi_Condici_cuatro_Observa);
+
+                       if(val.auxi_Judi_Condici_cinco=='s'){
+                           $('#auxilio_genereal_SI_5').val(val.auxi_Judi_Condici_cinco);
+
+                       }else {
+                           $('#auxilio_genereal_NO_5').val(val.auxi_Judi_Condici_cinco);
+                       }
+                       $('#auxilio_genereal_Observaciones_5').val(val.auxi_Judi_Condici_cinco_Observa);
+
+                       if(val.auxi_Judi_Condici_seis=='s'){
+                           $('#auxilio_genereal_SI_6').val(val.auxi_Judi_Condici_seis);
+
+                       }else {
+                           $('#auxilio_genereal_NO_6').val(val.auxi_Judi_Condici_seis);
+                       }
+                       $('#auxilio_genereal_Observaciones_6').val(val.auxi_Judi_Condici_seis_Observa);
+
+                       $('#auxilio_genereal_Acciones_1').val(val.auxi_Judi_Acciones_uno);
+                       $('#auxilio_genereal_Acciones_2').val(val.auxi_Judi_Acciones_dos);
+                       $('#auxilio_genereal_Acciones_3').val(val.auxi_Judi_Acciones_tres);
+
+                     //fin lista auxilio judicial
+
+                       if(val.Peritos_Condicion_uno=='s'){
+                           $('#Peritos_judiciales_SI_1').val(val.Peritos_Condicion_uno);
+                       }else {
+                           $('#Peritos_judiciales_NO_1').val(val.Peritos_Condicion_uno);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_1').val(val.Peritos_Condicion_uno_observa);
+
+                       if(val.Peritos_Condicion_dos=='s'){
+                           $('#Peritos_judiciales_SI_2_1').val(val.Peritos_Condicion_dos);
+                       }else {
+                           $('#Peritos_judiciales_NO_2_1').val(val.Peritos_Condicion_dos);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_1').val(val.Peritos_Condicion_dos_Observa);
+
+                       if(val.Peritos_Condicion_dos_uno=='s'){
+                           $('#Peritos_judiciales_SI_2_2').val(val.Peritos_Condicion_dos_uno);
+                       }else {
+                           $('#Peritos_judiciales_NO_2_2').val(val.Peritos_Condicion_dos_uno);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_2_2').val(val.Peritos_Condicion_dos_uno_Observa);
+
+                       if(val.Peritos_Condicion_tres=='s'){
+                           $('#Peritos_judiciales_SI_3').val(val.Peritos_Condicion_tres);
+                       }else {
+                           $('#Peritos_judiciales_NO_3').val(val.Peritos_Condicion_tres);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_3').val(val.Peritos_Condicion_tres_Observa);
+
+                       if(val.Peritos_Condicion_cuatro=='s'){
+                           $('#Peritos_judiciales_SI_4').val(val.Peritos_Condicion_cuatro);
+                       }else {
+                           $('#Peritos_judiciales_NO_4').val(val.Peritos_Condicion_cuatro);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_4').val(val.Peritos_Condicion_cuatro_Observa);
+
+
+                       if(val.Peritos_Condicion_cinco=='s'){
+                           $('#Peritos_judiciales_SI_5').val(val.Peritos_Condicion_cinco);
+                       }else {
+                           $('#Peritos_judiciales_NO_5').val(val.Peritos_Condicion_cinco);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_5').val(val.Peritos_Condicion_cinco_Observa);
+
+
+
+
+                       if(val.Peritos_Condicion_seis=='s'){
+                           $('#Peritos_judiciales_SI_6_1').val(val.Peritos_Condicion_seis);
+                       }else {
+                           $('#Peritos_judiciales_NO_6_1').val(val.Peritos_Condicion_seis);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_6_1').val(val.Peritos_Condicion_seis_Observa);
+
+                       if(val.Peritos_Condicion_seis_uno=='s'){
+                           $('#Peritos_judiciales_SI_6_2').val(val.Peritos_Condicion_seis_uno);
+                       }else {
+                           $('#Peritos_judiciales_NO_6_2').val(val.Peritos_Condicion_seis_uno);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_6_2').val(val.Peritos_Condicion_seis_uno_Observa);
+
+
+                       if(val.Peritos_Condiciom_siete=='s'){
+                           $('#Peritos_judiciales_SI_7').val(val.Peritos_Condiciom_siete);
+                       }else {
+                           $('#Peritos_judiciales_NO_7').val(val.Peritos_Condiciom_siete);
+
+                       }
+                       $('#Peritos_judiciales_Obserbaciones_7').val(val.Peritos_Condicion_siete_Observa);
+
+                       $('#Peritos_judiciales_Acciones_1').val(val.Peritos_Acciones_uno);
+                       $('#Peritos_judiciales_Acciones_2').val(val.Peritos_Acciones_dos);
+
+                       //fin lista peritos judicial
+
+                          if(val.Cuerpos_Condicion_uno=='s'){
+                              $('#Cuerpo_delito_efectos_SI_1').val(val.Cuerpos_Condicion_uno);
+
+                          }else {
+                              $('#Cuerpo_delito_efectos_NO_1').val(val.Cuerpos_Condicion_uno);
+                          }
+                       $('#Cuerpo_delito_efectos_Observaciones_1').val(val.Cuerpos_Condicion_uno_Observa);
+
+                       if(val.Cuerpos_Condicion_dos=='s'){
+                           $('#Cuerpo_delito_efectos_SI_2_1').val(val.Cuerpos_Condicion_dos);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_2_1').val(val.Cuerpos_Condicion_dos);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_2_1').val(val.Cuerpos_Condicion_dos_Observa);
+
+                       if(val.Cuerpos_Condicion_dos_uno=='s'){
+                           $('#Cuerpo_delito_efectos_SI_2_2').val(val.Cuerpos_Condicion_dos_uno);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_2_2').val(val.Cuerpos_Condicion_dos_uno);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_2_2').val(val.Cuerpos_Condicion_dos_uno_Observa);
+                       if(val.Cuerpos_Condicion_tres=='s'){
+                           $('#Cuerpo_delito_efectos_SI_3').val(val.Cuerpos_Condicion_tres);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_3').val(val.Cuerpos_Condicion_tres);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_3').val(val.Cuerpos_Condicion_tres_Observa);
+
+                       if(val.Cuerpos_Condiciones_cuatro=='s'){
+                           $('#Cuerpo_delito_efectos_SI_4_1').val(val.Cuerpos_Condiciones_cuatro);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_4_1').val(val.Cuerpos_Condiciones_cuatro);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_4_1').val(val.Cuerpos_Condiciones_cuatro_Observa);
+
+
+                       if(val.Cuerpos_Condiciones_cuatro_uno=='s'){
+                           $('#Cuerpo_delito_efectos_SI_4_2').val(val.Cuerpos_Condiciones_cuatro);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_4_2').val(val.Cuerpos_Condiciones_cuatro);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_4_2').val(val.Cuerpos_Condiciones_cuatro_Observa);
+
+
+                       if(val.Cuerpos_Condicion_cinco=='s'){
+                           $('#Cuerpo_delito_efectos_SI_5').val(val.Cuerpos_Condicion_cinco);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_5').val(val.Cuerpos_Condicion_cinco);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_5').val(val.Cuerpos_Condicion_cinco_Observa);
+
+                       if(val.Cuerpos_Condicion_cinco=='s'){
+                           $('#Cuerpo_delito_efectos_SI_5').val(val.Cuerpos_Condicion_cinco);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_5').val(val.Cuerpos_Condicion_cinco);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_5').val(val.Cuerpos_Condicion_cinco_Observa);
+
+
+                       if(val.Cuerpos_Condicion_Seis=='s'){
+                           $('#Cuerpo_delito_efectos_SI_6').val(val.Cuerpos_Condicion_Seis);
+
+                       }else {
+                           $('#Cuerpo_delito_efectos_NO_6').val(val.Cuerpos_Condicion_Seis);
+                       }
+                       $('#Cuerpo_delito_efectos_Observaciones_6').val(val.Cuerpos_Condicion_Seis_Observa);
+
+                       $('#Cuerpo_delito_efectos_ACCIONES_1').val(val.Cuerpos_Acciones_uno);
+                       $('#Cuerpo_delito_efectos_ACCIONES_2').val(val.Cuerpos_Acciones_dos);
+                       $('#Cuerpo_delito_efectos_ACCIONES_3').val(val.Cuerpos_Acciones_tres);
+                   })
                }
            })
        }

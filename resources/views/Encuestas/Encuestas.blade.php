@@ -143,7 +143,7 @@
                                                <label style="color: black" class="radio-inline"></label>
 
                                             <label style="margin-left: 15px;">Trabajadores: <div  class="checkbox checkbox-success checkbox-circle" >
-                                                    <input id="checkbox7" value="trabajador" name="DL_728_Trabajador" type="checkbox">
+                                                    <input id="checkbox7" value="1" name="DL_728_Trabajador" type="checkbox">
                                                     <label for="checkbox7"> DL 728 fijo</label>
 
                                                 </div>
@@ -151,7 +151,7 @@
                                             <label style="color: black" class="radio-inline"></label>
 
                                             <label style="margin-left: 15px;">Magistrados: <div  class="checkbox checkbox-success checkbox-circle" >
-                                                    <input id="checkbox7" value="Magistrado" name="DL_276_Magistrado" type="checkbox">
+                                                    <input id="checkbox7" value="2" name="DL_276_Magistrado" type="checkbox">
                                                     <label for="checkbox7"> DL_276</label>
 
                                                 </div>
@@ -159,15 +159,18 @@
                                             <label style="color: black" class="radio-inline"></label>
 
                                             <label style="margin-left: 15px;">Trabajadores: <div  class="checkbox checkbox-success checkbox-circle" >
-                                                    <input id="checkbox7" name="DL_1057_Trabajador_1" type="checkbox">
+                                                    <input id="checkbox7" value="3" name="DL_1057_Trabajador_1" type="checkbox">
                                                     <label for="checkbox7"> DL 728 fijo</label>
 
                                                 </div>
                                             </label>
+                                            <label style="margin-left: 15px;">Fotocheck: <div  class="checkbox checkbox-success checkbox-circle" >
+                                                    <input id="Fotocheck"  readonly value="4"   name="Fotocheck" type="checkbox">
+                                                    <label for="checkbox7"> Cuentan con Fotocheck</label>
 
-                                            <div style="margin-left: 40px;" class="checkbox checkbox-primary checkbox-circle">
-                                                <input id="checkbox-10" value="" name="Fotocheck" type="checkbox" checked="checked">
-                                                <label for="checkbox-10"> Cuentan con Fotocheck </label></div>
+                                                </div>
+                                            </label>
+
 
                                             <h4 style="margin-left: 15px;" >OBSERVACION</h4>
                                             <h6 style="margin-left: 20px;">ACCIONES QUE LA ADMINISTRACIÓN DE LA CORTE ADOPTA PARA SUBSANAR LA(S) DEFICIENCIA (S) ENCONTRADA (S): INDICAR PLAZO</h6><br>
