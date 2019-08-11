@@ -998,6 +998,7 @@
         $('.nav-tabs > li a[title]').tooltip();
 
         //Wizard
+        /*
         $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
 
             var $target = $(e.target);
@@ -1006,7 +1007,7 @@
                 return false;
             }
         });
-
+*/
         $(".next-step").click(function (e) {
 
             var $active = $('.wizard .nav-tabs li.active');
