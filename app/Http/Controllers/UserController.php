@@ -19,7 +19,7 @@ class UserController extends Controller
 
     public function index(Request $request){
         $rol=Rol::all();
-        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol");
+        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario,CONCAT(usuario.nombre,' ',usuario.Apellidos) nombres,usuario.Telefono,usuario.DNI,usuario.direccion FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol");
         if($request->ajax()){
             return Datatables::of($use)->make(true);
         }
@@ -32,19 +32,24 @@ class UserController extends Controller
     }
     public function store(Request $request){
         $user=new User();
-        $user->email=$request->usuarios;
+        $user->email=$request->usuario;
         $user->password=bcrypt($request->password);
-        if($user->imagen===null){
-            if(Input::HasFile('imagen')){
-                $file=Input::file('imagen');
-                $file->move(public_path().'/Imagenes/Usuarios',$file->getClientOriginalName());
-                $user->imagen=$file->getClientOriginalName();
+        if($user->imagen==null){
+            if(Input::HasFile('foto')){
+                $file = Input::file('foto');
+                $file->move(public_path() . '/Imagenes/Usuario', $file->getClientOriginalName());
+                $user->imagen = $file->getClientOriginalName();
             }
         } else{
             $user->imagen='descarga.png';
         }
         $user->Rol_idRol=$request->rol;
         $user->estado=2;
+        $user->nombre=$request->nombre;
+        $user->Apellidos=$request->apellidos;
+        $user->Telefono=$request->telefono;
+        $user->DNI=$request->dni;
+        $user->direccion=$request->direccion;
         $user->save();
         return response()->json(array("success"=>true));
 
@@ -74,28 +79,9 @@ class UserController extends Controller
 
     }
     public function detalle($id){
-     $detalle=DB::SELECT("SELECT * from 
-administrativa,
-adminmagistrado,
-subaministracion,
-areas_judiciales_apoyo, 
-aspectos_generales_inmueble, 
-aspectos_informaticos,
-aspectos_logisticos, 
-aspectos_seguridad,
-auxilio_judicial,
-cobranzas_multas_certificados, 
-cuerpos_delito_efectos,
-mobiliario, 
-peritos_judiciales,
-personal, 
-recaudacion_judicial, 
-servicios_basicos,
-servicio_judiciales, 
-suministro_materiales, 
-usuario
-WHERE administrativa.idMagiatradi=adminmagistrado.idMagistrados 
-and administrativa.idsubAministracion=subaministracion.id_subAministracion
+     $detalle=DB::SELECT(
+         "SELECT * from administrativa,adminmagistrado,subaministracion,areas_judiciales_apoyo, aspectos_generales_inmueble, aspectos_informaticos,aspectos_logisticos, aspectos_seguridad,auxilio_judicial,cobranzas_multas_certificados, cuerpos_delito_efectos,mobiliario, peritos_judiciales,personal, recaudacion_judicial, servicios_basicos,servicio_judiciales, 
+          suministro_materiales, usuario WHERE administrativa.idMagiatradi=adminmagistrado.idMagistrados and administrativa.idsubAministracion=subaministracion.id_subAministracion
 and administrativa.Usuario_idUsuario=usuario.idUsuario 
 and areas_judiciales_apoyo.Usuario_idUsuario=usuario.idUsuario
 and aspectos_generales_inmueble.Usuario_idUsuario=usuario.idUsuario 
