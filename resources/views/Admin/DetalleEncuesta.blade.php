@@ -1,4 +1,4 @@
-<!-- Modal -->
+
 <div class="modal fade" id="DetalleEncuesta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" style="width:1200px;" role="document">
         <div class="modal-content">
@@ -125,6 +125,7 @@
                                             <div class="panel panel-color panel-success">
                                                 <div class="panel-heading">
                                                     <h3 class="panel-title">Personal</h3>
+
                                                 </div><div class="panel-body">
                                                     <div class="col-12"style="width: 80%;height: auto">
                                                         <p style="margin-left: 10px;">Indicar número de trabajadores (incluyendo al Magistrado) que laboran en el órgano jurisdiccional
@@ -1592,7 +1593,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                             <ul class="list-inline pull-right">
                                                 <li><button type="button" class="btn btn-danger prev-step">
                                                         Anterior</button></li>
-                                                <li><a href="#" class="btn btn-primary btn-primary">PDF <span class="glyphicon glyphicon-download-alt"></span></a></li>
+                                                <li><a href="{{url('pdf')}}" class="btn btn-primary btn-primary">PDF <span class="glyphicon glyphicon-download-alt"></span></a></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>

@@ -1,5 +1,19 @@
 @extends('Principal.principal')
 @section('contenido')
+    <style>
+        .subir{
+            padding: 5px 10px;
+            background: #f55d3e;
+            margin-left: 190px;
+            color:#fff;
+            border:0px solid #fff;
+        }
+
+        .subir:hover{
+            color:#fff;
+            background: #f7cb15;
+        }
+    </style>
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-primary">
@@ -25,7 +39,7 @@
     </div>
     <!-- RegisUsuarios -->
     <div class="modal fade update" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">REGISTRAR USUARIOS</h5>
@@ -35,41 +49,103 @@
                 </div>
                 <div class="modal-body">
                     <div class="panel-body">
-                        <form class="form-horizontal" accept-charset="UTF-8" enctype="multipart/form-data" id="FormRegister">
-                            @csrf
-                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-3 control-label">Usuario</label>
-                                <div class="col-sm-9">
-                                    <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
-                                </div>
-                                <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Usuario">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-tabs navtab-bg col-lg-12">
+                                <li class="active">
+                                    <a title="Usuarios" href="#home" data-toggle="tab" aria-expanded="true">
+                                        <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                        <span class="hidden-xs" ><i class="glyphicon glyphicon-user"></i></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a title="Datos Personales"  href="#profile" data-toggle="tab" aria-expanded="false">
+                                        <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                        <span class="hidden-xs"><i class="glyphicon glyphicon-credit-card"></i></span>
+                                    </a>
+                                </li>
 
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Contraseña</label>
-                                <div class="col-sm-9"> <input type="password" name="password" class="form-control" id="password" placeholder="Password"></div>
-                            </div>
-                            <div class="form-group">
-                                <label  id="imagen" for="file" class="col-sm-3 control-label">Imagen</label>
-                                <div class="col-sm-9">
-                                    <input type="file" class="form-control" id="file" name="file" required />
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home"><br>
+                                    <h4 style="text-align: center">Credenciales de Iniciar Sesion</h4><br>
+
+                                    <form class="form-horizontal" accept-charset="UTF-8" enctype="multipart/form-data" id="FormRegister">
+                                        @csrf
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">Usuario</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Escriba aqui....">
+                                            </div>
+                                            <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Usuario">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Contraseña</label>
+                                            <div class="col-sm-9"> <input type="password" name="password" class="form-control" id="password" placeholder="*******"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputPassword4" class="col-sm-3 control-label">Rol</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" id="rol" name="rol">
+                                                    @foreach($rol as $r)
+                                                        <option value="{{$r->idRol}}">{{$r->Nombre_Rol}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane" id="profile"><br>
+                                    <h4 style="text-align: center">DATOS PERSONALES</h4><br>
+                                    <form class="form-horizontal" accept-charset="UTF-8" enctype="multipart/form-data" id="FormRegister">
+                                        @csrf
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">Nombre</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Escriba aqui....">
+                                            </div>
+                                            <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Escriba aqui....">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Apellidos</label>
+                                            <div class="col-sm-9"> <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Escriba aqui...."></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Telefono</label>
+                                            <div class="col-sm-9"> <input type="number" name="telefono" class="form-control" id="telefono" placeholder="Escriba aqui...."></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Dni</label>
+                                            <div class="col-sm-9"> <input type="number" name="dni" class="form-control" id="dni" placeholder="Escriba aqui...."></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Direccion</label>
+                                            <div class="col-sm-9"> <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Escriba aqui...."></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Foto</label>
+
+                                            <label for="file-upload" class="subir">
+                                                <i class="fas fa-cloud-upload-alt"></i> Subir archivo
+                                            </label>
+                                            <div class="col-sm-9">
+                                                <input id="file-upload" onchange='cambiar()' type="file" style='display: none;'/>
+                                                <div style="margin-left: 250px;" id="info"></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="submit" id="Registrar" class="btn btn-success">Registrar</button>
+                                        </div>
+                                    </form>
+
+
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword4" class="col-sm-3 control-label">Rol</label>
-                                <div class="col-sm-9">
-                                    <select class="form-control" id="rol" name="rol">
-                                        @foreach($rol as $r)
-                                            <option value="{{$r->idRol}}">{{$r->Nombre_Rol}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" id="Registrar" class="btn btn-info">Registrar</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
@@ -156,7 +232,7 @@
             },
             ajax: '{{url('Usuarios')}}',
             columns: [
-                {data: 'Usuario', name: 'Usuario'},
+                {data: 'email', name: 'email'},
                 {data: 'Nombre_Rol', name: 'Nombre_Rol'},
                 {"mRender": function ( data, type, row ) {
                         return '<a style="margin-left: 5px" class="btn btn-success btnEdit" data-edit="/Usuarios/'+row.idUsuario +'/edit" ><i class="fa fa-edit text-warning"></i></a>' +
@@ -171,7 +247,6 @@
           e.preventDefault();
           var data=$('#file').val();
           var frm=$('#FormRegister');
-          alert(data);
           $.ajaxSetup({
               headers: {
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -210,7 +285,7 @@
                 success:function(response){
                     $.each(response.user,function (index,val) {
                         $('#ActualizarModal').modal('show');
-                        $('#usuario_up').val(val.Usuario);
+                        $('#usuario_up').val(val.email);
                         $('#idusuario_up').val(val.idUsuario);
 
                         $.each(response.rol,function (index,va) {
@@ -255,6 +330,10 @@
         });
 */
     });
+    function cambiar(){
+        var pdrs = document.getElementById('file-upload').files[0].name;
+        document.getElementById('info').innerHTML = pdrs;
+    }
     function hola() {
         $('#Actualizar').click(function (e) {
             var id=$('#idusuario_up').val();
@@ -302,7 +381,7 @@
                dataType:'json',
                success:function (response) {
                    $.each(response,function (index,val) {
-                       $('#user').html(val.Usuario);
+                       $('#user').html(val.email);
                        $('#Precidente_corte').val(val.Presidente_corte);
                        $('#Gerente_Administrativo').val(val.Gerente_Administrativo);
                        $('#Magistrado').val(val.magistrados);

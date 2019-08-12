@@ -23,3 +23,4 @@ Route::resource('Encuestas','EncuestaController');
 Route::post('registrar','EncuestaController@hola');
 Route::get('BuscarOrgano/{idMagistrados}','EncuestaController@Buscar');
 Route::get('Detalle/{idUsuario}','UserController@detalle');
+Route::get('pdf', 'EncuestaController@pdf');

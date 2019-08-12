@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-</head>
+</head><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <body class="fixed-left"><div id="wrapper"><div class="topbar">
         <div class="topbar-left"><div class="text-center">
                 <a href="index.html" class="logo">
@@ -73,7 +73,7 @@
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
                                 <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle">
-                                <span class="profile-username"> {{Auth::user()->Usuario}}<br/> <small>Developer</small> </span>
+                                <span class="profile-username"> {{Auth::user()->email}}<br/> <small>Developer</small> </span>
                             </a><ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a></li><li>
                                     <a href="javascript:void(0)"><span class="badge badge-success pull-right">5</span> Settings </a>
                                 </li>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="user-info">
                     <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{Auth::user()->Usuario}}</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{Auth::user()->email}}</a>
                         <ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a>
                             </li>
                             <li>

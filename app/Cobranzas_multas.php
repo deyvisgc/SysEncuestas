@@ -16,6 +16,6 @@ class Cobranzas_multas extends Model
         'Condicion_tres_Precidencia_corte','Condicion_tres_Cargo_Remision','Condicion_tres_Nota',
         'Condicion_cuatro','Condicion_sinco',
         'Condicion_seis','Cobranza_acciones_uno','Cobranzas_acciones_dos',
-        'Cobranzas_acciones_tres','Usuario_idUsuario',
+        'Cobranzas_acciones_tres','Usuario_idUsuario','estado_user',
     ];
 }

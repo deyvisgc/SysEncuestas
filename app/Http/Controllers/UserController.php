@@ -19,7 +19,7 @@ class UserController extends Controller
 
     public function index(Request $request){
         $rol=Rol::all();
-        $use=DB::select("SELECT Usuario.Usuario,rol.Nombre_Rol,Usuario.idUsuario FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol");
+        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol");
         if($request->ajax()){
             return Datatables::of($use)->make(true);
         }
@@ -32,7 +32,7 @@ class UserController extends Controller
     }
     public function store(Request $request){
         $user=new User();
-        $user->Usuario=$request->usuarios;
+        $user->email=$request->usuarios;
         $user->password=bcrypt($request->password);
         if($user->imagen===null){
             if(Input::HasFile('imagen')){
@@ -44,6 +44,7 @@ class UserController extends Controller
             $user->imagen='descarga.png';
         }
         $user->Rol_idRol=$request->rol;
+        $user->estado=2;
         $user->save();
         return response()->json(array("success"=>true));
 
@@ -54,7 +55,7 @@ class UserController extends Controller
 
     public function edit($id){
         $rol=Rol::all();
-        $user=DB::select("Select * from Usuario where  idUsuario=$id");
+        $user=DB::select("Select * from usuario where  idUsuario=$id");
         $data=array('rol'=>$rol,'user'=>$user);
         return response()->json($data);
 
@@ -63,7 +64,7 @@ class UserController extends Controller
 
     public function update(Request $request,$id){
         $user=User::find($id);
-        $user->Usuario=$request->usuario_up;
+        $user->email=$request->usuario_up;
         $user->Rol_idRol=$request->rol_update;
         $user->save();
         return response()->json(array("success"=>true));

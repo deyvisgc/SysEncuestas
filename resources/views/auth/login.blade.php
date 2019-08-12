@@ -24,8 +24,8 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <input class="form-control" type="text" name="Usuario" value="{{ old('Usuario') }}"   placeholder="Usuario"></div>
-                    @error('Usuario')
+                        <input class="form-control" type="text" name="email" value="{{ old('email') }}"   placeholder="Usuario"></div>
+                    @error('password')
                     <span class="invalid-feedback" role="alert">
                 <strong style="color: red" >{{$message}}</strong></span>
                     @enderror
@@ -44,7 +44,11 @@
                         <button class="btn btn-primary btn-block btn-lg waves-effect waves-light {{ __('Ingresar') }}" type="submit">Entrar</button></div>
                 </div>
                 <div class="form-group m-t-30 m-b-0">
-                    <div class="col-sm-7"> <a href="#" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a></div>
+                    @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a>
+                    @endif
                     <div class="col-sm-5 text-right"> <a href="#" class="text-muted">Create an account</a></div>
                 </div>
             </form>
