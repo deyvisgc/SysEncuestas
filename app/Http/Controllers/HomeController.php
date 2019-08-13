@@ -25,4 +25,7 @@ class HomeController extends Controller
     {
         return view('Principal.principal');
     }
+    public function mensaje(){
+        return view('Admin.mensaje');
+    }
 }

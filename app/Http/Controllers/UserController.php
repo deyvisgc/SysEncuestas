@@ -41,7 +41,7 @@ class UserController extends Controller
                 $user->imagen = $file->getClientOriginalName();
             }
         } else{
-            $user->imagen='descarga.png';
+            $user->imagen='descarga.jpg';
         }
         $user->Rol_idRol=$request->rol;
         $user->estado=2;

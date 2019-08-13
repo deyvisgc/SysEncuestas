@@ -392,11 +392,17 @@
 
        function detalleEncuesta(id) {
          //  alert($('input:checkbox[name=colorfavorito]:checked').val());
+           var frm=$("#regisEncuestas,#form_personal_Observaciones,#regisPersona");
            $.ajax({
                url:'{{url('Detalle')}}/'+id,
                type:'get',
                dataType:'json',
                success:function (response) {
+                   if(response.length == 0){
+                       frm.trigger('reset');
+                       $('#user').html("");
+                       return;
+                   }
                    $.each(response,function (index,val) {
                        $('#user').html(val.email);
                        $('#Precidente_corte').val(val.Presidente_corte);
