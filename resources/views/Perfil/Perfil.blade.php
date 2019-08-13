@@ -265,7 +265,9 @@
                     success:function (response) {
 
                         $.each(response,function (index,val) {
-                            alert(val.nombre);
+                            $('#ActualizarPerfil').modal('show');
+
+                            $('#user_Perfil').val(val.email);
 
                         })
                     }

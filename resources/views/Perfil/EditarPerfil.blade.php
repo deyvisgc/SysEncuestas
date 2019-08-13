@@ -25,31 +25,27 @@
                             </li>
 
                         </ul>
-                        <form class="form-horizontal"  accept-charset="UTF-8" enctype="multipart/form-data" id="FormRegister">
+                        <form class="form-horizontal"  accept-charset="UTF-8" enctype="multipart/form-data" id="FormRegister"><br><br><br>
 
                             <div class="tab-content" style="width: 100%" >
 
-                                <div class="tab-pane active" id="home"><br>
+                                <div class="tab-pane active" id="home">
                                     <h4 style="text-align: center">Credenciales de Iniciar Sesion</h4><br>
 
                                     @csrf
                                     <div class="form-group" >
                                         <label for="inputEmail3" class="col-sm-3 control-label">Usuario</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Escriba aqui....">
+                                            <input type="text" name="user_Perfil" class="form-control" id="user_Perfil" placeholder="Escriba aqui....">
                                         </div>
                                         <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Usuario">
 
-                                    </div>
-                                    <div class="form-group" >
-                                        <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Contraseña</label>
-                                        <div class="col-sm-7"> <input type="password" name="password" class="form-control" id="password" placeholder="*******"></div>
                                     </div>
 
                                     <div class="form-group" >
                                         <label for="inputPassword4" class="col-sm-3 control-label">Rol</label>
                                         <div class="col-sm-7">
-                                            <select class="form-control" id="rol" name="rol">
+                                            <select class="form-control" id="rol_Perfil" name="rol_Perfil">
                                             </select>
                                         </div>
                                     </div>
@@ -62,37 +58,26 @@
                                     <div class="form-group"  >
                                         <label for="inputEmail3" class="col-sm-3 control-label">Nombre</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Escriba aqui....">
+                                            <input type="text" name="nombre" class="form-control" id="nombre_Perfil" placeholder="Escriba aqui....">
                                         </div>
-                                        <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Escriba aqui....">
+
 
                                     </div>
                                     <div class="form-group" >
                                         <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Apellidos</label>
-                                        <div class="col-sm-7"> <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Escriba aqui...."></div>
+                                        <div class="col-sm-7"> <input type="text" name="apellidos" class="form-control" id="apellidos_perfil" placeholder="Escriba aqui...."></div>
                                     </div>
                                     <div class="form-group"  >
                                         <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Telefono</label>
-                                        <div class="col-sm-7"> <input type="number" name="telefono" class="form-control" id="telefono" placeholder="Escriba aqui...."></div>
+                                        <div class="col-sm-7"> <input type="number" name="telefono" class="form-control" id="telefono_perfil" placeholder="Escriba aqui...."></div>
                                     </div>
                                     <div class="form-group" >
                                         <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Dni</label>
-                                        <div class="col-sm-7"> <input type="number" name="dni" class="form-control" id="dni" placeholder="Escriba aqui...."></div>
+                                        <div class="col-sm-7"> <input type="number" name="dni" class="form-control" id="dni_perfil" placeholder="Escriba aqui...."></div>
                                     </div>
                                     <div class="form-group" >
                                         <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Direccion</label>
-                                        <div class="col-sm-7"> <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Escriba aqui...."></div>
-                                    </div>
-                                    <div class="form-group" >
-                                        <label for="inputPassword3" id="contra" class="col-sm-3 control-label">Foto</label>
-
-                                        <label for="file-upload" class="subir">
-                                            <i class="fas fa-cloud-upload-alt"></i> Subir archivo
-                                        </label>
-                                        <div class="col-sm-7">
-                                            <input id="file-upload" name="foto" onchange='cambiar()' type="file" style='display: none;'/>
-                                            <div style="margin-left: 250px;" id="info"></div>
-                                        </div>
+                                        <div class="col-sm-7"> <input type="text" name="direccion" class="form-control" id="direccion_perfil" placeholder="Escriba aqui...."></div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
