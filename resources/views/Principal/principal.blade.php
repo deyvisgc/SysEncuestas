@@ -72,9 +72,15 @@
                             </a>
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
-                                <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle">
-                                <span class="profile-username"> {{Auth::user()->email}}<br/> <small>Developer</small> </span>
-                            </a><ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a></li><li>
+
+
+                                @if(Auth::user()->imagen=='')
+                                    <img src="{{asset('descarga.jpg')}}" alt="profile" class="img-circle"/>
+                                @elseif(Auth::user()->imagen)
+                                    <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" alt="profile" class="img-circle"/>
+                                @endif
+                                <span class="profile-username"> {{Auth::user()->nombre}} {{Auth::user()->Apellidos}}<br/> <small>Developer</small> </span>
+                            </a><ul class="dropdown-menu"><li><a href="{{url('Perfil')}}"> Profile</a></li><li>
                                     <a href="javascript:void(0)"><span class="badge badge-success pull-right">5</span> Settings </a>
                                 </li>
                                 <li>
@@ -97,7 +103,12 @@
         <div class="sidebar-inner slimscrollleft">
             <div class="user-details">
                 <div class="text-center">
-                    <img src="assets/images/users/avatar-1.jpg" alt="" class="img-circle">
+                    @if(Auth::user()->imagen=='')
+                        <img src="{{asset('descarga.jpg')}}" alt="profile" class="img-circle"/>
+                    @elseif(Auth::user()->imagen)
+                        <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" alt="profile" class="img-circle"/>
+                    @endif
+
                 </div>
                 <div class="user-info">
                     <div class="dropdown">
@@ -127,11 +138,13 @@
                         </i> Online</p></div></div><div id="sidebar-menu">
                      <ul>
                     <li>
-                        <a href="#" class="waves-effect">
+                        <a href="{{url('home')}}" class="waves-effect">
                             <i class="mdi mdi-home"></i>
-                            <span> Dashboard <span class="badge badge-primary pull-right">1</span></span>
+                            <span> Home <span class="badge badge-primary pull-right">1</span></span>
                         </a>
                     </li>
+                         @if(Auth::user()->Rol_idRol==1)
+
                          <li class="has_sub">
                              <a href="javascript:void(0);" class="waves-effect">
                                  <i class="mdi mdi-album"></i>
@@ -146,6 +159,7 @@
                                  <li>
                              </ul>
                          </li>
+                         @endif
                          <li class="has_sub">
                              <a href="javascript:void(0);" class="waves-effect">
                                  <i class="mdi mdi-opacity"></i>
@@ -185,7 +199,8 @@
     </div>
 </div>
 
-<script src="assets/js/jquery.min.js"></script>php
+<script src="assets/js/jquery.min.js"></script>
+<script src="js/ValidacionEncuesta.js"></script>
 <script src="assets/js/modernizr.min.js"></script>
 <script src="assets/js/detect.js"></script>
 <script src="assets/js/fastclick.js"></script>
@@ -205,6 +220,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 <!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5682efe7f6.js"></script>
 
 @yield('script')
 <script>

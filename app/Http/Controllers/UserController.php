@@ -41,7 +41,7 @@ class UserController extends Controller
                 $user->imagen = $file->getClientOriginalName();
             }
         } else{
-            $user->imagen='descarga.png';
+            $user->imagen='descarga.jpg';
         }
         $user->Rol_idRol=$request->rol;
         $user->estado=2;
@@ -103,6 +103,25 @@ and usuario.idUsuario=$id");
      return response()->json($detalle);
 
 
+    }
+    public function Registrar(Request $request,$id){
+        $this->validate($request,[
+            'imagen'=>'required |image',
+        ]);
+        $user=User::find($id);
+        $image_path="Imagenes/Usuario/$user->imagen";
+        if(\File::exists(Public_path($image_path))){
+            \File::delete(Public_path($image_path));
+        }
+        if(Input::HasFile('holaaa')){
+            $file=Input::file('holaaa');
+            $file->move(public_path().'/Imagenes/Usuario',$file->getClientOriginalName());
+            $user->imagen=$file->getClientOriginalName();
+        }
+        $user->save();
+        $data['succes']=true;
+        $data['foto']=$user;
+        return response()->json($data);
     }
 
 }

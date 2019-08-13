@@ -117,7 +117,10 @@
                                                                 </div><br><br>
                                                                 <div class="form-group">
                                                                     <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Dirección  <label>:</label></label>
-                                                                    <div class="col-sm-9"> <input type="text" name="direccion"  placeholder="Escribia aqui.." class="form-control" id="password" ></div>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" name="direccion"  placeholder="Escribia aqui.." class="form-control" id="direccion" >
+                                                                        <div id='msg_name'></div>
+                                                                    </div>
                                                                 </div><br><br>
                                                                 <div class="form-group">
                                                                     <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Fecha de programación  <label>:</label></label>
@@ -139,7 +142,7 @@
 
 
                                                 <ul class="list-inline pull-right">
-                                                    <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                    <li><button id="valida" type="button" class="btn btn-primary next-step">Next</button></li>
                                                 </ul>
                                             </div>
 
@@ -1746,10 +1749,65 @@ realizar y plazo para dar la solución.</textarea></td>
         });
 
         $(".next-step").click(function (e) {
+            var direcc=$('#direccion').val();
+if(direcc==''){
+    alert("ssdsd")
+    $('#direccion').blur(function(){
 
-            var $active = $('.wizard .nav-tabs li.active');
-            $active.next().removeClass('disabled');
-            nextTab($active);
+        var name = $(this).val();
+
+        if(name==''){
+
+            $('#name').addClass('error_jquery');
+            $('#msg_name').html('El campo direccion es requerido');
+        }else{
+
+            $('#name').removeClass('error_jquery');
+            $('#msg_name').html('');
+        }
+
+    });
+
+    $('#phone').blur(function(){
+
+        var phone = $(this).val();    // colocamos el contenido del (div phone) en la variable phone
+
+        if(phone==''){
+            $('#phone').addClass('error_jquery'); // añadimos una clase al div phone
+            $('#msg_phone').html('El campo Teléfono es requerido'); // añadimos el mensaje
+        }else if(isNaN(phone)){ // evalua si es númerico
+
+            $('#msg_phone').html(''); // dejamos en blanco el div para colocar el otro mensaje
+            $('#msg_phone').html('El Teléfono debe ser númerico');
+
+        }else{
+            // si no hay errores removemos la clase error_jquery y dejamos el div vacio
+            $('#phone').removeClass('error_jquery');
+            $('#msg_phone').html('');
+
+        }
+    });
+
+    $('#address').blur(function(){
+
+        var address = $(this).val();
+
+        if(address==''){
+
+            $('#address').addClass('error_jquery');
+            $('#msg_address').html('El campo Ciudad y dirección es requerido');
+        }else{
+
+            $('#address').removeClass('error_jquery');
+            $('#msg_address').html('');
+        }
+
+    });
+}else{
+    var $active = $('.wizard .nav-tabs li.active');
+    $active.next().removeClass('disabled');
+    nextTab($active);
+}
 
         });
         $(".prev-step").click(function (e) {
@@ -1762,7 +1820,13 @@ realizar y plazo para dar la solución.</textarea></td>
     });
 
     function nextTab(elem) {
-        $(elem).next().find('a[data-toggle="tab"]').click();
+        if ($('#direccion').val==''){
+            alert("hola")
+        } else {
+
+            $(elem).next().find('a[data-toggle="tab"]').click();
+        }
+
     }
     function prevTab(elem) {
         $(elem).prev().find('a[data-toggle="tab"]').click();
