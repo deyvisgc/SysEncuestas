@@ -98,7 +98,7 @@
                                                                 <div class="form-group">
                                                                     <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">Magistrado <label>:</label></label>
                                                                     <div class="col-sm-9">
-                                                                        <select class="selectpicker form-control" id="magis" name="magistrados" data-live-search="true">
+                                                                        <select class="selectpicker form-control" id="magis" name="magis" data-live-search="true">
                                                                             <option data-tokens="ketchup mustard" value="" disabled selected>SELECCIONAR MAGISTRADO</option>
                                                                             @foreach($magistrados as $ma)
                                                                                 <option value="{{$ma->idMagistrados}}">{{$ma->magistrados}}</option>
@@ -118,17 +118,24 @@
                                                                 <div class="form-group">
                                                                     <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Dirección  <label>:</label></label>
                                                                     <div class="col-sm-9">
-                                                                        <input type="text" name="direccion"  placeholder="Escribia aqui.." class="form-control" id="direccion" >
-                                                                        <div id='msg_name'></div>
+                                                                        <input type="text" name="direccion"  placeholder="Escribia aqui.." class="form-control" id="direccion"  onkeyup="validacion('direccion');">
+                                                                        <span class="help-block"></span>
                                                                     </div>
                                                                 </div><br><br>
                                                                 <div class="form-group">
                                                                     <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Fecha de programación  <label>:</label></label>
-                                                                    <div class="col-sm-9"> <input type="date" name="fecha_progra"  placeholder="Escribia aqui.." class="form-control" id="fecha_progra" ></div>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" name="fecha_progra"  placeholder="Escribia aqui.." class="form-control" id="fecha_progra"onkeyup="validacion('fecha_progra');" >
+                                                                        <span class="help-block"></span>
+                                                                    </div>
                                                                 </div><br><br>
                                                                 <div class="form-group">
                                                                     <label for="inputPassword3" id="contra" class="col-sm-3 control-label"style="color: black">Fecha de Ejecución <label>:</label></label>
-                                                                    <div class="col-sm-9"> <input type="date" name="fecha_ejecu"  placeholder="Escribia aqui.." class="form-control" id="fecha_ejecu" ></div>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" name="fecha_ejecu"  placeholder="Escribia aqui.." class="form-control" id="fecha_ejecu" onkeyup="validacion('fecha_ejecu');" >
+                                                                        <span class="help-block"></span>
+                                                                    </div>
+
                                                                 </div>
 
 
@@ -162,7 +169,8 @@
                                                             <div class="form-group">
                                                                 <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">PERSONAL TOTAL:</label>
                                                                 <div class="col-sm-9">
-                                                                    <input type="number" name="personal_total" style="margin-right: 10px;"  class="form-control"  id="personal_total" placeholder="Escribia aqui.." >
+                                                                    <input type="number" name="personal_total" style="margin-right: 10px;"  class="form-control"  id="personal_total" onkeyup="validacion('personal_total');" placeholder="Escribia aqui.." >
+                                                                    <span class="help-block"></span>
                                                                 </div>
                                                             </div>
                                                         </form>
@@ -208,13 +216,15 @@
                                                             <div class="form-group">
                                                                 <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">1:</label>
                                                                 <div class="col-sm-9">
-                                                                    <input type="text" name="observacion_1_Personal" style="margin-right: 10px;"  class="form-control"   id="observacion_1_Personal" placeholder="Escribia aqui.." >
+                                                                    <input type="text" name="observacion_1_Personal" style="margin-right: 10px;"  class="form-control"  onkeyup="validacion('observacion_1_Personal');"  id="observacion_1_Personal" placeholder="Escribia aqui.." >
+                                                                    <span class="help-block"></span>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="inputEmail3" class="col-sm-3 control-label" style="color: black">2:</label>
                                                                 <div class="col-sm-9">
-                                                                    <input type="text" name="observacion_2_Personal" style="margin-right: 10px;"  class="form-control"  id="observacion_2_Personal" placeholder="Escribia aqui.." >
+                                                                    <input type="text" name="observacion_2_Personal" style="margin-right: 10px;"  class="form-control" onkeyup="validacion('observacion_2_Personal');" id="observacion_2_Personal" placeholder="Escribia aqui.." >
+                                                                    <span class="help-block"></span>
                                                                 </div>
                                                             </div>
                                                         </form>
@@ -236,45 +246,157 @@
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Mesa de Partes o Centro de Distribución General</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Mesa_Partes_areas_apoyo_Deficiencias" name="Mesa_Partes_areas_apoyo_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Mesa_Partes_areas_apoyo_Acciones"  name="Mesa_Partes_areas_apoyo_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div class="">
+                                                                                      <textarea class="form-control"  rows="2" id="Mesa_Partes_areas_apoyo_Deficiencias" onkeyup="validacion('Mesa_Partes_areas_apoyo_Deficiencias');"  name="Mesa_Partes_areas_apoyo_Deficiencias"  style="color: black;font-weight: bold;" >
+
+                                                                                </textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="">
+                                                                                     <textarea class="form-control"  rows="2" id="Mesa_Partes_areas_apoyo_Acciones" onkeyup="validacion('Mesa_Partes_areas_apoyo_Acciones');"  name="Mesa_Partes_areas_apoyo_Acciones"  style="color: black;font-weight: bold;" >
+
+                                                                                </textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Archivo Jurisdiccional" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="archivo_areas_apoyo_Deficiencias" name="archivo_areas_apoyo_Deficiencias"  /></td>
-                                                                            <td><input type="text" class="form-control" id="archivo_areas_apoyo_Acciones" name="archivo_areas_apoyo_Acciones"  /></td>
+                                                                            <td>
+                                                                               <div class="">
+                                                                                   <input type="text" class="form-control" id="archivo_areas_apoyo_Deficiencias" onkeyup="validacion('archivo_areas_apoyo_Deficiencias');" name="archivo_areas_apoyo_Deficiencias"  />
+                                                                                   <span class="help-block"></span>
+                                                                               </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                            <div class="">
+                                                                                <input type="text" class="form-control" id="archivo_areas_apoyo_Acciones" onkeyup="validacion('archivo_areas_apoyo_Acciones');" name="archivo_areas_apoyo_Acciones"  />
+                                                                                <span class="help-block"></span>
+                                                                            </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Notificaciones Judiciales"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Notificaciones_areas_apoyo_Deficiencias" name="Notificaciones_areas_apoyo_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Notificaciones_areas_apoyo_Acciones" name="Notificaciones_areas_apoyo_Acciones" /></td>
+
+                                                                                <td>
+                                                                                    <div class="">
+                                                                                    <input type="text" class="form-control" id="Notificaciones_areas_apoyo_Deficiencias" name="Notificaciones_areas_apoyo_Deficiencias" onkeyup="validacion('Notificaciones_areas_apoyo_Deficiencias');" />
+                                                                                <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control" id="Notificaciones_areas_apoyo_Acciones" name="Notificaciones_areas_apoyo_Acciones"  onkeyup="validacion('Notificaciones_areas_apoyo_Acciones')"/>
+                                                                                <span class="help-block"></span>
+                                                                            </div>
+                                                                                </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Publicación de Edictos" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Publicaciones_areas_apoyo_Deficiencias" name="Publicaciones_areas_apoyo_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Publicaciones_areas_apoyo_Archivos" name="Publicaciones_areas_apoyo_Archivos"  /></td>
+
+                                                                                <td>
+                                                                                    <div >
+                                                                                        <input type="text" class="form-control"  id="Publicaciones_areas_apoyo_Deficiencias" onkeyup="validacion('Publicaciones_areas_apoyo_Deficiencias')"  name="Publicaciones_areas_apoyo_Deficiencias" />
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+                                                                                <td>
+                                                                                    <div >
+                                                                                    <input type="text" class="form-control" id="Publicaciones_areas_apoyo_Archivos"  onkeyup="validacion('Publicaciones_areas_apoyo_Archivos')" name="Publicaciones_areas_apoyo_Archivos"  />
+                                                                                    <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Convenio – RENIEC" style="color: black;font-weight: bold;"  /></td>
-                                                                            <td><input type="text" class="form-control" id="Convenio_reniec_areas_apoyo_Deficiencias" name="Convenio_reniec_areas_apoyo_Deficiencias"/></td>
-                                                                            <td><input type="text" class="form-control" id="Convenio_reniec_areas_apoyo_Acciones" name="Convenio_reniec_areas_apoyo_Acciones" /></td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <input type="text" class="form-control" id="Convenio_reniec_areas_apoyo_Deficiencias" onkeyup="validacion('Convenio_reniec_areas_apoyo_Deficiencias')" name="Convenio_reniec_areas_apoyo_Deficiencias"/>
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control" id="Convenio_reniec_areas_apoyo_Acciones" onkeyup="validacion('Convenio_reniec_areas_apoyo_Acciones')" name="Convenio_reniec_areas_apoyo_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Requisitorias"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Requisitorias_areas_apoyo_Deficiencias" name="Requisitorias_areas_apoyo_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Requisitorias_areas_apoyo_Acciones" name="Requisitorias_areas_apoyo_Acciones"/></td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control" id="Requisitorias_areas_apoyo_Deficiencias" onkeyup="validacion('Requisitorias_areas_apoyo_Deficiencias')" name="Requisitorias_areas_apoyo_Deficiencias" />
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control"  id="Requisitorias_areas_apoyo_Acciones" onkeyup="validacion('Requisitorias_areas_apoyo_Acciones')" name="Requisitorias_areas_apoyo_Acciones"/>
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+
+
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Otros." style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Otros_areas_apoyo_Deficiencias" name="Otros_areas_apoyo_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Otros_areas_apoyo_Acciones" name="Otros_areas_apoyo_Acciones" /></td>
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control"  id="Otros_areas_apoyo_Deficiencias"  onkeyup="validacion('Otros_areas_apoyo_Deficiencias')" name="Otros_areas_apoyo_Deficiencias" />
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <div>
+                                                                                    <input type="text" class="form-control" id="Otros_areas_apoyo_Acciones" onkeyup="validacion('Otros_areas_apoyo_Acciones')" name="Otros_areas_apoyo_Acciones" />
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_areas_apoyo_Deficiencias" name="subrasarse_areas_apoyo_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_areas_apoyo_Acciones" name="subrasarse_areas_apoyo_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción a realizar y plazo para dar la solución.</textarea></td>
+
+                                                                               <td>
+                                                                                   <div>
+                                                                                   <textarea class="form-control"  rows="3" id="subrasarse_areas_apoyo_Deficiencias" onkeyup="validacion('subrasarse_areas_apoyo_Deficiencias')" name="subrasarse_areas_apoyo_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                       <span class="help-block"></span>
+                                                                                   </div>
+                                                                               </td>
+
+
+
+                                                                                <td>
+                                                                                    <div>
+
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_areas_apoyo_Acciones" onkeyup="validacion('subrasarse_areas_apoyo_Acciones')" name="subrasarse_areas_apoyo_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                        <span class="help-block"></span>
+                                                                                    </div>
+                                                                                </td>
+
+
                                                                         </tr>
                                                                         </tbody>
                                                                     </table>
@@ -314,50 +436,151 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Mensajería</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Mensajería_aspectos_logisticos_Deficiencias" name="Mensajería_aspectos_logisticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Mensajería_aspectos_logisticos_Acciones"  name="Mensajería_aspectos_logisticos_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                             <div>
+                                                                                 <textarea class="form-control"  rows="2" id="Mensajería_aspectos_logisticos_Deficiencias" onkeyup="validacion('Mensajería_aspectos_logisticos_Deficiencias')" name="Mensajería_aspectos_logisticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                 <span class="help-block"></span>
+                                                                             </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="validacion('Mensajería_aspectos_logisticos_Acciones')"  rows="2" id="Mensajería_aspectos_logisticos_Acciones"  name="Mensajería_aspectos_logisticos_Acciones" onkeyup="validacion('Mensajería_aspectos_logisticos_Deficiencias')"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Fotocopiado" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Fotocopiado_aspectos_logisticos_Deficiencias" name="Fotocopiado_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Fotocopiado_aspectos_logisticos_Acciones"  name="Fotocopiado_aspectos_logisticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Fotocopiado_aspectos_logisticos_Deficiencias" onkeyup="validacion('Fotocopiado_aspectos_logisticos_Deficiencias')" name="Fotocopiado_aspectos_logisticos_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Fotocopiado_aspectos_logisticos_Acciones" onkeyup="validacion('Fotocopiado_aspectos_logisticos_Acciones')" name="Fotocopiado_aspectos_logisticos_Acciones" />
+                                                                                    <span class="help-block"></span>
+
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Limpieza"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Limpieza_aspectos_logisticos_Deficiencias" name="Limpieza_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Limpieza_aspectos_logisticos_Acciones" name="Limpieza_aspectos_logisticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Limpieza_aspectos_logisticos_Deficiencias" onkeyup="validacion('Limpieza_aspectos_logisticos_Deficiencias')" name="Limpieza_aspectos_logisticos_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Limpieza_aspectos_logisticos_Acciones" onkeyup="validacion('Limpieza_aspectos_logisticos_Acciones')" name="Limpieza_aspectos_logisticos_Acciones" />
+                                                                                    <span class="help-block"></span>
+
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Traducciones" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Traducciones_aspectos_logisticos_Deficiencias" name="Traducciones_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Traducciones_aspectos_logisticos_Archivos" name="Traducciones_aspectos_logisticos_Archivos" /></td>
+                                                                            <td>
+                                                                            <div>
+                                                                                <input type="text" class="form-control"  id="Traducciones_aspectos_logisticos_Deficiencias" onkeyup="validacion('Traducciones_aspectos_logisticos_Deficiencias')" name="Traducciones_aspectos_logisticos_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                            </div>
+                                                                            </td>
+                                                                            <td>
+                                                                             <div>
+                                                                                 <input type="text" class="form-control" id="Traducciones_aspectos_logisticos_Archivos" onkeyup="validacion('Traducciones_aspectos_logisticos_Archivos')" name="Traducciones_aspectos_logisticos_Archivos" />
+                                                                                 <span class="help-block"></span>
+
+                                                                             </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Publicaciones (Edictos)" style="color: black;font-weight: bold;"  /></td>
-                                                                            <td><input type="text" class="form-control" id="Publicaciones_aspectos_logisticos_Deficiencias" name="Publicaciones_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Publicaciones_aspectos_logisticos_Acciones"  name="Publicaciones_aspectos_logisticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="validacion('Publicaciones_aspectos_logisticos_Deficiencias')" id="Publicaciones_aspectos_logisticos_Deficiencias" name="Publicaciones_aspectos_logisticos_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                              <div>
+                                                                                  <input type="text" class="form-control" onkeyup="validacion('Publicaciones_aspectos_logisticos_Acciones')" id="Publicaciones_aspectos_logisticos_Acciones"  name="Publicaciones_aspectos_logisticos_Acciones" />
+                                                                                  <span class="help-block"></span>
+                                                                              </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Arrendamiento de Locales"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Arrendamiento_aspectos_logisticos_Deficiencias" name="Arrendamiento_aspectos_logisticos_Deficiencias"/></td>
-                                                                            <td><input type="text" class="form-control"  id="Arrendamiento_aspectos_logisticos_Acciones" name="Arrendamiento_aspectos_logisticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validacion('Arrendamiento_aspectos_logisticos_Deficiencias')" id="Arrendamiento_aspectos_logisticos_Deficiencias" name="Arrendamiento_aspectos_logisticos_Deficiencias"/>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validacion('Arrendamiento_aspectos_logisticos_Acciones')" id="Arrendamiento_aspectos_logisticos_Acciones" name="Arrendamiento_aspectos_logisticos_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Mantenimiento de Vehículos." style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias" name="Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Mantenimiento_vehiculos_aspectos_logisticos_Acciones" name="Mantenimiento_vehiculos_aspectos_logisticos_Acciones"/></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control"  onkeyup="validacion('Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias')" id="Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias" name="Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Mantenimiento_vehiculos_aspectos_logisticos_Acciones" onkeyup="validacion('Mantenimiento_vehiculos_aspectos_logisticos_Acciones')" name="Mantenimiento_vehiculos_aspectos_logisticos_Acciones"/>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Otros." style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Otros_aspectos_logisticos_Deficiencias" name="Otros_aspectos_logisticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Otros_aspectos_logisticos_Acciones" name="Otros_aspectos_logisticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control"  id="Otros_aspectos_logisticos_Deficiencias" onkeyup="validacion('Otros_aspectos_logisticos_Deficiencias')" name="Otros_aspectos_logisticos_Deficiencias" />
+
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Otros_aspectos_logisticos_Acciones" onkeyup="validacion('Otros_aspectos_logisticos_Acciones')" name="Otros_aspectos_logisticos_Acciones" />
+                                                                            <span class="help-block"></span>
+                                                                                 </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_logisticos_Deficiencias"  name="subrasarse_Aspectos_logisticos_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_logisticos_Acciones" name="subrasarse_Aspectos_logisticos_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción arealizar y plazo para dar la solución.</textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="3" id="subrasarse_Aspectos_logisticos_Deficiencias" onkeyup="validacion('subrasarse_Aspectos_logisticos_Deficiencias')"  name="subrasarse_Aspectos_logisticos_Deficiencias" style="color: black;font-weight: bold;" >
+                                                                                </textarea>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="3" id="subrasarse_Aspectos_logisticos_Acciones" onkeyup="validacion('subrasarse_Aspectos_logisticos_Acciones')" name="subrasarse_Aspectos_logisticos_Acciones" style="color: black;font-weight: bold;" >
+
+                                                                                </textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         </tbody>
                                                                     </table><br>
@@ -372,30 +595,83 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Energía Eléctrica</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Energía_servicio_bascios_Deficiencias"  name="Energía_setvicio_bascios_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Energía_servicio_bascios_Acciones" name="Energía_setvicio_bascios_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Energía_servicio_bascios_Deficiencias" onkeyup="validacion('Energía_servicio_bascios_Deficiencias')"  name="Energía_setvicio_bascios_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                               </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Energía_servicio_bascios_Acciones" onkeyup="validacion('Energía_servicio_bascios_Acciones')"  name="Energía_setvicio_bascios_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Agua" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Agua_servicio_bascios_Deficiencias" name="Agua_servicio_bascios_Deficiencias"  /></td>
-                                                                            <td><input type="text" class="form-control" id="Agua_servicio_bascios_Acciones" name="Agua_servicio_bascios_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Agua_servicio_bascios_Deficiencias" onkeyup="validacion('Agua_servicio_bascios_Deficiencias')" name="Agua_servicio_bascios_Deficiencias"/>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Agua_servicio_bascios_Acciones" onkeyup="validacion('Agua_servicio_bascios_Acciones')" name="Agua_servicio_bascios_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                    </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Telefonía / Internet"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Telefonía_servicio_bascios_Deficiencias"  name="Telefonía_servicio_bascios_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Telefonía_servicio_bascios_Acciones" name="Telefonía_servicio_bascios_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Telefonía_servicio_bascios_Deficiencias" onkeyup="validacion('Telefonía_servicio_bascios_Deficiencias')" name="Telefonía_servicio_bascios_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                <div>
+                                                                                <input type="text" class="form-control" id="Telefonía_servicio_bascios_Acciones" onkeyup="validacion('Telefonía_servicio_bascios_Acciones')" name="Telefonía_servicio_bascios_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Otros" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Otros_servicios_basicos_Deficiencias" name="Otros_servicios_basicos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Otros_servicios_basicos_Acciones" name="Otros_servicios_basicos_Acciones"  /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control"  id="Otros_servicios_basicos_Deficiencias" onkeyup="validacion('Otros_servicios_basicos_Deficiencias')" name="Otros_servicios_basicos_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Otros_servicios_basicos_Acciones" onkeyup="validacion('Otros_servicios_basicos_Acciones')" name="Otros_servicios_basicos_Acciones"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_servicios_basicos_Deficiencias"  name="subrasarse_servicios_basicos_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_servicios_basicos_Acciones" name="subrasarse_servicios_basicos_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción a realizar y plazo para dar la solución.</textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_servicios_basicos_Deficiencias" onkeyup="validacion('subrasarse_servicios_basicos_Deficiencias')" name="subrasarse_servicios_basicos_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_servicios_basicos_Acciones" onkeyup="validacion('subrasarse_servicios_basicos_Acciones')"  name="subrasarse_servicios_basicos_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+
                                                                         </tr>
                                                                         </tbody>
                                                                     </table><br>
@@ -435,43 +711,118 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         </thead>
                                                                         <tbody>
                                                                         <tr>
+
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Armarios / Archivadores</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Armarios_mobiliario_Deficiencias" name="Armarios_mobiliario_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Armarios_mobiliario_Acciones"  name="Armarios_mobiliario_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                            <div>
+                                                                                <textarea class="form-control"  onkeyup="validacion('Armarios_mobiliario_Deficiencias')" rows="2" id="Armarios_mobiliario_Deficiencias" name="Armarios_mobiliario_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+
+                                                                            </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"   onkeyup="validacion('Armarios_mobiliario_Acciones')" rows="2" id="Armarios_mobiliario_Acciones"  name="Armarios_mobiliario_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Estantería Metálica para
-archivos (Ángulos
-ranurados)</textarea></td>                                    <td><textarea class="form-control"  rows="3" id="Estantería_mobiliario_Deficiencias" name="Estantería_mobiliario_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Estantería Metálica para archivos (Ángulos ranurados)</textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="validacion('Estantería_mobiliario_Deficiencias')" rows="3" id="Estantería_mobiliario_Deficiencias" name="Estantería_mobiliario_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
 
-                                                                            <td><textarea class="form-control"  rows="3" id="Estantería_mobiliario_Acciones" name="Estantería_mobiliario_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"onkeyup="validacion('Estantería_mobiliario_Acciones')"  rows="3" id="Estantería_mobiliario_Acciones" name="Estantería_mobiliario_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Escritorios / Mesas"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Escritorios_mobiliario_Deficiencias" name="Escritorios_mobiliario_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Escritorios_mobiliario_Acciones" name="Escritorios_mobiliario_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Escritorios_mobiliario_Deficiencias" onkeyup="validacion('Escritorios_mobiliario_Deficiencias')"  name="Escritorios_mobiliario_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Escritorios_mobiliario_Acciones" onkeyup="validacion('Escritorios_mobiliario_Acciones')"  name="Escritorios_mobiliario_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Sillas / Sillones" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Sillas_mobiliario_Deficiencias" name="Sillas_mobiliario_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Sillas_mobiliario_Archivos" name="Sillas_mobiliario_Archivos" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="validacion('Sillas_mobiliario_Deficiencias')"  id="Sillas_mobiliario_Deficiencias" name="Sillas_mobiliario_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Sillas_mobiliario_Archivos" onkeyup="validacion('Sillas_mobiliario_Archivos')"  name="Sillas_mobiliario_Archivos" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Módulos para computadora" style="color: black;font-weight: bold;"  /></td>
-                                                                            <td><input type="text" class="form-control" id="Módulos_computadoras_mobiliarios_Deficiencias" name="Módulos_computadoras_mobiliarios_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Módulos_computadoras_mobiliarios_Acciones"  name="Módulos_computadoras_mobiliarios_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Módulos_computadoras_mobiliarios_Deficiencias" onkeyup="validacion('Módulos_computadoras_mobiliarios_Deficiencias')"  name="Módulos_computadoras_mobiliarios_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Módulos_computadoras_mobiliarios_Acciones"  onkeyup="validacion('Módulos_computadoras_mobiliarios_Acciones')" name="Módulos_computadoras_mobiliarios_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Otros"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="otros_mobiliario_Deficiencias" name="otros_mobiliario_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control"  id="otros_mobiliario_Acciones" name="otros_mobiliario_Acciones"/></td>
+                                                                            <td>
+                                                                               <div>
+                                                                                   <input type="text" class="form-control" id="otros_mobiliario_Deficiencias" onkeyup="validacion('otros_mobiliario_Deficiencias')" name="otros_mobiliario_Deficiencias" />
+                                                                                   <span class="help-block"></span>
+                                                                               </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control"  id="otros_mobiliario_Acciones" onkeyup="validacion('otros_mobiliario_Acciones')" name="otros_mobiliario_Acciones"/>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_mobiliarios_Deficiencias" name="subrasarse_mobiliarios_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_logisticos_Acciones" name="subrasarse_Aspectos_logisticos_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción a realizar y plazo para dar la solución.</textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_mobiliarios_Deficiencias" onkeyup="validacion('subrasarse_mobiliarios_Deficiencias')" name="subrasarse_mobiliarios_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_mobiliarios_Acciones" onkeyup="validacion('subrasarse_mobiliarios_Acciones')" name="subrasarse_mobiliarios_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         </tbody>
                                                                     </table>
@@ -500,42 +851,117 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Papel Bond A4</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Papel_suministro_Deficiencias"  name="Papel_suministro_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Papel_suministro_Acciones"  name="Papel_suministro_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                               <div> <textarea class="form-control"  rows="2" onkeyup="validacion('Papel_suministro_Deficiencias')"  id="Papel_suministro_Deficiencias"  name="Papel_suministro_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                   <span class="help-block"></span>
+                                                                               </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Papel_suministro_Acciones" onkeyup="validacion('Papel_suministro_Acciones')"   name="Papel_suministro_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Bolígrafos / Grapas 26/6</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Deficiencias" name="Bolígrafos_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Acciones"  name="Bolígrafos_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Deficiencias" onkeyup="validacion('Bolígrafos_suministro_Deficiencias')" name="Bolígrafos_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="Bolígrafos_suministro_Acciones" onkeyup="validacion('Bolígrafos_suministro_Acciones')" name="Bolígrafos_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Cinta p/Impresora matricial/Tóner p/Impresora</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Cinta_suministro_Deficiencias" name="Cinta_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Cinta_suministro_Acciones"  name="Cinta_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="validacion('Cinta_suministro_Deficiencias')"  rows="3" id="Cinta_suministro_Deficiencias" name="Cinta_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                        </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="Cinta_suministro_Acciones" onkeyup="validacion('Cinta_suministro_Acciones')"   name="Cinta_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Carátulas para expedientes"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Carátulas_suministro_Deficiencias" name="Carátulas_suministro_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Carátulas_suministro_Acciones" name="Carátulas_suministro_Acciones"  /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Carátulas_suministro_Deficiencias" onkeyup="validacion('Carátulas_suministro_Deficiencias')"  name="Carátulas_suministro_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Carátulas_suministro_Acciones" onkeyup="validacion('Carátulas_suministro_Acciones')"  name="Carátulas_suministro_Acciones"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="El Peruano (suministro)" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Peruano_suministro_Deficiencias"  name="Peruano_suministro_Deficiencias"/></td>
-                                                                            <td><input type="text" class="form-control" id="Peruano_suministro_Archivos" name="Peruano_suministro_Archivos"  /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control"  id="Peruano_suministro_Deficiencias"  onkeyup="validacion('Peruano_suministro_Deficiencias')"   name="Peruano_suministro_Deficiencias"/>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Peruano_suministro_Archivos" onkeyup="validacion('Peruano_suministro_Archivos')" name="Peruano_suministro_Archivos"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >Otros (Archivador Palanca,
 Símbolos y distintivo, Boletín de
 Condenas Nº 1, etc.)</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Otros_suministro_Deficiencias" name="Otros_suministro_Deficiencias"   style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Otros_suministro_Acciones"  name="Otros_suministro_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                     <textarea class="form-control"  rows="3" id="Otros_suministro_Deficiencias"  onkeyup="validacion('Otros_suministro_Deficiencias')" name="Otros_suministro_Deficiencias"   style="color: black;font-weight: bold;" >
+                                                                                </textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="Otros_suministro_Acciones"  onkeyup="validacion('Otros_suministro_Acciones')"  name="Otros_suministro_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
 deficiencia explicar la acción a
 realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_suministro_Deficiencias"  name="subrasarse_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_suministro_Acciones"  name="subrasarse_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_suministro_Deficiencias"  name="subrasarse_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                              <div>  <textarea class="form-control"  rows="3" id="subrasarse_suministro_Acciones"  name="subrasarse_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                  <span class="help-block"></span></div>
+                                                                            </td>
                                                                         </tr>
                                                                         </tbody>
                                                                     </table>
@@ -565,7 +991,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                             </div>
                                             <ul class="list-inline pull-right">
                                                 <li><button type="button" class="btn btn-default prev-step">Regresar</button></li>
-                                                <li><button type="button" class="btn btn-primary next-step">Next</button></li>
+                                                <li><button type="button" id="next1" class="btn btn-primary next">Next</button></li>
                                             </ul>
                                         </div>
                                         <div class="tab-pane" role="tabpanel" id="step3">
@@ -1748,88 +2174,9 @@ realizar y plazo para dar la solución.</textarea></td>
             }
         });
 
-        $(".next-step").click(function (e) {
-            var direcc=$('#direccion').val();
-if(direcc==''){
-    alert("ssdsd")
-    $('#direccion').blur(function(){
 
-        var name = $(this).val();
-
-        if(name==''){
-
-            $('#name').addClass('error_jquery');
-            $('#msg_name').html('El campo direccion es requerido');
-        }else{
-
-            $('#name').removeClass('error_jquery');
-            $('#msg_name').html('');
-        }
 
     });
 
-    $('#phone').blur(function(){
-
-        var phone = $(this).val();    // colocamos el contenido del (div phone) en la variable phone
-
-        if(phone==''){
-            $('#phone').addClass('error_jquery'); // añadimos una clase al div phone
-            $('#msg_phone').html('El campo Teléfono es requerido'); // añadimos el mensaje
-        }else if(isNaN(phone)){ // evalua si es númerico
-
-            $('#msg_phone').html(''); // dejamos en blanco el div para colocar el otro mensaje
-            $('#msg_phone').html('El Teléfono debe ser númerico');
-
-        }else{
-            // si no hay errores removemos la clase error_jquery y dejamos el div vacio
-            $('#phone').removeClass('error_jquery');
-            $('#msg_phone').html('');
-
-        }
-    });
-
-    $('#address').blur(function(){
-
-        var address = $(this).val();
-
-        if(address==''){
-
-            $('#address').addClass('error_jquery');
-            $('#msg_address').html('El campo Ciudad y dirección es requerido');
-        }else{
-
-            $('#address').removeClass('error_jquery');
-            $('#msg_address').html('');
-        }
-
-    });
-}else{
-    var $active = $('.wizard .nav-tabs li.active');
-    $active.next().removeClass('disabled');
-    nextTab($active);
-}
-
-        });
-        $(".prev-step").click(function (e) {
-
-            var $active = $('.wizard .nav-tabs li.active');
-            prevTab($active);
-
-        });
-
-    });
-
-    function nextTab(elem) {
-        if ($('#direccion').val==''){
-            alert("hola")
-        } else {
-
-            $(elem).next().find('a[data-toggle="tab"]').click();
-        }
-
-    }
-    function prevTab(elem) {
-        $(elem).prev().find('a[data-toggle="tab"]').click();
-    }
 </script>
     @endsection
