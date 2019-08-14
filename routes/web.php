@@ -30,5 +30,6 @@ Route::resource('Encuestas','EncuestaController');
 Route::post('registrar','EncuestaController@hola');
 Route::get('BuscarOrgano/{idMagistrados}','EncuestaController@Buscar');
 Route::resource('Perfil','PerfilController');
-Route::post('CambiarImagen/{id}','UserController@Registrar');
+Route::post('CanbiarImagen/{id}','UserController@CanbiarImagen');
+
 

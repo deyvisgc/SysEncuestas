@@ -111,10 +111,14 @@
                                             @elseif(Auth::user()->imagen)
                                                 <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" alt="" >
                                             @endif
-                                            <div class="file btn btn-lg btn-primary">
-                                                Change Photo
-                                                <input type="file" id="imagen" name="file"/>
-                                            </div>
+                                            <form id="frmCanbiarImagen"  enctype="multipart/form-data" >
+                                                {{ csrf_field() }}
+                                                <div class="file btn btn-lg btn-primary">
+                                                    Change Photo
+                                                    <input type="file" id="file"  onchange="canbiarfoto();" name="file"/>
+                                                </div>
+                                            </form>
+
                                         </div>
 
 
@@ -316,8 +320,40 @@
         });
 
         function cambiar(){
+
             var pdrs = document.getElementById('imagen').files[0].name;
             document.getElementById('info').innerHTML = pdrs;
+        }
+        function canbiarfoto() {
+            var id=$('#iduser').val();
+            var form = document.getElementById('file');// You need to use standard javascript object here
+            var file = form.files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url:'{{url('CanbiarImagen')}}/'+id,
+                data: formData,
+                type: 'POST',
+                cache: false,
+                processData: false,
+                contentType : false,
+                success:function (index) {
+                    file.trigger('reset');
+                    iziToast.success({
+                        title: 'OK',
+                        message: 'Successfully Actualizado Correctamente!',
+                    });
+
+                }
+
+            });
+
         }
     </script>
     @endsection

@@ -8,6 +8,7 @@ use SysEncuesta\User;
 use Illuminate\Support\Facades\Input;
 use Yajra\Datatables\Datatables;
 use DB;
+use Validator;
 
 class UserController extends Controller
 
@@ -104,23 +105,31 @@ and usuario.idUsuario=$id");
 
 
     }
-    public function Registrar(Request $request,$id){
-        $this->validate($request,[
-            'imagen'=>'required |image',
-        ]);
-        $user=User::find($id);
-        $image_path="Imagenes/Usuario/$user->imagen";
-        if(\File::exists(Public_path($image_path))){
-            \File::delete(Public_path($image_path));
+    public function CanbiarImagen(Request $request,$id){
+
+
+        $regla=[
+            'file'=>'required'
+        ];
+        $valida=Validator::make(Input::all(),$regla);
+        if($valida->fails()){
+            return response()->json(array('errors' => $valida->getMessageBag()->toArray()));
+        }else{
+            $user=User::find($id);
+            $image_path="Imagenes/Usuario/$user->imagen";
+            if(\File::exists(Public_path($image_path))){
+                \File::delete(Public_path($image_path));
+            }
+            if(Input::HasFile('file')){
+                $file=Input::file('file');
+                $file->move(public_path().'/Imagenes/Usuario',$file->getClientOriginalName());
+                $user->imagen=$file->getClientOriginalName();
+            }
+            $user->save();
+            $data['succes']=true;
+            $data['foto']=$user;
         }
-        if(Input::HasFile('holaaa')){
-            $file=Input::file('holaaa');
-            $file->move(public_path().'/Imagenes/Usuario',$file->getClientOriginalName());
-            $user->imagen=$file->getClientOriginalName();
-        }
-        $user->save();
-        $data['succes']=true;
-        $data['foto']=$user;
+
         return response()->json($data);
     }
 
