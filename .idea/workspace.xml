@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eff6f185-86e7-44c5-b1b8-57e6e765cce5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Imagenes/Usuario/hola-home-image.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/ValidacionEncuesta.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ValidacionEncuesta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Encuestas/Encuestas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Perfil/Perfil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Perfil/Perfil.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +238,7 @@
       <workItem from="1565714936042" duration="6109000" />
       <workItem from="1565760806881" duration="9516000" />
       <workItem from="1565791701549" duration="25442000" />
-      <workItem from="1565827581260" duration="7172000" />
+      <workItem from="1565827581260" duration="9263000" />
     </task>
     <servers />
   </component>
@@ -295,7 +291,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/ValidacionEncuesta.js</url>
-          <line>1452</line>
+          <line>1491</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

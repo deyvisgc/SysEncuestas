@@ -174,8 +174,19 @@ $(document).ready(function () {
             Otros_aspectos_logisticos_Deficiencias===''  ||
             Otros_aspectos_logisticos_Acciones==='' ||
             subrasarse_Aspectos_logisticos_Deficiencias==='' ||
-            subrasarse_Aspectos_logisticos_Acciones===''
+            subrasarse_Aspectos_logisticos_Acciones===''  ||
         //aspectos logisticos
+
+            Energía_servicio_bascios_Deficiencias==='' ||
+            Energía_servicio_bascios_Acciones==='' ||
+            Agua_servicio_bascios_Deficiencias==='' ||
+            Agua_servicio_bascios_Acciones==='' ||
+            Telefonía_servicio_bascios_Deficiencias===''||
+            Telefonía_servicio_bascios_Acciones===''||
+            Otros_servicios_basicos_Deficiencias===''||
+            Otros_servicios_basicos_Acciones===''||
+            subrasarse_servicios_basicos_Deficiencias===''||
+            subrasarse_servicios_basicos_Acciones===''
 
 
         )
@@ -197,6 +208,9 @@ $(document).ready(function () {
                 Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias=0,Mantenimiento_vehiculos_aspectos_logisticos_Acciones=0,Otros_aspectos_logisticos_Deficiencias=0,
                 Otros_aspectos_logisticos_Acciones=0,subrasarse_Aspectos_logisticos_Deficiencias=0,subrasarse_Aspectos_logisticos_Acciones=0
                 //aspectos logisticos
+            Energía_servicio_bascios_Deficiencias=0, Energía_servicio_bascios_Acciones=0,Agua_servicio_bascios_Deficiencias=0, Agua_servicio_bascios_Acciones=0,
+            Telefonía_servicio_bascios_Deficiencias=0,Telefonía_servicio_bascios_Acciones=0,Otros_servicios_basicos_Deficiencias=0,Otros_servicios_basicos_Acciones=0,
+            subrasarse_servicios_basicos_Deficiencias=0,subrasarse_servicios_basicos_Acciones
 
 
 
@@ -245,7 +259,19 @@ $(document).ready(function () {
             Otros_aspectos_logisticos_Acciones=validacion('Otros_aspectos_logisticos_Acciones');
             subrasarse_Aspectos_logisticos_Deficiencias=validacion('subrasarse_Aspectos_logisticos_Deficiencias');
             subrasarse_Aspectos_logisticos_Acciones=validacion('subrasarse_Aspectos_logisticos_Acciones');
+///                aspectos logisticos
 
+
+            Energía_servicio_bascios_Deficiencias=validacion('Energía_servicio_bascios_Deficiencias');
+            Energía_servicio_bascios_Acciones=validacion('Energía_servicio_bascios_Acciones');
+            Agua_servicio_bascios_Deficiencias=validacion('Agua_servicio_bascios_Deficiencias');
+            Agua_servicio_bascios_Acciones=validacion('Agua_servicio_bascios_Acciones');
+            Telefonía_servicio_bascios_Deficiencias=validacion('Telefonía_servicio_bascios_Deficiencias');
+            Telefonía_servicio_bascios_Acciones=validacion('Telefonía_servicio_bascios_Acciones');
+            Otros_servicios_basicos_Deficiencias=validacion('Otros_servicios_basicos_Deficiencias');
+            Otros_servicios_basicos_Acciones=validacion('Otros_servicios_basicos_Acciones');
+            subrasarse_servicios_basicos_Deficiencias=validacion('subrasarse_servicios_basicos_Deficiencias');
+            subrasarse_servicios_basicos_Acciones=validacion('subrasarse_servicios_basicos_Acciones');
 
 
             if (personal_total === false || observacion_1_Personal===false||observacion_2_Personal===false || Mesa_Partes_areas_apoyo_Deficiencias===false||
@@ -273,8 +299,21 @@ $(document).ready(function () {
                 Otros_aspectos_logisticos_Deficiencias===false ||
                 Otros_aspectos_logisticos_Acciones===false ||
                 subrasarse_Aspectos_logisticos_Deficiencias===false ||
-                subrasarse_Aspectos_logisticos_Acciones===false
+                subrasarse_Aspectos_logisticos_Acciones===false ||
             //aspectos logisticoss
+
+                Energía_servicio_bascios_Deficiencias===false ||
+                Energía_servicio_bascios_Acciones===false ||
+                Agua_servicio_bascios_Deficiencias===false ||
+                Agua_servicio_bascios_Acciones===false||
+                Telefonía_servicio_bascios_Deficiencias===false||
+                Telefonía_servicio_bascios_Acciones===false||
+                Otros_servicios_basicos_Deficiencias===false||
+                Otros_servicios_basicos_Acciones===false||
+                subrasarse_servicios_basicos_Deficiencias===false||
+                subrasarse_servicios_basicos_Acciones===false
+
+
 
             ) {
                 $("#exito").hide();
