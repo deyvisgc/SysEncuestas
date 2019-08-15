@@ -344,16 +344,22 @@
                 processData: false,
                 contentType : false,
                 success:function (index) {
-                    file.trigger('reset');
+
                     iziToast.success({
                         title: 'OK',
                         message: 'Successfully Actualizado Correctamente!',
                     });
+                    setTimeout(refrescar, 10000);
 
                 }
 
             });
 
+
+        }
+        function refrescar(){
+            //Actualiza la el div con los datos de imagenes.php
+            location.reload();
         }
     </script>
     @endsection
