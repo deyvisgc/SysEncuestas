@@ -1013,62 +1013,177 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 <tbody>
                                                                 <tr>
                                                                     <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Computadoras</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Computadoras_informaticos_Deficiencias" name="Computadoras_informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Computadoras_informaticos__Acciones" name="Computadoras_informaticos__Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="2" id="Computadoras_informaticos_Deficiencias" onkeyup="validacion('Computadoras_informaticos_Deficiencias')" name="Computadoras_informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="2" id="Computadoras_informaticos__Acciones" onkeyup="validacion('Computadoras_informaticos__Acciones')"  name="Computadoras_informaticos__Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Impresoras</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Impresoras_informaticos_Deficiencias" name="Impresoras_informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Impresoras_informaticos_Acciones" name="Impresoras_informaticos_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <textarea class="form-control"  rows="2" id="Impresoras_informaticos_Deficiencias" onkeyup="validacion('Impresoras_informaticos_Deficiencias')"  name="Impresoras_informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                           <span class="help-block"></span>
+                                                                       </div>
+                                                                    </td>
+                                                                    <td>
+                                                                    <div>
+                                                                        <textarea class="form-control"  rows="2" id="Impresoras_informaticos_Acciones" name="Impresoras_informaticos_Acciones" onkeyup="validacion('Impresoras_informaticos_Acciones')" style="color: black;font-weight: bold;" ></textarea>
+                                                                        <span class="help-block"></span>
+                                                                    </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><input  type="text" class="form-control" readonly value="Fax"style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control" id="Fax_Informaticos_Deficiencias" name="Fax_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="Fax_informaticos_Acciones" name="Fax_informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" id="Fax_Informaticos_Deficiencias" onkeyup="validacion('Fax_Informaticos_Deficiencias')" name="Fax_Informaticos_Deficiencias" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" id="Fax_informaticos_Acciones" onkeyup="validacion('Fax_informaticos_Acciones')" name="Fax_informaticos_Acciones" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="Mantenimiento de Equipos de Cómputo" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="Mantenimiento_equipos_Informaticos_Deficiencias"  name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                      <div>
+                                                                          <input type="text" class="form-control"  id="Mantenimiento_equipos_Informaticos_Deficiencias" onkeyup="validacion('Mantenimiento_equipos_Informaticos_Deficiencias')"  name="Mantenimiento_equipos_Informaticos_Deficiencias" />
+                                                                          <span class="help-block"></span>
+                                                                      </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" id="Mantenimiento_equipos_Informaticos_Acciones" onkeyup="validacion('Mantenimiento_equipos_Informaticos_Acciones')" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
 
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="UPS" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="UPS_Informaticos_Deficiencias" name="UPS_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="UPS_Informaticos_Acciones" name="UPS_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control"  id="UPS_Informaticos_Deficiencias"  onkeyup="validacion('UPS_Informaticos_Deficiencias')" name="UPS_Informaticos_Deficiencias" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <input type="text" class="form-control" id="UPS_Informaticos_Acciones" onkeyup="validacion('UPS_Informaticos_Acciones')" name="UPS_Informaticos_Acciones" />
+                                                                           <span class="help-block"></span>
+                                                                       </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="Supresor de Picos" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="supresor_picos_Informaticos_Deficiencias" name="supresor_picos_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="supresor_picos_Informaticos_Acciones" name="supresor_picos_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                    <div>
+                                                                        <input type="text" class="form-control"  id="supresor_picos_Informaticos_Deficiencias" onkeyup="validacion('supresor_picos_Informaticos_Deficiencias')" name="supresor_picos_Informaticos_Deficiencias" />
+                                                                        <span class="help-block"></span>
+                                                                    </div>
+                                                                    </td>
+                                                                    <td>
+                                                                      <div>
+                                                                          <input type="text" class="form-control" id="supresor_picos_Informaticos_Acciones" onkeyup="validacion('supresor_picos_Informaticos_Acciones')" name="supresor_picos_Informaticos_Acciones" />
+                                                                          <span class="help-block"></span>
+                                                                      </div>
+                                                                    </td>
                                                                 </tr>
 
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="Correo Electronico" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="Correo_Informaticos_Deficiencias" name="Correo_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="Correo_Informaticos_Acciones" name="Correo_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <input type="text" class="form-control"  id="Correo_Informaticos_Deficiencias" onkeyup="validacion('Correo_Informaticos_Deficiencias')" name="Correo_Informaticos_Deficiencias" />
+                                                                           <span class="help-block"></span>
+                                                                       </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" id="Correo_Informaticos_Acciones" onkeyup="validacion('Correo_Informaticos_Acciones')"  name="Correo_Informaticos_Acciones" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="Sistemas Informáticos – Software" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="sistemas_Informaticos_Deficiencias" name="sistemas_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="sistemas_Informaticos_Acciones" name="sistemas_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" onkeyup="validacion('sistemas_Informaticos_Deficiencias')" id="sistemas_Informaticos_Deficiencias" name="sistemas_Informaticos_Deficiencias" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <input type="text" class="form-control" id="sistemas_Informaticos_Acciones" onkeyup="validacion('sistemas_Informaticos_Acciones')" name="sistemas_Informaticos_Acciones" />
+                                                                           <span class="help-block"></span>
+                                                                       </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><input  type="text"  class="form-control" readonly value="Redes Informáticos" style="color: black;font-weight: bold;" /></td>
-                                                                    <td><input type="text" class="form-control"  id="Redes_Informáticos_Informaticos_Deficiencias" name="Redes_Informáticos_Informaticos_Deficiencias" /></td>
-                                                                    <td><input type="text" class="form-control" id="Redes_Informáticos_Informaticos_Acciones" name="Redes_Informáticos_Informaticos_Acciones" /></td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <input type="text" class="form-control"  id="Redes_Informáticos_Informaticos_Deficiencias" onkeyup="validacion('Redes_Informáticos_Informaticos_Deficiencias')" name="Redes_Informáticos_Informaticos_Deficiencias" />
+                                                                           <span class="help-block"></span></div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <input type="text" class="form-control" id="Redes_Informáticos_Informaticos_Acciones" onkeyup="validacion('Redes_Informáticos_Informaticos_Acciones')"  name="Redes_Informáticos_Informaticos_Acciones" />
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Otros</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Otros_Informaticos_Deficiencias"  name="Otros_Informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Otros_Informaticos_Acciones"  name="Otros_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                    <td>
+                                                                      <div>
+                                                                          <textarea class="form-control"  rows="2" id="Otros_Informaticos_Deficiencias" onkeyup="validacion('Otros_Informaticos_Deficiencias')"  name="Otros_Informaticos_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                          <span class="help-block"></span>
+                                                                      </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+
+                                                                            <textarea class="form-control"  rows="2" id="Otros_Informaticos_Acciones"  onkeyup="validacion('Otros_Informaticos_Acciones')"  name="Otros_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="3" id="subrasarse_Informaticos_Deficiencias" name="subrasarse_Informaticos_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="3" id="subrasarse_Informaticos_Acciones" name="subrasarse_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción a realizar y plazo para dar la solución.</textarea></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="3" id="subrasarse_Informaticos_Deficiencias" onkeyup="validacion('subrasarse_Informaticos_Deficiencias')" name="subrasarse_Informaticos_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                        <textarea class="form-control"  rows="3" onkeyup="validacion('subrasarse_Informaticos_Acciones')" id="subrasarse_Informaticos_Acciones" name="subrasarse_Informaticos_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                        <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
@@ -1095,30 +1210,81 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Detectores de Metal</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_detectorM_Deficiencias" name="Aspectos_seguridad_detectorM_Deficiencias"   style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_detectorM_Acciones" name="Aspectos_seguridad_detectorM_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="validaciones('Aspectos_seguridad_detectorM_Deficiencias')" id="Aspectos_seguridad_detectorM_Deficiencias" name="Aspectos_seguridad_detectorM_Deficiencias"   style="color: black;font-weight: bold;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_detectorM_Acciones"  onkeyup="validaciones('Aspectos_seguridad_detectorM_Acciones')" name="Aspectos_seguridad_detectorM_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Extintores</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Deficiencias" onkeyup="validaciones('Aspectos_seguridad_Extintores_Deficiencias')" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_seguridad_Extintores_Acciones" onkeyup="validaciones('Aspectos_seguridad_Extintores_Acciones')" name="Aspectos_seguridad_Extintores_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Mangueras contra incendio"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_seguridad_Mangueras_Deficiencias" name="Aspectos_seguridad_Mangueras_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_seguridad_Mangueras_Acciones" name="Aspectos_seguridad_Mangueras_Acciones"  /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control"  onkeyup="validaciones('Aspectos_seguridad_Mangueras_Deficiencias')" id="Aspectos_seguridad_Mangueras_Deficiencias" name="Aspectos_seguridad_Mangueras_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Aspectos_seguridad_Mangueras_Acciones" onkeyup="validaciones('Aspectos_seguridad_Mangueras_Acciones')" name="Aspectos_seguridad_Mangueras_Acciones"  />
+
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Otros" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_seguridad_Otros_Deficiencias" name="Aspectos_seguridad_Otros_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_seguridad_Otros_Acciones" name="Aspectos_seguridad_Otros_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_seguridad_Otros_Deficiencias')" id="Aspectos_seguridad_Otros_Deficiencias" name="Aspectos_seguridad_Otros_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control"  onkeyup="validaciones('Aspectos_seguridad_Otros_Acciones')" id="Aspectos_seguridad_Otros_Acciones" name="Aspectos_seguridad_Otros_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
-deficiencia explicar la acción a
-realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Deficiencias" name="subrasarse_Aspectos_seguridad_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Acciones" name="subrasarse_Aspectos_seguridad_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la deficiencia explicar la acción a realizar y plazo para dar la solución.</textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Deficiencias" onkeyup="validaciones('subrasarse_Aspectos_seguridad_Deficiencias')" name="subrasarse_Aspectos_seguridad_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_Aspectos_seguridad_Acciones" onkeyup="validaciones('subrasarse_Aspectos_seguridad_Acciones')" name="subrasarse_Aspectos_seguridad_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                                </div>
+                                                                </td>
                                                                         </tr>
                                                                         </tbody>
                                                                     </table>
@@ -1165,62 +1331,178 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Estructuras</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Deficiencias" name="Aspectos_generales_Estructuras_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Acciones"  name="Aspectos_generales_Estructuras_Acciones"  style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Deficiencias"onkeyup="validaciones('Aspectos_generales_Estructuras_Deficiencias')" name="Aspectos_generales_Estructuras_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_generales_Estructuras_Acciones" onkeyup="validaciones('Aspectos_generales_Estructuras_Acciones')"   name="Aspectos_generales_Estructuras_Acciones"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="2" id="comment" readonly style="color: black;font-weight: bold;" >Puertas</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Deficiencias" name="Aspectos_generales_Puertas_Deficiencias"  style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Acciones" name="Aspectos_generales_Puertas_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Deficiencias" onkeyup="validaciones('Aspectos_generales_Puertas_Deficiencias')" name="Aspectos_generales_Puertas_Deficiencias"  style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Aspectos_generales_Puertas_Acciones"  onkeyup="validaciones('Aspectos_generales_Puertas_Acciones')" name="Aspectos_generales_Puertas_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text" class="form-control" readonly value="Ventanas"style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Ventanas_Deficiencias" name="Aspectos_generales_Ventanas_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Ventanas_Acciones" name="Aspectos_generales_Ventanas_Acciones"  /></td>
+                                                                            <td>
+
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="Aspectos_generales_Ventanas_Deficiencias"  onkeyup="validaciones('Aspectos_generales_Ventanas_Deficiencias')" name="Aspectos_generales_Ventanas_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Ventanas_Acciones')" id="Aspectos_generales_Ventanas_Acciones" name="Aspectos_generales_Ventanas_Acciones"  />
+                                                                                <span class="help-block"></span>
+                                                                                      </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Pisos" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Pisos_Deficiencias" name="Aspectos_generales_Pisos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Pisos_Acciones" name="Aspectos_generales_Pisos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Pisos_Deficiencias')" id="Aspectos_generales_Pisos_Deficiencias" name="Aspectos_generales_Pisos_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                                    </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Pisos_Acciones')" id="Aspectos_generales_Pisos_Acciones" name="Aspectos_generales_Pisos_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                                 </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Pintura (externa – interna)" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Pintura_Deficiencias" name="Aspectos_generales_Pintura_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Pintura_Acciones" name="Aspectos_generales_Pintura_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Pintura_Deficiencias')" id="Aspectos_generales_Pintura_Deficiencias" name="Aspectos_generales_Pintura_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control"  onkeyup="validaciones('Aspectos_generales_Pintura_Acciones')" id="Aspectos_generales_Pintura_Acciones" name="Aspectos_generales_Pintura_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                                 </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Instalaciones Sanitarias" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" name="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Instalaciones_Sanitarias_Acciones" name="Aspectos_generales_Instalaciones_Sanitarias_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control"  onkeyup="validaciones('Aspectos_generales_Instalaciones_Sanitarias_Deficiencias')" id="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" name="Aspectos_generales_Instalaciones_Sanitarias_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                               </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Instalaciones_Sanitarias_Acciones')" id="Aspectos_generales_Instalaciones_Sanitarias_Acciones" name="Aspectos_generales_Instalaciones_Sanitarias_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Instalaciones Eléctricas" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" name="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Instalaciones_Eléctricas_Acciones" name="Aspectos_generales_Instalaciones_Eléctricas_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Instalaciones_Eléctricas_Deficiencias')" id="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" name="Aspectos_generales_Instalaciones_Eléctricas_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Instalaciones_Eléctricas_Acciones')" id="Aspectos_generales_Instalaciones_Eléctricas_Acciones" name="Aspectos_generales_Instalaciones_Eléctricas_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Brinda Seguridad" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_brinda_Seguridad_Deficiencias" name="Aspectos_generales_brinda_Seguridad_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_brinda_Seguridad_Acciones" name="Aspectos_generales_brinda_Seguridad_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_brinda_Seguridad_Deficiencias')"  id="Aspectos_generales_brinda_Seguridad_Deficiencias" name="Aspectos_generales_brinda_Seguridad_Deficiencias" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_brinda_Seguridad_Acciones')" id="Aspectos_generales_brinda_Seguridad_Acciones" name="Aspectos_generales_brinda_Seguridad_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Mantenimiento de Local" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Mantenimiento_local_Deficiencias" name="Aspectos_generales_Mantenimiento_local_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Mantenimiento_local_Acciones" name="Aspectos_generales_Mantenimiento_local_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Mantenimiento_local_Deficiencias')"  id="Aspectos_generales_Mantenimiento_local_Deficiencias" name="Aspectos_generales_Mantenimiento_local_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Mantenimiento_local_Acciones')"  id="Aspectos_generales_Mantenimiento_local_Acciones" name="Aspectos_generales_Mantenimiento_local_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td><input  type="text"  class="form-control" readonly value="Otros" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control"  id="Aspectos_generales_Otros_Deficiencias" name="Aspectos_generales_Otros_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_Otros_Acciones" name="Aspectos_generales_Otros_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Otros_Deficiencias')" id="Aspectos_generales_Otros_Deficiencias" name="Aspectos_generales_Otros_Deficiencias" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" onkeyup="validaciones('Aspectos_generales_Otros_Acciones')"  id="Aspectos_generales_Otros_Acciones" name="Aspectos_generales_Otros_Acciones" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td><textarea class="form-control"  rows="3" id="comment" readonly style="color: black;font-weight: bold;" >En caso de no subsanarse la
 deficiencia explicar la acción a
 realizar y plazo para dar la solución.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_generales_Deficiencias" name="ssubrasarse_Aspectos_generales_Deficiencias" style="color: black;font-weight: bold;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="subrasarse_Aspectos_generales_Acciones" name="subrasarse_Aspectos_generales_Acciones" style="color: black;font-weight: bold;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="3" onkeyup="validaciones('subrasarse_Aspectos_generales_Deficiencias')" id="subrasarse_Aspectos_generales_Deficiencias" name="ssubrasarse_Aspectos_generales_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="3" onkeyup="validaciones('subrasarse_Aspectos_generales_Acciones')" id="subrasarse_Aspectos_generales_Acciones" name="subrasarse_Aspectos_generales_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th colspan="3"><label>Cuando el local visitado es <label style="color: black;">ALQUILADO</label> , y en la visita se han encontrado deficiencias en los aspectos del inmueble (cuadro
@@ -1228,9 +1510,24 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                         mejoras en locales alquilados.</label></label></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><input  type="text" id="Aspectos_generales_ALQUILADO"  name="Aspectos_generales_ALQUILADO" class="form-control"  placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_ALQUILADO1"  name="Aspectos_generales_ALQUILADO1" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Deficiencias" name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_ALQUILADO2"  name="Aspectos_generales_ALQUILADO2" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input  type="text" id="Aspectos_generales_ALQUILADO" onkeyup="validaciones('Aspectos_generales_ALQUILADO')"  name="Aspectos_generales_ALQUILADO" class="form-control"  placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Aspectos_generales_ALQUILADO1" onkeyup="validaciones('Aspectos_generales_ALQUILADO1')"  name="Aspectos_generales_ALQUILADO1" placeholder="----------------------------------------------------------------------"  />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Aspectos_generales_ALQUILADO2" onkeyup="validaciones('Aspectos_generales_ALQUILADO2')"  name="Aspectos_generales_ALQUILADO2" placeholder="----------------------------------------------------------------------"  />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th colspan="3">Si el local visitado tiene la condición de <label style="color: black;">CEDIDO EN USO,</label> ,y en la visita se han advertido deficiencias en los aspectos del
@@ -1238,9 +1535,24 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 siempre y cuando el plazo de cesión en uso es superior a los 10 años.></th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td><input  type="text"  class="form-control" id="Aspectos_generales_CEDIDO" name="Aspectos_generales_CEDIDO" placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_CEDIDO1" name="Aspectos_generales_CEDIDO1" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Deficiencias" name="Mantenimiento_equipos_Informaticos_Deficiencias" /></td>
-                                                                            <td><input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" name="Aspectos_generales_CEDIDO2" placeholder="----------------------------------------------------------------------" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <input  type="text"  class="form-control" id="Aspectos_generales_CEDIDO" onkeyup="validaciones('Aspectos_generales_CEDIDO')" name="Aspectos_generales_CEDIDO" placeholder="-------------------------------------------------------------------" style="color: black;font-weight: bold;" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Aspectos_generales_CEDIDO1" onkeyup="validaciones('Aspectos_generales_CEDIDO1')" name="Aspectos_generales_CEDIDO1" placeholder="----------------------------------------------------------------------"  />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="Aspectos_generales_CEDIDO2" onkeyup="validaciones('Aspectos_generales_CEDIDO2')" name="Aspectos_generales_CEDIDO2" placeholder="----------------------------------------------------------------------" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th colspan="3"><label>Nota: </label>En los casos de inmuebles de propiedad de la Entidad o en condición de Cesión en Uso (mayor a 10 años) que requieran
@@ -1298,66 +1610,119 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tr>
                                                                             <td>1</td>
                                                                             <td><textarea class="form-control" readonly  rows="3" style="color: black;font-weight: bold; ">¿Se cumple con el llenado de la Ficha única del Renipros al ordenar el internamiento o salida del Procesado o Sentenciado?</textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="servicio_judiciales_SI_1" name="servicio_judiciales_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="servicio_judiciales_NO_1" name="servicio_judiciales_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="servicio_judiciales_Observaciones_1" name="servicio_judiciales_Observaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  onkeyup="validaciones('servicio_judiciales_SI_1')"  rows="2" id="servicio_judiciales_SI_1" name="servicio_judiciales_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td><textarea class="form-control" onkeyup="validaciones('servicio_judiciales_NO_1')"  rows="2" id="servicio_judiciales_NO_1" name="servicio_judiciales_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"   onkeyup="validaciones('servicio_judiciales_Observaciones_1')"  rows="2" id="servicio_judiciales_Observaciones_1" name="servicio_judiciales_Observaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+
+                                                                                </div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>2</td>
                                                                             <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Remite a su Registro Distrital de Internos Procesados y Sentenciados (Redipros), la Ficha Única del Renipros dentro de las 24 horas de emitido el mandato?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_SI_2" name="servicio_judiciales_SI_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_NO_2" name="servicio_judiciales_NO_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_2" name="servicio_judiciales_Observaciones_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"   onkeyup="validaciones('servicio_judiciales_SI_2')"  rows="2" id="servicio_judiciales_SI_2" name="servicio_judiciales_SI_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  onkeyup="validaciones('servicio_judiciales_NO_2')"  rows="2" id="servicio_judiciales_NO_2" name="servicio_judiciales_NO_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_2" onkeyup="validaciones('servicio_judiciales_Observaciones_2')" name="servicio_judiciales_Observaciones_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
 
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>3</td>
                                                                             <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al remitir la Ficha Única del Renipros ¿Adjunta la Resolución Judicial que da origen al llenado de la Ficha en copia certificada por el Secretario de Juzgado o Sala?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_SI_3" name="servicio_judiciales_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_NO_3" name="servicio_judiciales_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_3" name="servicio_judiciales_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_SI_3" onkeyup="validaciones('servicio_judiciales_SI_3')" name="servicio_judiciales_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_NO_3"  onkeyup="validaciones('servicio_judiciales_NO_3')" name="servicio_judiciales_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_3" onkeyup="validaciones('servicio_judiciales_Observaciones_3')" name="servicio_judiciales_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
 
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>4</td>
                                                                             <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >Se cumple con informar al Redipros de los mandatos del Órgano Jurisdiccional sobre el internamiento o salida o la variación de la situación jurídica (de procesado a sentenciado)</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_SI_4" name="servicio_judiciales_SI_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_NO_4" name="servicio_judiciales_NO_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_4" name="servicio_judiciales_Observaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_SI_4" name="servicio_judiciales_SI_4"  onkeyup="validaciones('servicio_judiciales_SI_4')" style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="servicio_judiciales_NO_4" name="servicio_judiciales_NO_4"  onkeyup="validaciones('servicio_judiciales_NO_4')" style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                     <textarea class="form-control"  rows="2" id="servicio_judiciales_Observaciones_4" onkeyup="validaciones('servicio_judiciales_Observaciones_4')" name="servicio_judiciales_Observaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
 
 
                                                                         </tr>
                                                                         <tr>
-                                                                            <th colspan="5">De ser negativa la respuesta, explique porque?: <input type="text" class="form-control" id="servicio_judiciales_respuesta_negativa" name="servicio_judiciales_respuesta_negativa" placeholder="Escribir aqui....."  /></th>
+                                                                            <th colspan="5">De ser negativa la respuesta, explique porque?:
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="servicio_judiciales_respuesta_negativa" onkeyup="validaciones('servicio_judiciales_respuesta_negativa')" name="servicio_judiciales_respuesta_negativa" placeholder="Escribir aqui....."  />
+                                                                            <span class="help-block"></span>
+
+                                                                </div>
+                                                                            </th>
                                                                         </tr>
                                                                         <tr>
                                                                             <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>1</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="servicio_judiciales_acciones1" name="servicio_judiciales_acciones1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                              <div>
+                                                                                  <input type="text" class="form-control" id="servicio_judiciales_acciones1" onkeyup="validaciones('servicio_judiciales_acciones1')" name="servicio_judiciales_acciones1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                                  <span class="help-block"></span>
+                                                                              </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>2</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="servicio_judiciales_acciones2" name="servicio_judiciales_acciones2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="servicio_judiciales_acciones2" onkeyup="validaciones('servicio_judiciales_acciones2')"  name="servicio_judiciales_acciones2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>3</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="servicio_judiciales_acciones3" name="servicio_judiciales_acciones3" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="servicio_judiciales_acciones3" onkeyup="validaciones('servicio_judiciales_acciones3')" name="servicio_judiciales_acciones3" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>4</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="servicio_judiciales_acciones4" name="servicio_judiciales_acciones4" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                           <div>
+                                                                               <input type="text" class="form-control" id="servicio_judiciales_acciones4"  onkeyup="validaciones('servicio_judiciales_acciones4')" name="servicio_judiciales_acciones4" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                               <span class="help-block"></span>
+                                                                           </div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>5</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="servicio_judiciales_acciones5" name="servicio_judiciales_acciones5" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                               <div> <input type="text" class="form-control" id="servicio_judiciales_acciones5"  onkeyup="validaciones('servicio_judiciales_acciones5')" name="servicio_judiciales_acciones5" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+                                                                                   <span class="help-block"></span></div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         </tbody>
@@ -1407,56 +1772,96 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tbody>
                                                                         <tr>
                                                                             <center><td style="padding-top: 40px;">1</td></center>
-                                                                            <td><textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="auxilio_genereal_SI_1" name="auxilio_genereal_si"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="auxilio_genereal_NO_1" name="auxilio_genereal_no"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="auxilio_genereal_Observacaciones_1" name="auxilio_genereal_Observacaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td>
+                                                                                <textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
+                                                                            <td>
+                                                                                <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_SI_1')"  rows="2" id="auxilio_judicial_SI_1" name="auxilio_genereal_si"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control"  onkeyup="validaciones('auxilio_judicial_NO_1')" rows="2" id="auxilio_judicial_NO_1" name="auxilio_genereal_no"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_Observacaciones_')"  rows="2" id="auxilio_judicial_Observacaciones_" name="auxilio_genereal_Observacaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 90px;">2</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >En los últimos doce meses ¿El Órgano Jurisdiccional concedió Auxilio Judicial?</textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De ser afirmativa la respuesta, señale ¿Cuántas resoluciones se han expedido y su fueron puestos en conocimiento de la Oficina de Administración Distrital?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_2_1"  name="auxilio_genereal_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_2_2" name="auxilio_genereal_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_2_1" name="auxilio_genereal_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_2_2" name="auxilio_genereal_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_Observaciones_2_1" name="auxilio_genereal_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " >
-                                                                        </textarea><hr><textarea class="form-control"  rows="2" id="auxilio_genereal_Observaciones_2_2" name="auxilio_genereal_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_1" onkeyup="validaciones('auxilio_judicial_SI_1')" name="auxilio_genereal_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_SI_2_2')" id="auxilio_judicial_SI_2_2" name="auxilio_genereal_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_2_1" onkeyup="validaciones('auxilio_judicial_NO_2_1')" name="auxilio_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_NO_2_2')" id="auxilio_judicial_NO_2_2" name="auxilio_genereal_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="auxilio_judicial_Observaciones_2_1" onkeyup="validaciones('auxilio_judicial_Observaciones_2_1')" name="auxilio_genereal_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                        <hr>
+                                                                               <div>
+                                                                                   <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_Observaciones_2_2')" rows="2" id="auxilio_judicial_Observaciones_2_2" name="auxilio_genereal_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                   <span class="help-block"></span>
+                                                                               </div>
+                                                                            </td>
 
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">3</td>
                                                                             <td><textarea class="form-control"  rows="5" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Al conceder Auxilio Judicial tiene en consideración, que se otorga a los justiciables que para cubrir los gastos del proceso, ponen en peligro su subsistencia y la de quienes de ellos dependen? (Art. 179º TUO del CPC)</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_3" name="auxilio_genereal_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_3" name="auxilio_genereal_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="auxilio_genereal_Observaciones_3" name="auxilio_genereal_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control" onkeyup="validaciones('auxilio_judicial_SI_3')" rows="2" id="auxilio_judicial_SI_3" name="auxilio_genereal_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control" onkeyup="validaciones('auxilio_judicial_NO_3')" rows="2" id="auxilio_judicial_NO_3" name="auxilio_genereal_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                              <div>
+                                                                                  <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_Observaciones_3')" rows="3" id="auxilio_judicial_Observaciones_3" name="auxilio_genereal_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                  <span class="help-block"></span>
+                                                                              </div>
+                                                                            </td>
 
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">4</td>
                                                                             <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿En la Resolución que concede el auxilio judicial se indica que esta comprende únicamente la exoneración en la presentación del derecho por notificación judicial y aranceles judiciales, como lo precisan las normas emitidas al respecto?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_4" name="auxilio_genereal_SI_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_4" name="auxilio_genereal_NO_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="auxilio_genereal_Observaciones_4" name="auxilio_genereal_Observaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_4" onkeyup="validaciones('auxilio_judicial_SI_4')" name="auxilio_genereal_SI_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_NO_4" onkeyup="validaciones('auxilio_judicial_NO_4')" name="auxilio_genereal_NO_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><div>
+                                                                                <textarea class="form-control"  rows="3" id="auxilio_judicial_Observaciones_4"  onkeyup="validaciones('auxilio_judicial_Observaciones_4')" name="auxilio_genereal_Observaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">5</td>
                                                                             <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El justiciable beneficiado con el Auxilio Judicial, usa siempre, el formato aprobado por la R.A. Nº R. A. Nº 182-2004-CE-PJ?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_5" name="auxilio_genereal_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_5" name="auxilio_genereal_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_Observaciones_5" name="auxilio_genereal_Observaciones_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="validaciones('auxilio_judicial_SI_5')" id="auxilio_judicial_SI_5" name="auxilio_genereal_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_NO_5')" id="auxilio_judicial_NO_5" name="auxilio_genereal_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="validaciones('auxilio_judicial_Observaciones_5')" id="auxilio_judicial_Observaciones_5" name="auxilio_genereal_Observaciones_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">6</td>
                                                                             <td><textarea class="form-control"  rows="7" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juzgado en los procesos judiciales en los que hubiera concedido Auxilio Judicial a la parte ganadora, cumple con requerir el reembolso de los derechos por notificación judicial y aranceles judiciales en favor del PJ., conforme lo estipula el Art.412º del TUO del CPC?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_SI_6" name="auxilio_genereal_SI_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="" id="auxilio_genereal_NO_6" name="auxilio_genereal_NO_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="auxilio_genereal_Observaciones_6" name="auxilio_genereal_Observaciones_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_6" name="auxilio_judicial_SI_6" onkeyup="validaciones('auxilio_judicial_SI_6')"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="" id="auxilio_judicial_NO_6" name="auxilio_judicial_NO_6" onkeyup="validaciones('auxilio_judicial_NO_6')" style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" id="auxilio_judicial_Observaciones_6" onkeyup="validaciones('auxilio_judicial_Observaciones_6')" name="auxilio_genereal_Observaciones_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
                                                                         </tr>
 
                                                                         <tr>
@@ -1464,16 +1869,32 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>1</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="auxilio_genereal_Acciones_1" name="auxilio_genereal_Acciones_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="auxilio_judicial_Acciones_1" onkeyup="validaciones('auxilio_judicial_Acciones_1')" name="auxilio_genereal_Acciones_1" placeholder="Escribir aqui......"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>2</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="auxilio_genereal_Acciones_2" name="auxilio_genereal_Acciones_2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" id="auxilio_judicial_Acciones_2" onkeyup="validaciones('auxilio_judicial_Acciones_2')" name="auxilio_genereal_Acciones_2" placeholder="Escribir aqui......"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>3</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="auxilio_genereal_Acciones_3" name="auxilio_genereal_Acciones_3" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                <input type="text" class="form-control" id="auxilio_judicial_Acciones_3" onkeyup="validaciones('auxilio_judicial_Acciones_3')" name="auxilio_genereal_Acciones_3" placeholder="Escribir aqui......" />
+                                                                                <span class="help-block"></span>
+                                                                </div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         </tbody>
@@ -1510,7 +1931,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                 <li><button type="button" class="btn btn-danger prev-step">
                                                         Anterior</button></li>
                                                 <li><button type="button" class="btn btn-default next-step">Omitir</button></li>
-                                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Next</button></li>
+                                                <li><button type="button" id="next2" class="btn btn-primary btn-info-full next">Next</button></li>
                                             </ul>
                                         </div>
                                         <div class="tab-pane" role="tabpanel" id="complete">

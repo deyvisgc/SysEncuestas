@@ -350,9 +350,6 @@
                         message: 'Successfully Actualizado Correctamente!',
                     });
 
-                    setTimeout(refrescar, 10000);
-
-
                     setTimeout(function(){
                      location.reload();
                     }, 2000);
