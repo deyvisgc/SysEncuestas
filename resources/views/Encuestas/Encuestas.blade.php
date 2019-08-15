@@ -953,13 +953,13 @@ deficiencia explicar la acción a
 realizar y plazo para dar la solución.</textarea></td>
                                                                             <td>
                                                                                 <div>
-                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_suministro_Deficiencias"  name="subrasarse_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
+                                                                                    <textarea class="form-control"  rows="3" id="subrasarse_suministro_Deficiencias"  onkeyup="validacion('subrasarse_suministro_Deficiencias')"  name="subrasarse_suministro_Deficiencias" style="color: black;font-weight: bold;" ></textarea>
                                                                                     <span class="help-block"></span>
                                                                                 </div>
 
                                                                             </td>
                                                                             <td>
-                                                                              <div>  <textarea class="form-control"  rows="3" id="subrasarse_suministro_Acciones"  name="subrasarse_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea>
+                                                                              <div>  <textarea class="form-control"  rows="3" id="subrasarse_suministro_Acciones"   onkeyup="validacion('subrasarse_suministro_Acciones')"  name="subrasarse_suministro_Acciones" style="color: black;font-weight: bold;" ></textarea>
                                                                                   <span class="help-block"></span></div>
                                                                             </td>
                                                                         </tr>

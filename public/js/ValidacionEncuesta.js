@@ -55,6 +55,9 @@ $(document).ready(function () {
         var Otros_areas_apoyo_Acciones=$('#Otros_areas_apoyo_Acciones').val();
         var subrasarse_areas_apoyo_Deficiencias = $('#Publicaciones_areas_apoyo_Deficiencias').val();
         var subrasarse_areas_apoyo_Acciones=$('#Publicaciones_areas_apoyo_Archivos').val();
+
+
+
         //fin validacion de areas de apoyos
         //inicio de aspectos logisticos
         var Mensajería_aspectos_logisticos_Deficiencias=$('#Mensajería_aspectos_logisticos_Deficiencias').val();
@@ -133,12 +136,57 @@ $(document).ready(function () {
 
 
 
-        if (personal_total === ''|| observacion_1_Personal===''||observacion_2_Personal==='' || Mesa_Partes_areas_apoyo_Deficiencias === '' || Mesa_Partes_areas_apoyo_Acciones===''||archivo_areas_apoyo_Deficiencias==='' || archivo_areas_apoyo_Acciones === ''|| Notificaciones_areas_apoyo_Deficiencias==='' ||Notificaciones_areas_apoyo_Acciones==='' || Publicaciones_areas_apoyo_Deficiencias === ''|| Publicaciones_areas_apoyo_Archivos==='' ||Convenio_reniec_areas_apoyo_Deficiencias==='' ||Convenio_reniec_areas_apoyo_Acciones==='' ||Requisitorias_areas_apoyo_Deficiencias===''  ||Requisitorias_areas_apoyo_Acciones==='' || Otros_areas_apoyo_Deficiencias==='' ||Otros_areas_apoyo_Acciones===''|| subrasarse_areas_apoyo_Deficiencias ===''|| subrasarse_areas_apoyo_Acciones==='' || Mensajería_aspectos_logisticos_Deficiencias==='' || Mensajería_aspectos_logisticos_Acciones==='' ||Fotocopiado_aspectos_logisticos_Deficiencias==='' || Fotocopiado_aspectos_logisticos_Acciones==='' ||Limpieza_aspectos_logisticos_Deficiencias==='' || Limpieza_aspectos_logisticos_Acciones ==='' || Traducciones_aspectos_logisticos_Deficiencias===''|| Traducciones_aspectos_logisticos_Archivos==='' ||Publicaciones_aspectos_logisticos_Deficiencias==='' ||Publicaciones_aspectos_logisticos_Acciones==='' || Arrendamiento_aspectos_logisticos_Deficiencias==='' || Arrendamiento_aspectos_logisticos_Acciones==='' || Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias===0 || Mantenimiento_vehiculos_aspectos_logisticos_Acciones===0 || Otros_aspectos_logisticos_Deficiencias===''  || Otros_aspectos_logisticos_Acciones==='' || subrasarse_Aspectos_logisticos_Deficiencias==='' || subrasarse_Aspectos_logisticos_Acciones==='' ||Energía_servicio_bascios_Deficiencias==='' || Energía_servicio_bascios_Acciones==='' ||Agua_servicio_bascios_Deficiencias==='' ||Agua_servicio_bascios_Acciones===''  || Telefonía_servicio_bascios_Deficiencias==='' || Telefonía_servicio_bascios_Acciones==='' ||Otros_servicios_basicos_Deficiencias || Otros_servicios_basicos_Acciones===''||subrasarse_servicios_basicos_Deficiencias==='' ||subrasarse_servicios_basicos_Acciones===''|| Armarios_mobiliario_Deficiencias==='' ||Armarios_mobiliario_Acciones==='' || Estantería_mobiliario_Acciones==='' ||Escritorios_mobiliario_Deficiencias===''|| Escritorios_mobiliario_Acciones==='' ||Sillas_mobiliario_Deficiencias==='' || Sillas_mobiliario_Archivos===''|| Módulos_computadoras_mobiliarios_Deficiencias===''|| Módulos_computadoras_mobiliarios_Acciones==='' ||otros_mobiliario_Deficiencias==='' || otros_mobiliario_Acciones==='' || subrasarse_mobiliarios_Deficiencias==='' ||subrasarse_mobiliarios_Acciones===''||
-            Papel_suministro_Deficiencias==='' ||Papel_suministro_Acciones==='' ||Bolígrafos_suministro_Deficiencias==='' ||Bolígrafos_suministro_Acciones  ||
-            Cinta_suministro_Deficiencias==='' ||Cinta_suministro_Acciones==='' ||  Peruano_suministro_Deficiencias==='' ||Peruano_suministro_Archivos===''
-            ||Otros_suministro_Deficiencias==='' ||Otros_suministro_Acciones==='' ||subrasarse_suministro_Deficiencias==='' || subrasarse_suministro_Acciones===''||
-            Carátulas_suministro_Deficiencias==='' ||Carátulas_suministro_Acciones===''
+        if (
+            personal_total === ''||
+            observacion_1_Personal===''||
+            observacion_2_Personal==='' ||
+            Mesa_Partes_areas_apoyo_Deficiencias === '' ||
+            Mesa_Partes_areas_apoyo_Acciones==='' ||
+            archivo_areas_apoyo_Deficiencias==='' ||
+            archivo_areas_apoyo_Acciones === ''||
+            Notificaciones_areas_apoyo_Deficiencias==='' ||
+            Notificaciones_areas_apoyo_Acciones==='' ||
+            Publicaciones_areas_apoyo_Deficiencias === ''||
+            Publicaciones_areas_apoyo_Archivos==='' ||
+            Convenio_reniec_areas_apoyo_Deficiencias==='' ||
+            Convenio_reniec_areas_apoyo_Acciones==='' ||
+            Requisitorias_areas_apoyo_Deficiencias===''  ||
+            Requisitorias_areas_apoyo_Acciones==='' ||
+            Otros_areas_apoyo_Deficiencias==='' ||
+            Otros_areas_apoyo_Acciones===''||
+            subrasarse_areas_apoyo_Deficiencias ===''||
+            subrasarse_areas_apoyo_Acciones==='' ||
+            //personal y area de aópoyo
+            Mensajería_aspectos_logisticos_Deficiencias===''  ||
+            Mensajería_aspectos_logisticos_Acciones === ''||
+            Fotocopiado_aspectos_logisticos_Deficiencias===''||
+            Fotocopiado_aspectos_logisticos_Acciones==='' ||
+            Limpieza_aspectos_logisticos_Deficiencias === '' ||
+            Limpieza_aspectos_logisticos_Acciones==='' ||
+            Traducciones_aspectos_logisticos_Deficiencias==='' ||
+            Traducciones_aspectos_logisticos_Archivos === ''||
+            Publicaciones_aspectos_logisticos_Deficiencias==='' ||
+            Publicaciones_aspectos_logisticos_Acciones==='' ||
+            Arrendamiento_aspectos_logisticos_Deficiencias === ''||
+            Arrendamiento_aspectos_logisticos_Acciones==='' ||
+            Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias==='' ||
+            Mantenimiento_vehiculos_aspectos_logisticos_Acciones==='' ||
+            Otros_aspectos_logisticos_Deficiencias===''  ||
+            Otros_aspectos_logisticos_Acciones==='' ||
+            subrasarse_Aspectos_logisticos_Deficiencias==='' ||
+            subrasarse_Aspectos_logisticos_Acciones===''  ||
+        //aspectos logisticos
 
+            Energía_servicio_bascios_Deficiencias==='' ||
+            Energía_servicio_bascios_Acciones==='' ||
+            Agua_servicio_bascios_Deficiencias==='' ||
+            Agua_servicio_bascios_Acciones==='' ||
+            Telefonía_servicio_bascios_Deficiencias===''||
+            Telefonía_servicio_bascios_Acciones===''||
+            Otros_servicios_basicos_Deficiencias===''||
+            Otros_servicios_basicos_Acciones===''||
+            subrasarse_servicios_basicos_Deficiencias===''||
+            subrasarse_servicios_basicos_Acciones===''
 
 
         )
@@ -148,114 +196,126 @@ $(document).ready(function () {
 
 
         {
-            var personal_total = 0,observacion1,Mesa_Partes_areas_apoyo_Deficiencias=0,Mesa_Partes_areas_apoyo_Acciones=0,archivo_areas_apoyo_Deficiencias=0, archivo_areas_apoyo_Acciones=0,Notificaciones_areas_apoyo_Deficiencias=0,Notificaciones_areas_apoyo_Acciones=0, Publicaciones_areas_apoyo_Deficiencias=0,Publicaciones_areas_apoyo_Archivos=0,Convenio_reniec_areas_apoyo_Deficiencias=0, Convenio_reniec_areas_apoyo_Acciones=0,Requisitorias_areas_apoyo_Deficiencias=0,Requisitorias_areas_apoyo_Acciones=0,Otros_areas_apoyo_Deficiencias=0, Otros_areas_apoyo_Acciones=0,subrasarse_areas_apoyo_Deficiencias=0, subrasarse_areas_apoyo_Acciones=0, Mensajería_aspectos_logisticos_Deficiencias=0,Mensajería_aspectos_logisticos_Acciones=0,Fotocopiado_aspectos_logisticos_Deficiencias=0,Fotocopiado_aspectos_logisticos_Acciones=0,Limpieza_aspectos_logisticos_Deficiencias=0,Limpieza_aspectos_logisticos_Acciones=0,Traducciones_aspectos_logisticos_Deficiencias=0,Traducciones_aspectos_logisticos_Archivos=0,Publicaciones_aspectos_logisticos_Deficiencias=0, Publicaciones_aspectos_logisticos_Acciones=0,Arrendamiento_aspectos_logisticos_Deficiencias=0,Arrendamiento_aspectos_logisticos_Acciones=0,Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias=0,Mantenimiento_vehiculos_aspectos_logisticos_Acciones=0,Otros_aspectos_logisticos_Deficiencias=0,Otros_aspectos_logisticos_Acciones=0,subrasarse_Aspectos_logisticos_Deficiencias=0,subrasarse_Aspectos_logisticos_Acciones=0,Energía_servicio_bascios_Deficiencias=0,Energía_servicio_bascios_Acciones=0,Agua_servicio_bascios_Deficiencias=0,Agua_servicio_bascios_Acciones=0,Telefonía_servicio_bascios_Deficiencias=0,Telefonía_servicio_bascios_Acciones=0,Otros_servicios_basicos_Deficiencias=0,Otros_servicios_basicos_Acciones=0,subrasarse_servicios_basicos_Deficiencias=0,subrasarse_servicios_basicos_Acciones=0,Armarios_mobiliario_Deficiencias=0, Armarios_mobiliario_Acciones=0, Estantería_mobiliario_Acciones=0, Escritorios_mobiliario_Deficiencias=0, Escritorios_mobiliario_Acciones=0, Sillas_mobiliario_Deficiencias=0, Sillas_mobiliario_Archivos=0, Módulos_computadoras_mobiliarios_Deficiencias=0,Módulos_computadoras_mobiliarios_Acciones=0,otros_mobiliario_Deficiencias=0,otros_mobiliario_Acciones=0, subrasarse_mobiliarios_Deficiencias=0, subrasarse_mobiliarios_Acciones=0
+            var personal_total = 0,observacion_1_Personal=0,observacion_2_Personal=0,Mesa_Partes_areas_apoyo_Deficiencias=0,Mesa_Partes_areas_apoyo_Acciones=0,
+                archivo_areas_apoyo_Deficiencias=0,archivo_areas_apoyo_Acciones=0,Notificaciones_areas_apoyo_Deficiencias=0,Notificaciones_areas_apoyo_Acciones=0,
+                Publicaciones_areas_apoyo_Deficiencias=0,Publicaciones_areas_apoyo_Archivos=0,Convenio_reniec_areas_apoyo_Deficiencias=0,
+                Convenio_reniec_areas_apoyo_Acciones=0, Requisitorias_areas_apoyo_Deficiencias=0,Requisitorias_areas_apoyo_Acciones=0,Otros_areas_apoyo_Deficiencias=0,
+                Otros_areas_apoyo_Acciones=0, subrasarse_areas_apoyo_Deficiencias=0,subrasarse_areas_apoyo_Acciones=0 ,
+//personal y area de aópoyo
+                Mensajería_aspectos_logisticos_Deficiencias=0,Mensajería_aspectos_logisticos_Acciones=0,Fotocopiado_aspectos_logisticos_Deficiencias=0,Fotocopiado_aspectos_logisticos_Acciones=0,
+                Limpieza_aspectos_logisticos_Deficiencias=0,Limpieza_aspectos_logisticos_Acciones=0,Traducciones_aspectos_logisticos_Deficiencias=0,Traducciones_aspectos_logisticos_Archivos=0,
+                Publicaciones_aspectos_logisticos_Deficiencias=0,Publicaciones_aspectos_logisticos_Acciones=0,Arrendamiento_aspectos_logisticos_Deficiencias=0,Arrendamiento_aspectos_logisticos_Acciones=0,
+                Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias=0,Mantenimiento_vehiculos_aspectos_logisticos_Acciones=0,Otros_aspectos_logisticos_Deficiencias=0,
+                Otros_aspectos_logisticos_Acciones=0,subrasarse_Aspectos_logisticos_Deficiencias=0,subrasarse_Aspectos_logisticos_Acciones=0
+                //aspectos logisticos
+            Energía_servicio_bascios_Deficiencias=0, Energía_servicio_bascios_Acciones=0,Agua_servicio_bascios_Deficiencias=0, Agua_servicio_bascios_Acciones=0,
+            Telefonía_servicio_bascios_Deficiencias=0,Telefonía_servicio_bascios_Acciones=0,Otros_servicios_basicos_Deficiencias=0,Otros_servicios_basicos_Acciones=0,
+            subrasarse_servicios_basicos_Deficiencias=0,subrasarse_servicios_basicos_Acciones
 
-            Papel_suministro_Deficiencias=0,
-             Papel_suministro_Acciones=0,
-             Bolígrafos_suministro_Deficiencias=0,
-             Bolígrafos_suministro_Acciones=0,
-             Cinta_suministro_Deficiencias=0,
-             Cinta_suministro_Acciones=0,
-                Peruano_suministro_Deficiencias=0,
-             Peruano_suministro_Archivos=0,
-             Otros_suministro_Deficiencias=0,
-             Otros_suministro_Acciones=0,
-             subrasarse_suministro_Deficiencias=0,
-             subrasarse_suministro_Acciones=0
 
-            ;
+
+
+
+
+
+        ;
 
             personal_total = validacion('personal_total');
-            observacion1 = validacion('observacion_1_Personal');
-            observacion1 = validacion('observacion_2_Personal');
-
-            Mesa_Partes_areas_apoyo_Deficiencias = validacion('Mesa_Partes_areas_apoyo_Deficiencias');
-            Mesa_Partes_areas_apoyo_Acciones = validacion('Mesa_Partes_areas_apoyo_Acciones');
-            archivo_areas_apoyo_Deficiencias = validacion('archivo_areas_apoyo_Deficiencias');
-
-            archivo_areas_apoyo_Acciones = validacion('archivo_areas_apoyo_Acciones');
-            Notificaciones_areas_apoyo_Deficiencias = validacion('Notificaciones_areas_apoyo_Deficiencias');
-            Notificaciones_areas_apoyo_Acciones = validacion('Notificaciones_areas_apoyo_Acciones');
-
-            Publicaciones_areas_apoyo_Deficiencias = validacion('Publicaciones_areas_apoyo_Deficiencias');
-            Publicaciones_areas_apoyo_Archivos = validacion('Publicaciones_areas_apoyo_Archivos');
-            Convenio_reniec_areas_apoyo_Deficiencias = validacion('Convenio_reniec_areas_apoyo_Deficiencias');
-
-            Convenio_reniec_areas_apoyo_Acciones = validacion('Convenio_reniec_areas_apoyo_Acciones');
-            Requisitorias_areas_apoyo_Deficiencias = validacion('Requisitorias_areas_apoyo_Deficiencias');
-            Requisitorias_areas_apoyo_Acciones = validacion('Requisitorias_areas_apoyo_Acciones');
-
-            Otros_areas_apoyo_Deficiencias = validacion('Otros_areas_apoyo_Deficiencias');
-            Otros_areas_apoyo_Acciones = validacion('Otros_areas_apoyo_Acciones');
-            subrasarse_areas_apoyo_Deficiencias = validacion('subrasarse_areas_apoyo_Deficiencias');
-            subrasarse_areas_apoyo_Acciones = validacion('subrasarse_areas_apoyo_Acciones');
-            //fin de validacion de areas de apoyo
+            observacion_1_Personal = validacion('observacion_1_Personal');
+            observacion_2_Personal = validacion('observacion_2_Personal');
+            Mesa_Partes_areas_apoyo_Deficiencias= validacion('Mesa_Partes_areas_apoyo_Deficiencias');
+            Mesa_Partes_areas_apoyo_Acciones=validacion('Mesa_Partes_areas_apoyo_Acciones');
+            archivo_areas_apoyo_Deficiencias=validacion('archivo_areas_apoyo_Deficiencias');
+            archivo_areas_apoyo_Acciones=validacion('archivo_areas_apoyo_Acciones');
+            Notificaciones_areas_apoyo_Deficiencias=validacion('Notificaciones_areas_apoyo_Deficiencias');
+            Notificaciones_areas_apoyo_Acciones=validacion('Notificaciones_areas_apoyo_Acciones');
+            Publicaciones_areas_apoyo_Deficiencias=validacion('Publicaciones_areas_apoyo_Deficiencias');
+            Publicaciones_areas_apoyo_Archivos=validacion('Publicaciones_areas_apoyo_Archivos');
+            Convenio_reniec_areas_apoyo_Deficiencias=validacion('Convenio_reniec_areas_apoyo_Deficiencias');
+            Convenio_reniec_areas_apoyo_Acciones=validacion('Convenio_reniec_areas_apoyo_Acciones');
+            Requisitorias_areas_apoyo_Deficiencias=validacion('Requisitorias_areas_apoyo_Deficiencias');
+            Requisitorias_areas_apoyo_Acciones=validacion('Requisitorias_areas_apoyo_Acciones');
+            Otros_areas_apoyo_Deficiencias=validacion('Otros_areas_apoyo_Deficiencias');
+            Otros_areas_apoyo_Acciones=validacion('Otros_areas_apoyo_Acciones');
+            subrasarse_areas_apoyo_Deficiencias=validacion('subrasarse_areas_apoyo_Deficiencias');
+            subrasarse_areas_apoyo_Acciones=validacion('subrasarse_areas_apoyo_Acciones');
+            //personal y area de aópoyo
 
             Mensajería_aspectos_logisticos_Deficiencias=validacion('Mensajería_aspectos_logisticos_Deficiencias');
-            Mensajería_aspectos_logisticos_Acciones=validacion('Mensajería_aspectos_logisticos_Acciones');
+            Mensajería_aspectos_logisticos_Acciones =validacion('Mensajería_aspectos_logisticos_Acciones');
             Fotocopiado_aspectos_logisticos_Deficiencias=validacion('Fotocopiado_aspectos_logisticos_Deficiencias');
-            Fotocopiado_aspectos_logisticos_Acciones=validacion("Fotocopiado_aspectos_logisticos_Acciones")
-            Limpieza_aspectos_logisticos_Deficiencias=validacion('Limpieza_aspectos_logisticos_Deficiencias');
+            Fotocopiado_aspectos_logisticos_Acciones==validacion('Fotocopiado_aspectos_logisticos_Acciones');
+            Limpieza_aspectos_logisticos_Deficiencias =validacion('Limpieza_aspectos_logisticos_Deficiencias');
             Limpieza_aspectos_logisticos_Acciones=validacion('Limpieza_aspectos_logisticos_Acciones');
-
-
             Traducciones_aspectos_logisticos_Deficiencias=validacion('Traducciones_aspectos_logisticos_Deficiencias');
-            Traducciones_aspectos_logisticos_Archivos=validacion('Traducciones_aspectos_logisticos_Archivos');
+            Traducciones_aspectos_logisticos_Archivos =validacion('Traducciones_aspectos_logisticos_Archivos');
             Publicaciones_aspectos_logisticos_Deficiencias=validacion('Publicaciones_aspectos_logisticos_Deficiencias');
             Publicaciones_aspectos_logisticos_Acciones=validacion('Publicaciones_aspectos_logisticos_Acciones');
-            Arrendamiento_aspectos_logisticos_Deficiencias=validacion('Arrendamiento_aspectos_logisticos_Deficiencias');
+            Arrendamiento_aspectos_logisticos_Deficiencias =validacion('Arrendamiento_aspectos_logisticos_Deficiencias');
             Arrendamiento_aspectos_logisticos_Acciones=validacion('Arrendamiento_aspectos_logisticos_Acciones');
-
             Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias=validacion('Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias');
             Mantenimiento_vehiculos_aspectos_logisticos_Acciones=validacion('Mantenimiento_vehiculos_aspectos_logisticos_Acciones');
             Otros_aspectos_logisticos_Deficiencias=validacion('Otros_aspectos_logisticos_Deficiencias');
             Otros_aspectos_logisticos_Acciones=validacion('Otros_aspectos_logisticos_Acciones');
             subrasarse_Aspectos_logisticos_Deficiencias=validacion('subrasarse_Aspectos_logisticos_Deficiencias');
             subrasarse_Aspectos_logisticos_Acciones=validacion('subrasarse_Aspectos_logisticos_Acciones');
-
-        Energía_servicio_bascios_Deficiencias=validacion('Energía_servicio_bascios_Deficiencias');
-        Energía_servicio_bascios_Acciones=validacion('Energía_servicio_bascios_Acciones') ;
-        Agua_servicio_bascios_Deficiencias=validacion('Agua_servicio_bascios_Deficiencias');
-        Agua_servicio_bascios_Acciones=validacion('Agua_servicio_bascios_Acciones');
-         Telefonía_servicio_bascios_Deficiencias=validacion('Telefonía_servicio_bascios_Deficiencias');
-          Telefonía_servicio_bascios_Acciones=validacion('Telefonía_servicio_bascios_Acciones');
-        Otros_servicios_basicos_Deficiencias=validacion('Otros_servicios_basicos_Deficiencias');
-         Otros_servicios_basicos_Acciones=validacion('Otros_servicios_basicos_Acciones');
-         subrasarse_servicios_basicos_Deficiencias=validacion('subrasarse_servicios_basicos_Deficiencias');
-        subrasarse_servicios_basicos_Acciones=validacion('subrasarse_servicios_basicos_Acciones');
-//fin aspectos basicos
-             Armarios_mobiliario_Deficiencias=validacion('Armarios_mobiliario_Deficiencias');
-             Armarios_mobiliario_Acciones=validacion('Armarios_mobiliario_Acciones');
-             Estantería_mobiliario_Acciones=validacion('Estantería_mobiliario_Acciones');
-            Estantería_mobiliario_Deficiencias=validacion('Estantería_mobiliario_Deficiencias');
-             Escritorios_mobiliario_Deficiencias=validacion('Escritorios_mobiliario_Deficiencias');
-             Escritorios_mobiliario_Acciones=validacion('Escritorios_mobiliario_Acciones');
-             Sillas_mobiliario_Deficiencias=validacion('Sillas_mobiliario_Deficiencias');
-             Sillas_mobiliario_Archivos=validacion('Sillas_mobiliario_Archivos');
-             Módulos_computadoras_mobiliarios_Deficiencias=validacion('Módulos_computadoras_mobiliarios_Deficiencias');
-             Módulos_computadoras_mobiliarios_Acciones=validacion('Módulos_computadoras_mobiliarios_Acciones');
-             otros_mobiliario_Deficiencias=validacion('otros_mobiliario_Deficiencias');
-             otros_mobiliario_Acciones=validacion('otros_mobiliario_Acciones');
-             subrasarse_mobiliarios_Deficiencias=validacion('subrasarse_mobiliarios_Deficiencias');
-            subrasarse_mobiliarios_Acciones=validacion('subrasarse_mobiliarios_Acciones');
-       //fin mobiliario
-            Papel_suministro_Deficiencias=validacion('Papel_suministro_Deficiencias');
-                Papel_suministro_Acciones=validacion('Papel_suministro_Acciones');
-                Bolígrafos_suministro_Deficiencias=validacion('Bolígrafos_suministro_Deficiencias');
-                Bolígrafos_suministro_Acciones=validacion('Bolígrafos_suministro_Acciones');
-                Cinta_suministro_Deficiencias=validacion('Cinta_suministro_Deficiencias');
-                Cinta_suministro_Acciones=validacion('Cinta_suministro_Acciones');
-             Carátulas_suministro_Deficiencias=validacion('Carátulas_suministro_Deficiencias');
-             Carátulas_suministro_Acciones=validacion('Carátulas_suministro_Acciones');
-                Peruano_suministro_Deficiencias=validacion('Peruano_suministro_Deficiencias');
-                Peruano_suministro_Archivos=validacion('Peruano_suministro_Archivos');
-                Otros_suministro_Deficiencias=validacion('Otros_suministro_Deficiencias');
-                Otros_suministro_Acciones=validacion('Otros_suministro_Acciones');
-                subrasarse_suministro_Deficiencias=validacion('subrasarse_suministro_Deficiencias');
-                subrasarse_suministro_Acciones=validacion('subrasarse_suministro_Acciones');
+///                aspectos logisticos
 
 
-            if (personal_total === false) {
+            Energía_servicio_bascios_Deficiencias=validacion('Energía_servicio_bascios_Deficiencias');
+            Energía_servicio_bascios_Acciones=validacion('Energía_servicio_bascios_Acciones');
+            Agua_servicio_bascios_Deficiencias=validacion('Agua_servicio_bascios_Deficiencias');
+            Agua_servicio_bascios_Acciones=validacion('Agua_servicio_bascios_Acciones');
+            Telefonía_servicio_bascios_Deficiencias=validacion('Telefonía_servicio_bascios_Deficiencias');
+            Telefonía_servicio_bascios_Acciones=validacion('Telefonía_servicio_bascios_Acciones');
+            Otros_servicios_basicos_Deficiencias=validacion('Otros_servicios_basicos_Deficiencias');
+            Otros_servicios_basicos_Acciones=validacion('Otros_servicios_basicos_Acciones');
+            subrasarse_servicios_basicos_Deficiencias=validacion('subrasarse_servicios_basicos_Deficiencias');
+            subrasarse_servicios_basicos_Acciones=validacion('subrasarse_servicios_basicos_Acciones');
+
+
+            if (personal_total === false || observacion_1_Personal===false||observacion_2_Personal===false || Mesa_Partes_areas_apoyo_Deficiencias===false||
+                Mesa_Partes_areas_apoyo_Acciones===false||  archivo_areas_apoyo_Deficiencias===false || archivo_areas_apoyo_Acciones===false||
+                Notificaciones_areas_apoyo_Deficiencias===false || Notificaciones_areas_apoyo_Acciones===false || Publicaciones_areas_apoyo_Deficiencias===false
+                ||Publicaciones_areas_apoyo_Archivos===false || Convenio_reniec_areas_apoyo_Deficiencias===false  || Convenio_reniec_areas_apoyo_Acciones===false
+                || Requisitorias_areas_apoyo_Deficiencias===false  || Requisitorias_areas_apoyo_Acciones===false || Otros_areas_apoyo_Deficiencias===false
+                || Otros_areas_apoyo_Acciones===false   || subrasarse_areas_apoyo_Deficiencias===false || subrasarse_areas_apoyo_Acciones===false||
+                //personal y area de aópoyo
+
+                Mensajería_aspectos_logisticos_Deficiencias===false ||
+                Mensajería_aspectos_logisticos_Acciones === false||
+                Fotocopiado_aspectos_logisticos_Deficiencias===false||
+                Fotocopiado_aspectos_logisticos_Acciones===false ||
+                Limpieza_aspectos_logisticos_Deficiencias === false ||
+                Limpieza_aspectos_logisticos_Acciones===false ||
+                Traducciones_aspectos_logisticos_Deficiencias===false ||
+                Traducciones_aspectos_logisticos_Archivos === false ||
+                Publicaciones_aspectos_logisticos_Deficiencias===false ||
+                Publicaciones_aspectos_logisticos_Acciones=== false ||
+                Arrendamiento_aspectos_logisticos_Deficiencias === false||
+                Arrendamiento_aspectos_logisticos_Acciones=== false ||
+                Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias===false ||
+                Mantenimiento_vehiculos_aspectos_logisticos_Acciones===false ||
+                Otros_aspectos_logisticos_Deficiencias===false ||
+                Otros_aspectos_logisticos_Acciones===false ||
+                subrasarse_Aspectos_logisticos_Deficiencias===false ||
+                subrasarse_Aspectos_logisticos_Acciones===false ||
+            //aspectos logisticoss
+
+                Energía_servicio_bascios_Deficiencias===false ||
+                Energía_servicio_bascios_Acciones===false ||
+                Agua_servicio_bascios_Deficiencias===false ||
+                Agua_servicio_bascios_Acciones===false||
+                Telefonía_servicio_bascios_Deficiencias===false||
+                Telefonía_servicio_bascios_Acciones===false||
+                Otros_servicios_basicos_Deficiencias===false||
+                Otros_servicios_basicos_Acciones===false||
+                subrasarse_servicios_basicos_Deficiencias===false||
+                subrasarse_servicios_basicos_Acciones===false
+
+
+
+            ) {
                 $("#exito").hide();
                 $("#error").show();
             } else {
@@ -264,6 +324,8 @@ $(document).ready(function () {
             }
         }
     else {
+
+        alert('sssss')
             var $active = $('.wizard .nav-tabs li.active');
             $active.next().removeClass('disabled');
             nextTab($active);
@@ -1867,7 +1929,7 @@ function validacion(campo){
             $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
             return true;
 
-        }
+    }
     }
 }
 function nextTab(elem) {

@@ -349,7 +349,13 @@
                         title: 'OK',
                         message: 'Successfully Actualizado Correctamente!',
                     });
+
                     setTimeout(refrescar, 10000);
+
+
+                    setTimeout(function(){
+                     location.reload();
+                    }, 2000);
 
                 }
 
@@ -357,9 +363,6 @@
 
 
         }
-        function refrescar(){
-            //Actualiza la el div con los datos de imagenes.php
-            location.reload();
-        }
+
     </script>
     @endsection
