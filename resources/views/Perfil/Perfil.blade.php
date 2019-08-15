@@ -344,12 +344,14 @@
                 processData: false,
                 contentType : false,
                 success:function (index) {
-                    file.trigger('reset');
+
                     iziToast.success({
                         title: 'OK',
                         message: 'Successfully Actualizado Correctamente!',
                     });
-
+                    setTimeout(function(){
+                     location.reload();
+                    }, 2000);
                 }
 
             });
