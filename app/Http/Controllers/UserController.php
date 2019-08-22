@@ -49,28 +49,56 @@ class UserController extends Controller
         return view('Admin.UsuariosDelete');
     }
     public function store(Request $request){
-        $user=new User();
-        $user->email=$request->usuario;
-        $user->password=bcrypt($request->password);
-        if($user->imagen==null){
-            if(Input::HasFile('foto')){
-                $file = Input::file('foto');
-                $file->move(public_path() . '/Imagenes/Usuario', $file->getClientOriginalName());
-                $user->imagen = $file->getClientOriginalName();
+
+        $regla=
+            [  'foto'=>'mimes:jpeg,bmp,png ',
+                'email'=>'required |unique:usuario',
+                'password' => 'required',
+                'string',
+                'min:10',             // must be at least 10 characters in length
+                'regex:/[a-z]/',      // must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                'regex:/[0-9]/',      // must contain at least one digit
+                'regex:/[@$!%*#?&]/',
+
+            ];
+        $validate=Validator::make(Input::all(),$regla);
+        if($validate->fails()){
+            return response()->json(array('errors' => $validate->getMessageBag()->toArray()));
+
+        }else{
+            $user=new User();
+            $user->email=$request->email;
+            $user->password=bcrypt($request->password);
+            if($user->imagen==null){
+                if(Input::HasFile('foto')){
+                    $file = Input::file('foto');
+                    $file->move(public_path() . '/Imagenes/Usuario', $file->getClientOriginalName());
+                    $user->imagen = $file->getClientOriginalName();
+                }
+            } else{
+                $user->imagen='descarga.jpg';
             }
-        } else{
-            $user->imagen='descarga.jpg';
+            $user->Rol_idRol=$request->rol;
+            $user->estado=2;
+            $user->nombre=$request->nombre;
+            $user->Apellidos=$request->apellidos;
+            $user->Telefono=$request->telefono;
+            $user->DNI=$request->dni;
+            $user->direccion=$request->direccion;
+            $user->estado_Delete=0;
+            $user->save();
+
+
         }
-        $user->Rol_idRol=$request->rol;
-        $user->estado=2;
-        $user->nombre=$request->nombre;
-        $user->Apellidos=$request->apellidos;
-        $user->Telefono=$request->telefono;
-        $user->DNI=$request->dni;
-        $user->direccion=$request->direccion;
-        $user->estado_Delete=0;
-        $user->save();
         return response()->json(array("success"=>true));
+
+
+
+
+
+
+
 
 
 

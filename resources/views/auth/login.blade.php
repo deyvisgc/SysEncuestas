@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <div class="col-xs-12">
                         <input class="form-control" type="text" name="email" value="{{ old('email') }}"   placeholder="Usuario"></div>
-                    @error('password')
+                    @error('email')
                     <span class="invalid-feedback" role="alert">
                 <strong style="color: red" >{{$message}}</strong></span>
                     @enderror

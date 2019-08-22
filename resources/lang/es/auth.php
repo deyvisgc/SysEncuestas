@@ -14,6 +14,8 @@ return [
     */
 
     'failed' => 'Estas credenciales no coinciden con nuestros registros.',
+    'email' => 'Email Incorrecto',
+    'password' => 'Contraseña Incorrecta ',
     'throttle' => 'Demasiados intentos fallidos en muy poco tiempo. Por favor intente de nuevo en :seconds segundos.',
 
 ];

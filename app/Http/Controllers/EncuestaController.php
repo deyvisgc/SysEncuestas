@@ -299,7 +299,7 @@ class EncuestaController extends Controller
            $servicios_judiciales->Condicion_tres_Observa = $request->servicio_judiciales_Observaciones_3;
 
            if ($request->get('servicio_judiciales_SI_4')) {
-               $servicios_judiciales->Condicion_cuatro = $request->get('servicio_judiciales_SI_3');
+               $servicios_judiciales->Condicion_cuatro = $request->get('servicio_judiciales_SI_4');
            } else {
                $servicios_judiciales->Condicion_cuatro = $request->get('servicio_judiciales_NO_4');
            }
@@ -315,15 +315,15 @@ class EncuestaController extends Controller
            $servicios_judiciales->save();
 
            $auxilio_judicial = new Auxilio_Judicial();
-           if ($request->get('auxilio_genereal_si')) {
-               $auxilio_judicial->auxi_Judi_Condi_uno = $request->get('auxilio_genereal_si');
+           if ($request->get('auxilio_judicial_SI_1')) {
+               $auxilio_judicial->auxi_Judi_Condi_uno = $request->get('auxilio_judicial_SI_1');
            } else {
-               $auxilio_judicial->auxi_Judi_Condi_uno = $request->get('auxilio_genereal_no');
+               $auxilio_judicial->auxi_Judi_Condi_uno = $request->get('auxilio_judicial_NO_1');
            }
 
            $auxilio_judicial->auxi_Judi_Condici_uno_Observa = $request->auxilio_genereal_Observacaciones_1;
-           if ($request->get('auxilio_genereal_SI_2_1')) {
-               $auxilio_judicial->auxi_Judi_Condici_dos = $request->get('auxilio_genereal_SI_2_1');
+           if ($request->get('auxilio_judicial_SI_2_1')) {
+               $auxilio_judicial->auxi_Judi_Condici_dos = $request->get('auxilio_judicial_SI_2_1');
            } else {
                $auxilio_judicial->auxi_Judi_Condici_dos = $request->get('auxilio_genereal_NO_2_1');
            }
@@ -356,10 +356,10 @@ class EncuestaController extends Controller
            }
            $auxilio_judicial->auxi_Judi_Condici_cinco_Observa = $request->auxilio_genereal_Observaciones_5;
 
-           if ($request->get('auxilio_genereal_SI_6')) {
-               $auxilio_judicial->auxi_Judi_Condici_seis = $request->auxilio_genereal_SI_6;
+           if ($request->get('auxilio_judicial_SI_6')) {
+               $auxilio_judicial->auxi_Judi_Condici_seis = $request->auxilio_judicial_SI_6;
            } else {
-               $auxilio_judicial->auxi_Judi_Condici_seis = $request->auxilio_genereal_NO_6;
+               $auxilio_judicial->auxi_Judi_Condici_seis = $request->auxilio_judicial_NO_6;
            }
 
            $auxilio_judicial->auxi_Judi_Condici_seis_Observa = $request->auxilio_genereal_Observaciones_6;
@@ -417,9 +417,9 @@ class EncuestaController extends Controller
            }
            $peritos_judiciales->Peritos_Condicion_seis_Observa = $request->Peritos_judiciales_Obserbaciones_6_1;
            if ($request->get('Peritos_judiciales_SI_6_2')) {
-               $peritos_judiciales->Peritos_Condicion_seis = $request->Peritos_judiciales_SI_6_2;
+               $peritos_judiciales->Peritos_Condicion_seis_uno = $request->Peritos_judiciales_SI_6_2;
            } else {
-               $peritos_judiciales->Peritos_Condicion_seis = $request->Peritos_judiciales_NO_6_2;
+               $peritos_judiciales->Peritos_Condicion_seis_uno = $request->Peritos_judiciales_NO_6_2;
            }
 
            $peritos_judiciales->Peritos_Condicion_seis_uno_Observa = $request->Peritos_judiciales_Obserbaciones_6_2;

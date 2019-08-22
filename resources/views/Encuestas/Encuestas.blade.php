@@ -1793,7 +1793,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                             <td style="padding-top: 90px;">2</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >En los últimos doce meses ¿El Órgano Jurisdiccional concedió Auxilio Judicial?</textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De ser afirmativa la respuesta, señale ¿Cuántas resoluciones se han expedido y su fueron puestos en conocimiento de la Oficina de Administración Distrital?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_1" onkeyup="validaciones('auxilio_judicial_SI_1')" name="auxilio_genereal_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_1" onkeyup="validaciones('auxilio_judicial_SI_1')" name="auxilio_judicial_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_SI_2_2')" id="auxilio_judicial_SI_2_2" name="auxilio_genereal_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                                             <td><textarea class="form-control"  rows="2" id="auxilio_judicial_NO_2_1" onkeyup="validaciones('auxilio_judicial_NO_2_1')" name="auxilio_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_NO_2_2')" id="auxilio_judicial_NO_2_2" name="auxilio_genereal_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
@@ -1969,7 +1969,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                     </td>
                                                                 <td>
                                                                         <div>
-                                                                            <textarea  rows="2" class="form-control" onkeyup="Valida('Peritos_judiciales_Obserbaciones_1');" id="Peritos_judiciales_Obserbaciones_1"  name="auxilio_genereal_Acciones_3" placeholder="Escribir aqui......" ></textarea>
+                                                                            <textarea  rows="2" class="form-control" onkeyup="Valida('Peritos_judiciales_Obserbaciones_1');" id="Peritos_judiciales_Obserbaciones_1"  name="Peritos_judiciales_Obserbaciones_1" placeholder="Escribir aqui......" ></textarea>
                                                                             <span class="help-block"></span>
                                                                         </div>
                                                                     </td>
@@ -2566,7 +2566,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                             <td>1</td>
                                                                             <td colspan="5">
                                                                                 <div>
-                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cobransas_certificados_ACCIONES_1')" name="Cobransas_certificados_NO_6"  id="Cobransas_certificados_ACCIONES_1" name="Cobransas_certificados_ACCIONES_1" placeholder="Escribir aqui......" />
+                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cobransas_certificados_ACCIONES_1')" id="Cobransas_certificados_ACCIONES_1" name="Cobransas_certificados_ACCIONES_1" placeholder="Escribir aqui......" />
                                                                                     <span class="help-block"></span>
                                                                                </div>
 

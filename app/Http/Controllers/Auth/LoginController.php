@@ -4,7 +4,8 @@ namespace SysEncuesta\Http\Controllers\Auth;
 
 use SysEncuesta\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use \Illuminate\Http\Request;
+use SysEncuesta\User;
 class LoginController extends Controller
 {
     /*
@@ -19,6 +20,8 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
+    public $maxAttempts=3;
+    public $decayMinutes=1;
 
     /**
      * Where to redirect users after login.
@@ -35,6 +38,24 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        if ( ! User::where('email', $request->email)->first() ) {
+            return redirect()->back()
+                ->withInput($request->only($this->username(), 'remember'))
+                ->withErrors([
+                    $this->username() => trans('auth.email'),
+                ]);
+        }
+        if ( ! User::where('email', $request->email)->where('password', bcrypt($request->password))->first() ) {
+            return redirect()->back()
+                ->withInput($request->only($this->username(), 'remember'))
+                ->withErrors([
+                    'password' => trans('auth.password'),
+                ]);
+        }
     }
  
 }

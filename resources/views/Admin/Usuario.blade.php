@@ -22,7 +22,7 @@
                     <h4 class="m-b-30 m-t-0">LISTA DE USUARIOS <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Nuevo</button> </h4>
                     <div id="datatable-buttons_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                         </div>
-                    <div class="table-responsive">
+
                         <table id="tb_usuarios" class="table table-striped table-bordered dataTable no-footer dtr-inline" role="grid" aria-describedby="datatable-buttons_info">
                             <thead>
                             <tr role="row">
@@ -39,7 +39,7 @@
 
                             </tbody>
                         </table>
-                    </div>
+
 
                     </div>
                 </div>
@@ -87,7 +87,8 @@
                                         <div class="form-group" >
                                             <label for="inputEmail3" class="col-sm-3 control-label">Usuario</label>
                                             <div class="col-sm-7">
-                                                <input type="text" name="usuario" class="form-control" onkeyup="validacion('usuario')" id="usuario" placeholder="Escriba aqui....">
+                                                <input type="text" name="email" class="form-control" onkeyup="validacion('usuario')" id="usuario" placeholder="Escriba aqui....">
+                                                <p class="errorUser text-danger hidden"></p>
                                                 <span class="help-block"></span>
                                             </div>
                                             <input type="hidden" name="idusuario"  class="form-control" id="idusuario" placeholder="Usuario">
@@ -98,6 +99,7 @@
                                             <div class="col-sm-7">
                                                 <input type="password" name="password" onkeyup="validacion('password')" class="form-control" id="password" placeholder="*******">
                                                 <span class="help-block"></span>
+                                                <p class="errorPassword text-danger hidden"></p>
                                             </div>
                                         </div>
 
@@ -163,6 +165,7 @@
                                                 <input id="file-upload" name="foto"  onchange='cambiar()' type="file" style='display: none;'/>
                                                 <div style="margin-left: 250px;" id="info"></div>
                                             </div>
+                                            <p class="errorFoto text-danger hidden"></p>
                                             <span class="help-block"></span>
                                         </div>
                                         <div class="modal-footer">
@@ -236,7 +239,7 @@
 
       tabla=  $('#tb_usuarios').dataTable({
             stateSave: true,
-            responsive: true,
+         responsive: true,
             processing: false,
             serverSide : true,
             language: {
@@ -347,6 +350,34 @@
                   processData: false,
                   contentType : false,
                   success:function (response) {
+                      $('.errorUser').addClass('hidden');
+                      $('.errorFoto').addClass('hidden');
+                      $('.errorPassword').addClass('hidden');
+                      if (response.errors) {
+
+                          if (response.errors.email){
+                              iziToast.warning({
+                                  title: 'Caution',
+                                  message: 'Porfavor Revise el Registro de Credenciales',
+                              });
+                              $('.errorUser').removeClass('hidden');
+                              $('.errorUser').text(response.errors.email);
+                          }
+                          if (response.errors.foto){
+                              $('.errorFoto').removeClass('hidden');
+                              $('.errorFoto').text(response.errors.foto);
+                          }
+                          if (response.errors.password){
+                              iziToast.warning({
+                                  title: 'Caution',
+                                  message: 'Porfavor Revise el Registro de Credenciales',
+                              });
+                              $('.errorPassword').removeClass('hidden');
+                              $('.errorPassword').text(response.errors.password);
+                          }
+
+
+                      }
                       if(response.success==true){
                           iziToast.success({
                               title: 'OK',
