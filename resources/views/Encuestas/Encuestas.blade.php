@@ -1775,14 +1775,14 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                             <td>
                                                                                 <textarea class="form-control" readonly  rows="4" style="color: black;font-weight: bold; ">¿Cuenta con la Directiva Nº 006-2004-CE-PJ, “Procedimientos para la Concesión de Beneficio de Auxilio Judicial“ y el “Formato de Auxilio Judicial”?</textarea></td>
                                                                             <td>
-                                                                                <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_SI_1')"  rows="2" id="auxilio_judicial_SI_1" name="auxilio_genereal_si"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_SI_1')"  rows="2" id="auxilio_judicial_SI_1" name="auxilio_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
                                                                             </td>
                                                                             <td>
-                                                                                <textarea class="form-control"  onkeyup="validaciones('auxilio_judicial_NO_1')" rows="2" id="auxilio_judicial_NO_1" name="auxilio_genereal_no"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                <textarea class="form-control"  onkeyup="validaciones('auxilio_judicial_NO_1')" rows="2" id="auxilio_judicial_NO_1" name="auxilio_judicial_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
                                                                             </td>
                                                                             <td>
                                                                                 <div>
-                                                                                    <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_Observacaciones_')"  rows="2" id="auxilio_judicial_Observacaciones_" name="auxilio_genereal_Observacaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                    <textarea class="form-control" onkeyup="validaciones('auxilio_judicial_Observacaciones')"  rows="2" id="auxilio_judicial_Observacaciones" name="auxilio_genereal_Observacaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
                                                                                     <span class="help-block"></span>
                                                                                 </div>
 
@@ -1795,7 +1795,7 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De ser afirmativa la respuesta, señale ¿Cuántas resoluciones se han expedido y su fueron puestos en conocimiento de la Oficina de Administración Distrital?</textarea></td>
                                                                             <td><textarea class="form-control"  rows="2" id="auxilio_judicial_SI_1" onkeyup="validaciones('auxilio_judicial_SI_1')" name="auxilio_genereal_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_SI_2_2')" id="auxilio_judicial_SI_2_2" name="auxilio_genereal_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_genereal_NO_2_1" onkeyup="validaciones('auxilio_judicial_NO_2_1')" name="auxilio_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" id="auxilio_judicial_NO_2_1" onkeyup="validaciones('auxilio_judicial_NO_2_1')" name="auxilio_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="validaciones('auxilio_judicial_NO_2_2')" id="auxilio_judicial_NO_2_2" name="auxilio_genereal_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                                             <td>
                                                                                 <div>
@@ -1960,67 +1960,138 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 <tr>
                                                                     <center><td style="padding-top: 30px;">1</td></center>
                                                                     <td><textarea class="form-control" readonly  rows="2" style="color: black;font-weight: bold; ">En los últimos 6 meses ¿Han existido procesos judiciales que requirieron de un peritaje judicial?</textarea></td>
-                                                                    <td><textarea class="form-control"   rows="2" id="Peritos_judiciales_SI_1" name="Peritos_judiciales_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"   rows="2" id="Peritos_judiciales_NO_1" name="Peritos_judiciales_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"   rows="2" id="Peritos_judiciales_Obserbaciones_1" name="Peritos_judiciales_Obserbaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                    <td>
+                                                                        <textarea class="form-control"   rows="2"   onkeyup="Valida('Peritos_judiciales_SI_1');"  id="Peritos_judiciales_SI_1" name="Peritos_judiciales_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <textarea class="form-control" onkeyup="Valida('Peritos_judiciales_NO_1');"   rows="2" id="Peritos_judiciales_NO_1"  name="Peritos_judiciales_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                    </td>
+                                                                <td>
+                                                                        <div>
+                                                                            <textarea  rows="2" class="form-control" onkeyup="Valida('Peritos_judiciales_Obserbaciones_1');" id="Peritos_judiciales_Obserbaciones_1"  name="auxilio_genereal_Acciones_3" placeholder="Escribir aqui......" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
 
                                                                 </tr>
                                                                 <tr>
                                                                     <td style="padding-top: 90px;">2</td>
-                                                                    <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al nombrar Peritos Judiciales ¿El Juzgado utiliza los peritos del REPEJ y/o Administración Distrital?</textarea>
+                                                                    <td>
+                                                                        <textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Al nombrar Peritos Judiciales ¿El Juzgado utiliza los peritos del REPEJ y/o Administración Distrital?</textarea>
                                                                         <hr size="2" color="black"><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >EL REPEJ y/o Administración, demoran en designar a los Peritos Judiciales? Indicar número de días.</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_2_1" name="Peritos_judiciales_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_2_2" name="Peritos_judiciales_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_2_1" name="Peritos_judiciales_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_2_2" name="Peritos_judiciales_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_1" name="Peritos_judiciales_Obserbaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_2" name="Peritos_judiciales_Obserbaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+
+                                                                    <td>
+                                                                        <textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_2_1" name="Peritos_judiciales_SI_2_1" onkeyup="Valida('Peritos_judiciales_SI_2_1')"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+
+                                                                        <hr size="2" color="black">
+
+                                                                        <textarea class="form-control"  rows="2"  onkeyup="Valida('Peritos_judiciales_SI_2_2')" id="Peritos_judiciales_SI_2_2" name="Peritos_judiciales_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_2_1" onkeyup="Valida('Peritos_judiciales_NO_2_1')" name="Peritos_judiciales_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+
+
+                                                                        <hr size="2" color="black">
+
+                                                                        <textarea class="form-control"  onkeyup="Valida('Peritos_judiciales_NO_2_2')" rows="2" id="Peritos_judiciales_NO_2_2" name="Peritos_judiciales_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_1" onkeyup="Valida('Peritos_judiciales_Obserbaciones_2_1')" name="Peritos_judiciales_Obserbaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " >
+                                                                            </textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                        <hr>
+                                                                        <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_2_2"  onkeyup="Valida('Peritos_judiciales_Obserbaciones_2_2')" name="Peritos_judiciales_Obserbaciones_2_2"  style="color: black;font-weight: bold;">
+</textarea>
+                                                                                <span class="help-block"></span>
+
+                                                                    </td>
 
 
                                                                 </tr>
                                                                 <tr>
                                                                     <td style="padding-top: 40px;">3</td>
                                                                     <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Durante el año, los Jueces han requerido Peritos de una profesión o especialidad que no existe en la nómina del REPEJ o Administración?</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_3" name="Peritos_judiciales_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_3" name="Peritos_judiciales_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="3" id="Peritos_judiciales_Obserbaciones_3" name="Peritos_judiciales_Obserbaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_3" name="Peritos_judiciales_SI_3" onkeyup="Valida('Peritos_judiciales_SI_3')"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_3" name="Peritos_judiciales_NO_3" onkeyup="Valida('Peritos_judiciales_NO_3')"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="3" id="Peritos_judiciales_Obserbaciones_3" onkeyup="Valida('Peritos_judiciales_Obserbaciones_3')"  name="Peritos_judiciales_Obserbaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+                                                                    </td>
 
 
                                                                 </tr>
                                                                 <tr>
                                                                     <td style="padding-top: 40px;">4</td>
                                                                     <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Si la respuesta es afirmativa, utilizan el Peritaje Extraordinario (Cuando el especialista requerido no existe en el PREPEJ o Administración?</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_4" name="Peritos_judiciales_SI_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_4" name="Peritos_judiciales_NO_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="3" id="Peritos_judiciales_Obserbaciones_4" name="Peritos_judiciales_Obserbaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_4" onkeyup="Valida('Peritos_judiciales_SI_4')" name="Peritos_judiciales_SI_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_4" onkeyup="Valida('Peritos_judiciales_NO_4')" name="Peritos_judiciales_NO_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="3" id="Peritos_judiciales_Obserbaciones_4" onkeyup="Valida('Peritos_judiciales_Obserbaciones_4')"  name="Peritos_judiciales_Obserbaciones_4"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
 
                                                                 <tr>
                                                                     <td style="padding-top: 40px;">5</td>
                                                                     <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿El Juez al designar a los especialistas que no se existen en la nómina del REPEJ, dispone la retención del 8% de los honorarios netos a favor de PJ? Nota.- Esto no es adecuado porque el 8% es deduce de los honorarios netos de los peritos del REPEJ y de administración.</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_5" name="Peritos_judiciales_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_5" name="Peritos_judiciales_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_5" name="Peritos_judiciales_Obserbaciones_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_5"  onkeyup="Valida('Peritos_judiciales_SI_5')"  name="Peritos_judiciales_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_5"   onkeyup="Valida('Peritos_judiciales_NO_5')" name="Peritos_judiciales_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_5"  onkeyup="Valida('Peritos_judiciales_Obserbaciones_5')" name="Peritos_judiciales_Obserbaciones_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+
+                                                                    <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
                                                                 </tr>
 
                                                                 <tr>
                                                                     <td style="padding-top: 90px;">6</td>
                                                                     <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Los peritos del REPEJ o Administración aceptan la designación por escrito ante el Juez de la causa en procesos penales (gratuitos)?</textarea>
                                                                         <hr size="2" color="black"><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿De ser negativa la respuesta precisar si se informa al REPEJ o Administración, para que consideren su conducta en la renovación de la inscripción.</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_6_1" name="Peritos_judiciales_SI_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_6_2" name="Peritos_judiciales_SI_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_6_1" name="Peritos_judiciales_NO_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_6_2" name="Peritos_judiciales_NO_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_6_1" name="Peritos_judiciales_Obserbaciones_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                        <hr><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_6_2" name="Peritos_judiciales_Obserbaciones_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_6_1" onkeyup="Valida('Peritos_judiciales_SI_6_1')" name="Peritos_judiciales_SI_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                        <hr size="2" color="black"><textarea class="form-control"  rows="2" onkeyup="Valida('Peritos_judiciales_SI_6_2')" id="Peritos_judiciales_SI_6_2" name="Peritos_judiciales_SI_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_6_1"  onkeyup="Valida('Peritos_judiciales_NO_6_1')" name="Peritos_judiciales_NO_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                        <hr size="2" color="black"><textarea class="form-control" onkeyup="Valida('Peritos_judiciales_NO_6_2')" rows="2" id="Peritos_judiciales_NO_6_2" name="Peritos_judiciales_NO_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                    <td>
+                                                                        <div>
+
+                                                                            <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_6_1" onkeyup="Valida('Peritos_judiciales_Obserbaciones_6_1')"  name="Peritos_judiciales_Obserbaciones_6_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+
+
+                                                                        <hr>
+                                                                        <div>
+                                                                            <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_6_2" onkeyup="Valida('Peritos_judiciales_Obserbaciones_6_2')" name="Peritos_judiciales_Obserbaciones_6_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                        </td>
                                                                 </tr>
 
                                                                 <tr>
                                                                     <td style="padding-top: 40px;">7</td>
                                                                     <td><textarea class="form-control"  rows="6" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿ El Órgano Jurisdiccional antes de fijar los honorarios, solicita al REPEJ o Administración Distrital la disponibilidad del 8% para el pago de las “Pericias Penales Extraordinarias”, conforme al artículo 7,4 de la Directiva N° 003-2007-GG/PJ u otra.?</textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_7" name="Peritos_judiciales_SI_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_7" name="Peritos_judiciales_NO_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_7" name="Peritos_judiciales_Obserbaciones_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_SI_7" onkeyup="Valida('Peritos_judiciales_SI_7')" name="Peritos_judiciales_SI_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td><textarea class="form-control"  rows="2" id="Peritos_judiciales_NO_7"  onkeyup="Valida('Peritos_judiciales_NO_7')" name="Peritos_judiciales_NO_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <textarea class="form-control"  rows="2" id="Peritos_judiciales_Obserbaciones_7" onkeyup="Valida('Peritos_judiciales_Obserbaciones_7')" name="Peritos_judiciales_Obserbaciones_7"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                           <span class="help-block"></span>
+                                                                       </div>
+                                                                    </td>
                                                                 </tr>
 
                                                                 <tr>
@@ -2028,11 +2099,22 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>1</td>
-                                                                    <td colspan="5"><input type="text" class="form-control" id="Peritos_judiciales_Acciones_1" name="Peritos_judiciales_Acciones_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                    <td colspan="5">
+                                                                        <div>
+                                                                            <input type="text" class="form-control" onkeyup="Valida('Peritos_judiciales_Acciones_1')" id="Peritos_judiciales_Acciones_1" name="Peritos_judiciales_Acciones_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" />
+
+                                                        </div>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
-                                                                    <td colspan="5"><input type="text" class="form-control" id="Peritos_judiciales_Acciones_2" name="Peritos_judiciales_Acciones_2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                    <td colspan="5">
+                                                                        <div>
+                                                                            <input type="text" class="form-control" onkeyup="Valida('Peritos_judiciales_Acciones_2')" id="Peritos_judiciales_Acciones_2" name="Peritos_judiciales_Acciones_2" placeholder="Escribir aqui......"  />
+
+                                                                            <span class="help-block"></span>
+                                                                        </div>
+                                                                    </td>
 
                                                                 </tr>
                                                                 </tbody>
@@ -2079,30 +2161,53 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tr>
                                                                             <center><td style="padding-top: 30px;">1</td></center>
                                                                             <td><textarea class="form-control" readonly  rows="2" style="color: black;font-weight: bold; ">El Juzgado cuenta con CMDED?</textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_SI_1" name="Cuerpo_delito_efectos_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_NO_1" name="Cuerpo_delito_efectos_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_Observaciones_1" name="Cuerpo_delito_efectos_Observaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_SI_1" onkeyup="Valida('Cuerpo_delito_efectos_SI_1')" name="Cuerpo_delito_efectos_SI_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_NO_1"  onkeyup="Valida('Cuerpo_delito_efectos_NO_1')" name="Cuerpo_delito_efectos_NO_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"   rows="2" id="Cuerpo_delito_efectos_Observaciones_1" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_1')" name="Cuerpo_delito_efectos_Observaciones_1"  style="color: black;font-weight: bold;margin-top: 10px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                               </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 90px;">2</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se remiten al Almacén las CMDED, dentro de las 72 horas de apertura de la instrucción?</textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Utilizan la Boleta de Internamiento firmada por el Secretario y Magistrado?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_1" name="Cuerpo_delito_efectos_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_2" name="Cuerpo_delito_efectos_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_1" name="Cuerpo_delito_efectos_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_2" name="Cuerpo_delito_efectos_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_1" name="Cuerpo_delito_efectos_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_2_2" name="Cuerpo_delito_efectos_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                                <hr size="2" color="black">
+                                                                                <textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Utilizan la Boleta de Internamiento firmada por el Secretario y Magistrado?</textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_2_1" onkeyup="Valida('Cuerpo_delito_efectos_SI_2_1')" name="Cuerpo_delito_efectos_SI_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_SI_2_2')" id="Cuerpo_delito_efectos_SI_2_2" name="Cuerpo_delito_efectos_SI_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_1" onkeyup="Valida('Cuerpo_delito_efectos_NO_2_1')"  name="Cuerpo_delito_efectos_NO_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_2_2" onkeyup="Valida('Cuerpo_delito_efectos_NO_2_2')" name="Cuerpo_delito_efectos_NO_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_2_1')" rows="2" id="Cuerpo_delito_efectos_Observaciones_2_1" name="Cuerpo_delito_efectos_Observaciones_2_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+
+                                                                                <hr>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_2_2')" id="Cuerpo_delito_efectos_Observaciones_2_2" name="Cuerpo_delito_efectos_Observaciones_2_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                              </td>
 
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">3</td>
                                                                             <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >El encargado del Almacén, ¿Emite reporte a los Órganos Jurisdiccionales, sobre las CMDED que ingresaron por disposición de sus despachos?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_3" name="Cuerpo_delito_efectos_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_3" name="Cuerpo_delito_efectos_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="3" id="Cuerpo_delito_efectos_Observaciones_3" name="Cuerpo_delito_efectos_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_SI_3')" id="Cuerpo_delito_efectos_SI_3" name="Cuerpo_delito_efectos_SI_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_NO_3')" id="Cuerpo_delito_efectos_NO_3" name="Cuerpo_delito_efectos_NO_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="3" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_3')" id="Cuerpo_delito_efectos_Observaciones_3" name="Cuerpo_delito_efectos_Observaciones_3"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                              </td>
 
 
                                                                         </tr>
@@ -2110,12 +2215,23 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                             <td style="padding-top: 90px;">4</td>
                                                                             <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Se detectaron CMDED que figuran en la denuncia fiscal y que no fueron puestos a disposición del Juzgado por parte de la Policía Nacional y el Ministerio Publico?</textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa, indicar las acciones adoptadas.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_4_1" name="Cuerpo_delito_efectos_SI_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_4_2" name="Cuerpo_delito_efectos_SI_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_4_1" name="Cuerpo_delito_efectos_NO_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_4_2" name="Cuerpo_delito_efectos_NO_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_4_1" name="Cuerpo_delito_efectos_Observaciones_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_4_2" name="Cuerpo_delito_efectos_Observaciones_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_4_1" onkeyup="Valida('Cuerpo_delito_efectos_SI_4_1')" name="Cuerpo_delito_efectos_SI_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_SI_4_2')"  id="Cuerpo_delito_efectos_SI_4_2" name="Cuerpo_delito_efectos_SI_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_4_1" onkeyup="Valida('Cuerpo_delito_efectos_NO_4_1')" name="Cuerpo_delito_efectos_NO_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" onkeyup="Valida('Cuerpo_delito_efectos_NO_4_2')" id="Cuerpo_delito_efectos_NO_4_2" name="Cuerpo_delito_efectos_NO_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_4_1" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_4_1')"  name="Cuerpo_delito_efectos_Observaciones_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                    <span class="help-block"></span>
+
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_4_2"  onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_4_2')"  name="Cuerpo_delito_efectos_Observaciones_4_2"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                                </td>
 
 
                                                                         </tr>
@@ -2123,18 +2239,29 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">5</td>
                                                                             <td><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se cumple con remitir a la DISCAMEC las armas de fuego, municiones y explosivos incautados por el Juzgado?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_5" name="Cuerpo_delito_efectos_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_5" name="Cuerpo_delito_efectos_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_5" name="Cuerpo_delito_efectos_Observaciones_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_5" name="Cuerpo_delito_efectos_SI_5"  onkeyup="Valida('Cuerpo_delito_efectos_SI_5')" style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_5" name="Cuerpo_delito_efectos_NO_5"   onkeyup="Valida('Cuerpo_delito_efectos_NO_5')" style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_5" name="Cuerpo_delito_efectos_Observaciones_5"  onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_5')"   style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                                </td>
                                                                         </tr>
 
 
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">6</td>
                                                                             <td><textarea class="form-control"  rows="4" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se informa al Encargado del Almacén de CMDED los procesos fenecidos, en el día, para computar los seis meses que permitan el remate y disposición de los mismos?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_SI_6" name="Cuerpo_delito_efectos_SI_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_NO_6" name="Cuerpo_delito_efectos_NO_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cuerpo_delito_efectos_Observaciones_6" name="Cuerpo_delito_efectos_Observaciones_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  onkeyup="Valida('Cuerpo_delito_efectos_SI_6')"  rows="2" id="Cuerpo_delito_efectos_SI_6" name="Cuerpo_delito_efectos_SI_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  onkeyup="Valida('Cuerpo_delito_efectos_NO_6')"  rows="2" id="Cuerpo_delito_efectos_NO_6" name="Cuerpo_delito_efectos_NO_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td>
+                                                                                <div>
+                                                                                    <textarea class="form-control" onkeyup="Valida('Cuerpo_delito_efectos_Observaciones_6')" rows="2" id="Cuerpo_delito_efectos_Observaciones_6" name="Cuerpo_delito_efectos_Observaciones_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+
+                                                                               </td>
                                                                         </tr>
 
                                                                         <tr>
@@ -2142,16 +2269,31 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>1</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cuerpo_delito_efectos_ACCIONES_1" name="Cuerpo_delito_efectos_ACCIONES_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cuerpo_delito_efectos_ACCIONES_1')" id="Cuerpo_delito_efectos_ACCIONES_1" name="Cuerpo_delito_efectos_ACCIONES_1" placeholder="Escribir aqui......"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>2</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cuerpo_delito_efectos_ACCIONES_2" name="Cuerpo_delito_efectos_ACCIONES_2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control"  onkeyup="Valida('Cuerpo_delito_efectos_ACCIONES_2')" id="Cuerpo_delito_efectos_ACCIONES_2" name="Cuerpo_delito_efectos_ACCIONES_2" placeholder="Escribir aqui......"  />
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                                </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>3</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cuerpo_delito_efectos_ACCIONES_3" name="Cuerpo_delito_efectos_ACCIONES_3" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cuerpo_delito_efectos_ACCIONES_3')" id="Cuerpo_delito_efectos_ACCIONES_3" name="Cuerpo_delito_efectos_ACCIONES_3" placeholder="Escribir aqui......"  />
+                                                                            <span class="help-block"></span>
+                                                                                </div>
+                                                                            </td>
 
                                                                         </tr>
                                                                         </tbody>
@@ -2213,19 +2355,19 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_1" name="Recaudacion_judicial_SI_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_3" name="Recaudacion_judicial_SI_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_1_4" name="Recaudacion_judicial_SI_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  onkeyup="Valida('Recaudacion_judicial_SI_1')" rows="2" id="Recaudacion_judicial_SI_1" name="Recaudacion_judicial_SI_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control" onkeyup="Valida('Recaudacion_judicial_SI_1_1')" rows="2" id="Recaudacion_judicial_SI_1_1" name="Recaudacion_judicial_SI_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  onkeyup="Valida('Recaudacion_judicial_SI_1_2')"  rows="2" id="Recaudacion_judicial_SI_1_2" name="Recaudacion_judicial_SI_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
+                                                                                <textarea class="form-control" onkeyup="Valida('Recaudacion_judicial_SI_1_3')"  rows="2" id="Recaudacion_judicial_SI_1_3" name="Recaudacion_judicial_SI_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                                <textarea class="form-control"  onkeyup="Valida('Recaudacion_judicial_SI_1_4')"  rows="2" id="Recaudacion_judicial_SI_1_4" name="Recaudacion_judicial_SI_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1" name="Recaudacion_judicial_NO_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_1" name="Recaudacion_judicial_NO_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_2" name="Recaudacion_judicial_NO_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_3" name="Recaudacion_judicial_NO_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_1_4" name="Recaudacion_judicial_NO_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_1')" id="Recaudacion_judicial_NO_1" name="Recaudacion_judicial_NO_1"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_1_1')" id="Recaudacion_judicial_NO_1_1" name="Recaudacion_judicial_NO_1_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_1_2')" id="Recaudacion_judicial_NO_1_2" name="Recaudacion_judicial_NO_1_2"  style="color: black;font-weight: bold;margin-top: 45px; " >s</textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_1_3')" id="Recaudacion_judicial_NO_1_3" name="Recaudacion_judicial_NO_1_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_1_4')"  id="Recaudacion_judicial_NO_1_4" name="Recaudacion_judicial_NO_1_4"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
@@ -2242,15 +2384,15 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota. Las copias se deben remitir semanal o quincenalmente, según lo señalado por la Oficina de Administración, Distrital.( Precisar en este acto la periodicidad)</textarea>
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_2" name="Recaudacion_judicial_S1_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_2_3" name="Recaudacion_judicial_S1_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_S1_2')" id="Recaudacion_judicial_S1_2" name="Recaudacion_judicial_S1_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"   onkeyup="Valida('Recaudacion_judicial_S1_2_1')" id="Recaudacion_judicial_S1_2_1" name="Recaudacion_judicial_S1_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_S1_2_2')" id="Recaudacion_judicial_S1_2_2" name="Recaudacion_judicial_S1_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Recaudacion_judicial_S1_2_3')" id="Recaudacion_judicial_S1_2_3" name="Recaudacion_judicial_S1_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_2" name="Recaudacion_judicial_NO_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_2_1" name="Recaudacion_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_2_2" name="Recaudacion_judicial_NO_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_2_3" name="Recaudacion_judicial_NO_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_2')" id="Recaudacion_judicial_NO_2" name="Recaudacion_judicial_NO_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_2_1')" id="Recaudacion_judicial_NO_2_1" name="Recaudacion_judicial_NO_2_1"  style="color: black;font-weight: bold;margin-top: 55px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_2_2')"  id="Recaudacion_judicial_NO_2_2" name="Recaudacion_judicial_NO_2_2"  style="color: black;font-weight: bold;margin-top: 85px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Recaudacion_judicial_NO_2_3')" id="Recaudacion_judicial_NO_2_3" name="Recaudacion_judicial_NO_2_3"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
                                                                             </td>
                                                                         </tr>
@@ -2261,15 +2403,15 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Esta situación impide obtener Ingresos por los servicios prestados en el archivo, como Búsqueda, Lectura de Expedientes, Expedición de Copias, Etc.)</textarea>
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_S1_3')" id="Recaudacion_judicial_S1_3" name="Recaudacion_judicial_S1_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Recaudacion_judicial_S1_3_1')" id="Recaudacion_judicial_S1_3_1" name="Recaudacion_judicial_S1_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Recaudacion_judicial_S1_3_2')"  id="Recaudacion_judicial_S1_3_2" name="Recaudacion_judicial_S1_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_3')"  id="Recaudacion_judicial_NO_3" name="Recaudacion_judicial_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_3_1')"   id="Recaudacion_judicial_NO_3_1" name="Recaudacion_judicial_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_3_2')"   id="Recaudacion_judicial_NO_3_2" name="Recaudacion_judicial_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
@@ -2277,11 +2419,11 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tr>
                                                                             <td style="padding-top: 90px;">4</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿Cumplen con verificar si los montos pagados por concepto de Arancel Judicial corresponden a los fijados en el Cuadro de Valor vigente al momento de solicitar el acto procesal?</textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De presentarse casos de aranceles judiciales diminutos, ¿Se cumple con requerir el reintegro correspondiente?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_4" name="Recaudacion_judicial_S1_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_4_1" name="Recaudacion_judicial_S1_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_4" name="Recaudacion_judicial_NO_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_4_1" name="Recaudacion_judicial_NO_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                                <hr size="2" color="black"><textarea class="form-control"   rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >De presentarse casos de aranceles judiciales diminutos, ¿Se cumple con requerir el reintegro correspondiente?</textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_S1_4"  onkeyup="Valida('Recaudacion_judicial_S1_4')" name="Recaudacion_judicial_S1_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="Valida('Recaudacion_judicial_S1_4_1')" id="Recaudacion_judicial_S1_4_1" name="Recaudacion_judicial_S1_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_4" onkeyup="Valida('Recaudacion_judicial_NO_4')" name="Recaudacion_judicial_NO_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_4_1')" id="Recaudacion_judicial_NO_4_1" name="Recaudacion_judicial_NO_4_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
 
 
                                                                         </tr>
@@ -2289,8 +2431,8 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">5</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Se verifica la presentación de los derechos por notificación judicial suficientes para notificar a todas las partes que intervienen en el proceso?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_SI_5" name="Recaudacion_judicial_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Recaudacion_judicial_NO_5" name="Recaudacion_judicial_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_SI_5')" id="Recaudacion_judicial_SI_5" name="Recaudacion_judicial_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Recaudacion_judicial_NO_5')" id="Recaudacion_judicial_NO_5" name="Recaudacion_judicial_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                         </tr>
                                                                         </tbody>
                                                                     </table>
@@ -2344,10 +2486,10 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                             <td style="padding-top: 90px;">1</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >El Juzgado cuenta con el Libro de Registro de Multas?</textarea>
                                                                                 <hr size="2" color="black"><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Si la respuesta es afirmativa. ¿Llena los datos como: Nombre del multado. Monto de la Multa en URP, N° y fecha de Resolución de la Multa previo en el artículo 7° del RCM u otro? precisar.</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_1" name="Cobransas_certificados_SI_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_1_1" name="Cobransas_certificados_SI_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_1" name="Cobransas_certificados_NO_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_1_1" name="Cobransas_certificados_NO_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_1"  onkeyup="Valida('Cobransas_certificados_SI_1')" name="Cobransas_certificados_SI_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_SI_1_1')" id="Cobransas_certificados_SI_1_1" name="Cobransas_certificados_SI_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_1" onkeyup="Valida('Cobransas_certificados_NO_1')" name="Cobransas_certificados_NO_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                                <hr size="2" color="black"><textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_NO_1_1')" id="Cobransas_certificados_NO_1_1" name="Cobransas_certificados_NO_1_1"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea></td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 300px;">2</td>
@@ -2360,20 +2502,20 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 <hr><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >d. ¿Qué acciones ha realizado el Juzgado para el cobro de las multas?, precise:</textarea>
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2" name="Cobransas_certificados_SI_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2_1" name="Cobransas_certificados_SI_2_1"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2_2" name="Cobransas_certificados_SI_2_2"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2_3" name="Cobransas_certificados_SI_2_3"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2_4" name="Cobransas_certificados_SI_2_4"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_2_5" name="Cobransas_certificados_SI_2_5"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_2')" id="Cobransas_certificados_SI_2" name="Cobransas_certificados_SI_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_2_1')"  id="Cobransas_certificados_SI_2_1" name="Cobransas_certificados_SI_2_1"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_SI_2_2')" id="Cobransas_certificados_SI_2_2" name="Cobransas_certificados_SI_2_2"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_2_3')" id="Cobransas_certificados_SI_2_3" name="Cobransas_certificados_SI_2_3"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_2_4')" id="Cobransas_certificados_SI_2_4" name="Cobransas_certificados_SI_2_4"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_2_5')" id="Cobransas_certificados_SI_2_5" name="Cobransas_certificados_SI_2_5"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2" name="Cobransas_certificados_N0_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2_1" name="Cobransas_certificados_N0_2_1"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2_2" name="Cobransas_certificados_N0_2_2"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2_3" name="Cobransas_certificados_N0_2_3"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2_4" name="Cobransas_certificados_N0_2_4"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_N0_2_5" name="Cobransas_certificados_N0_2_5"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_N0_2')" id="Cobransas_certificados_N0_2" name="Cobransas_certificados_N0_2"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_N0_2_1')" id="Cobransas_certificados_N0_2_1" name="Cobransas_certificados_N0_2_1"  style="color: black;font-weight: bold;margin-top: 50px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_N0_2_2')" id="Cobransas_certificados_N0_2_2" name="Cobransas_certificados_N0_2_2"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_N0_2_3')"  id="Cobransas_certificados_N0_2_3" name="Cobransas_certificados_N0_2_3"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_N0_2_4')" id="Cobransas_certificados_N0_2_4" name="Cobransas_certificados_N0_2_4"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_N0_2_5')" id="Cobransas_certificados_N0_2_5" name="Cobransas_certificados_N0_2_5"  style="color: black;font-weight: bold;margin-top: 40px; " ></textarea>
 
                                                                             </td>
                                                                         </tr>
@@ -2383,55 +2525,71 @@ realizar y plazo para dar la solución.</textarea></td>
                                                                                 <hr size="2" color="black";><label>  Si la respuesta es afirmativa, mostrar el cargo de remisión:  Oficio:N°  <input id="Cobransas_certificados_Resp_afirma_3" name="Cobransas_certificados_Resp_afirma_3" type="text" style="width: 300px;padding: 5px 10px; margin: 3px 0; display: inline-block;  border: 1px solid #ccc;  border-radius: 4px; box-sizing: border-box;" placeholder="__________________________________________"/></label>
                                                                                 <hr><textarea class="form-control"  rows="3" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >Nota.- Los pagos deben efectuarse con CP o Boletas de Deposito, de efectuarse en CDJ deben ser inmediatamente endosados a la Subgerencia de Tesorería y remitidos a la Adm. Para su envió a la Subgerencia de Recaudación Judicial.</textarea>
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_3" name="Cobransas_certificados_SI_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_3_1" name="Cobransas_certificados_SI_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_3_2" name="Cobransas_certificados_SI_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_SI_3')" id="Cobransas_certificados_SI_3" name="Cobransas_certificados_SI_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_3_1')"  id="Cobransas_certificados_SI_3_1" name="Cobransas_certificados_SI_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2"  onkeyup="Valida('Cobransas_certificados_SI_3_2')"  id="Cobransas_certificados_SI_3_2" name="Cobransas_certificados_SI_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_3" name="Cobransas_certificados_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_3_1" name="Cobransas_certificados_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
-                                                                                <textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_3_2" name="Cobransas_certificados_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_NO_3')"  id="Cobransas_certificados_NO_3" name="Cobransas_certificados_NO_3"  style="color: black;font-weight: bold;margin-top: 5px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_NO_3_1')" id="Cobransas_certificados_NO_3_1" name="Cobransas_certificados_NO_3_1"  style="color: black;font-weight: bold;margin-top: 30px; " ></textarea>
+                                                                                <textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_NO_3_2')" id="Cobransas_certificados_NO_3_2" name="Cobransas_certificados_NO_3_2"  style="color: black;font-weight: bold;margin-top: 45px; " ></textarea>
 
 
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td style="padding-top: 30px;">4</td>
-                                                                            <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿El Juzgado cuenta con el Libro de Registro de CDJ?</textarea>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_4" name="Cobransas_certificados_SI_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_4" name="Cobransas_certificados_NO_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <td><textarea class="form-control" onkeyup="Valida('Aspectos_seguridad_Extintores_Deficiencias')"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;" >¿El Juzgado cuenta con el Libro de Registro de CDJ?</textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_SI_4')"  id="Cobransas_certificados_SI_4" name="Cobransas_certificados_SI_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
+                                                                            <td><textarea class="form-control"  rows="2" onkeyup="Valida('Cobransas_certificados_NO_4')" id="Cobransas_certificados_NO_4" name="Cobransas_certificados_NO_4"  style="color: black;font-weight: bold;margin-top: 20px; " ></textarea>
 
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">5</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Existen CDJ prescriptos (con más de cinco años de concluido el proceso que les dio origen), que mantiene en custodia del encargado y que aún no ha sido remitidos a la Oficina de Administración Distrital?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_5" name="Cobransas_certificados_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_5" name="Cobransas_certificados_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_5"  onkeyup="Valida('Cobransas_certificados_SI_5')" name="Cobransas_certificados_SI_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_5" onkeyup="Valida('Cobransas_certificados_NO_5')" name="Cobransas_certificados_NO_5"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                         </tr>
 
                                                                         <tr>
                                                                             <td style="padding-top: 40px;">6</td>
                                                                             <td><textarea class="form-control"  rows="2" readonly id="Aspectos_seguridad_Extintores_Deficiencias" name="Aspectos_seguridad_Extintores_Deficiencias"  style="color: black;font-weight: bold;"  >¿Cuentan, el juez y los auxiliares jurisdiccionales, con las normas vigentes que regulan los temas antes señalados?</textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_6" name="Cobransas_certificados_SI_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
-                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_6" name="Cobransas_certificados_NO_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_SI_6" onkeyup="Valida('Cobransas_certificados_SI_6')" name="Cobransas_certificados_SI_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
+                                                                            <td><textarea class="form-control"  rows="2" id="Cobransas_certificados_NO_6" onkeyup="Valida('Cobransas_certificados_NO_6')" name="Cobransas_certificados_NO_6"  style="color: black;font-weight: bold;margin-top: 20px;" ></textarea></td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th colspan="5"><h5>ACCIONES QUE ADOPTO LA ADMINISTRACIÓN DE LA CORTE:</h5></th>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>1</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cobransas_certificados_ACCIONES_1" name="Cobransas_certificados_ACCIONES_1" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cobransas_certificados_ACCIONES_1')" name="Cobransas_certificados_NO_6"  id="Cobransas_certificados_ACCIONES_1" name="Cobransas_certificados_ACCIONES_1" placeholder="Escribir aqui......" />
+                                                                                    <span class="help-block"></span>
+                                                                               </div>
+
+
+                                                                            </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>2</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cobransas_certificados_ACCIONES_2" name="Cobransas_certificados_ACCIONES_2" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <input type="text" class="form-control" onkeyup="Valida('Cobransas_certificados_ACCIONES_2')" id="Cobransas_certificados_ACCIONES_2" name="Cobransas_certificados_ACCIONES_2" placeholder="Escribir aqui......"  />
+                                                                                <span class="help-block"></span>
+
+                                                                            </td>
 
                                                                         </tr>
                                                                         <tr>
                                                                             <td>3</td>
-                                                                            <td colspan="5"><input type="text" class="form-control" id="Cobransas_certificados_ACCIONES_3" name="Cobransas_certificados_ACCIONES_3" placeholder="Escribir aqui......" id="Mantenimiento_equipos_Informaticos_Acciones" name="Mantenimiento_equipos_Informaticos_Acciones" /></td>
+                                                                            <td colspan="5">
+                                                                                <div>
+                                                                                    <input type="text" class="form-control" onkeyup="Valida('Cobransas_certificados_ACCIONES_3')" id="Cobransas_certificados_ACCIONES_3" name="Cobransas_certificados_ACCIONES_3" placeholder="Escribir aqui......"/>
+                                                                                    <span class="help-block"></span>
+                                                                                </div>
+                                                                               </td>
 
                                                                         </tr>
                                                                         </tbody>
@@ -2467,7 +2625,7 @@ realizar y plazo para dar la solución.</textarea></td>
 
                                                 <li><button type="button" class="btn btn-danger prev-step">
                                                         Anterior</button></li>
-                                                <li><button type="button" onclick="hahah();" class="btn btn-success btn-info-full next-step">Enviar Encuesta</button></li>
+                                                <li><button type="button" id="valida" onclick="hahah();" class="btn btn-success btn-info-full next-step">Enviar Encuesta</button></li>
 
 
                                             </ul>
@@ -2515,36 +2673,631 @@ realizar y plazo para dar la solución.</textarea></td>
     @endsection
 @section('script')
 <script>
-    function hahah(){
-        var frm=$("#regisEncuestas,#form_personal_Observaciones,#regisPersona");
+    function hahah() {
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
+        var Peritos_judiciales_SI_1 = $('#Peritos_judiciales_SI_1').val();
+        var Peritos_judiciales_NO_1 = $('#Peritos_judiciales_NO_1').val();
+        var Peritos_judiciales_Obserbaciones_1 = $('#Peritos_judiciales_Obserbaciones_1').val();
+        var Peritos_judiciales_SI_2_1 = $('#Peritos_judiciales_SI_2_1').val();
+        var Peritos_judiciales_SI_2_2 = $('#Peritos_judiciales_SI_2_2').val();
+        var Peritos_judiciales_NO_2_1 = $('#Peritos_judiciales_NO_2_1').val();
+        var Peritos_judiciales_NO_2_2 = $('#Peritos_judiciales_NO_2_2').val();
+        var Peritos_judiciales_Obserbaciones_2_1 = $('#Peritos_judiciales_Obserbaciones_2_1').val();
+        var Peritos_judiciales_Obserbaciones_2_2 = $('#Peritos_judiciales_Obserbaciones_2_2').val();
+        var Peritos_judiciales_SI_3 = $('#Peritos_judiciales_SI_3').val();
+        var Peritos_judiciales_NO_3 = $('#Peritos_judiciales_NO_3').val();
+        var Peritos_judiciales_Obserbaciones_3 = $('#Peritos_judiciales_Obserbaciones_3').val();
+        var Peritos_judiciales_SI_4 = $('#Peritos_judiciales_SI_4').val();
+        var Peritos_judiciales_NO_4 = $('#Peritos_judiciales_NO_4').val();
+        var Peritos_judiciales_Obserbaciones_4 = $('#Peritos_judiciales_Obserbaciones_4').val();
+        var Peritos_judiciales_SI_5 = $('#Peritos_judiciales_SI_5').val();
+        var Peritos_judiciales_NO_5 = $('#Peritos_judiciales_NO_5').val();
+        var Peritos_judiciales_Obserbaciones_5 = $('#Peritos_judiciales_Obserbaciones_5').val();
+        var Peritos_judiciales_SI_6_1 = $('#Peritos_judiciales_SI_6_1').val();
+        var Peritos_judiciales_SI_6_2 = $('#Peritos_judiciales_SI_6_2').val();
+        var Peritos_judiciales_NO_6_1 = $('#Peritos_judiciales_NO_6_1').val();
+        var Peritos_judiciales_NO_6_2 = $('#Peritos_judiciales_NO_6_2').val();
+        var Peritos_judiciales_Obserbaciones_6_1 = $('#Peritos_judiciales_Obserbaciones_6_1').val();
+        var Peritos_judiciales_Obserbaciones_6_2 = $('#Peritos_judiciales_Obserbaciones_6_2').val();
+
+        var Peritos_judiciales_SI_7 = $('#Peritos_judiciales_SI_7').val();
+        var Peritos_judiciales_NO_7 = $('#Peritos_judiciales_NO_7').val();
+        var Peritos_judiciales_Obserbaciones_7 = $('#Peritos_judiciales_Obserbaciones_7').val();
+        var Peritos_judiciales_Acciones_1 = $('#Peritos_judiciales_Acciones_1').val();
+        var Peritos_judiciales_Acciones_2 = $('#Peritos_judiciales_Acciones_2').val();
+        //fin peritos judiciales
+
+        var Cuerpo_delito_efectos_SI_1 = $('#Cuerpo_delito_efectos_SI_1').val();
+        var Cuerpo_delito_efectos_NO_1 = $('#Cuerpo_delito_efectos_NO_1').val();
+        var Cuerpo_delito_efectos_Observaciones_1 = $('#Cuerpo_delito_efectos_Observaciones_1').val();
+        var Cuerpo_delito_efectos_SI_2_1 = $('#Cuerpo_delito_efectos_SI_2_1').val();
+        var Cuerpo_delito_efectos_SI_2_2 = $('#Cuerpo_delito_efectos_SI_2_2').val();
+        var Cuerpo_delito_efectos_NO_2_1 = $('#Cuerpo_delito_efectos_NO_2_1').val();
+        var Cuerpo_delito_efectos_NO_2_2 = $('#Cuerpo_delito_efectos_NO_2_2').val();
+        var Cuerpo_delito_efectos_Observaciones_2_1 = $('#Cuerpo_delito_efectos_Observaciones_2_1').val();
+        var Cuerpo_delito_efectos_Observaciones_2_2 = $('#Cuerpo_delito_efectos_Observaciones_2_2').val();
+        var Cuerpo_delito_efectos_SI_3 = $('#Cuerpo_delito_efectos_SI_3').val();
+        var Cuerpo_delito_efectos_NO_3 = $('#Cuerpo_delito_efectos_NO_3').val();
+        var Cuerpo_delito_efectos_Observaciones_3 = $('#Cuerpo_delito_efectos_Observaciones_3').val();
+
+        var Cuerpo_delito_efectos_SI_4_1 = $('#Cuerpo_delito_efectos_SI_4_1').val();
+        var Cuerpo_delito_efectos_SI_4_2 = $('#Cuerpo_delito_efectos_SI_4_2').val();
+        var Cuerpo_delito_efectos_NO_4_1 = $('#Cuerpo_delito_efectos_NO_4_1').val();
+        var Cuerpo_delito_efectos_NO_4_2 = $('#Cuerpo_delito_efectos_NO_4_2').val();
+        var Cuerpo_delito_efectos_Observaciones_4_1 = $('#Cuerpo_delito_efectos_Observaciones_4_1').val();
+        var Cuerpo_delito_efectos_Observaciones_4_2 = $('#Cuerpo_delito_efectos_Observaciones_4_2').val();
+        var Cuerpo_delito_efectos_SI_5 = $('#Cuerpo_delito_efectos_SI_5').val();
+        var Cuerpo_delito_efectos_NO_5 = $('#Cuerpo_delito_efectos_NO_5').val();
+        var Cuerpo_delito_efectos_Observaciones_5 = $('#Cuerpo_delito_efectos_Observaciones_5').val();
+        var Cuerpo_delito_efectos_SI_6 = $('#Cuerpo_delito_efectos_SI_6').val();
+        var Cuerpo_delito_efectos_NO_6 = $('#Cuerpo_delito_efectos_NO_6').val();
+        var Cuerpo_delito_efectos_Observaciones_6 = $('#Cuerpo_delito_efectos_Observaciones_6').val();
+
+        var Cuerpo_delito_efectos_ACCIONES_1 = $('#Cuerpo_delito_efectos_ACCIONES_1').val();
+        var Cuerpo_delito_efectos_ACCIONES_2 = $('#Cuerpo_delito_efectos_ACCIONES_2').val();
+        var Cuerpo_delito_efectos_ACCIONES_3 = $('#Cuerpo_delito_efectos_ACCIONES_3').val();
+
+        //fin cuerpo del delito
+
+
+        var Recaudacion_judicial_SI_1 = $('#Recaudacion_judicial_SI_1').val();
+        var Recaudacion_judicial_SI_1_1 = $('#Recaudacion_judicial_SI_1_1').val();
+        var Recaudacion_judicial_SI_1_2 = $('#Recaudacion_judicial_SI_1_2').val();
+        var Recaudacion_judicial_SI_1_3 = $('#Recaudacion_judicial_SI_1_3').val();
+        var Recaudacion_judicial_SI_1_4 = $('#Recaudacion_judicial_SI_1_4').val();
+        var Recaudacion_judicial_NO_1 = $('#Recaudacion_judicial_NO_1').val();
+        var Recaudacion_judicial_NO_1_1 = $('#Recaudacion_judicial_NO_1_1').val();
+        var Recaudacion_judicial_NO_1_2 = $('#Recaudacion_judicial_NO_1_2').val();
+        var Recaudacion_judicial_NO_1_3 = $('#Recaudacion_judicial_NO_1_3').val();
+        var Recaudacion_judicial_NO_1_4 = $('#Recaudacion_judicial_NO_1_4').val();
+        var Recaudacion_judicial_S1_2 = $('#Recaudacion_judicial_S1_2').val();
+        var Recaudacion_judicial_S1_2_1 = $('#Recaudacion_judicial_S1_2_1').val();
+        var Recaudacion_judicial_S1_2_2 = $('#Recaudacion_judicial_S1_2_2').val();
+        var Recaudacion_judicial_S1_2_3 = $('#Recaudacion_judicial_S1_2_3').val();
+        var Recaudacion_judicial_NO_2 = $('#Recaudacion_judicial_NO_2').val();
+        var Recaudacion_judicial_NO_2_1 = $('#Recaudacion_judicial_NO_2_1').val();
+        var Recaudacion_judicial_NO_2_2 = $('#Recaudacion_judicial_NO_2_2').val();
+        var Recaudacion_judicial_NO_2_3 = $('#Recaudacion_judicial_NO_2_3').val();
+        var Recaudacion_judicial_S1_3 = $('#Recaudacion_judicial_S1_3').val();
+        var Recaudacion_judicial_S1_3_1 = $('#Recaudacion_judicial_S1_3_1').val();
+        var Recaudacion_judicial_S1_3_2 = $('#Recaudacion_judicial_S1_3_2').val();
+        var Recaudacion_judicial_NO_3 = $('#Recaudacion_judicial_NO_3').val();
+        var Recaudacion_judicial_NO_3_1 = $('#Recaudacion_judicial_NO_3_1').val();
+        var Recaudacion_judicial_NO_3_2 = $('#Recaudacion_judicial_NO_3_2').val();
+
+        var Recaudacion_judicial_S1_4 = $('#Recaudacion_judicial_S1_4').val();
+        var Recaudacion_judicial_S1_4_1 = $('#Recaudacion_judicial_S1_4_1').val();
+        var Recaudacion_judicial_NO_4 = $('#Recaudacion_judicial_NO_4').val();
+        var Recaudacion_judicial_NO_4_1 = $('#Recaudacion_judicial_NO_4_1').val();
+        var Recaudacion_judicial_SI_5 = $('#Recaudacion_judicial_SI_5').val();
+        var Recaudacion_judicial_NO_5 = $('#Recaudacion_judicial_NO_5').val();
+
+        //fin recaudacion judicial
+        var Cobransas_certificados_SI_1 = $('#Cobransas_certificados_SI_1').val();
+        var Cobransas_certificados_SI_1_1 = $('#Cobransas_certificados_SI_1_1').val();
+        var Cobransas_certificados_NO_1 = $('#Cobransas_certificados_NO_1').val();
+        var Cobransas_certificados_NO_1_1 = $('#Cobransas_certificados_NO_1_1').val();
+        var Cobransas_certificados_SI_2 = $('#Cobransas_certificados_SI_2').val();
+        var Cobransas_certificados_SI_2_1 = $('#Cobransas_certificados_SI_2_1').val();
+        var Cobransas_certificados_SI_2_2 = $('#Cobransas_certificados_SI_2_2').val();
+        var Cobransas_certificados_SI_2_3 = $('#Cobransas_certificados_SI_2_3').val();
+        var Cobransas_certificados_SI_2_4 = $('#Cobransas_certificados_SI_2_4').val();
+        var Cobransas_certificados_SI_2_5 = $('#Cobransas_certificados_SI_2_5').val();
+        var Cobransas_certificados_N0_2 = $('#Cobransas_certificados_N0_2').val();
+        var Cobransas_certificados_N0_2_1 = $('#Cobransas_certificados_N0_2_1').val();
+        var Cobransas_certificados_N0_2_2 = $('#Cobransas_certificados_N0_2_2').val();
+        var Cobransas_certificados_N0_2_3 = $('#Cobransas_certificados_N0_2_3').val();
+        var Cobransas_certificados_N0_2_4 = $('#Cobransas_certificados_N0_2_4').val();
+        var Cobransas_certificados_N0_2_5 = $('#Cobransas_certificados_N0_2_5').val();
+        var Cobransas_certificados_SI_3 = $('#Cobransas_certificados_SI_3').val();
+        var Cobransas_certificados_SI_3_1 = $('#Cobransas_certificados_SI_3_1').val();
+        var Cobransas_certificados_SI_3_2 = $('#Cobransas_certificados_SI_3_2').val();
+        var Cobransas_certificados_NO_3 = $('#Cobransas_certificados_NO_3').val();
+        var Cobransas_certificados_NO_3_1 = $('#Cobransas_certificados_NO_3_1').val();
+        var Cobransas_certificados_NO_3_2=$('#Cobransas_certificados_NO_3_2').val();
+        var Cobransas_certificados_SI_4 = $('#Cobransas_certificados_SI_4').val();
+        var Cobransas_certificados_NO_4 = $('#Cobransas_certificados_NO_4').val();
+        var Cobransas_certificados_SI_5 = $('#Cobransas_certificados_SI_5').val();
+
+        var Cobransas_certificados_NO_5 = $('#Cobransas_certificados_NO_5').val();
+        var Cobransas_certificados_SI_6 = $('#Cobransas_certificados_SI_6').val();
+        var Cobransas_certificados_NO_6 = $('#Cobransas_certificados_NO_6').val();
+        var Cobransas_certificados_ACCIONES_1 = $('#Cobransas_certificados_ACCIONES_1').val();
+        var Cobransas_certificados_ACCIONES_2 = $('#Cobransas_certificados_ACCIONES_2').val();
+        var Cobransas_certificados_ACCIONES_3 = $('#Cobransas_certificados_ACCIONES_3').val();
+
+
+        if(
+            Peritos_judiciales_SI_1=== '' && Peritos_judiciales_NO_1 === ''  ||
+            Peritos_judiciales_Obserbaciones_1 === '' || Peritos_judiciales_SI_2_1===''
+            && Peritos_judiciales_NO_2_1 ===''
+            || Peritos_judiciales_SI_2_2===''
+            && Peritos_judiciales_NO_2_2===''
+            || Peritos_judiciales_Obserbaciones_2_1===''
+            || Peritos_judiciales_Obserbaciones_2_2===''
+            ||  Peritos_judiciales_SI_3==='' && Peritos_judiciales_NO_3===''
+            || Peritos_judiciales_Obserbaciones_3==='' ||
+            Peritos_judiciales_SI_4 ==='' && Peritos_judiciales_NO_4 ==='' ||
+            Peritos_judiciales_Obserbaciones_4==='' ||
+
+            Peritos_judiciales_SI_5==='' && Peritos_judiciales_NO_5===''||
+            Peritos_judiciales_Obserbaciones_5==='' || Peritos_judiciales_SI_6_1==='' && Peritos_judiciales_NO_6_1==='' ||
+            Peritos_judiciales_SI_6_2==='' && Peritos_judiciales_NO_6_2==='' ||
+            Peritos_judiciales_Obserbaciones_6_1==='' ||
+            Peritos_judiciales_Obserbaciones_6_2==='' ||
+            Peritos_judiciales_SI_7==='' &&  Peritos_judiciales_NO_7==='' ||
+            Peritos_judiciales_Obserbaciones_7==='' ||
+            Peritos_judiciales_Acciones_1===''||
+            Peritos_judiciales_Acciones_2==='' ||
+            //fin peritos judiciales
+
+            Cuerpo_delito_efectos_SI_1==='' && Cuerpo_delito_efectos_NO_1==='' ||
+            Cuerpo_delito_efectos_Observaciones_1===''
+            || Cuerpo_delito_efectos_SI_2_1==='' && Cuerpo_delito_efectos_NO_2_1===''
+            || Cuerpo_delito_efectos_SI_2_2===''  && Cuerpo_delito_efectos_NO_2_2==='' ||
+            Cuerpo_delito_efectos_Observaciones_2_1==='' || Cuerpo_delito_efectos_Observaciones_2_2==='' ||
+
+            Cuerpo_delito_efectos_SI_3==='' && Cuerpo_delito_efectos_NO_3==='' ||
+            Cuerpo_delito_efectos_Observaciones_3==='' ||
+
+            Cuerpo_delito_efectos_SI_4_1 ===''  && Cuerpo_delito_efectos_NO_4_1==='' ||
+
+            Cuerpo_delito_efectos_SI_4_2 ==='' && Cuerpo_delito_efectos_NO_4_2==='' ||
+
+            Cuerpo_delito_efectos_Observaciones_4_1==='' || Cuerpo_delito_efectos_Observaciones_4_2===''  ||
+
+            Cuerpo_delito_efectos_SI_5==='' && Cuerpo_delito_efectos_NO_5==='' ||
+
+            Cuerpo_delito_efectos_Observaciones_5 === '' ||
+
+            Cuerpo_delito_efectos_SI_6 ==='' && Cuerpo_delito_efectos_NO_6===''||
+            Cuerpo_delito_efectos_Observaciones_6==='' ||
+
+            Cuerpo_delito_efectos_ACCIONES_1===''||  Cuerpo_delito_efectos_ACCIONES_2 ==='' || Cuerpo_delito_efectos_ACCIONES_3=== ''  ||
+//fin cuepro delito
+
+             Recaudacion_judicial_SI_1 ==='' &&  Recaudacion_judicial_NO_1 ==='' ||
+            Recaudacion_judicial_SI_1_1=== '' && Recaudacion_judicial_NO_1_1==='' ||
+            Recaudacion_judicial_SI_1_2=== '' && Recaudacion_judicial_NO_1_2==='' ||
+            Recaudacion_judicial_SI_1_3==='' &&  Recaudacion_judicial_NO_1_3==='' ||
+            Recaudacion_judicial_SI_1_4==='' &&  Recaudacion_judicial_NO_1_4==='' ||
+            Recaudacion_judicial_S1_2==='' &&   Recaudacion_judicial_NO_2==='' ||
+            Recaudacion_judicial_S1_2_1 ==='' && Recaudacion_judicial_NO_2_1==='' ||
+            Recaudacion_judicial_S1_2_2==='' && Recaudacion_judicial_NO_2_2==='' ||
+            Recaudacion_judicial_S1_2_3==='' &&  Recaudacion_judicial_NO_2_3==='' ||
+            Recaudacion_judicial_S1_3==='' &&  Recaudacion_judicial_NO_3==='' ||
+            Recaudacion_judicial_S1_3_1==='' && Recaudacion_judicial_NO_3_1==='' ||
+            Recaudacion_judicial_S1_3_2=== '' && Recaudacion_judicial_NO_3_2==='' ||
+            Recaudacion_judicial_S1_4==='' && Recaudacion_judicial_NO_4===''||
+            Recaudacion_judicial_S1_4_1==='' && Recaudacion_judicial_NO_4_1==='' ||
+            Recaudacion_judicial_SI_5===''&& Recaudacion_judicial_NO_5===''  ||
+            //fin Recaudacion judicial
+
+             Cobransas_certificados_SI_1==='' && Cobransas_certificados_NO_1==='' ||
+            Cobransas_certificados_SI_1_1==='' && Cobransas_certificados_NO_1_1==='' ||
+            Cobransas_certificados_SI_2==='' && Cobransas_certificados_N0_2===''||
+            Cobransas_certificados_SI_2_1==='' && Cobransas_certificados_N0_2_1==='' ||
+            Cobransas_certificados_SI_2_2==='' && Cobransas_certificados_N0_2_2===''||
+            Cobransas_certificados_SI_2_3==='' && Cobransas_certificados_N0_2_3==='' ||
+            Cobransas_certificados_SI_2_4===''&& Cobransas_certificados_N0_2_4===''||
+            Cobransas_certificados_SI_2_5==='' && Cobransas_certificados_N0_2_5===''||
+            Cobransas_certificados_SI_3==='' && Cobransas_certificados_NO_3===''||
+            Cobransas_certificados_NO_3_1==='' &&Cobransas_certificados_NO_3_1===''||
+            Cobransas_certificados_SI_3_2==='' && Cobransas_certificados_NO_3_2===''||
+            Cobransas_certificados_SI_4==='' && Cobransas_certificados_NO_4===''||
+            Cobransas_certificados_SI_5==='' && Cobransas_certificados_NO_5==='' ||
+            Cobransas_certificados_SI_6=== '' && Cobransas_certificados_NO_6===''||
+            Cobransas_certificados_ACCIONES_1==='' || Cobransas_certificados_ACCIONES_2===''||
+            Cobransas_certificados_ACCIONES_3===''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ){
+
+            Peritos_judiciales_SI_1=Valida('Peritos_judiciales_SI_1');
+            Peritos_judiciales_NO_1=Valida('Peritos_judiciales_NO_1');
+            Peritos_judiciales_Obserbaciones_1=Valida('Peritos_judiciales_Obserbaciones_1');
+            Peritos_judiciales_SI_2_1=Valida('Peritos_judiciales_SI_2_1');
+            Peritos_judiciales_SI_2_2=Valida('Peritos_judiciales_SI_2_2');
+            Peritos_judiciales_NO_2_1=Valida('Peritos_judiciales_NO_2_1');
+            Peritos_judiciales_NO_2_2=Valida('Peritos_judiciales_NO_2_2');
+            Peritos_judiciales_Obserbaciones_2_1=Valida('Peritos_judiciales_Obserbaciones_2_1');
+            Peritos_judiciales_Obserbaciones_2_2=Valida('Peritos_judiciales_Obserbaciones_2_2');
+
+            Peritos_judiciales_SI_3=Valida('Peritos_judiciales_SI_3');
+            Peritos_judiciales_NO_3=Valida('Peritos_judiciales_NO_3');
+            Peritos_judiciales_Obserbaciones_3=Valida('Peritos_judiciales_Obserbaciones_3');
+            Peritos_judiciales_SI_4=Valida('Peritos_judiciales_SI_4');
+            Peritos_judiciales_NO_4=Valida('Peritos_judiciales_NO_4');
+            Peritos_judiciales_Obserbaciones_4=Valida('Peritos_judiciales_Obserbaciones_4');
+
+            Peritos_judiciales_SI_5=Valida('Peritos_judiciales_SI_5');
+            Peritos_judiciales_NO_5=Valida('Peritos_judiciales_NO_5');
+            Peritos_judiciales_Obserbaciones_5=Valida('Peritos_judiciales_Obserbaciones_5');
+            Peritos_judiciales_SI_6_1=Valida('Peritos_judiciales_SI_6_1');
+            Peritos_judiciales_SI_6_2=Valida('Peritos_judiciales_SI_6_2');
+            Peritos_judiciales_NO_6_1=Valida('Peritos_judiciales_NO_6_1');
+            Peritos_judiciales_NO_6_2=Valida('Peritos_judiciales_NO_6_2');
+            Peritos_judiciales_Obserbaciones_6_1=Valida('Peritos_judiciales_Obserbaciones_6_1');
+            Peritos_judiciales_Obserbaciones_6_2=Valida('Peritos_judiciales_Obserbaciones_6_2');
+            Peritos_judiciales_SI_7=Valida('Peritos_judiciales_SI_7');
+            Peritos_judiciales_NO_7=Valida('Peritos_judiciales_NO_7');
+            Peritos_judiciales_Obserbaciones_7=Valida('Peritos_judiciales_Obserbaciones_7');
+            Peritos_judiciales_Acciones_1=Valida('Peritos_judiciales_Acciones_1');
+            Peritos_judiciales_Acciones_2=Valida('Peritos_judiciales_Acciones_2');
+            //fin peritos
+
+            Cuerpo_delito_efectos_SI_1=Valida('Cuerpo_delito_efectos_SI_1');
+            Cuerpo_delito_efectos_NO_1=Valida('Cuerpo_delito_efectos_NO_1');
+            Cuerpo_delito_efectos_Observaciones_1=Valida('Cuerpo_delito_efectos_Observaciones_1');
+            Cuerpo_delito_efectos_SI_2_1=Valida('Cuerpo_delito_efectos_SI_2_1');
+            Cuerpo_delito_efectos_SI_2_2=Valida('Cuerpo_delito_efectos_SI_2_2');
+            Cuerpo_delito_efectos_NO_2_1=Valida('Cuerpo_delito_efectos_NO_2_1');
+            Cuerpo_delito_efectos_NO_2_2=Valida('Cuerpo_delito_efectos_NO_2_2');
+            Cuerpo_delito_efectos_Observaciones_2_1=Valida('Cuerpo_delito_efectos_Observaciones_2_1');
+            Cuerpo_delito_efectos_Observaciones_2_2=Valida('Cuerpo_delito_efectos_Observaciones_2_2');
+
+            Cuerpo_delito_efectos_SI_3=Valida('Cuerpo_delito_efectos_SI_3');
+            Cuerpo_delito_efectos_NO_3=Valida('Cuerpo_delito_efectos_NO_3');
+            Cuerpo_delito_efectos_Observaciones_3=Valida('Cuerpo_delito_efectos_Observaciones_3');
+            Cuerpo_delito_efectos_SI_4_1=Valida('Cuerpo_delito_efectos_SI_4_1');
+            Cuerpo_delito_efectos_SI_4_2=Valida('Cuerpo_delito_efectos_SI_4_2');
+            Cuerpo_delito_efectos_NO_4_1=Valida('Cuerpo_delito_efectos_NO_4_1');
+            Cuerpo_delito_efectos_NO_4_2=Valida('Cuerpo_delito_efectos_NO_4_2');
+            Cuerpo_delito_efectos_Observaciones_4_1=Valida('Cuerpo_delito_efectos_Observaciones_4_1');
+            Cuerpo_delito_efectos_Observaciones_4_2=Valida('Cuerpo_delito_efectos_Observaciones_4_2');
+
+            Cuerpo_delito_efectos_SI_5=Valida('Cuerpo_delito_efectos_SI_5');
+            Cuerpo_delito_efectos_NO_5=Valida('Cuerpo_delito_efectos_NO_5');
+            Cuerpo_delito_efectos_Observaciones_5=Valida('Cuerpo_delito_efectos_Observaciones_5');
+            Cuerpo_delito_efectos_SI_6=Valida('Cuerpo_delito_efectos_SI_6');
+            Cuerpo_delito_efectos_NO_6=Valida('Cuerpo_delito_efectos_NO_6');
+            Cuerpo_delito_efectos_Observaciones_6=Valida('Cuerpo_delito_efectos_Observaciones_6');
+
+            Cuerpo_delito_efectos_ACCIONES_1=Valida('Cuerpo_delito_efectos_ACCIONES_1');
+            Cuerpo_delito_efectos_ACCIONES_2=Valida('Cuerpo_delito_efectos_ACCIONES_2');
+            Cuerpo_delito_efectos_ACCIONES_3=Valida('Cuerpo_delito_efectos_ACCIONES_3');
+            //fin cuerpo delito
+
+
+             Recaudacion_judicial_SI_1=Valida('Recaudacion_judicial_SI_1');
+             Recaudacion_judicial_SI_1_1=Valida('Recaudacion_judicial_SI_1_1');
+             Recaudacion_judicial_SI_1_2=Valida('Recaudacion_judicial_SI_1_2');
+             Recaudacion_judicial_SI_1_3=Valida('Recaudacion_judicial_SI_1_3');
+             Recaudacion_judicial_SI_1_4=Valida('Recaudacion_judicial_SI_1_4');
+
+             Recaudacion_judicial_NO_1=Valida('Recaudacion_judicial_NO_1');
+             Recaudacion_judicial_NO_1_1=Valida('Recaudacion_judicial_NO_1_1');
+             Recaudacion_judicial_NO_1_2=Valida('Recaudacion_judicial_NO_1_2');
+             Recaudacion_judicial_NO_1_3=Valida('Recaudacion_judicial_NO_1_3');
+             Recaudacion_judicial_NO_1_4 =Valida('Recaudacion_judicial_NO_1_4');
+             Recaudacion_judicial_S1_2=Valida('Recaudacion_judicial_S1_2');
+
+             Recaudacion_judicial_S1_2_1=Valida('Recaudacion_judicial_S1_2_1');
+             Recaudacion_judicial_S1_2_2=Valida('Recaudacion_judicial_S1_2_2');
+             Recaudacion_judicial_S1_2_3 =Valida('Recaudacion_judicial_S1_2_3');
+             Recaudacion_judicial_NO_2 =Valida('Recaudacion_judicial_NO_2');
+             Recaudacion_judicial_NO_2_1 =Valida('Recaudacion_judicial_NO_2_1');
+             Recaudacion_judicial_NO_2_2 =Valida('Recaudacion_judicial_NO_2_2');
+             Recaudacion_judicial_NO_2_3 =Valida('Recaudacion_judicial_NO_2_3');
+             Recaudacion_judicial_S1_3 = Valida('Recaudacion_judicial_S1_3');
+
+             Recaudacion_judicial_S1_3_1 = Valida('Recaudacion_judicial_S1_3_1');
+             Recaudacion_judicial_S1_3_2 = Valida('Recaudacion_judicial_S1_3_2');
+             Recaudacion_judicial_NO_3 = Valida('Recaudacion_judicial_NO_3');
+             Recaudacion_judicial_NO_3_1 = Valida('Recaudacion_judicial_NO_3_1');
+             Recaudacion_judicial_NO_3_2= Valida('Recaudacion_judicial_NO_3_2');
+
+             Recaudacion_judicial_S1_4 = Valida('Recaudacion_judicial_S1_4');
+             Recaudacion_judicial_S1_4_1 = Valida('Recaudacion_judicial_S1_4_1');
+             Recaudacion_judicial_NO_4= Valida('Recaudacion_judicial_NO_4');
+             Recaudacion_judicial_NO_4_1 = Valida('Recaudacion_judicial_NO_4_1');
+             Recaudacion_judicial_SI_5 = Valida('Recaudacion_judicial_SI_5');
+             Recaudacion_judicial_NO_5 = Valida('Recaudacion_judicial_NO_5');
+//fin recaudacuon judicial
+            Cobransas_certificados_SI_1 = Valida('Cobransas_certificados_SI_1');
+            Cobransas_certificados_SI_1_1 = Valida('Cobransas_certificados_SI_1_1');
+            Cobransas_certificados_NO_1 = Valida('Cobransas_certificados_NO_1');
+            Cobransas_certificados_NO_1_1 = Valida('Cobransas_certificados_NO_1_1');
+            Cobransas_certificados_SI_2 = Valida('Cobransas_certificados_SI_2');
+            Cobransas_certificados_SI_2_1 = Valida('Cobransas_certificados_SI_2_1');
+
+            Cobransas_certificados_SI_2_2 = Valida('Cobransas_certificados_SI_2_2');
+            Cobransas_certificados_SI_2_3 = Valida('Cobransas_certificados_SI_2_3');
+            Cobransas_certificados_SI_2_4 = Valida('Cobransas_certificados_SI_2_4');
+            Cobransas_certificados_SI_2_5 = Valida('Cobransas_certificados_SI_2_5');
+            Cobransas_certificados_N0_2 = Valida('Cobransas_certificados_N0_2');
+            Cobransas_certificados_N0_2_1 = Valida('Cobransas_certificados_N0_2_1');
+            Cobransas_certificados_N0_2_2 = Valida('Cobransas_certificados_N0_2_2');
+            Cobransas_certificados_N0_2_3 = Valida('Cobransas_certificados_N0_2_3');
+
+            Cobransas_certificados_N0_2_4 = Valida('Cobransas_certificados_N0_2_4');
+            Cobransas_certificados_N0_2_5 = Valida('Cobransas_certificados_N0_2_5');
+            Cobransas_certificados_SI_3 = Valida('Cobransas_certificados_SI_3');
+            Cobransas_certificados_SI_3_1 = Valida('Cobransas_certificados_SI_3_1');
+            Cobransas_certificados_SI_3_2 = Valida('Cobransas_certificados_SI_3_2');
+            Cobransas_certificados_NO_3 = Valida('Cobransas_certificados_NO_3');
+            Cobransas_certificados_NO_3_1 = Valida('Cobransas_certificados_NO_3_1');
+            Cobransas_certificados_NO_3_2 = Valida('Cobransas_certificados_NO_3_2');
+            Cobransas_certificados_SI_4 = Valida('Cobransas_certificados_SI_4');
+            Cobransas_certificados_NO_4 = Valida('Cobransas_certificados_NO_4');
+            Cobransas_certificados_SI_5 = Valida('Cobransas_certificados_SI_5');
+
+            Cobransas_certificados_NO_5 = Valida('Cobransas_certificados_NO_5');
+            Cobransas_certificados_SI_6 = Valida('Cobransas_certificados_SI_6');
+            Cobransas_certificados_NO_6 = Valida('Cobransas_certificados_NO_6');
+            Cobransas_certificados_ACCIONES_1 = Valida('Cobransas_certificados_ACCIONES_1');
+            Cobransas_certificados_ACCIONES_2 = Valida('Cobransas_certificados_ACCIONES_2');
+            Cobransas_certificados_ACCIONES_3 =Valida('Cobransas_certificados_ACCIONES_3');
+
+
+
+
+
+
+            if (
+                Peritos_judiciales_SI_1===false
+                || Peritos_judiciales_NO_1===false ||
+                Peritos_judiciales_Obserbaciones_1 ===false ||
+                Peritos_judiciales_SI_2_1===false ||
+            Peritos_judiciales_SI_2_2===false ||
+            Peritos_judiciales_NO_2_1===false ||
+            Peritos_judiciales_NO_2_2===false ||
+            Peritos_judiciales_Obserbaciones_2_1===false ||
+            Peritos_judiciales_Obserbaciones_2_2===false ||
+
+                Peritos_judiciales_SI_3 ===false ||
+                Peritos_judiciales_NO_3===false ||
+                Peritos_judiciales_Obserbaciones_3===false ||
+                Peritos_judiciales_SI_4 ===false ||
+                Peritos_judiciales_NO_4===false ||
+                Peritos_judiciales_Obserbaciones_4===false ||
+
+
+                Peritos_judiciales_SI_5 ===false ||
+                Peritos_judiciales_NO_5===false ||
+                Peritos_judiciales_Obserbaciones_5===false ||
+                Peritos_judiciales_SI_6_1 ===false ||
+                Peritos_judiciales_NO_6_1===false ||
+                Peritos_judiciales_SI_6_2 ===false ||
+                Peritos_judiciales_NO_6_2===false ||
+                Peritos_judiciales_Obserbaciones_6_1===false ||
+                Peritos_judiciales_Obserbaciones_6_2===false ||
+
+                Peritos_judiciales_SI_7 && Peritos_judiciales_NO_7===false ||
+                Peritos_judiciales_Obserbaciones_7===false ||
+                Peritos_judiciales_Acciones_1===false ||
+                Peritos_judiciales_Acciones_2===false ||
+
+                //fin peritos judiciales
+
+                Cuerpo_delito_efectos_SI_1===false ||
+                    Cuerpo_delito_efectos_NO_1===false ||
+                    Cuerpo_delito_efectos_Observaciones_1===false ||
+                    Cuerpo_delito_efectos_SI_2_1===false ||
+                    Cuerpo_delito_efectos_SI_2_2===false ||
+                    Cuerpo_delito_efectos_NO_2_1===false ||
+                    Cuerpo_delito_efectos_NO_2_2===false ||
+                    Cuerpo_delito_efectos_Observaciones_2_1===false ||
+                    Cuerpo_delito_efectos_Observaciones_2_2===false ||
+
+                Cuerpo_delito_efectos_SI_3===false ||
+                Cuerpo_delito_efectos_NO_3===false ||
+                Cuerpo_delito_efectos_Observaciones_3===false ||
+
+                Cuerpo_delito_efectos_SI_4_1===false ||
+                Cuerpo_delito_efectos_SI_4_2===false ||
+                Cuerpo_delito_efectos_NO_4_1===false ||
+                Cuerpo_delito_efectos_NO_4_2===false ||
+                Cuerpo_delito_efectos_Observaciones_4_1===false ||
+                Cuerpo_delito_efectos_Observaciones_4_2===false ||
+
+                Cuerpo_delito_efectos_SI_5===false ||
+                Cuerpo_delito_efectos_NO_5===false ||
+                Cuerpo_delito_efectos_Observaciones_5===false ||
+                Cuerpo_delito_efectos_SI_6===false ||
+                Cuerpo_delito_efectos_NO_6===false ||
+                Cuerpo_delito_efectos_Observaciones_6===false ||
+
+                Cuerpo_delito_efectos_ACCIONES_1===false ||
+                Cuerpo_delito_efectos_ACCIONES_2===false ||
+                Cuerpo_delito_efectos_ACCIONES_3===false ||
+                //cuerpo delito fin
+
+                Recaudacion_judicial_SI_1===false ||
+            Recaudacion_judicial_SI_1_1===false ||
+            Recaudacion_judicial_SI_1_2===false ||
+            Recaudacion_judicial_SI_1_3===false ||
+            Recaudacion_judicial_SI_1_4===false ||
+
+            Recaudacion_judicial_NO_1===false ||
+            Recaudacion_judicial_NO_1_1===false ||
+            Recaudacion_judicial_NO_1_2===false ||
+            Recaudacion_judicial_NO_1_3===false ||
+            Recaudacion_judicial_NO_1_4 ===false ||
+            Recaudacion_judicial_S1_2===false ||
+
+            Recaudacion_judicial_S1_2_1===false ||
+            Recaudacion_judicial_S1_2_2===false ||
+            Recaudacion_judicial_S1_2_3 ===false ||
+            Recaudacion_judicial_NO_2 ===false ||
+            Recaudacion_judicial_NO_2_1===false ||
+            Recaudacion_judicial_NO_2_2 ===false ||
+            Recaudacion_judicial_NO_2_3===false ||
+            Recaudacion_judicial_S1_3 ===false ||
+
+            Recaudacion_judicial_S1_3_1===false ||
+            Recaudacion_judicial_S1_3_2 ===false ||
+            Recaudacion_judicial_NO_3 ===false ||
+            Recaudacion_judicial_NO_3_1 ===false ||
+            Recaudacion_judicial_NO_3_2===false ||
+
+            Recaudacion_judicial_S1_4 ===false ||
+            Recaudacion_judicial_S1_4_1 ===false ||
+            Recaudacion_judicial_NO_4===false ||
+            Recaudacion_judicial_NO_4_1 ===false ||
+            Recaudacion_judicial_SI_5===false ||
+            Recaudacion_judicial_NO_5 ===false ||
+                // fin recaudacion
+
+                Cobransas_certificados_SI_1 ===false ||
+            Cobransas_certificados_SI_1_1 ===false ||
+            Cobransas_certificados_NO_1 ===false ||
+            Cobransas_certificados_NO_1_1 ===false ||
+            Cobransas_certificados_SI_2 ===false ||
+            Cobransas_certificados_SI_2_1===false ||
+
+            Cobransas_certificados_SI_2_2 ===false ||
+            Cobransas_certificados_SI_2_3 ===false ||
+            Cobransas_certificados_SI_2_4 ===false ||
+            Cobransas_certificados_SI_2_5===false ||
+            Cobransas_certificados_N0_2 ===false ||
+            Cobransas_certificados_N0_2_1===false ||
+            Cobransas_certificados_N0_2_2 ===false ||
+            Cobransas_certificados_N0_2_3===false ||
+
+            Cobransas_certificados_N0_2_4 ===false ||
+            Cobransas_certificados_N0_2_5===false ||
+            Cobransas_certificados_SI_3 ===false ||
+            Cobransas_certificados_SI_3_1 ===false ||
+            Cobransas_certificados_SI_3_2 ===false ||
+            Cobransas_certificados_NO_3 ===false ||
+            Cobransas_certificados_NO_3_1 ===false ||
+            Cobransas_certificados_NO_3_2 ===false ||
+            Cobransas_certificados_SI_4===false ||
+            Cobransas_certificados_NO_4 ===false ||
+            Cobransas_certificados_SI_5 ===false ||
+
+            Cobransas_certificados_NO_5  ===false ||
+            Cobransas_certificados_SI_6  ===false ||
+            Cobransas_certificados_NO_6  ===false ||
+            Cobransas_certificados_ACCIONES_1 ===false ||
+            Cobransas_certificados_ACCIONES_2  ===false ||
+            Cobransas_certificados_ACCIONES_3  ===false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ) {
+                $("#exito").hide();
+                $("#error").show();
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Porfavor Rellene la Encuesta!',
+                    timer: 2000
+                });
             }
-        });
 
-        $.ajax({
-            url:'{{url('registrar')}}',
-            type:'post',
-            dataType:'json',
-            data:frm.serialize(),
-            success:function (response) {
+        }else{
+            $("#error").hide();
+            $("#exito").show();
+            alert('ya salio czm');
 
-                if(response.success==true){
-                    frm.trigger('reset');
-                    iziToast.success({
-                        title: 'OK',
-                        message: 'Successfully Registrado Correctamente!',
-                    });
-                    document.location.reload();
+            var frm=$("#regisEncuestas,#form_personal_Observaciones,#regisPersona");
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
 
 
+            $.ajax({
+                url:'{{url('registrar')}}',
+                type:'post',
+                dataType:'json',
+                data:frm.serialize(),
+                success:function (response) {
+
+
+
+                    if(response.success==true){
+                        frm.trigger('reset');
+                        iziToast.success({
+                            title: 'OK',
+                            message: 'Successfully Registrado Correctamente!',
+                        });
+                        document.location.reload();
+
+
+
+                    }
 
                 }
+            })
 
-            }
-        })
+        }
+
+
+
+
+
+
+
 
     }
     $('#magis').on('change',function (e) {
@@ -2598,6 +3351,7 @@ realizar y plazo para dar la solución.</textarea></td>
 
 
     });
+
 
 </script>
     @endsection

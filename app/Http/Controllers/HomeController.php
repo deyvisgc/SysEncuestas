@@ -25,13 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user1=DB::select("SELECT COUNT(*) as user FROM usuario WHERE usuario.estado=0");
-        $user4 =User::where('estado','=', 0)->get();
-        $user5 =User::where('estado','=', 2)->get();
-        $user2=DB::select("SELECT COUNT(*) as user1 FROM usuario WHERE usuario.estado=2");
-        $user6=DB::select("SELECT * FROM usuario ");
+        $user1=DB::select("SELECT COUNT(*) as user FROM usuario WHERE usuario.estado=0 AND usuario.Rol_idRol=2");
+        $user4 =DB::select("SELECT * FROM usuario WHERE usuario.estado=0 AND usuario.Rol_idRol=2");
+        $user5 =DB::select("SELECT * FROM usuario WHERE usuario.estado=2  AND usuario.Rol_idRol=2");
+        $user2=DB::select("SELECT COUNT(*) as user1 FROM usuario WHERE usuario.estado=2 AND usuario.Rol_idRol=2");
+        $user6=DB::select("SELECT * FROM usuario where usuario.Rol_idRol=2 ");
 
-        $alluser=DB::select("SELECT COUNT(*) as alluser FROM usuario ");
+        $alluser=DB::select("SELECT COUNT(*) as alluser FROM usuario where usuario.Rol_idRol=2 ");
         return view('Principal.dasbord',['user'=>$user1,'user1'=>$user2,
             'alluser'=>$alluser,"user4"=>$user4,'user5'=>$user5,'user6'=>$user6]);
     }

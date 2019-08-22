@@ -97,3 +97,40 @@
         </div>
     </div>
 </div>
+
+<div id="UpdatePassword" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+                <center> <h3>Canbiar Contraseña</h3></center>
+            </div>
+            <form action="{{url('user/Password')}}" method="post" >
+                {{csrf_field()}}
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Introduce tu actual password:</label>
+                        <input type="password" name="mypassword" class="form-control">
+                        <div class="text-danger">{{$errors->first('mypassword')}}</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Introduce tu nuevo password:</label>
+                        <input type="password" name="password" class="form-control">
+                        <div class="text-danger">{{$errors->first('password')}}</div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirma tu nuevo password:</label>
+                        <input type="password" name="password_confirmation" class="form-control">
+                        <div class="text-danger">{{$errors->first('password')}}</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-success" id="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

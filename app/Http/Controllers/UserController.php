@@ -20,7 +20,7 @@ class UserController extends Controller
 
     public function index(Request $request){
         $rol=Rol::all();
-        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario,CONCAT(usuario.nombre,' ',usuario.Apellidos) nombres,usuario.Telefono,usuario.DNI,usuario.direccion FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol");
+        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario,CONCAT(usuario.nombre,' ',usuario.Apellidos) nombres,usuario.Telefono,usuario.DNI,usuario.direccion FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol and usuario.Rol_idRol=2 and usuario.estado_Delete=0");
         if($request->ajax()){
             return Datatables::of($use)->make(true);
         }
@@ -30,6 +30,23 @@ class UserController extends Controller
     {
         $libros =($id);
         return $libros;
+    }
+    public function CanbiarEstado($id){
+
+        $ro=DB::table('Usuario')
+            ->where('idUsuario', $id)
+            ->update(['estado_Delete' =>1]);
+        return response()->json(array("success"=>true));
+
+
+    }
+    public function UsuariosDelete(Request $request){
+
+        $use=DB::select("SELECT Usuario.email,rol.Nombre_Rol,Usuario.idUsuario,CONCAT(usuario.nombre,' ',usuario.Apellidos) nombres,usuario.Telefono,usuario.DNI,usuario.direccion FROM Usuario,rol WHERE Usuario.Rol_idRol=rol.idRol and usuario.Rol_idRol=2 and usuario.estado_Delete=1");
+        if($request->ajax()){
+            return Datatables::of($use)->make(true);
+        }
+        return view('Admin.UsuariosDelete');
     }
     public function store(Request $request){
         $user=new User();
@@ -51,6 +68,7 @@ class UserController extends Controller
         $user->Telefono=$request->telefono;
         $user->DNI=$request->dni;
         $user->direccion=$request->direccion;
+        $user->estado_Delete=0;
         $user->save();
         return response()->json(array("success"=>true));
 

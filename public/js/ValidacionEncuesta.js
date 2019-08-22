@@ -1,6 +1,7 @@
 var v=true;
 $("span.help-block").hide();
 $(document).ready(function () {
+
     $(".next-step").click(function (e) {
         var magis=$("#magis").val();
         var organo=$('#organo_judicial').val();
@@ -32,7 +33,8 @@ $(document).ready(function () {
 
 
     });
-    $('#next1').click(function (e) {
+    $("#next1").click(function (e) {
+
         e.preventDefault();
         var personal_total = $('#personal_total').val();
         var observacion_1_Personal=$('#observacion_1_Personal').val();
@@ -176,7 +178,7 @@ $(document).ready(function () {
             Otros_aspectos_logisticos_Acciones==='' ||
             subrasarse_Aspectos_logisticos_Deficiencias==='' ||
             subrasarse_Aspectos_logisticos_Acciones===''  ||
-        //aspectos logisticos
+            //aspectos logisticos
 
             Energía_servicio_bascios_Deficiencias==='' ||
             Energía_servicio_bascios_Acciones==='' ||
@@ -188,37 +190,37 @@ $(document).ready(function () {
             Otros_servicios_basicos_Acciones===''||
             subrasarse_servicios_basicos_Deficiencias===''||
             subrasarse_servicios_basicos_Acciones===''||
-          //fin de servicios
+            //fin de servicios
 
             Armarios_mobiliario_Deficiencias===''||
-         Armarios_mobiliario_Acciones===''||
+            Armarios_mobiliario_Acciones===''||
             Estantería_mobiliario_Deficiencias===''||
-         Estantería_mobiliario_Acciones===''||
-         Escritorios_mobiliario_Deficiencias===''||
-         Escritorios_mobiliario_Acciones===''||
-         Sillas_mobiliario_Deficiencias===''||
-         Sillas_mobiliario_Archivos===''||
-         Módulos_computadoras_mobiliarios_Deficiencias===''||
-         Módulos_computadoras_mobiliarios_Acciones===''||
-         otros_mobiliario_Deficiencias===''||
-         otros_mobiliario_Acciones===''||
-         subrasarse_mobiliarios_Deficiencias===''||
-         subrasarse_mobiliarios_Acciones===''||
-        //fin mobiliarios
-             Papel_suministro_Deficiencias===''||
-         Papel_suministro_Acciones===''||
-         Bolígrafos_suministro_Deficiencias===''||
-         Bolígrafos_suministro_Acciones===''||
-         Cinta_suministro_Deficiencias===''||
-         Cinta_suministro_Acciones===''||
-         Carátulas_suministro_Deficiencias===''||
-         Carátulas_suministro_Acciones===''||
-         Peruano_suministro_Deficiencias===''||
-         Peruano_suministro_Archivos===''||
-         Otros_suministro_Deficiencias===''||
-         Otros_suministro_Acciones===''||
-         subrasarse_suministro_Deficiencias===''||
-         subrasarse_suministro_Acciones===''
+            Estantería_mobiliario_Acciones===''||
+            Escritorios_mobiliario_Deficiencias===''||
+            Escritorios_mobiliario_Acciones===''||
+            Sillas_mobiliario_Deficiencias===''||
+            Sillas_mobiliario_Archivos===''||
+            Módulos_computadoras_mobiliarios_Deficiencias===''||
+            Módulos_computadoras_mobiliarios_Acciones===''||
+            otros_mobiliario_Deficiencias===''||
+            otros_mobiliario_Acciones===''||
+            subrasarse_mobiliarios_Deficiencias===''||
+            subrasarse_mobiliarios_Acciones===''||
+            //fin mobiliarios
+            Papel_suministro_Deficiencias===''||
+            Papel_suministro_Acciones===''||
+            Bolígrafos_suministro_Deficiencias===''||
+            Bolígrafos_suministro_Acciones===''||
+            Cinta_suministro_Deficiencias===''||
+            Cinta_suministro_Acciones===''||
+            Carátulas_suministro_Deficiencias===''||
+            Carátulas_suministro_Acciones===''||
+            Peruano_suministro_Deficiencias===''||
+            Peruano_suministro_Archivos===''||
+            Otros_suministro_Deficiencias===''||
+            Otros_suministro_Acciones===''||
+            subrasarse_suministro_Deficiencias===''||
+            subrasarse_suministro_Acciones===''
         )
 
 
@@ -237,12 +239,12 @@ $(document).ready(function () {
                 Publicaciones_aspectos_logisticos_Deficiencias=0,Publicaciones_aspectos_logisticos_Acciones=0,Arrendamiento_aspectos_logisticos_Deficiencias=0,Arrendamiento_aspectos_logisticos_Acciones=0,
                 Mantenimiento_vehiculos_aspectos_logisticos_Deficiencias=0,Mantenimiento_vehiculos_aspectos_logisticos_Acciones=0,Otros_aspectos_logisticos_Deficiencias=0,
                 Otros_aspectos_logisticos_Acciones=0,subrasarse_Aspectos_logisticos_Deficiencias=0,subrasarse_Aspectos_logisticos_Acciones=0
-                //aspectos logisticos
+            //aspectos logisticos
             Energía_servicio_bascios_Deficiencias=0, Energía_servicio_bascios_Acciones=0,Agua_servicio_bascios_Deficiencias=0, Agua_servicio_bascios_Acciones=0,
-            Telefonía_servicio_bascios_Deficiencias=0,Telefonía_servicio_bascios_Acciones=0,Otros_servicios_basicos_Deficiencias=0,Otros_servicios_basicos_Acciones=0,
-            subrasarse_servicios_basicos_Deficiencias=0,subrasarse_servicios_basicos_Acciones=0,
+                Telefonía_servicio_bascios_Deficiencias=0,Telefonía_servicio_bascios_Acciones=0,Otros_servicios_basicos_Deficiencias=0,Otros_servicios_basicos_Acciones=0,
+                subrasarse_servicios_basicos_Deficiencias=0,subrasarse_servicios_basicos_Acciones=0,
 
-            Armarios_mobiliario_Deficiencias=0;
+                Armarios_mobiliario_Deficiencias=0;
             Armarios_mobiliario_Acciones=0;
             Estantería_mobiliario_Deficiencias=0;
             Estantería_mobiliario_Acciones=0;
@@ -275,7 +277,7 @@ $(document).ready(function () {
 
 
 
-        ;
+            ;
 
             personal_total = validacion('personal_total');
             observacion_1_Personal = validacion('observacion_1_Personal');
@@ -345,7 +347,7 @@ $(document).ready(function () {
             otros_mobiliario_Acciones=validacion('otros_mobiliario_Acciones');
             subrasarse_mobiliarios_Deficiencias=validacion('subrasarse_mobiliarios_Deficiencias');
             subrasarse_mobiliarios_Acciones=validacion('subrasarse_mobiliarios_Acciones');
-              //fin mobiliarios
+            //fin mobiliarios
 
             Papel_suministro_Deficiencias=validacion('Papel_suministro_Deficiencias');
             Papel_suministro_Acciones=validacion('Papel_suministro_Acciones');
@@ -388,7 +390,7 @@ $(document).ready(function () {
                 Otros_aspectos_logisticos_Acciones===false ||
                 subrasarse_Aspectos_logisticos_Deficiencias===false ||
                 subrasarse_Aspectos_logisticos_Acciones===false ||
-            //aspectos logisticoss
+                //aspectos logisticoss
 
                 Energía_servicio_bascios_Deficiencias===false ||
                 Energía_servicio_bascios_Acciones===false ||
@@ -414,7 +416,7 @@ $(document).ready(function () {
                 otros_mobiliario_Acciones===false||
                 subrasarse_mobiliarios_Deficiencias===false||
                 subrasarse_mobiliarios_Acciones===false||
-            //fin mobiliarios
+                //fin mobiliarios
 
                 Papel_suministro_Deficiencias===false||
                 Papel_suministro_Acciones===false||
@@ -433,6 +435,12 @@ $(document).ready(function () {
 
 
             ) {
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Porfavor Rellene la Encuesta!',
+                    timer: 2000
+                });
                 $("#exito").hide();
                 $("#error").show();
             } else {
@@ -440,50 +448,51 @@ $(document).ready(function () {
                 $("#exito").show();
             }
         }
-    else {
+        else {
 
-        alert('sssss')
+            alert('sssss')
             var $active = $('.wizard .nav-tabs li.active');
             $active.next().removeClass('disabled');
             nextTab($active);
 
         }
+
     });
     $('#next2').click(function (e) {
         e.preventDefault();
-     var Computadoras_informaticos_Deficiencias=$('#Computadoras_informaticos_Deficiencias').val();
-     var  Computadoras_informaticos__Acciones=$('#Computadoras_informaticos__Acciones').val();
-     var Impresoras_informaticos_Deficiencias= $('#Impresoras_informaticos_Deficiencias').val();
-     var Impresoras_informaticos_Acciones=$('#Impresoras_informaticos_Acciones').val();
-     var Fax_Informaticos_Deficiencias= $('#Fax_Informaticos_Deficiencias').val();
-     var Fax_informaticos_Acciones= $('#Fax_informaticos_Acciones').val();
-     var Mantenimiento_equipos_Informaticos_Deficiencias=$('#Mantenimiento_equipos_Informaticos_Deficiencias').val();
-     var Mantenimiento_equipos_Informaticos_Acciones=$('#Mantenimiento_equipos_Informaticos_Acciones').val();
-     var UPS_Informaticos_Deficiencias= $('#UPS_Informaticos_Deficiencias').val();
-     var UPS_Informaticos_Acciones=$('#UPS_Informaticos_Acciones').val();
-     var supresor_picos_Informaticos_Deficiencias= $('#supresor_picos_Informaticos_Deficiencias').val();
-     var supresor_picos_Informaticos_Acciones= $('#supresor_picos_Informaticos_Acciones').val();
-     var Correo_Informaticos_Deficiencias=$('#Correo_Informaticos_Deficiencias').val();
-     var  Correo_Informaticos_Acciones=$('#Correo_Informaticos_Acciones').val();
-     var sistemas_Informaticos_Deficiencias= $('#sistemas_Informaticos_Deficiencias').val();
-     var sistemas_Informaticos_Acciones=$('#sistemas_Informaticos_Acciones').val();
-     var Redes_Informáticos_Informaticos_Deficiencias= $('#Redes_Informáticos_Informaticos_Deficiencias').val();
-     var Redes_Informáticos_Informaticos_Acciones= $('#Redes_Informáticos_Informaticos_Acciones').val();
-     var Otros_Informaticos_Deficiencias=$('#Otros_Informaticos_Deficiencias').val();
-     var Otros_Informaticos_Acciones=$('#Otros_Informaticos_Acciones').val();
-     var subrasarse_Informaticos_Deficiencias= $('#subrasarse_Informaticos_Deficiencias').val();
-     var subrasarse_Informaticos_Acciones=$('#subrasarse_Informaticos_Acciones').val();
-  //fin aspectos informaticos
-    var Aspectos_seguridad_detectorM_Deficiencias=$('#Aspectos_seguridad_detectorM_Deficiencias').val();
-    var Aspectos_seguridad_detectorM_Acciones=$('#Aspectos_seguridad_detectorM_Acciones').val();
-    var Aspectos_seguridad_Extintores_Deficiencias=$('#Aspectos_seguridad_Extintores_Deficiencias').val();
-    var Aspectos_seguridad_Extintores_Acciones=$('#Aspectos_seguridad_Extintores_Acciones').val();
-    var Aspectos_seguridad_Mangueras_Deficiencias=$('#Aspectos_seguridad_Mangueras_Deficiencias').val();
-    var Aspectos_seguridad_Mangueras_Acciones=$('#Aspectos_seguridad_Mangueras_Acciones').val();
-    var Aspectos_seguridad_Otros_Deficiencias=$('#Aspectos_seguridad_Otros_Deficiencias').val();
-    var Aspectos_seguridad_Otros_Acciones=$('#Aspectos_seguridad_Otros_Acciones').val();
-    var subrasarse_Aspectos_seguridad_Deficiencias=$('#subrasarse_Aspectos_seguridad_Deficiencias').val();
-    var subrasarse_Aspectos_seguridad_Acciones=$('#subrasarse_Aspectos_seguridad_Acciones').val();
+        var Computadoras_informaticos_Deficiencias=$('#Computadoras_informaticos_Deficiencias').val();
+        var  Computadoras_informaticos__Acciones=$('#Computadoras_informaticos__Acciones').val();
+        var Impresoras_informaticos_Deficiencias= $('#Impresoras_informaticos_Deficiencias').val();
+        var Impresoras_informaticos_Acciones=$('#Impresoras_informaticos_Acciones').val();
+        var Fax_Informaticos_Deficiencias= $('#Fax_Informaticos_Deficiencias').val();
+        var Fax_informaticos_Acciones= $('#Fax_informaticos_Acciones').val();
+        var Mantenimiento_equipos_Informaticos_Deficiencias=$('#Mantenimiento_equipos_Informaticos_Deficiencias').val();
+        var Mantenimiento_equipos_Informaticos_Acciones=$('#Mantenimiento_equipos_Informaticos_Acciones').val();
+        var UPS_Informaticos_Deficiencias= $('#UPS_Informaticos_Deficiencias').val();
+        var UPS_Informaticos_Acciones=$('#UPS_Informaticos_Acciones').val();
+        var supresor_picos_Informaticos_Deficiencias= $('#supresor_picos_Informaticos_Deficiencias').val();
+        var supresor_picos_Informaticos_Acciones= $('#supresor_picos_Informaticos_Acciones').val();
+        var Correo_Informaticos_Deficiencias=$('#Correo_Informaticos_Deficiencias').val();
+        var  Correo_Informaticos_Acciones=$('#Correo_Informaticos_Acciones').val();
+        var sistemas_Informaticos_Deficiencias= $('#sistemas_Informaticos_Deficiencias').val();
+        var sistemas_Informaticos_Acciones=$('#sistemas_Informaticos_Acciones').val();
+        var Redes_Informáticos_Informaticos_Deficiencias= $('#Redes_Informáticos_Informaticos_Deficiencias').val();
+        var Redes_Informáticos_Informaticos_Acciones= $('#Redes_Informáticos_Informaticos_Acciones').val();
+        var Otros_Informaticos_Deficiencias=$('#Otros_Informaticos_Deficiencias').val();
+        var Otros_Informaticos_Acciones=$('#Otros_Informaticos_Acciones').val();
+        var subrasarse_Informaticos_Deficiencias= $('#subrasarse_Informaticos_Deficiencias').val();
+        var subrasarse_Informaticos_Acciones=$('#subrasarse_Informaticos_Acciones').val();
+        //fin aspectos informaticos
+        var Aspectos_seguridad_detectorM_Deficiencias=$('#Aspectos_seguridad_detectorM_Deficiencias').val();
+        var Aspectos_seguridad_detectorM_Acciones=$('#Aspectos_seguridad_detectorM_Acciones').val();
+        var Aspectos_seguridad_Extintores_Deficiencias=$('#Aspectos_seguridad_Extintores_Deficiencias').val();
+        var Aspectos_seguridad_Extintores_Acciones=$('#Aspectos_seguridad_Extintores_Acciones').val();
+        var Aspectos_seguridad_Mangueras_Deficiencias=$('#Aspectos_seguridad_Mangueras_Deficiencias').val();
+        var Aspectos_seguridad_Mangueras_Acciones=$('#Aspectos_seguridad_Mangueras_Acciones').val();
+        var Aspectos_seguridad_Otros_Deficiencias=$('#Aspectos_seguridad_Otros_Deficiencias').val();
+        var Aspectos_seguridad_Otros_Acciones=$('#Aspectos_seguridad_Otros_Acciones').val();
+        var subrasarse_Aspectos_seguridad_Deficiencias=$('#subrasarse_Aspectos_seguridad_Deficiencias').val();
+        var subrasarse_Aspectos_seguridad_Acciones=$('#subrasarse_Aspectos_seguridad_Acciones').val();
 
         //fin aspectos de seguridad
         var Aspectos_generales_Estructuras_Deficiencias=$('#Aspectos_generales_Estructuras_Deficiencias').val();
@@ -545,7 +554,7 @@ $(document).ready(function () {
 
         var auxilio_judicial_SI_1=$('#auxilio_judicial_SI_1').val();
         var auxilio_judicial_NO_1=$('#auxilio_judicial_NO_1').val();
-        var auxilio_judicial_Observacaciones=$('#auxilio_judicial_Observacaciones_').val();
+        var auxilio_judicial_Observacaciones=$('#auxilio_judicial_Observacaciones').val();
         var auxilio_judicial_SI_1=$('#auxilio_judicial_SI_1').val();
         var auxilio_judicial_SI_2_2=$('#auxilio_judicial_SI_2_2').val();
         var auxilio_judicial_NO_2_1=$('#auxilio_judicial_NO_2_1').val();
@@ -570,6 +579,16 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
         if (
             Computadoras_informaticos_Deficiencias==='' ||
             Computadoras_informaticos__Acciones==='' ||
@@ -577,114 +596,95 @@ $(document).ready(function () {
             Impresoras_informaticos_Acciones===''||
             Fax_Informaticos_Deficiencias===''||
             Fax_informaticos_Acciones===''||
-         Mantenimiento_equipos_Informaticos_Deficiencias===''||
-         Mantenimiento_equipos_Informaticos_Acciones===''||
-         UPS_Informaticos_Deficiencias===''||
-         UPS_Informaticos_Acciones===''||
-         supresor_picos_Informaticos_Deficiencias===''||
-         supresor_picos_Informaticos_Acciones===''||
-         Correo_Informaticos_Deficiencias===''||
-          Correo_Informaticos_Acciones===''||
-         sistemas_Informaticos_Deficiencias===''||
-         sistemas_Informaticos_Acciones===''||
-         Redes_Informáticos_Informaticos_Deficiencias===''||
-         Redes_Informáticos_Informaticos_Acciones===''||
-         Otros_Informaticos_Deficiencias===''||
-         Otros_Informaticos_Acciones===''||
-         subrasarse_Informaticos_Deficiencias===''||
-         subrasarse_Informaticos_Acciones===''||
-            //aspectos informatiocs
+            Mantenimiento_equipos_Informaticos_Deficiencias===''||
+            Mantenimiento_equipos_Informaticos_Acciones===''||
+            UPS_Informaticos_Deficiencias===''||
+            UPS_Informaticos_Acciones===''||
+            supresor_picos_Informaticos_Deficiencias===''||
+            supresor_picos_Informaticos_Acciones===''||
+            Correo_Informaticos_Deficiencias===''||
+            Correo_Informaticos_Acciones===''||
+            sistemas_Informaticos_Deficiencias===''||
+            sistemas_Informaticos_Acciones===''||
+            Redes_Informáticos_Informaticos_Deficiencias===''||
+            Redes_Informáticos_Informaticos_Acciones===''||
+            Otros_Informaticos_Deficiencias===''||
+            Otros_Informaticos_Acciones===''||
+            subrasarse_Informaticos_Deficiencias===''||
+            subrasarse_Informaticos_Acciones===''||
+
             Aspectos_seguridad_detectorM_Deficiencias===''||
-         Aspectos_seguridad_detectorM_Acciones===''||
-         Aspectos_seguridad_Extintores_Deficiencias===''||
-         Aspectos_seguridad_Extintores_Acciones===''||
-         Aspectos_seguridad_Mangueras_Deficiencias===''||
-         Aspectos_seguridad_Mangueras_Acciones===''||
-         Aspectos_seguridad_Otros_Deficiencias===''||
-         Aspectos_seguridad_Otros_Acciones===''||
-         subrasarse_Aspectos_seguridad_Deficiencias===''||
-         subrasarse_Aspectos_seguridad_Acciones===''||
-            //aspectos seguridad
-
-
+            Aspectos_seguridad_detectorM_Acciones===''||
+            Aspectos_seguridad_Extintores_Deficiencias===''||
+            Aspectos_seguridad_Extintores_Acciones===''||
+            Aspectos_seguridad_Mangueras_Deficiencias===''||
+            Aspectos_seguridad_Mangueras_Acciones===''||
+            Aspectos_seguridad_Otros_Deficiencias===''||
+            Aspectos_seguridad_Otros_Acciones===''||
+            subrasarse_Aspectos_seguridad_Deficiencias===''||
+            subrasarse_Aspectos_seguridad_Acciones==='' ||
+            //aspectos seguridad fin
 
             Aspectos_generales_Estructuras_Deficiencias===''||
-         Aspectos_generales_Estructuras_Acciones===''||
-         Aspectos_generales_Puertas_Deficiencias===''||
-         Aspectos_generales_Puertas_Acciones===''||
-         Aspectos_generales_Ventanas_Deficiencias===''||
-         Aspectos_generales_Ventanas_Acciones===''||
-         Aspectos_generales_Pisos_Deficiencias===''||
-         Aspectos_generales_Pisos_Acciones===''||
-         Aspectos_generales_Pintura_Deficiencias===''||
-         Aspectos_generales_Pintura_Acciones===''||
-         Aspectos_generales_Instalaciones_Sanitarias_Deficiencias===''||
-         Aspectos_generales_Instalaciones_Sanitarias_Acciones===''||
-         Aspectos_generales_Instalaciones_Eléctricas_Deficiencias===''||
-         Aspectos_generales_Instalaciones_Eléctricas_Acciones===''||
-         Aspectos_generales_brinda_Seguridad_Deficiencias===''||
-         Aspectos_generales_brinda_Seguridad_Acciones===''||
-         Aspectos_generales_Mantenimiento_local_Deficiencias===''||
-         Aspectos_generales_Mantenimiento_local_Acciones===''||
-         Aspectos_generales_Otros_Deficiencias===''||
-         Aspectos_generales_Otros_Acciones===''||
-         subrasarse_Aspectos_generales_Deficiencias===''||
-         subrasarse_Aspectos_generales_Acciones===''||
-         Aspectos_generales_ALQUILADO===''||
-         Aspectos_generales_ALQUILADO1===''||
-         Aspectos_generales_ALQUILADO2===''||
+            Aspectos_generales_Estructuras_Acciones===''||
+            Aspectos_generales_Puertas_Deficiencias===''||
+            Aspectos_generales_Puertas_Acciones===''||
+            Aspectos_generales_Ventanas_Deficiencias===''||
+            Aspectos_generales_Ventanas_Acciones===''||
+            Aspectos_generales_Pisos_Deficiencias===''||
+            Aspectos_generales_Pisos_Acciones===''||
+            Aspectos_generales_Pintura_Deficiencias===''||
+            Aspectos_generales_Pintura_Acciones===''||
+            Aspectos_generales_Instalaciones_Sanitarias_Deficiencias===''||
+            Aspectos_generales_Instalaciones_Sanitarias_Acciones===''||
+            Aspectos_generales_Instalaciones_Eléctricas_Deficiencias===''||
+            Aspectos_generales_Instalaciones_Eléctricas_Acciones===''||
+            Aspectos_generales_brinda_Seguridad_Deficiencias===''||
+            Aspectos_generales_brinda_Seguridad_Acciones===''||
+            Aspectos_generales_Mantenimiento_local_Deficiencias===''||
+            Aspectos_generales_Mantenimiento_local_Acciones===''||
+            Aspectos_generales_Otros_Deficiencias===''||
+            Aspectos_generales_Otros_Acciones===''||
+            subrasarse_Aspectos_generales_Deficiencias===''||
+            subrasarse_Aspectos_generales_Acciones===''||
+            Aspectos_generales_ALQUILADO===''||
+            Aspectos_generales_ALQUILADO1===''||
+            Aspectos_generales_ALQUILADO2===''||
 
-         Aspectos_generales_CEDIDO===''||
-         Aspectos_generales_CEDIDO1===''||
-         Aspectos_generales_CEDIDO2==='' ||
-
-        //fin de aspectos generales
-            servicio_judiciales_SI_1==='' ||
-         servicio_judiciales_NO_1==='' ||
-         servicio_judiciales_Observaciones_1==='' ||
-         servicio_judiciales_SI_2==='' ||
-         servicio_judiciales_NO_2==='' ||
-         servicio_judiciales_Observaciones_2==='' ||
-         servicio_judiciales_SI_3==='' ||
-         servicio_judiciales_NO_3==='' ||
-         servicio_judiciales_Observaciones_3==='' ||
-         servicio_judiciales_SI_4==='' ||
-         servicio_judiciales_NO_4==='' ||
-         servicio_judiciales_Observaciones_4==='' ||
+            Aspectos_generales_CEDIDO===''||
+            Aspectos_generales_CEDIDO1===''||
+            Aspectos_generales_CEDIDO2===''||
+            //aspecytos geenrales fin
 
 
-         servicio_judiciales_respuesta_negativa==='' ||
-         servicio_judiciales_acciones1==='' ||
-         servicio_judiciales_acciones2==='' ||
-         servicio_judiciales_acciones3==='' ||
-         servicio_judiciales_acciones4==='' ||
-         servicio_judiciales_acciones5==='' ||
 
-            //FIN serviicos generales
-            auxilio_judicial_SI_1===''||
-             auxilio_judicial_NO_1===''||
-         auxilio_judicial_Observacaciones===''||
-         auxilio_judicial_SI_1===''||
-         auxilio_judicial_SI_2_2===''||
-         auxilio_judicial_NO_2_1===''||
-         auxilio_judicial_NO_2_2===''||
-         auxilio_judicial_Observaciones_2_1===''||
-         auxilio_judicial_Observaciones_2_2===''||
-         auxilio_judicial_SI_3===''||
-         auxilio_judicial_NO_3===''||
-         auxilio_judicial_Observaciones_3===''||
-         auxilio_judicial_SI_4===''||
-         auxilio_judicial_NO_4===''||
-         auxilio_judicial_Observaciones_4===''||
-         auxilio_judicial_SI_5===''||
-         auxilio_judicial_NO_5===''||
-         auxilio_judicial_Observaciones_5===''||
-         auxilio_judicial_SI_6===''||
-         auxilio_judicial_NO_6===''||
-         auxilio_judicial_Observaciones_6===''||
-         auxilio_judicial_Acciones_1===''||
-         auxilio_judicial_Acciones_2===''||
-         auxilio_judicial_Acciones_3===''
+            servicio_judiciales_Observaciones_1==='' ||
+            servicio_judiciales_Observaciones_2==='' ||
+            servicio_judiciales_Observaciones_3==='' ||
+            servicio_judiciales_Observaciones_4==='' ||
+
+
+            servicio_judiciales_respuesta_negativa==='' ||
+            servicio_judiciales_acciones1==='' ||
+            servicio_judiciales_acciones2==='' ||
+            servicio_judiciales_acciones3==='' ||
+            servicio_judiciales_acciones4==='' ||
+            servicio_judiciales_acciones5===''||
+
+            //fin servicios judiciales
+            auxilio_judicial_Observacaciones===''||
+            auxilio_judicial_Observaciones_2_1===''||
+            auxilio_judicial_Observaciones_2_2===''||
+            auxilio_judicial_Observaciones_3===''||
+
+            auxilio_judicial_Observaciones_4===''||
+            auxilio_judicial_Observaciones_5===''||
+
+            auxilio_judicial_Observaciones_6===''||
+            auxilio_judicial_Acciones_1===''||
+            auxilio_judicial_Acciones_2===''||
+            auxilio_judicial_Acciones_3===''
+        //fin auxilio judicial
 
 
 
@@ -692,109 +692,123 @@ $(document).ready(function () {
 
 
 
-    )
+
+
+
+
+
+
+
+
+
+
+
+
+        )
 
         {
             var Computadoras_informaticos_Deficiencias=0, Computadoras_informaticos__Acciones=0, Impresoras_informaticos_Deficiencias=0,
-            Impresoras_informaticos_Acciones=0, Fax_Informaticos_Deficiencias=0, Fax_informaticos_Acciones=0,
-            Mantenimiento_equipos_Informaticos_Deficiencias=0, Mantenimiento_equipos_Informaticos_Acciones=0,
-            UPS_Informaticos_Deficiencias=0, UPS_Informaticos_Acciones=0, supresor_picos_Informaticos_Deficiencias=0,
-            supresor_picos_Informaticos_Acciones=0, Correo_Informaticos_Deficiencias=0, Correo_Informaticos_Acciones=0,
-            sistemas_Informaticos_Deficiencias=0, sistemas_Informaticos_Acciones=0, Redes_Informáticos_Informaticos_Deficiencias=0,
-            Redes_Informáticos_Informaticos_Acciones=0, Otros_Informaticos_Deficiencias=0, Otros_Informaticos_Acciones=0,
-            subrasarse_Informaticos_Deficiencias=0, subrasarse_Informaticos_Acciones=0,
-               //fin aspectos sguridad
+                Impresoras_informaticos_Acciones=0, Fax_Informaticos_Deficiencias=0, Fax_informaticos_Acciones=0,
+                Mantenimiento_equipos_Informaticos_Deficiencias=0, Mantenimiento_equipos_Informaticos_Acciones=0,
+                UPS_Informaticos_Deficiencias=0, UPS_Informaticos_Acciones=0, supresor_picos_Informaticos_Deficiencias=0,
+                supresor_picos_Informaticos_Acciones=0, Correo_Informaticos_Deficiencias=0, Correo_Informaticos_Acciones=0,
+                sistemas_Informaticos_Deficiencias=0, sistemas_Informaticos_Acciones=0, Redes_Informáticos_Informaticos_Deficiencias=0,
+                Redes_Informáticos_Informaticos_Acciones=0, Otros_Informaticos_Deficiencias=0, Otros_Informaticos_Acciones=0,
+                subrasarse_Informaticos_Deficiencias=0, subrasarse_Informaticos_Acciones=0,
+                //fin aspectos informatiocs
+
                 Aspectos_seguridad_detectorM_Deficiencias=0,
                 Aspectos_seguridad_detectorM_Acciones=0,
-        Aspectos_seguridad_Extintores_Deficiencias=0,
-        Aspectos_seguridad_Extintores_Acciones=0,
-        Aspectos_seguridad_Mangueras_Deficiencias=0,
-        Aspectos_seguridad_Mangueras_Acciones=0,
-        Aspectos_seguridad_Otros_Deficiencias=0,
-        Aspectos_seguridad_Otros_Acciones=0,
-        subrasarse_Aspectos_seguridad_Deficiencias=0,
-        subrasarse_Aspectos_seguridad_Acciones=0,
-                //fin aspectos de seguridad
+                Aspectos_seguridad_Extintores_Deficiencias=0,
+                Aspectos_seguridad_Extintores_Acciones=0,
+                Aspectos_seguridad_Mangueras_Deficiencias=0,
+                Aspectos_seguridad_Mangueras_Acciones=0,
+                Aspectos_seguridad_Otros_Deficiencias=0,
+                Aspectos_seguridad_Otros_Acciones=0,
+                subrasarse_Aspectos_seguridad_Deficiencias=0,
+                subrasarse_Aspectos_seguridad_Acciones=0,
+                //aspectos de seguridad
 
 
                 Aspectos_generales_Estructuras_Deficiencias=0,
-        Aspectos_generales_Estructuras_Acciones=0,
-        Aspectos_generales_Puertas_Deficiencias=0,
-        Aspectos_generales_Puertas_Acciones=0,
-        Aspectos_generales_Ventanas_Deficiencias=0,
-        Aspectos_generales_Ventanas_Acciones=0,
-        Aspectos_generales_Pisos_Deficiencias=0,
-        Aspectos_generales_Pisos_Acciones=0,
-        Aspectos_generales_Pintura_Deficiencias=0,
-        Aspectos_generales_Pintura_Acciones=0,
-        Aspectos_generales_Instalaciones_Sanitarias_Deficiencias=0,
-        Aspectos_generales_Instalaciones_Sanitarias_Acciones=0,
-        Aspectos_generales_Instalaciones_Eléctricas_Deficiencias=0,
-        Aspectos_generales_Instalaciones_Eléctricas_Acciones=0,
-        Aspectos_generales_brinda_Seguridad_Deficiencias=0,
-        Aspectos_generales_brinda_Seguridad_Acciones=0,
-        Aspectos_generales_Mantenimiento_local_Deficiencias=0,
-        Aspectos_generales_Mantenimiento_local_Acciones=0,
-        Aspectos_generales_Otros_Deficiencias=0,
-        Aspectos_generales_Otros_Acciones=0,
-        subrasarse_Aspectos_generales_Deficiencias=0,
-        subrasarse_Aspectos_generales_Acciones=0,
-        Aspectos_generales_ALQUILADO=0,
-        Aspectos_generales_ALQUILADO1=0,
-        Aspectos_generales_ALQUILADO2=0,
+                Aspectos_generales_Estructuras_Acciones=0,
+                Aspectos_generales_Puertas_Deficiencias=0,
+                Aspectos_generales_Puertas_Acciones=0,
+                Aspectos_generales_Ventanas_Deficiencias=0,
+                Aspectos_generales_Ventanas_Acciones=0,
+                Aspectos_generales_Pisos_Deficiencias=0,
+                Aspectos_generales_Pisos_Acciones=0,
+                Aspectos_generales_Pintura_Deficiencias=0,
+                Aspectos_generales_Pintura_Acciones=0,
+                Aspectos_generales_Instalaciones_Sanitarias_Deficiencias=0,
+                Aspectos_generales_Instalaciones_Sanitarias_Acciones=0,
+                Aspectos_generales_Instalaciones_Eléctricas_Deficiencias=0,
+                Aspectos_generales_Instalaciones_Eléctricas_Acciones=0,
+                Aspectos_generales_brinda_Seguridad_Deficiencias=0,
+                Aspectos_generales_brinda_Seguridad_Acciones=0,
+                Aspectos_generales_Mantenimiento_local_Deficiencias=0,
+                Aspectos_generales_Mantenimiento_local_Acciones=0,
+                Aspectos_generales_Otros_Deficiencias=0,
+                Aspectos_generales_Otros_Acciones=0,
+                subrasarse_Aspectos_generales_Deficiencias=0,
+                subrasarse_Aspectos_generales_Acciones=0,
+                Aspectos_generales_ALQUILADO=0,
+                Aspectos_generales_ALQUILADO1=0,
+                Aspectos_generales_ALQUILADO2=0,
 
-        Aspectos_generales_CEDIDO=0,
-        Aspectos_generales_CEDIDO1=0,
-        Aspectos_generales_CEDIDO2=0,
-                //fin aspectos generales
+                Aspectos_generales_CEDIDO=0,
+                Aspectos_generales_CEDIDO1=0,
+                Aspectos_generales_CEDIDO2=0,
+                //FIN ASPECTOS GENERALES
                 servicio_judiciales_SI_1=0,
-        servicio_judiciales_NO_1=0,
-        servicio_judiciales_Observaciones_1=0,
-        servicio_judiciales_SI_2=0,
-        servicio_judiciales_NO_2=0,
-        servicio_judiciales_Observaciones_2=0,
-        servicio_judiciales_SI_3=0,
-        servicio_judiciales_NO_3=0,
-        servicio_judiciales_Observaciones_3=0,
-        servicio_judiciales_SI_4=0,
-        servicio_judiciales_NO_4=0,
-        servicio_judiciales_Observaciones_4=0,
+                servicio_judiciales_NO_1=0,
+                auxilio_judicial_Observacaciones=0,
+                servicio_judiciales_SI_2=0,
+                servicio_judiciales_NO_2=0,
+
+                servicio_judiciales_Observaciones_2=0,
+                servicio_judiciales_SI_3=0,
+                servicio_judiciales_NO_3=0,
+                servicio_judiciales_Observaciones_3=0,
+                servicio_judiciales_SI_4=0,
+                servicio_judiciales_NO_4=0,
+
+                servicio_judiciales_Observaciones_4=0,
 
 
-        servicio_judiciales_respuesta_negativa=0,
-        servicio_judiciales_acciones1=0,
-        servicio_judiciales_acciones2=0,
-        servicio_judiciales_acciones3=0,
-        servicio_judiciales_acciones4=0,
-        servicio_judiciales_acciones5=0,
-//FIN ASPECTOS GENERALES
+                servicio_judiciales_respuesta_negativa=0,
+                servicio_judiciales_acciones1=0,
+                servicio_judiciales_acciones2=0,
+                servicio_judiciales_acciones3=0,
+                servicio_judiciales_acciones4=0,
+                servicio_judiciales_acciones5=0,
 
-
+                //fin servicios judiciales
                 auxilio_judicial_SI_1=0,
-        auxilio_judicial_NO_1=0,
-        auxilio_judicial_Observacaciones=0,
-        auxilio_judicial_SI_1=0,
-        auxilio_judicial_SI_2_2=0,
-        auxilio_judicial_NO_2_1=0,
-        auxilio_judicial_NO_2_2=0,
-        auxilio_judicial_Observaciones_2_1=0,
-        auxilio_judicial_Observaciones_2_2=0,
-        auxilio_judicial_SI_3=0,
-        auxilio_judicial_NO_3=0,
-        auxilio_judicial_Observaciones_3=0,
-        auxilio_judicial_SI_4=0,
-        auxilio_judicial_NO_4=0,
-        auxilio_judicial_Observaciones_4=0,
-        auxilio_judicial_SI_5=0,
-        auxilio_judicial_NO_5=0,
-        auxilio_judicial_Observaciones_5=0,
-        auxilio_judicial_SI_6=0,
-        auxilio_judicial_NO_6=0,
-        auxilio_judicial_Observaciones_6=0,
-        auxilio_judicial_Acciones_1=0,
-        auxilio_judicial_Acciones_2=0,
-        auxilio_judicial_Acciones_3=0,
-
+                auxilio_judicial_NO_1=0,
+                auxilio_judicial_Observacaciones=0,
+                auxilio_judicial_SI_1=0,
+                auxilio_judicial_SI_2_2=0,
+                auxilio_judicial_NO_2_1=0,
+                auxilio_judicial_NO_2_2=0,
+                auxilio_judicial_Observaciones_2_1=0,
+                auxilio_judicial_Observaciones_2_2=0,
+                auxilio_judicial_SI_3=0,
+                auxilio_judicial_NO_3=0,
+                auxilio_judicial_Observaciones_3=0,
+                auxilio_judicial_SI_4=0,
+                auxilio_judicial_NO_4=0,
+                auxilio_judicial_Observaciones_4=0,
+                auxilio_judicial_SI_5=0,
+                auxilio_judicial_NO_5=0,
+                auxilio_judicial_Observaciones_5=0,
+                auxilio_judicial_SI_6=0,
+                auxilio_judicial_NO_6=0,
+                auxilio_judicial_Observaciones_6=0,
+                auxilio_judicial_Acciones_1=0,
+                auxilio_judicial_Acciones_2=0,
+                auxilio_judicial_Acciones_3=0,
+                //fin auxilio judicial
 
 
 
@@ -811,119 +825,127 @@ $(document).ready(function () {
 
 
                 Computadoras_informaticos_Deficiencias=validacion('Computadoras_informaticos_Deficiencias');
-                Computadoras_informaticos__Acciones=validacion('Computadoras_informaticos__Acciones');
-                Impresoras_informaticos_Deficiencias=validacion('Impresoras_informaticos_Deficiencias');
-                Impresoras_informaticos_Acciones=validacion('Impresoras_informaticos_Acciones');
-                Fax_Informaticos_Deficiencias=validacion('Fax_Informaticos_Deficiencias');
-                Fax_informaticos_Acciones=validacion('Fax_informaticos_Acciones');
-                Mantenimiento_equipos_Informaticos_Deficiencias=validacion('Mantenimiento_equipos_Informaticos_Deficiencias');
-                Mantenimiento_equipos_Informaticos_Acciones=validacion('Mantenimiento_equipos_Informaticos_Acciones');
-                UPS_Informaticos_Deficiencias=validacion('UPS_Informaticos_Deficiencias');
-                UPS_Informaticos_Acciones=validacion('UPS_Informaticos_Acciones');
-                supresor_picos_Informaticos_Deficiencias=validacion('supresor_picos_Informaticos_Deficiencias');
-                supresor_picos_Informaticos_Acciones=validacion('supresor_picos_Informaticos_Acciones');
-                Correo_Informaticos_Deficiencias=validacion('supresor_picos_Informaticos_Acciones');
-                Correo_Informaticos_Acciones=validacion('Correo_Informaticos_Acciones');
-                sistemas_Informaticos_Deficiencias=validacion('sistemas_Informaticos_Deficiencias');
-                sistemas_Informaticos_Acciones=validacion('sistemas_Informaticos_Acciones');
-                Redes_Informáticos_Informaticos_Deficiencias=validacion('Redes_Informáticos_Informaticos_Deficiencias');
-                Redes_Informáticos_Informaticos_Acciones=validacion('Redes_Informáticos_Informaticos_Acciones');
-                Otros_Informaticos_Deficiencias=validacion('Otros_Informaticos_Deficiencias');
-                Otros_Informaticos_Acciones=validacion('Otros_Informaticos_Acciones');
-                subrasarse_Informaticos_Deficiencias=validacion('subrasarse_Informaticos_Deficiencias');
-                subrasarse_Informaticos_Acciones=validacion('subrasarse_Informaticos_Acciones');
-                //enpiesa otro metodo de validacion
+            Computadoras_informaticos__Acciones=validacion('Computadoras_informaticos__Acciones');
+            Impresoras_informaticos_Deficiencias=validacion('Impresoras_informaticos_Deficiencias');
+            Impresoras_informaticos_Acciones=validacion('Impresoras_informaticos_Acciones');
+            Fax_Informaticos_Deficiencias=validacion('Fax_Informaticos_Deficiencias');
+            Fax_informaticos_Acciones=validacion('Fax_informaticos_Acciones');
+            Mantenimiento_equipos_Informaticos_Deficiencias=validacion('Mantenimiento_equipos_Informaticos_Deficiencias');
+            Mantenimiento_equipos_Informaticos_Acciones=validacion('Mantenimiento_equipos_Informaticos_Acciones');
+            UPS_Informaticos_Deficiencias=validacion('UPS_Informaticos_Deficiencias');
+            UPS_Informaticos_Acciones=validacion('UPS_Informaticos_Acciones');
+            supresor_picos_Informaticos_Deficiencias=validacion('supresor_picos_Informaticos_Deficiencias');
+            supresor_picos_Informaticos_Acciones=validacion('supresor_picos_Informaticos_Acciones');
+            Correo_Informaticos_Deficiencias=validacion('supresor_picos_Informaticos_Acciones');
+            Correo_Informaticos_Acciones=validacion('Correo_Informaticos_Acciones');
+            sistemas_Informaticos_Deficiencias=validacion('sistemas_Informaticos_Deficiencias');
+            sistemas_Informaticos_Acciones=validacion('sistemas_Informaticos_Acciones');
+            Redes_Informáticos_Informaticos_Deficiencias=validacion('Redes_Informáticos_Informaticos_Deficiencias');
+            Redes_Informáticos_Informaticos_Acciones=validacion('Redes_Informáticos_Informaticos_Acciones');
+            Otros_Informaticos_Deficiencias=validacion('Otros_Informaticos_Deficiencias');
+            Otros_Informaticos_Acciones=validacion('Otros_Informaticos_Acciones');
+            subrasarse_Informaticos_Deficiencias=validacion('subrasarse_Informaticos_Deficiencias');
+            subrasarse_Informaticos_Acciones=validacion('subrasarse_Informaticos_Acciones');
+            //enpiesa otro metodo de validacion
+            //aspectos de seguridad
 
-                Aspectos_seguridad_detectorM_Deficiencias=validaciones('Aspectos_seguridad_detectorM_Deficiencias');
-                Aspectos_seguridad_detectorM_Acciones=validaciones('Aspectos_seguridad_detectorM_Acciones');
-                Aspectos_seguridad_Extintores_Deficiencias=validaciones('Aspectos_seguridad_Extintores_Deficiencias');
-                Aspectos_seguridad_Extintores_Acciones=validaciones('Aspectos_seguridad_Extintores_Acciones');
-                Aspectos_seguridad_Mangueras_Deficiencias=validaciones('Aspectos_seguridad_Mangueras_Deficiencias');
-                Aspectos_seguridad_Mangueras_Acciones=validaciones('Aspectos_seguridad_Mangueras_Acciones');
-                Aspectos_seguridad_Otros_Deficiencias=validaciones('Aspectos_seguridad_Otros_Deficiencias');
-                Aspectos_seguridad_Otros_Acciones=validaciones('Aspectos_seguridad_Otros_Acciones');
-                subrasarse_Aspectos_seguridad_Deficiencias=validaciones('subrasarse_Aspectos_seguridad_Deficiencias');
-                subrasarse_Aspectos_seguridad_Acciones=validaciones('subrasarse_Aspectos_seguridad_Acciones');
 
-                //fin aspectos de seguridad
-
+            Aspectos_seguridad_detectorM_Deficiencias=validaciones('Aspectos_seguridad_detectorM_Deficiencias');
+            Aspectos_seguridad_detectorM_Acciones=validaciones('Aspectos_seguridad_detectorM_Acciones');
+            Aspectos_seguridad_Extintores_Deficiencias=validaciones('Aspectos_seguridad_Extintores_Deficiencias');
+            Aspectos_seguridad_Extintores_Acciones=validaciones('Aspectos_seguridad_Extintores_Acciones');
+            Aspectos_seguridad_Mangueras_Deficiencias=validaciones('Aspectos_seguridad_Mangueras_Deficiencias');
+            Aspectos_seguridad_Mangueras_Acciones=validaciones('Aspectos_seguridad_Mangueras_Acciones');
+            Aspectos_seguridad_Otros_Deficiencias=validaciones('Aspectos_seguridad_Otros_Deficiencias');
+            Aspectos_seguridad_Otros_Acciones=validaciones('Aspectos_seguridad_Otros_Acciones');
+            subrasarse_Aspectos_seguridad_Deficiencias=validaciones('subrasarse_Aspectos_seguridad_Deficiencias');
+            subrasarse_Aspectos_seguridad_Acciones=validaciones('subrasarse_Aspectos_seguridad_Acciones');
+//fin aspectos seguridad
             Aspectos_generales_Estructuras_Deficiencias=validaciones('Aspectos_generales_Estructuras_Deficiencias');
-                Aspectos_generales_Estructuras_Acciones=validaciones('Aspectos_generales_Estructuras_Acciones');
-                Aspectos_generales_Puertas_Deficiencias=validaciones('Aspectos_generales_Puertas_Deficiencias');
-                Aspectos_generales_Puertas_Acciones=validaciones('Aspectos_generales_Puertas_Acciones');
-                Aspectos_generales_Ventanas_Deficiencias=validaciones('Aspectos_generales_Ventanas_Deficiencias');
-                Aspectos_generales_Ventanas_Acciones=validaciones('Aspectos_generales_Ventanas_Acciones');
-                Aspectos_generales_Pisos_Deficiencias=validaciones('Aspectos_generales_Pisos_Deficiencias');
-                Aspectos_generales_Pisos_Acciones=validaciones('Aspectos_generales_Pisos_Acciones');
-                Aspectos_generales_Pintura_Deficiencias=validaciones('Aspectos_generales_Pintura_Deficiencias');
-                Aspectos_generales_Pintura_Acciones=validaciones('Aspectos_generales_Pintura_Acciones');
-                Aspectos_generales_Instalaciones_Sanitarias_Deficiencias=validaciones('Aspectos_generales_Instalaciones_Sanitarias_Deficiencias');
-                Aspectos_generales_Instalaciones_Sanitarias_Acciones=validaciones('Aspectos_generales_Instalaciones_Sanitarias_Acciones');
-                Aspectos_generales_Instalaciones_Eléctricas_Deficiencias=validaciones('Aspectos_generales_Instalaciones_Eléctricas_Deficiencias');
-                Aspectos_generales_Instalaciones_Eléctricas_Acciones=validaciones('Aspectos_generales_Instalaciones_Eléctricas_Acciones');
-                Aspectos_generales_brinda_Seguridad_Deficiencias=validaciones('Aspectos_generales_brinda_Seguridad_Deficiencias');
-                Aspectos_generales_brinda_Seguridad_Acciones=validaciones('Aspectos_generales_brinda_Seguridad_Acciones');
-                Aspectos_generales_Mantenimiento_local_Deficiencias=validaciones('Aspectos_generales_Mantenimiento_local_Deficiencias');
-                Aspectos_generales_Mantenimiento_local_Acciones=validaciones('Aspectos_generales_Mantenimiento_local_Acciones');
-                Aspectos_generales_Otros_Deficiencias=validaciones('Aspectos_generales_Otros_Deficiencias');
-                Aspectos_generales_Otros_Acciones=validaciones('Aspectos_generales_Otros_Acciones');
-                subrasarse_Aspectos_generales_Deficiencias=validaciones('subrasarse_Aspectos_generales_Deficiencias');
-                subrasarse_Aspectos_generales_Acciones=validaciones('subrasarse_Aspectos_generales_Acciones');
-                Aspectos_generales_ALQUILADO=validaciones('Aspectos_generales_ALQUILADO');
-                Aspectos_generales_ALQUILADO1=validaciones('Aspectos_generales_ALQUILADO1');
-                Aspectos_generales_ALQUILADO2=validaciones('Aspectos_generales_ALQUILADO2');
+            Aspectos_generales_Estructuras_Acciones=validaciones('Aspectos_generales_Estructuras_Acciones');
+            Aspectos_generales_Puertas_Deficiencias=validaciones('Aspectos_generales_Puertas_Deficiencias');
+            Aspectos_generales_Puertas_Acciones=validaciones('Aspectos_generales_Puertas_Acciones');
+            Aspectos_generales_Ventanas_Deficiencias=validaciones('Aspectos_generales_Ventanas_Deficiencias');
+            Aspectos_generales_Ventanas_Acciones=validaciones('Aspectos_generales_Ventanas_Acciones');
+            Aspectos_generales_Pisos_Deficiencias=validaciones('Aspectos_generales_Pisos_Deficiencias');
+            Aspectos_generales_Pisos_Acciones=validaciones('Aspectos_generales_Pisos_Acciones');
+            Aspectos_generales_Pintura_Deficiencias=validaciones('Aspectos_generales_Pintura_Deficiencias');
+            Aspectos_generales_Pintura_Acciones=validaciones('Aspectos_generales_Pintura_Acciones');
+            Aspectos_generales_Instalaciones_Sanitarias_Deficiencias=validaciones('Aspectos_generales_Instalaciones_Sanitarias_Deficiencias');
+            Aspectos_generales_Instalaciones_Sanitarias_Acciones=validaciones('Aspectos_generales_Instalaciones_Sanitarias_Acciones');
+            Aspectos_generales_Instalaciones_Eléctricas_Deficiencias=validaciones('Aspectos_generales_Instalaciones_Eléctricas_Deficiencias');
+            Aspectos_generales_Instalaciones_Eléctricas_Acciones=validaciones('Aspectos_generales_Instalaciones_Eléctricas_Acciones');
+            Aspectos_generales_brinda_Seguridad_Deficiencias=validaciones('Aspectos_generales_brinda_Seguridad_Deficiencias');
+            Aspectos_generales_brinda_Seguridad_Acciones=validaciones('Aspectos_generales_brinda_Seguridad_Acciones');
+            Aspectos_generales_Mantenimiento_local_Deficiencias=validaciones('Aspectos_generales_Mantenimiento_local_Deficiencias');
+            Aspectos_generales_Mantenimiento_local_Acciones=validaciones('Aspectos_generales_Mantenimiento_local_Acciones');
+            Aspectos_generales_Otros_Deficiencias=validaciones('Aspectos_generales_Otros_Deficiencias');
+            Aspectos_generales_Otros_Acciones=validaciones('Aspectos_generales_Otros_Acciones');
+            subrasarse_Aspectos_generales_Deficiencias=validaciones('subrasarse_Aspectos_generales_Deficiencias');
+            subrasarse_Aspectos_generales_Acciones=validaciones('subrasarse_Aspectos_generales_Acciones');
+            Aspectos_generales_ALQUILADO=validaciones('Aspectos_generales_ALQUILADO');
+            Aspectos_generales_ALQUILADO1=validaciones('Aspectos_generales_ALQUILADO1');
+            Aspectos_generales_ALQUILADO2=validaciones('Aspectos_generales_ALQUILADO2');
 
-                Aspectos_generales_CEDIDO=validaciones('Aspectos_generales_CEDIDO');
-                Aspectos_generales_CEDIDO1=validaciones('Aspectos_generales_CEDIDO1');
-                Aspectos_generales_CEDIDO2=validaciones('Aspectos_generales_CEDIDO2');
-                //fin aspectos generales
+            Aspectos_generales_CEDIDO=validaciones('Aspectos_generales_CEDIDO');
+            Aspectos_generales_CEDIDO1=validaciones('Aspectos_generales_CEDIDO1');
+            Aspectos_generales_CEDIDO2=validaciones('Aspectos_generales_CEDIDO2');
+            //fin de aspectos fenerales
 
             servicio_judiciales_SI_1=validaciones('servicio_judiciales_SI_1');
-                servicio_judiciales_NO_1=validaciones('servicio_judiciales_NO_1');
-                servicio_judiciales_Observaciones_1=validaciones('servicio_judiciales_Observaciones_1');
-                servicio_judiciales_SI_2=validaciones('servicio_judiciales_SI_2');
-                servicio_judiciales_NO_2=validaciones('servicio_judiciales_NO_2');
-                servicio_judiciales_Observaciones_2=validaciones('servicio_judiciales_Observaciones_2');
-                servicio_judiciales_SI_3=validaciones('servicio_judiciales_SI_3');
-                servicio_judiciales_NO_3=validaciones('servicio_judiciales_NO_3'),
-                servicio_judiciales_Observaciones_3=validaciones('servicio_judiciales_Observaciones_3');
-                servicio_judiciales_SI_4=validaciones('servicio_judiciales_SI_4');
-                servicio_judiciales_NO_4=validaciones('servicio_judiciales_NO_4');
-                servicio_judiciales_Observaciones_4=validaciones('servicio_judiciales_Observaciones_4');
+            servicio_judiciales_NO_1=validaciones('  servicio_judiciales_NO_1');
+
+            servicio_judiciales_Observaciones_1=validaciones('servicio_judiciales_Observaciones_1');
+            servicio_judiciales_SI_2=validaciones('servicio_judiciales_SI_2');
+            servicio_judiciales_NO_2=validaciones('servicio_judiciales_NO_2');
+            servicio_judiciales_Observaciones_2=validaciones('servicio_judiciales_Observaciones_2');
+            servicio_judiciales_SI_3=validaciones('servicio_judiciales_SI_3');
+            servicio_judiciales_NO_3=validaciones('servicio_judiciales_NO_3');
+            servicio_judiciales_Observaciones_3=validaciones('servicio_judiciales_Observaciones_3');
+            servicio_judiciales_SI_4=validaciones('servicio_judiciales_SI_4');
+            servicio_judiciales_NO_4=validaciones('servicio_judiciales_NO_4');
+            servicio_judiciales_Observaciones_4=validaciones('servicio_judiciales_Observaciones_4');
 
 
-                servicio_judiciales_respuesta_negativa=validaciones('servicio_judiciales_respuesta_negativa');
-                servicio_judiciales_acciones1=validaciones('servicio_judiciales_acciones1');
-                servicio_judiciales_acciones2=validaciones('servicio_judiciales_acciones2');
-                servicio_judiciales_acciones3=validaciones('servicio_judiciales_acciones3');
-                servicio_judiciales_acciones4=validaciones('servicio_judiciales_acciones4');
-                servicio_judiciales_acciones5=validaciones('');
-       //fin servicios finales
+            servicio_judiciales_respuesta_negativa=validaciones('servicio_judiciales_respuesta_negativa');
+            servicio_judiciales_acciones1=validaciones('servicio_judiciales_acciones1');
+            servicio_judiciales_acciones2=validaciones('servicio_judiciales_acciones2');
+            servicio_judiciales_acciones3=validaciones('servicio_judiciales_acciones3');
+            servicio_judiciales_acciones4=validaciones('servicio_judiciales_acciones4');
+            servicio_judiciales_acciones5=validaciones('servicio_judiciales_acciones5');
+            //fin servicios judiciales
 
             auxilio_judicial_SI_1=validaciones('auxilio_judicial_SI_1');
-                auxilio_judicial_NO_1=validaciones('auxilio_judicial_NO_1');
-                auxilio_judicial_Observacaciones=validaciones('auxilio_judicial_Observacaciones');
-                auxilio_judicial_SI_1=validaciones('auxilio_judicial_SI_1');
-                auxilio_judicial_SI_2_2=validaciones('auxilio_judicial_SI_2_2');
-                auxilio_judicial_NO_2_1=validaciones('auxilio_judicial_NO_2_1');
-                auxilio_judicial_NO_2_2=validaciones('auxilio_judicial_NO_2_2');
-                auxilio_judicial_Observaciones_2_1=validaciones('auxilio_judicial_Observaciones_2_1');
-                auxilio_judicial_Observaciones_2_2=validaciones('auxilio_judicial_Observaciones_2_2');
-                auxilio_judicial_SI_3=validaciones('auxilio_judicial_SI_3');
-                auxilio_judicial_NO_3=validaciones('auxilio_judicial_NO_3');
-                auxilio_judicial_Observaciones_3=validaciones('auxilio_judicial_Observaciones_3');
-                auxilio_judicial_SI_4=validaciones('auxilio_judicial_SI_4');
-                auxilio_judicial_NO_4=validaciones('auxilio_judicial_NO_4');
-                auxilio_judicial_Observaciones_4=validaciones('auxilio_judicial_Observaciones_4');
-                auxilio_judicial_SI_5=validaciones('auxilio_judicial_SI_5');
-                auxilio_judicial_NO_5=validaciones('auxilio_judicial_NO_5');
-                auxilio_judicial_Observaciones_5=validaciones('auxilio_judicial_Observaciones_5')
-                auxilio_judicial_SI_6=validaciones('auxilio_judicial_SI_6');
-                auxilio_judicial_NO_6=validaciones('auxilio_judicial_NO_6');
-                auxilio_judicial_Observaciones_6=validaciones('auxilio_judicial_Observaciones_6');
-                auxilio_judicial_Acciones_1=validaciones('auxilio_judicial_Acciones_1');
-                auxilio_judicial_Acciones_2=validaciones('auxilio_judicial_Acciones_2');
-                auxilio_judicial_Acciones_3=validaciones('auxilio_judicial_Acciones_3');
+            auxilio_judicial_NO_1=validaciones('auxilio_judicial_NO_1');
+            auxilio_judicial_Observacaciones=validaciones('auxilio_judicial_Observacaciones');
+            auxilio_judicial_SI_1=validaciones('auxilio_judicial_SI_1');
+            auxilio_judicial_SI_2_2=validaciones('auxilio_judicial_SI_2_2');
+            auxilio_judicial_NO_2_1=validaciones('auxilio_judicial_NO_2_1');
+            auxilio_judicial_NO_2_2=validaciones('auxilio_judicial_NO_2_2');
+            auxilio_judicial_Observaciones_2_1=validaciones('auxilio_judicial_Observaciones_2_1');
+            auxilio_judicial_Observaciones_2_2=validaciones('auxilio_judicial_Observaciones_2_2');
+            auxilio_judicial_SI_3=validaciones('auxilio_judicial_SI_3');
+            auxilio_judicial_NO_3=validaciones('auxilio_judicial_NO_3');
+            auxilio_judicial_Observaciones_3=validaciones('auxilio_judicial_Observaciones_3');
+            auxilio_judicial_SI_4=validaciones('auxilio_judicial_SI_4');
+            auxilio_judicial_NO_4=validaciones('auxilio_judicial_NO_4');
+            auxilio_judicial_Observaciones_4=validaciones('auxilio_judicial_Observaciones_4');
+            auxilio_judicial_SI_5=validaciones('auxilio_judicial_SI_5');
+            auxilio_judicial_NO_5=validaciones('auxilio_judicial_NO_5');
+            auxilio_judicial_Observaciones_5=validaciones('auxilio_judicial_Observaciones_5')
+            auxilio_judicial_SI_6=validaciones('auxilio_judicial_SI_6');
+            auxilio_judicial_NO_6=validaciones('auxilio_judicial_NO_6');
+            auxilio_judicial_Observaciones_6=validaciones('auxilio_judicial_Observaciones_6');
+            auxilio_judicial_Acciones_1=validaciones('auxilio_judicial_Acciones_1');
+            auxilio_judicial_Acciones_2=validaciones('auxilio_judicial_Acciones_2');
+            auxilio_judicial_Acciones_3=validaciones('auxilio_judicial_Acciones_3');
+
+
+
+
+
+
+
 
 
 
@@ -952,10 +974,8 @@ $(document).ready(function () {
                 Otros_Informaticos_Deficiencias===false||
                 Otros_Informaticos_Acciones===false||
                 subrasarse_Informaticos_Deficiencias===false||
-                subrasarse_Informaticos_Acciones===false  ||
-
+                subrasarse_Informaticos_Acciones===false||
                 //fin aspectos informaticos
-
                 Aspectos_seguridad_detectorM_Deficiencias===false||
                 Aspectos_seguridad_detectorM_Acciones===false||
                 Aspectos_seguridad_Extintores_Deficiencias===false||
@@ -967,7 +987,7 @@ $(document).ready(function () {
                 subrasarse_Aspectos_seguridad_Deficiencias===false||
                 subrasarse_Aspectos_seguridad_Acciones===false ||
 
-                //aspectos de seguridad
+                //FIN aspectos seguridad
 
                 Aspectos_generales_Estructuras_Deficiencias===false||
                 Aspectos_generales_Estructuras_Acciones===false||
@@ -998,64 +1018,74 @@ $(document).ready(function () {
                 Aspectos_generales_CEDIDO===false||
                 Aspectos_generales_CEDIDO1===false||
                 Aspectos_generales_CEDIDO2===false ||
-
                 //fin aspectos generales
-
-                servicio_judiciales_SI_1===false||
-                servicio_judiciales_NO_1===false ||
+                servicio_judiciales_SI_1 && servicio_judiciales_NO_1 ===false ||
                 servicio_judiciales_Observaciones_1===false||
-                servicio_judiciales_SI_2===false ||
-                servicio_judiciales_NO_2===false ||
+                servicio_judiciales_SI_2 && servicio_judiciales_NO_2===false ||
                 servicio_judiciales_Observaciones_2===false ||
-                servicio_judiciales_SI_3===false ||
-                servicio_judiciales_NO_3===false ||
+                servicio_judiciales_SI_3 && servicio_judiciales_NO_3===false ||
                 servicio_judiciales_Observaciones_3===false ||
-                servicio_judiciales_SI_4===false ||
-                servicio_judiciales_NO_4===false ||
+                servicio_judiciales_SI_4 && servicio_judiciales_NO_4===false ||
                 servicio_judiciales_Observaciones_4===false||
-
-
                 servicio_judiciales_respuesta_negativa===false ||
                 servicio_judiciales_acciones1===false||
                 servicio_judiciales_acciones2===false ||
                 servicio_judiciales_acciones3===false ||
                 servicio_judiciales_acciones4===false ||
                 servicio_judiciales_acciones5===false ||
+                //fin servicios judiciales
 
-            //FIN servicios generales
-                auxilio_judicial_SI_1===false||
-                auxilio_judicial_NO_1===false||
+                auxilio_judicial_SI_1 && auxilio_judicial_NO_1===false||
                 auxilio_judicial_Observacaciones===false||
-                auxilio_judicial_SI_1===false||
-                auxilio_judicial_SI_2_2===false||
-                auxilio_judicial_NO_2_1===false||
-                auxilio_judicial_NO_2_2===false||
+                auxilio_judicial_SI_1 &&  auxilio_judicial_NO_2_1 ===false||
+                auxilio_judicial_SI_2_2 &&    auxilio_judicial_NO_2_2===false||
                 auxilio_judicial_Observaciones_2_1===false||
                 auxilio_judicial_Observaciones_2_2===false||
-                auxilio_judicial_SI_3===false||
+                auxilio_judicial_SI_3 &&
                 auxilio_judicial_NO_3===false||
                 auxilio_judicial_Observaciones_3===false||
-                auxilio_judicial_SI_4===false||
-                auxilio_judicial_NO_4===false||
+                auxilio_judicial_SI_4 &&  auxilio_judicial_NO_4===false||
                 auxilio_judicial_Observaciones_4===false||
-                auxilio_judicial_SI_5===false||
-                auxilio_judicial_NO_5===false||
+                auxilio_judicial_SI_5 && auxilio_judicial_NO_5===false||
                 auxilio_judicial_Observaciones_5===false||
-                auxilio_judicial_SI_6===false||
-                auxilio_judicial_NO_6===false||
+                auxilio_judicial_SI_6 && auxilio_judicial_NO_6===false||
                 auxilio_judicial_Observaciones_6===false||
                 auxilio_judicial_Acciones_1===false||
                 auxilio_judicial_Acciones_2===false||
                 auxilio_judicial_Acciones_3===false
 
+            //fin auxilio judicial
 
-            ) {
+
+
+
+
+
+
+
+
+
+
+
+
+//final de servicios judiciales
+            )
+
+            {
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Porfavor Rellene la Encuesta!',
+                    timer: 2000
+                });
                 $("#exito").hide();
                 $("#error").show();
-            }else{
+            }
+            else{
                 $("#error").hide();
                 $("#exito").show();
             }
+
         }else {
             var $active = $('.wizard .nav-tabs li.active');
             $active.next().removeClass('disabled');
@@ -1063,12 +1093,18 @@ $(document).ready(function () {
         }
 
     });
+
+    
+
     $(".prev-step").click(function (e) {
 
         var $active = $('.wizard .nav-tabs li.active');
         prevTab($active);
 
     });
+
+
+
 
 });
 function validacion(campo){
@@ -4282,7 +4318,8 @@ function validaciones(campo) {
         }
     }
 
-    //fin auxilio general
+    //fin servicios judiciales
+
 
     if (campo==='auxilio_judicial_SI_1'){
         Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
@@ -4746,6 +4783,8 @@ function validaciones(campo) {
 
         }
     }
+    
+
 
 
 
@@ -4763,4 +4802,2638 @@ function nextTab(elem) {
 }
 function prevTab(elem) {
     $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+function Valida(campo) {
+    if (campo==='Peritos_judiciales_SI_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_NO_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_SI_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_NO_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+
+    if (campo==='Peritos_judiciales_SI_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Acciones_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Acciones_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    //Fin Peritos  judiciales
+
+
+
+    if (campo==='Peritos_judiciales_SI_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_NO_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_SI_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Peritos_judiciales_NO_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+
+    if (campo==='Peritos_judiciales_SI_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_6_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_6_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_SI_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_NO_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Obserbaciones_7'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Acciones_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Peritos_judiciales_Acciones_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    ///fon peritos juriciales
+    if (campo==='Cuerpo_delito_efectos_SI_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cuerpo_delito_efectos_SI_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_SI_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_SI_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_SI_4_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_SI_4_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_4_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_4_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_4_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_4_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cuerpo_delito_efectos_SI_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_SI_6'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_NO_6'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_Observaciones_6'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cuerpo_delito_efectos_ACCIONES_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cuerpo_delito_efectos_ACCIONES_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cuerpo_delito_efectos_ACCIONES_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    //fin cuerpo del delito
+
+
+    if (campo==='Recaudacion_judicial_SI_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_SI_1_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_1_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_SI_1_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_1_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_SI_1_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_1_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_SI_1_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_1_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_S1_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_S1_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_S1_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+
+    if (campo==='Recaudacion_judicial_S1_2_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_2_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_S1_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_S1_3_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_3_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_S1_3_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_3_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_S1_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_S1_4_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_4_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Recaudacion_judicial_SI_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Recaudacion_judicial_NO_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    // Recaudacion judicial fin
+
+    if (campo==='Cobransas_certificados_SI_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_1_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_1_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_2_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_2_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_2_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_N0_2_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_3_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_3_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_3_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_3_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_4'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+
+    if (campo==='Cobransas_certificados_SI_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_5'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_SI_6'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_NO_6'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_ACCIONES_1'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_ACCIONES_2'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+    if (campo==='Cobransas_certificados_ACCIONES_3'){
+        Aspectos_seguridad_detectorM_Deficiencias = document.getElementById(campo).value;
+        if( Aspectos_seguridad_detectorM_Deficiencias == null || Aspectos_seguridad_detectorM_Deficiencias.length == 0 || /^\s+$/.test(Aspectos_seguridad_detectorM_Deficiencias) ) {
+
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-error has-feedback");
+            $('#'+campo).parent().children('span').text("Campo Requerido").show();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-remove form-control-feedback' style='margin-right: 10px;'></span>");
+            return false;
+
+        }
+        else{
+            $("#glypcn"+campo).remove();
+            $('#'+campo).parent().parent().attr("class", "form-group has-success has-feedback");
+            $('#'+campo).parent().children('span').hide();
+            $('#'+campo).parent().append("<span id='glypcn"+campo+"' class='glyphicon glyphicon-ok form-control-feedback' style='margin-right: 10px;'></span>");
+            return true;
+
+        }
+    }
+
+
+
+
 }

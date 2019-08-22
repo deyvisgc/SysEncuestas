@@ -1,5 +1,10 @@
 @extends('Principal.principal')
 @section('contenido')
+    @if (Session::has('message'))
+        <div class="text-danger">
+            {{Session::get('message')}}
+        </div>
+    @endif
     <style>
 
         .emp-profile{
@@ -101,6 +106,17 @@
                     @switch(true)
                         @case($us->Rol_idRol == 1)
                         <div class="container emp-profile">
+                            @if (Session::has('status'))
+                                <hr />
+
+                                    <div class="alert alert-success" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <strong> {{Session::get('status')}}!</strong>
+                                    </div>
+
+
+                                <hr />
+                            @endif
                             <form method="post">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -114,16 +130,23 @@
                                             <form id="frmCanbiarImagen"  enctype="multipart/form-data" >
                                                 {{ csrf_field() }}
                                                 <div class="file btn btn-lg btn-primary">
-                                                    Change Photo
+                                                    Canbiar Foto
                                                     <input type="file" id="file"  onchange="canbiarfoto();" name="file"/>
+
                                                 </div>
                                             </form>
 
+
+
                                         </div>
+                                        <button style="margin-left: 90px;"  type="button" id="zxzx" data-toggle="modal" data-target="#UpdatePassword" class="btn btn-warning"><i class='fas fa-key ' style='font-size:20px'></i> Actualizar contraseña</button>
 
 
                                     </div>
-                                    <div class="col-md-6"> <button style="margin-left: 500px;" type="button" id="ActualirPerfil" class="btn btn-success">Editar Perfil</button>
+                                    <div class="col-md-6">
+                                        <button style="margin-left: 500px;" type="button" id="ActualirPerfil" class="btn btn-success">Editar Perfil</button>
+
+
                                         <div class="col-sm-6">
                                             <CENTER><span><h4 style="color:#00b1b1;">PERFIL ADMINISTRATIVO</h4></span></CENTER>
                                             <center><span style="color:#0075b0";><p>Datos Personales y Credenciales</p></span></center>
@@ -172,7 +195,19 @@
 
                         @break
                         @case($us->Rol_idRol != 1)
+
                         <div class="container emp-profile">
+                            @if (Session::has('status'))
+                                <hr />
+
+                                <div class="alert alert-success" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <strong> {{Session::get('status')}}!</strong>
+                                </div>
+
+
+                                <hr />
+                            @endif
                             <form method="post">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -183,11 +218,16 @@
                                             @elseif(Auth::user()->imagen)
                                                 <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" alt="" >
                                             @endif
-                                            <div class="file btn btn-lg btn-primary">
-                                                Change Photo
-                                                <input type="file" id="imagen" name="file"/>
-                                            </div>
+                                                <form id="frmCanbiarImagen"  enctype="multipart/form-data" >
+                                                    {{ csrf_field() }}
+                                                    <div class="file btn btn-lg btn-primary">
+                                                        Canbiar Foto
+                                                        <input type="file" id="file"  onchange="canbiarfoto();" name="file"/>
+                                                    </div>
+                                                </form>
                                         </div>
+                                        <button style="margin-left: 90px;"  type="button" id="zxzx" data-toggle="modal" data-target="#UpdatePassword" class="btn btn-dark"><i class='fas fa-key ' style='font-size:20px'></i> Actualizar contraseña</button>
+
 
 
                                     </div>
@@ -254,10 +294,13 @@
 @section('script')
     <script>
         var id=$('#iduser').val();
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 4000);
 
             $('#ActualirPerfil').click(function () {
-               var dd=$('#imagen').val();
-               alert(dd);
                 $.ajax({
                     url:'{{url('Perfil')}}/'+id,
                     type:'get',

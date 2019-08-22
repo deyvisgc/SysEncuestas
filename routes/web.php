@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth','is_admn']], function () {
     //solo el administrador puede dentrar a estas carpetas
     Route::get('Detalle/{idUsuario}','UserController@detalle');
+
     Route::resource('Usuarios','UserController');
     //
 });
@@ -30,6 +31,12 @@ Route::resource('Encuestas','EncuestaController');
 Route::post('registrar','EncuestaController@hola');
 Route::get('BuscarOrgano/{idMagistrados}','EncuestaController@Buscar');
 Route::resource('Perfil','PerfilController');
+Route::Post('user/Password','PerfilController@canbiarpass');
+
+Route::get('CanbiarEstado/{id}','UserController@CanbiarEstado');
 Route::post('CanbiarImagen/{id}','UserController@CanbiarImagen');
+Route::get('UsuariosDelete','UserController@UsuariosDelete');
+
+Route::get('generate-pdf', 'PdfGenerateController@pdfview')->name('generate-pdf');
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>   <link href="css/wizard.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8" />
     <title>PODER JUDICIAL - SYSENCUESTAS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -14,7 +14,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/wizard.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.min.css">
+
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
@@ -79,13 +80,8 @@
                                 @elseif(Auth::user()->imagen)
                                     <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" alt="profile" class="img-circle"/>
                                 @endif
-                                <span class="profile-username"> {{Auth::user()->nombre}} {{Auth::user()->Apellidos}}<br/> <small>Developer</small> </span>
-                            </a><ul class="dropdown-menu"><li><a href="{{url('Perfil')}}"> Profile</a></li><li>
-                                    <a href="javascript:void(0)"><span class="badge badge-success pull-right">5</span> Settings </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"> Lock screen</a>
-                                </li>
+                                <span class="profile-username"> {{Auth::user()->nombre}} {{Auth::user()->Apellidos}}<br/> <small></small> </span>
+                            </a><ul class="dropdown-menu"><li><a href="{{url('Perfil')}}"> Perfil</a></li>
                                 <li class="divider"></li><li> <a class="dropdown-item "href="{{ route('logout') }}"
                                                                  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -113,7 +109,7 @@
                 <div class="user-info">
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{Auth::user()->email}}</a>
-                        <ul class="dropdown-menu"><li><a href="javascript:void(0)"> Profile</a>
+                        <ul class="dropdown-menu"><li><a href="javascript:void(0)"> Perfil</a>
                             </li>
                             <li>
                                 <a > Settings</a>
@@ -135,7 +131,7 @@
                     <p class="text-muted m-0">
                         <i class="fa fa-dot-circle-o text-success">
 
-                        </i> Online</p></div></div><div id="sidebar-menu">
+                        </i> Bienvenido</p></div></div><div id="sidebar-menu">
                      <ul>
                     <li>
                         <a href="{{url('home')}}" class="waves-effect">
@@ -154,6 +150,8 @@
                              </a>
                              <ul class="list-unstyled">
                                  <li><a href="{{url('Usuarios')}}">Usuarios</a>
+                                 </li>
+                                 <li><a href="{{url('UsuariosDelete')}}">Usuarios Eliminados</a>
                                  </li>
 
                                  <li>
@@ -218,9 +216,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.10/dist/sweetalert2.min.js"></script>
 <!---<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/5682efe7f6.js"></script>
+
 
 @yield('script')
 <script>
